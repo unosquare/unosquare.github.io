@@ -26,15 +26,18 @@ footer {
     margin: 0;
     border-width: 0;
     background-color: #333;
+    color: #FFF;
+    text-transform: lowercase;
 }
 .jumbotron {
     background-image: url('background.png');
 }
 .navbar-nav>li>a {
     color: white;
-    text-transform: lowercase;
+    border-bottom: 2px solid #333;
 }
 .navbar-nav>li>a:hover {
+    background-color: #333;
     border-bottom: 2px solid #44c5db;
 }
 img.logo-center {
