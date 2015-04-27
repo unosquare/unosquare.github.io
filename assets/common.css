@@ -9,7 +9,7 @@ body {
 	position:relative;
 }
 div.content-body {
-    padding-bottom:100px;
+    padding-bottom:150px;
 }
 footer {
     background-color: #333;
@@ -20,7 +20,7 @@ footer {
 	bottom:0;
 	left:0;
     width:100%;
-	height:100px;
+	min-height:120px;
 }
 .navbar {
     margin: 0;
@@ -35,12 +35,40 @@ footer {
 .navbar-nav>li>a {
     color: white;
     border-bottom: 2px solid #333;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
 }
-.navbar-nav>li>a:hover {
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
     background-color: #333;
     border-bottom: 2px solid #44c5db;
 }
-img.logo-center {
-    max-width: 130px;
-    min-width: 100px;
+a.navbar-brand {
+    color: white;
+}
+a.navbar-brand:hover, a.navbar-brand:focus  {
+    color: #44c5db
+}
+footer h4 {
+    color: #44c5db;
+}
+ul.sociallist a {
+    color: #FFF;
+    font-size: 18px;
+}
+    ul.sociallist a:hover {
+        color: #44c5db;
+    }
+
+footer img {
+    width: 100px;
+}
+
+@media only screen and (min-width : 768px) {
+    footer img {
+        width: 178px;
+    }
+
+    ul.sociallist a {
+        font-size: 22px;
+    }
 }
