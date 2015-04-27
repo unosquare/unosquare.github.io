@@ -25,7 +25,19 @@ footer {
 .navbar {
     margin: 0;
     border-width: 0;
+    background-color: #333;
 }
 .jumbotron {
     background-image: url('background.png');
+}
+.navbar-nav>li>a {
+    color: white;
+    text-transform: lowercase;
+}
+.navbar-nav>li>a:hover {
+    border-bottom: 2px solid #44c5db;
+}
+img.logo-center {
+    max-width: 130px;
+    min-width: 100px;
 }
