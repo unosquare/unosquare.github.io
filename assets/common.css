@@ -12,14 +12,23 @@ div.content-body {
     padding-bottom:150px;
 }
 footer {
-    background-color: #333;
     color: #FFF;
     text-align: center;
-    padding: 20px;
     position:absolute;
 	bottom:0;
 	left:0;
     width:100%;
+	min-height:120px;
+}
+footer div.row {
+    background-image: url('molecules.jpg');
+    background-position: bottom center;
+    padding: 20px;
+}
+.footer-fade {
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, rgba(255,255,255,1));
+    position: absolute;
+    width: 100%;
 	min-height:120px;
 }
 .navbar {
@@ -30,7 +39,27 @@ footer {
     text-transform: lowercase;
 }
 .jumbotron {
-    background-image: url('background.png');
+    background-image: url('molecules.jpg');
+    min-height: 400px;
+}
+.jumbotron-fade {
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 90%, rgba(255,255,255,1));
+    min-height: 400px;
+    position: absolute;
+    width: 100%;
+}
+.jumbotron-inner {
+    background: white;
+    background: linear-gradient(to left, rgba(255,255,255,0.5), rgba(255,255,255,0.9));
+    width: 100%;
+    min-height: 200px;
+    position: absolute;
+}
+.jumbotron-outer {
+    padding-top: 30px;
+}
+.catalog { 
+    margin-top: -160px;
 }
 .navbar-nav>li>a {
     color: white;
@@ -72,7 +101,14 @@ footer img {
         font-size: 22px;
     }
 }
+.btn-primary {
+    background-color: #0889A9;
+}
 div.panel-default div.panel-heading {
-    background-color: #333;
+    background-color: #1C815F;
+    background: linear-gradient(to left, #1C815F, #0889A9);
     color: white;
+}
+.thumbnail, .panel {
+    box-shadow: 1px 1px 3px #333;
 }
