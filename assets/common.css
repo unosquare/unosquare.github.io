@@ -22,7 +22,7 @@ footer {
 }
 footer div.row {
     background-image: url('molecules.jpg');
-    background-position: bottom center;
+    background-position: 28% center;
     padding: 20px;
 }
 .footer-fade {
