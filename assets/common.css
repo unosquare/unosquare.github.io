@@ -112,3 +112,6 @@ div.panel-default div.panel-heading {
 .thumbnail, .panel {
     box-shadow: 1px 1px 3px #333;
 }
+.page-header {
+    margin: 0;
+}
