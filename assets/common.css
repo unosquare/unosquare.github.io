@@ -38,28 +38,31 @@ footer div.row {
     color: #FFF;
     text-transform: lowercase;
 }
+main {
+    padding: 0 !important;
+}
 .jumbotron {
     background-image: url('molecules.jpg');
-    min-height: 400px;
+    min-height: 300px;
+    position: relative;
+    z-index: -1;
 }
 .jumbotron-fade {
     background: linear-gradient(to bottom, rgba(255,255,255,0) 90%, rgba(255,255,255,1));
-    min-height: 400px;
+    min-height: 300px;
     position: absolute;
     width: 100%;
 }
 .jumbotron-inner {
     background: white;
     background: linear-gradient(to left, rgba(255,255,255,0.5), rgba(255,255,255,0.9));
-    width: 100%;
+    width: 97%;
     min-height: 200px;
     position: absolute;
+    overflow: hidden;
 }
 .jumbotron-outer {
     padding-top: 30px;
-}
-.catalog { 
-    margin-top: -160px;
 }
 .navbar-nav>li>a {
     color: white;
@@ -111,6 +114,7 @@ div.panel-default div.panel-heading {
 }
 .thumbnail, .panel {
     box-shadow: 1px 1px 3px #333;
+    padding: 20px;
 }
 .page-header {
     margin: 0;
