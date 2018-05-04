@@ -38,6 +38,10 @@ footer div.row {
 main {
     padding: 0 !important;
 }
+.img-small {
+    width: 64px;
+    height: 64px;
+}
 .jumbotron {
     background-image: url('molecules.jpg');
     min-height: 300px;
