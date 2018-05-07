@@ -92,12 +92,12 @@ ul.sociallist a {
         color: #44c5db;
     }
 
-footer img {
+footer .logo {
     width: 100px;
 }
 
 @media only screen and (min-width : 768px) {
-    footer img {
+    footer .logo {
         width: 178px;
     }
 
