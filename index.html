@@ -39,23 +39,25 @@
                         <img alt="FFME Sample" src="https://github.com/unosquare/ffmediaelement/raw/master/Support/ffmeplay.png" class="img-fluid" />
                     </div>
                     <div class="col-9">
-                        <p>FFME is a close (and I'd like to think better) drop-in replacement for
-                            <a href="https://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement(v=vs.110).aspx">Microsoft's WPF MediaElement Control</a>. While the standard MediaElement uses DirectX (DirectShow)
-                            for media playback, FFME uses
+                        <p>FFME is a close (and I'd like to think better) drop-in replacement fo
+                            <a href="https://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement(v=vs.110).aspx">Microsoft's WPF MediaElement Control</a>. 
+                            While the standard MediaElement uses DirectX (DirectShow) for media playback, FFME uses
                             <a href="http://ffmpeg.org/">FFmpeg</a> to read and decode audio and video. This means that for those of you who want to support
                             stuff like HLS playback, or just don't want to go through the hassle of installing codecs on client
                             machines, using FFME
                             <em>might</em> be the answer.</p>
                         <p>FFME provides multiple improvements over the standard MediaElement such as:</p>
                         <ul>
-                            <li>Asynchronous and synchronous frame scrubbing</li>
                             <li>Fast media seeking and frame-by-frame seeking</li>
-                            <li>Properties such as Position, NaturalDuration, SpeedRatio, and Volume are all Dependency Properties!
-                            </li>
-                            <li>Additional and extended media events.</li>
-                            <li>Ability to easily apply filtergraphs.</li>
-                            <li>Ability to extract media metadata and tech specs of a media stream (title, album, bitrate, FPS, etc).
-                            </li>
+                            <li>Properties such as Position, Balance, SpeedRatio, IsMuted, and Volume are all Dependency Properties!</li>
+                            <li>Additional and extended media events. Extracting (and modifying) video, audio and subtitle frames is very easy.</li>
+                            <li>Ability to easily apply FFmpeg video and audio filtergraphs.</li>
+                            <li>Ability to extract media metadata and tech specs of a media stream (title, album, bitrate, codecs, FPS, etc).</li>
+                            <li>Ability to apply volume, balance and speed ratio to media playback.</li>
+                            <li>MediaState actually works on this control. The standard WPF MediaElement severely lacks in this area.</li>
+                            <li>Ability to pick media streams contained in a file or a URL.</li>
+                            <li>Ability to pass input and codec parameters.</li>
+                            <li>Ability to introduce hardware decoding acceleration via devices or via codecs.</li>
                         </ul>
                         <p>
                             <em>... all in a single MediaElement control</em>
@@ -100,7 +102,7 @@
                         <div class="caption">
                             <h3>Tubular</h3>
                             <p>
-                                A set of AngularJS directives and backend libraries (DotNet and Node.js) designed to rapidly build modern web applications.
+                                A set of AngularJS, Angular 6 and React directives and backend libraries (DotNet and Node.js) designed to rapidly build modern web applications.
                                 Tubular features a fully templateable grid with lots of features such as server-side pagination,
                                 multi-column sorting and filtering, built-in export to CSV (client-side), and in-line editing of
                                 rows via templates.
@@ -137,9 +139,9 @@
                         <div class="caption">
                             <h3>PassCore</h3>
                             <p>
-                                PassCore is a very simple 1-page web application written in C#, using ASP.NET 5, Bootstrap, AngularJS and Microsoft Directory
-                                Services. It allows users to change their Active Directory password on their own, provided the user
-                                is not disabled.
+                                PassCore is a very simple 1-page web application written in C#, using ASP.NET Core , 
+                                Angular Material, Typescript, and Microsoft Directory Services. It allows users to change their 
+                                Active Directory password on their own, provided the user is not disabled.
                             </p>
                             <p>
                                 <a href="https://github.com/unosquare/passcore" class="btn btn-default" role="button">
