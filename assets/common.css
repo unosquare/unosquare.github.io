@@ -2,7 +2,8 @@
 body {
 	margin:0;
 	padding:0;
-	height:100%;
+    height:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 #wrapper {
 	min-height:100%;
@@ -94,6 +95,19 @@ ul.sociallist a {
 
 footer .logo {
     width: 100px;
+}
+
+.section-title {
+    padding: 20px;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.section-title h2 {
+    font-size: 36px;
+}
+
+.section-title p {
+    font-size: 18px;
 }
 
 @media only screen and (min-width : 768px) {
