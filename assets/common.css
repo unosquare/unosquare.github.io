@@ -3,3 +3,15 @@
     max-width: none;
 }
 
+.hero{
+    background: url('/assets/ffmeplay.png') no-repeat center ;
+}
+
+.logo {
+    object-fit: scale-down;
+    height: 200px
+}
+
+.description {
+    min-height: 70px;
+}
