@@ -4,7 +4,8 @@
 }
 
 .hero{
-    background: url('/assets/ffmeplay.png') no-repeat center ;
+    background: url('/assets/ffmeplay.png') no-repeat center;
+    background-size: 100% auto;
 }
 
 .logo {
@@ -51,13 +52,13 @@
 
 @media only screen and (max-width: 4200px) and (min-width: 1200px) {
     .card-head-xl {
-        min-height: 440px;
+        min-height: 272px;
     }
 }
 
 @media only screen and (max-width:  1199px) and (min-width: 991px){
     .card-head-xl {
-        min-height: 560px;
+        min-height: 344px;
     }
 }
 
