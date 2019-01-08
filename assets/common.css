@@ -53,32 +53,14 @@
 }
 
 @media only screen and (max-width: 4200px) and (min-width: 1200px) {
-    #embedio .card-head{
+    .card-head {
         min-height: 200px;
     }
 }
 
 @media only screen and (max-width:  1199px) and (min-width: 991px) {
-    #embedio .card-head{
+    .card-head {
         min-height: 250px;
-    }
-}
-
-@media only screen and (max-width: 990px) {
-    #embedio .card-head{
-        min-height: auto;
-    }
-}
-
-@media only screen and (max-width: 4200px) and (min-width: 1200px) {
-    .card-head {
-        min-height: 272px;
-    }
-}
-
-@media only screen and (max-width:  1199px) and (min-width: 991px) {
-    .card-head {
-        min-height: 320px;
     }
 }
 
