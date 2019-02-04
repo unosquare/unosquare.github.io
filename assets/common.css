@@ -35,6 +35,12 @@
     background-color: rgb(235, 240, 240);
 }
 
+.swan-hex{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
 .description {
     min-height: 70px;
 }
