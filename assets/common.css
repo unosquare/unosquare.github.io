@@ -10,7 +10,7 @@
 .hero img {
     height: inherit;
     width: 100%;
-    object-fit: scale-down;
+    padding: 0 !important;
     object-position: top;
 }
 
