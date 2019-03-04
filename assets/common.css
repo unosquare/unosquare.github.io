@@ -5,12 +5,17 @@
 
 .hero {
     position: relative;
-    height: auto;
 }
 
 .hero img {
     height: inherit;
     width: 100%;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+.img-cover{
+    object-fit: cover !important;
 }
 
 @media only screen and (max-width: 500px) {
