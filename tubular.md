@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Open Source Software Initiatives from Unosquare | Tubular"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
