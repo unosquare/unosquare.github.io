@@ -127,6 +127,7 @@ description: "All the utilities for a web server in one place, written in C#"
                             EmbedIO can use the OWIN platform in two different approach:
                             You can use EmbedIO as OWIN server and use all OWIN framework with EmbedIO
                             modules.
+                        </p>
                     </div>
                     <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
                         <a href="https://www.nuget.org/packages/EmbedIO.OWIN/" class="link-blue button">
