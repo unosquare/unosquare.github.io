@@ -72,10 +72,10 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
             <p>Do you imagine how it would be if everyone collaborates to make one gorgeous,
                 flawless and optimized method? Or a class? Or even a project?</p>
             <p>The Open Source tries to achieve this, instead of everyone making their own code,
-                why not use something that is already created, tested and optimized by the community?</br></p>
+                why not use something that is already created, tested and optimized by the community?</p>
             <p>If you use Open Source software, you are helping to improve and make the work of
                 a lot of devs easier. Solve issues, report bugs or create your own variant to a
-                specific scenario and share it.</br></p>
+                specific scenario and share it.</p>
             <p>Help the community to grow, improve and leave a footprint.</p>
         </div>
     </div>
