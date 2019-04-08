@@ -70,7 +70,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         <h3 class="subtitle my-4">Why is important to use Open Source Software?​</h3>
         <div class="col-12 mt-5 p-0">
             <p>Do you imagine how it would be if everyone collaborates to make one gorgeous,
-                flawless and optimized method? Or a class? Or even a project?</br></p>
+                flawless and optimized method? Or a class? Or even a project?</p>
             <p>The Open Source tries to achieve this, instead of everyone making their own code,
                 why not use something that is already created, tested and optimized by the community?</br></p>
             <p>If you use Open Source software, you are helping to improve and make the work of
