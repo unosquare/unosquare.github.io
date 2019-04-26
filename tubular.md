@@ -25,9 +25,8 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     <h4 class="text-uppercase">Tubular for AngularJS (formerly Tubular)</h4>
                     <span>By Unosquare</span>
                     <p class="author-date">
-                        It provides a set of directives and services using AngularJS as framework. <br>
-                        Full markup design, you don't need to write even a Controller in AngularJS to
-                        start using our Grid or Form
+                        Provides a set of directives and services using AngularJS as a framework.
+                        Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
@@ -67,9 +66,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     <h4 class="text-uppercase">Tubular for Angular6 (formerly Tubular2)</h4>
                     <span>By Unosquare</span>
                     <p class="author-date">
-                        It is a set of components based on Angular Material 2 featuring: <br>
-                        Full Grid with sorting, filtering, exporting just like the previous Tubular for
-                        AngularJs component.
+                        A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">

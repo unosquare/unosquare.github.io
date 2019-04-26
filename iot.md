@@ -8,10 +8,7 @@ description: "See all our hardware and iot projects and how useful they are."
         <img src="/assets/iot.jpg" class="px-5 img-cover" alt="IoT logo" />
         <div class="hero-title title-black">
             <h2 class="text-uppercase">IoT/Hardware</h2>
-            <div id="hero-label">Here in unosquare, we love to work on new things like IoT and look for
-                implement fun and useful
-                projects
-                with the most recent technologies.</div>
+            <div id="hero-label">At Unosquare we love to work on new things like IoT and look for ways to implement fun and useful projects with the most recent technologies</div>
         </div>
     </div>
 </div>
