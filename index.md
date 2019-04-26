@@ -14,17 +14,13 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
     <div class="col-12 mt-5 p-0">
-        <p>FFME is a close (and I'd like to think better) drop-in replacement fo
-            <a target="_blank"
-                href="https://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement(v=vs.110).aspx">Microsoft's
+        <p>FFME is a close (and we’d 'd like to think better) drop-in replacement for
+            <a target="_blank" href="https://msdn.microsoft.com/en-us/library/system.windows.controls.mediaelement(v=vs.110).aspx">Microsoft's
                 WPF MediaElement Control</a>.
             While the standard MediaElement uses DirectX (DirectShow) for media playback, FFME uses
-            <a target="_blank" href="http://ffmpeg.org/">FFmpeg</a> to read and decode audio and video. This
-            means that
-            for those of you who want to support
-            stuff like HLS playback, or just don't want to go through the hassle of installing codecs
-            on client machines, using FFME might be the answer.</p>
-        <p>FFME provides multiple improvements over the standard MediaElement such as:</p>
+            <a target="_blank" href="http://ffmpeg.org/">FFmpeg</a> to read and decode audio and video. This means for users who want to support things
+            like HLS playback or just don’t want to go through the hassle of installing codecs on client machines, using FFME might be the answer.</p>
+        <p>FFME provides multiple improvements over standard MediaElement:</p>
         <div class="facts-four-columns">
             <div class="row">
                 <div class="col-6 col-lg-3">
@@ -32,34 +28,29 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                 </div>
                 <div class="col-6 col-lg-3">
                     <p>Properties such as Position, Balance, SpeedRatio, IsMuted, and Volume are all
-                        Dependency Properties!</p>
+                        Dependency Properties</p>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <p>Additional and extended media events. Extracting (and modifying) video, audio
+                    <p>Additional and extended media events - extracting and modifying video, audio
                         and
-                        subtitle frames is very easy.</p>
+                        subtitle frames is very easy</p>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <p>Ability to easily apply FFmpeg video and audio filtergraphs.</p>
+                    <p>Easily apply FFmpeg video and audio filtergraphs</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6 col-lg-3">
-                    <p>MediaState actually works on this control. The standard WPF MediaElement
-                        severely lacks
-                        in this area.</p>
+                    <p>MediaState works effectively on this control while standard WPF MediaElement is lacking in this area</p>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <p>Ability to extract media metadata and tech specs of a media stream (title,
-                        album,
-                        bitrate, codecs, FPS, etc).</p>
+                    <p>Extract media metadata and tech specs of a media stream including title, album, bitrate, codecs, FPS, etc.</p>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <p>Ability to apply volume, balance and speed ratio to media playback from a file
-                        or a URL.</p>
+                    <p>Apply volume, balance and speed ratio to media playback from a file or URL</p>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <p>Ability to introduce hardware decoding acceleration via devices or via codecs.</p>
+                    <p>Introduce hardware decoding acceleration via devices or via codecs</p>
                 </div>
             </div>
         </div>
@@ -67,16 +58,14 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
 </div>
 <div class="gray-section">
     <div class="container content-home">
-        <h3 class="subtitle my-4">Why is important to use Open Source Software?​</h3>
+        <h3 class="subtitle my-4">Why is it important to use Open Source Software?​</h3>
         <div class="col-12 mt-5 p-0">
-            <p>Do you imagine how it would be if everyone collaborates to make one gorgeous,
-                flawless and optimized method? Or a class? Or even a project?</p>
-            <p>The Open Source tries to achieve this, instead of everyone making their own code,
-                why not use something that is already created, tested and optimized by the community?</p>
-            <p>If you use Open Source software, you are helping to improve and make the work of
-                a lot of devs easier. Solve issues, report bugs or create your own variant to a
-                specific scenario and share it.</p>
-            <p>Help the community to grow, improve and leave a footprint.</p>
+            <p>Imagine the outcome if everyone collaborated to make one gorgeous, flawless, optimized program, or product, or even a project.</p>
+            <p>Open Source tries to achieve exactly this: instead of everyone making their own code, why not use something that is already created,
+            tested and optimized by the community of developers? </p>
+            <p>If you use Open Source software, you are helping to improve code, educate coders and make the work of software developers easier and more efficient.
+            Open Source allows developers to solve issues, report bugs, create your own variant for a specific scenario and share it with others to do the same. </p>
+            <p>Open Source helps the software development community grow, improve and leave a footprint for other industries to follow and create their own open source codes for communities to build upon and create a better world. </p>
         </div>
     </div>
 </div>
@@ -107,16 +96,10 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                         <h4 class="text-uppercase">Tubular</h4>
                         <p class="author-date">
                             A set of AngularJS, Angular 6 and React directives and backend libraries
-                            (DotNet
-                            and
-                            Node.js) designed to rapidly build modern web applications. <br>
+                            (DotNet and Node.js) designed to rapidly build modern web applications. <br>
                             Tubular features a fully templateable grid with lots of features such as
-                            server-side
-                            pagination,
-                            multi-column sorting and filtering, built-in export to CSV (client-side), and
-                            in-line
-                            editing of
-                            rows via templates.
+                            server-side pagination, multi-column sorting and filtering, built-in export to CSV (client-side), and
+                            in-line editing of rows via templates.
                         </p>
                     </div>
                     <a href="/tubular.html" class="text-uppercase">read more</a>

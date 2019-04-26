@@ -28,16 +28,7 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                             <h4 class="text-uppercase">SWAN: Stuff We All Need</h4>
                             <span>By Unosquare</span>
                             <p class="author-date">
-                                Swan is a collection of classes and extension methods that we (and other
-                                good
-                                developers)
-                                have written and evolved over the years. We found ourselves copying and
-                                pasting the
-                                same code
-                                for every project every time we started them. We decided to kill that cycle
-                                once
-                                and for all.
-                                This is the result of that idea.
+                                Swan is a collection of classes and extension methods that Unosquare and other developers have developed and evolved over the years. We found ourselves copying and pasting the same code for every project, each time we started it. We decided to kill that Ctrl-C/Ctrl-V cycle once and for all and Swan is the result. 
                             </p>
                         </div>
                         <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
