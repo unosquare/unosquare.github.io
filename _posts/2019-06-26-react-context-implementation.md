@@ -1,4 +1,5 @@
 ---
+author: alejandro_ocampo
 layout: post
 title: "React Context implementation"
 date: 2019-06-26
