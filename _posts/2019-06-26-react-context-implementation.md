@@ -84,7 +84,7 @@ One of the things we noticed was the fact that every intent to show a new messag
 
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-1-kqbux?fontsize=14" title="Unosquare best practices - React context #1" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-So, we learned that: **Passing `value={{}}` to the provider will re-render any consumer even if the properties inside `value` are the same**
+So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**
 
 Meaning that we needed to find a way to pass the same `value` if it hasn't changed. That way, consumers won't be updated because there are no changes.
 
@@ -159,6 +159,8 @@ isValidSession: () => {
 ```
 
 So, let's understand this simple function, we're just checking `getProviderValue.isAuthenticated` and showing a message indicating the result. Try it at: https://codesandbox.io/s/unosquare-best-practices-react-context-2-0xy57
+
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 Steps:
 1. Open the app
