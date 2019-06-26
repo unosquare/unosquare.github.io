@@ -28,6 +28,7 @@ And some common actions like:
 So, our Context Provider would look like:
 
 ```tsx
+{% raw %}
 const GlobalContextProvider: React.FunctionComponent<any> = ({
 	children
 }) => {
@@ -75,6 +76,7 @@ const GlobalContextProvider: React.FunctionComponent<any> = ({
 		</GlobalContext.Provider>
 	);
 };
+{% endraw %}
 ```
 
 ### Things we learned
