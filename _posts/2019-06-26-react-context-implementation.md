@@ -92,11 +92,11 @@ Meaning that we needed to find a way to pass the same `value` if it hasn't chang
 This can be done by putting that value on a hook.
 
 ```tsx
+{% raw %}
 // Instead of doing this
 const [getIsAuthenticated, setIsAuthenticated] = React.useState(false);
 const [getUsername, setUsername] = React.useState("");
-```
-```tsx
+
 // We need this
 const [getProviderValue, setProviderValue] = React.useState({
   isAuthenticated: false,
@@ -106,11 +106,13 @@ const [getProviderValue, setProviderValue] = React.useState({
     setSnackbarMessage, // I'm forwarding the setter for our snackbar
   } // We will have another problem here (we will review it later)
 });
+{% endraw %}
 ```
 
 And on the provider:
 
 ```tsx
+{% raw %}
 // Instead of doing this
 <GlobalContext.Provider
   value={{
@@ -121,15 +123,14 @@ And on the provider:
   {children}
   <GlobalSnackbar seconds={3000} message={getMessage} mobile={false} />
 </GlobalContext.Provider>
-```
-```tsx
+
 // We need this
 <GlobalContext.Provider
   value={getProviderValue}>
   {children}
   <GlobalSnackbar seconds={3000} message={getMessage} mobile={false} />
 </GlobalContext.Provider>
-
+{% endraw %}
 ```
 
 As you can see, we're not passing `getMessage` value to the provider, because that's not relevant to anybody except our GlobalSnackbar.
