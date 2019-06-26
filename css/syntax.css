@@ -1,5 +1,7 @@
 pre.highlight {
     padding: 10px;
+}
+pre code span {
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 

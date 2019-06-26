@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
 
 <div class="row">
     <div class="col-md-12 text-right">
-        <span class="badge badge-warning">Blog entry posted on {{ page.date | date_to_string }} by Mario Di Vece</span>
+        <span class="badge badge-warning">Blog entry posted on {{ page.date | date_to_string }} by {{ author.name }}</span>
         <br />
         {% for tag in page.tags %}
         <span class="badge badge-success">{{ tag }}</span>
