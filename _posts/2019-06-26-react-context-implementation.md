@@ -1,3 +1,13 @@
+---
+layout: post
+title: "React Context implementation"
+date: 2019-06-26
+nocomments: false
+area: "blog"
+description: A walkthrough our learning process while implementing React Context. The problems we faced and the things we learned.
+tags: React-Context React-Hooks
+---
+
 # React Context Implementation
 We have implemented [React Context](https://reactjs.org/docs/context.html) in a way that allows us to share accross the tree: global state and global logic. Along with that, we also wanted a way [Global snackbar](https://material-ui.com/components/snackbars/) to show any feedback from the app.
 
