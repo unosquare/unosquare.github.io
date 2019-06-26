@@ -32,7 +32,7 @@ const GlobalContextProvider: React.FunctionComponent<any> = ({
 	children
 }) => {
 	const [getMessage, setMessage] = React.useState({
-		messageText: "",
+        messageText: "",
 		messageType: "success"
 	});
 

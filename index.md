@@ -3,7 +3,7 @@ layout: default
 title: "Open Source Software Initiatives from Unosquare | Home"
 description: "Check Unosquare's Open Source Software Initiatives for several technologies"
 ---
-<div class="container content-home">
+<div class="content-home">
     <div class="main-hero hero">
         <img src="/assets/ffmeplay2.png" alt="FFME logo" />
         <div class="hero-title title-black">
@@ -57,7 +57,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
     </div>
 </div>
 <div class="gray-section">
-    <div class="container content-home">
+    <div class="content-home">
         <h3 class="subtitle my-4">Why is it important to use Open Source Software?​</h3>
         <div class="col-12 mt-5 p-0">
             <p>Imagine the outcome if everyone collaborated to make one gorgeous, flawless, optimized program, or product, or even a project.</p>
@@ -69,7 +69,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
 </div>
-<div class="container content-home">
+<div class="content-home">
     <h3 class="subtitle my-4">Open Source Projects</h3>
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
@@ -181,7 +181,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
     </div>
 </div>
 <div class="gray-section">
-    <div class="container content-home pt-5">
+    <div class="content-home pt-5">
         <h3 class="subtitle">More projects from Unosquare</h3>
         <div class="row">
             <div class="col-12 col-lg-4 mb-4">
@@ -379,7 +379,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
 </div>
-<div id="banner" class="container content-home my-4">
+<div id="banner" class="content-home my-4">
     <div class="container">
         <div class="call-to-action-banner row">
             <div class="col-3 col-lg-1 icon">
