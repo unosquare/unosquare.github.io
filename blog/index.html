@@ -4,41 +4,44 @@ title: Things we have learned
 area: "blog"
 ---
 
-<div class="row">
-    <div class="col-md-12">
-        <h1>{{ page.title }}</h1>
-        <img src="/assets/rdblog.jpg" class="img-fluid rounded" style="width:100%;" alt="Things we have learned" />
-        <div style="padding-top: 10px;">
-            We want to share some things we have learned over the time at Unosquare R&D.
+<div class="container content-home">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{ page.title }}</h1>
+            <img src="/assets/rdblog.jpg" class="img-fluid rounded" style="width:100%;" alt="Things we have learned" />
+            <div style="padding-top: 10px;">
+                We want to share some things we have learned over the time at Unosquare R&D.
+            </div>
+            <hr />
         </div>
-        <hr />
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
 
-        <!-- Blog posts -->
-        {% for post in site.posts %}
-        <div class="row">
+            <!-- Blog posts -->
+            {% for post in site.posts %}
+            <div class="row">
 
-            <div class="col-md-12">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <a href="{{ post.url }}" class="float-right btn btn-success btn-sm">Read More <i class="fa fa-arrow-circle-right"></i></a>
-                        <h2 class="card-title">{{ post.title }}</h2>
-                        <span class="text-muted float-left">Posted on {{ post.date | date_to_string }}</span>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">{{ post.description }}</p>
-                        <div>
-                            {% for tag in post.tags %}
-                            <span class="badge badge-info">{{ tag }}</span>
-                            {% endfor %}
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <a href="{{ post.url }}" class="float-right btn btn-success btn-sm">Read More <i
+                                    class="fa fa-arrow-circle-right"></i></a>
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <span class="text-muted float-left">Posted on {{ post.date | date_to_string }}</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">{{ post.description }}</p>
+                            <div>
+                                {% for tag in post.tags %}
+                                <span class="badge badge-info">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
