@@ -3,7 +3,7 @@ layout: default
 title: "Open Source Software Initiatives from Unosquare | Embedio"
 description: "All the utilities for a web server in one place, written in C#"
 ---
-<div class="container content-home py-0">
+<div class="content-home py-0">
     <div class="main-hero hero">
         <img src="/assets/coding-like-a-god.jpg" class="px-5" alt="EmbedIO logo" />
         <div class="hero-title title-black">
@@ -16,7 +16,7 @@ description: "All the utilities for a web server in one place, written in C#"
         </div>
     </div>
 </div>
-<div class="container content-home py-0">
+<div class="content-home py-0">
     <div class="facts-four-columns">
         <div class="row">
             <div class="col-6 col-lg-3">
@@ -53,7 +53,7 @@ description: "All the utilities for a web server in one place, written in C#"
         </div>
     </div>
 </div>
-<div class="container content-home">
+<div class="content-home">
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">

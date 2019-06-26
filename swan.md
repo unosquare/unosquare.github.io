@@ -3,7 +3,7 @@ layout: default
 title: "Open Source Software Initiatives from Unosquare | Swan"
 description: "Avoid rewriting code using SWAN, give to your project a quick start"
 ---
-<div class="container content-home py-0">
+<div class="content-home py-0">
     <div class="main-hero hero">
         <img src="/assets/coding-swan.jpg" class="px-5" alt="Swan logo" />
         <div class="hero-title title-black">
@@ -14,12 +14,12 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
         </div>
     </div>
 </div>
-<div class="container content-home">
+<div class="content-home">
     <h3 class="subtitle my-4">Swan's areas​</h3>
     <img src="/assets/swanAreas.png" class="px-5 swan-hex">
 </div>
 <div class="gray-section">
-    <div class="container content-home">
+    <div class="content-home">
         <div class="row">
             <div class="col-12 col-lg-6 mb-4">
                 <div class="card">
