@@ -163,13 +163,14 @@ So, let's understand this simple function, we're just checking `getProviderValue
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 Steps:
-- Open the app
-- Make sure you haven't clicked on any **LOGIN** button
-- Click on Component C -> **Check if user is authenticated on actions**
-- Now, click on Component A -> **LOGIN** button
-- So, now you should be able to see that the user is authenticated
-- Click again on Component C -> **Check if user is authenticated on actions**
-
+<ol style="list-style-type: square">
+	<li>Open the app</li>
+	<li>Make sure you haven't clicked on any **LOGIN** button</li>
+	<li>Click on Component C -> **Check if user is authenticated on actions**</li>
+	<li>Now, click on Component A -> **LOGIN** button</li>
+	<li>So, now you should be able to see that the user is authenticated</li>
+	<li>Click again on Component C -> **Check if user is authenticated on actions**</li>
+</ol>
 What's happening? Consumers using `isAuthenticated` are seeing the proper value but actions on the Provider are seeing a different value.
 
 ## Third attempt
