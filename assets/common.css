@@ -6,12 +6,9 @@
     font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
-.normal-list {
+.post ul,
+.post ol {
     list-style-type: square;
-}
-
-.normal-list li{
-    
 }
 
 body{

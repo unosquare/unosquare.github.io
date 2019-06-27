@@ -16,8 +16,15 @@ During this implementation we have learned several things about react.
 
 ## First attempt
 
-Our first approach was creating a simple GlobalContextProvider, exposing some information about the user: IsAuthenticated, Username.
-And some common actions like: login, logout and setSnackbarMessage.
+Our first approach was creating a simple GlobalContextProvider, exposing some information about the user: 
+
+- IsAuthenticated 
+- Username
+
+And some common actions like: 
+- login
+- logout
+- setSnackbarMessage
 
 So, our first implementation would look like (If you notice some slowness is because Component D which contains a long list):
 
@@ -103,14 +110,13 @@ isValidSession: () => {
 So, let's understand this simple function, we're just checking `getProviderValue.isAuthenticated` and showing a message indicating the result. Now, with these changes we will be avoiding the re-render of all the components (you can check the console logs) but let's get into the new issue.
 
 Steps:
-<ol class="normal-list">
-	<li>Open the app</li>
-	<li>Make sure you haven't clicked on any **LOGIN** button</li>
-	<li>Click on Component C -> **Check if user is authenticated on actions**</li>
-	<li>Now, click on Component A -> **LOGIN** button</li>
-	<li>So, now you should be able to see that the user is authenticated</li>
-	<li>Click again on Component C -> **Check if user is authenticated on actions**</li>
-</ol>
+
+1. Open the app
+2. Make sure you haven't clicked on any **LOGIN** button
+3. Click on Component C -> **Check if user is authenticated on actions**
+4. Now, click on Component A -> **LOGIN** button
+5. So, now you should be able to see that the user is authenticated
+6. Click again on Component C -> **Check if user is authenticated on actions**
 
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
@@ -119,12 +125,10 @@ What's happening? Consumers using `isAuthenticated` are seeing the proper value 
 Is this something wrong with our Context Provider? The answer is: **NO!** Take a look at the following isolated example:
 
 Steps:
-<ol class="normal-list">
-	<li>Open the app</li>
-	<li>Click on the **Increment** button several times </li>
-	<li>Click **Check value** button</li>
-	<li>Surprise!!! You will always get a **0**</li>
-</ol>
+1. Open the app
+2. Click on the **Increment** button several times
+3. Click **Check value** button
+4. Surprise!!! You will always get a **0**
 
 <iframe src="https://codesandbox.io/embed/react-hooks-playground-q3bfk?fontsize=14&runonclick=1&codemirror=1" title="Out of sync state" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
@@ -141,18 +145,14 @@ Why not having a Context specifically to handle state and another one to provide
 
 Let's give it a try. We will do the following:
 
-<ol class="normal-list">
-	<li>Move actions to a **GlobalActionsContext**</li>
-	<li>Add a function to update **GlobalContext** state</li>
-	<li>Start consuming **GlobalActionsContext**</li>
-</ol>
+- Move actions to a **GlobalActionsContext**
+- Add a function to update **GlobalContext** state
+- Start consuming **GlobalActionsContext**
 
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-3-cl9hk?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #3" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 You can see that:
 
-<ol class="normal-list">
-	<li>Showing messages on the snackbar is not re-rendering components</li>
-	<li>Clicking **Check if user is authenticated on actions** button is working now properly</li>
-	<li>We have a better separation of concerns</li>
-</ol>
+- Showing messages on the snackbar is not re-rendering components
+- Clicking **Check if user is authenticated on actions** button is working now properly
+- We have a better separation of concerns
