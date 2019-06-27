@@ -1,4 +1,9 @@
-﻿body{
+﻿.normal-list {
+    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    list-style-type: square;
+}
+
+body{
     margin: 0;
     max-width: none;
 }
