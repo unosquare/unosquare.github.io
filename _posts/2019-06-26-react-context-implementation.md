@@ -130,7 +130,7 @@ Steps:
 3. Click **Check value** button
 4. Surprise!!! You will always get a **0**
 
-<iframe src="https://codesandbox.io/embed/react-hooks-playground-q3bfk?fontsize=14&runonclick=1&codemirror=1" title="Out of sync state" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/react-hooks-playground-q3bfk?fontsize=14&runonclick=1&codemirror=1&module=/src/index.tsx" title="Out of sync state" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 So this is not an issue with our Context Provider, this is a normal behavior with React Hooks. Functions inside the state are always getting the initial value for the hook. In fact, the documentation from React contains information about this. Check it at: https://reactjs.org/docs/hooks-faq.html#why-am-i-seeing-stale-props-or-state-inside-my-function
 
