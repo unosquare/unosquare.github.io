@@ -1,4 +1,8 @@
-﻿.normal-list {
+﻿.post * {
+    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.normal-list {
     
     list-style-type: square;
 }
