@@ -21,7 +21,7 @@ And some common actions like: login, logout and setSnackbarMessage.
 
 So, our first implementation would look like (If you notice some slowness is because Component D which contains a long list):
 
-<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-1-kqbux?fontsize=14&runonclick=1&codemirror=1&module=globalContextProvider.tsx" title="Unosquare best practices - React context #1" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-1-kqbux?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #1" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 ### Things we learned
 One of the things we noticed was the fact that every intent to show a new message in our snackbar was causing a re-render on every component. Please take a look at it and notice the Console logs, you will see all the components being rendered every time a message is shown:
@@ -112,7 +112,7 @@ Steps:
 	<li>Click again on Component C -> **Check if user is authenticated on actions**</li>
 </ol>
 
-<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14&runonclick=1&codemirror=1&module=globalContextProvider.tsx" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 What's happening? Consumers using `isAuthenticated` are seeing the proper value but actions on the Provider are seeing a different value.
 
@@ -147,7 +147,7 @@ Let's give it a try. We will do the following:
 	<li>Start consuming **GlobalActionsContext**</li>
 </ol>
 
-<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-3-cl9hk?fontsize=14&runonclick=1&codemirror=1&module=globalContextProvider.tsx" title="Unosquare best practices - React context #3" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-3-cl9hk?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #3" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 You can see that:
 
