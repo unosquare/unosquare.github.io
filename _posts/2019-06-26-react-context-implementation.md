@@ -6,7 +6,7 @@ date: 2019-06-26
 nocomments: false
 area: "blog"
 description: A walkthrough our learning process while implementing React Context. The problems we faced and the things we learned.
-tags: React-Context React-Hooks
+tags: React-Context React-Hooks Javascript
 ---
 
 # React Context Implementation
@@ -80,11 +80,11 @@ const GlobalContextProvider: React.FunctionComponent<any> = ({
 ```
 
 ### Things we learned
-One of the things we noticed was the fact that every intent to show a new message in our snackbar was causing a re-render on every component. Please take a look at it: https://codesandbox.io/s/unosquare-best-practices-react-context-1-kqbux
+One of the things we noticed was the fact that every intent to show a new message in our snackbar was causing a re-render on every component. Please take a look at it and notice the Console logs, you will see all the components being rendered every time a message is shown:
 
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-1-kqbux?fontsize=14" title="Unosquare best practices - React context #1" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**
+So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**. You can read more about this at: https://reactjs.org/docs/context.html#caveats
 
 Meaning that we needed to find a way to pass the same `value` if it hasn't changed. That way, consumers won't be updated because there are no changes.
 
@@ -158,9 +158,7 @@ isValidSession: () => {
 }
 ```
 
-So, let's understand this simple function, we're just checking `getProviderValue.isAuthenticated` and showing a message indicating the result. Try it at: https://codesandbox.io/s/unosquare-best-practices-react-context-2-0xy57
-
-<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+So, let's understand this simple function, we're just checking `getProviderValue.isAuthenticated` and showing a message indicating the result. Now, with these changes we will be avoiding the re-render of all the components (you can check the console logs) but let's get into the new issue.
 
 Steps:
 <ol style="list-style-type: square">
@@ -171,6 +169,48 @@ Steps:
 	<li>So, now you should be able to see that the user is authenticated</li>
 	<li>Click again on Component C -> **Check if user is authenticated on actions**</li>
 </ol>
+
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
 What's happening? Consumers using `isAuthenticated` are seeing the proper value but actions on the Provider are seeing a different value.
 
+Is this something wrong with our Context Provider? The answer is: **NO!** Take a look at the following isolated example:
+
+Steps:
+<ol style="list-style-type: square">
+	<li>Open the app</li>
+	<li>Click on the **Increment** button several times </li>
+	<li>Click **Check value** button</li>
+	<li>Surprise!!! You will always get a **0**</li>
+</ol>
+
+<iframe src="https://codesandbox.io/embed/react-hooks-playground-q3bfk?fontsize=14" title="Out of sync state" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+So this is not an issue with our Context Provider, this is a normal behavior with React Hooks. Functions inside the state are always getting the initial value for the hook. In fact, the documentation from React contains information about this. Check it at: https://reactjs.org/docs/hooks-faq.html#why-am-i-seeing-stale-props-or-state-inside-my-function
+
+So, there's a workaround for this:
+
+> If you intentionally want to read the latest state from some asynchronous callback, you could keep it in a ref, mutate it, and read from it.
+
+At that moment I was thinking about another way to implement this. So, why not separating concerns a little bit more?
+
 ## Third attempt
+Why not having a Context specifically to handle state and another one to provide logic/actions? That way we could also separate logic by domain on its own Context.
+
+Let's give it a try. We will do the following:
+
+<ol style="list-style-type: square">
+	<li>Move actions to a **GlobalActionsContext**</li>
+	<li>Add a function to update **GlobalContext** state</li>
+	<li>Start consuming **GlobalActionsContext**</li>
+</ol>
+
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-3-cl9hk?fontsize=14" title="Unosquare best practices - React context #3" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+You can see that:
+
+<ol style="list-style-type: square">
+	<li>Showing messages on the snackbar is not re-rendering components</li>
+	<li>Clicking **Check if user is authenticated on actions** button is working now properly</li>
+	<li>We have a better separation of concerns</li>
+</ol>
