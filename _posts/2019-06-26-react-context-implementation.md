@@ -156,3 +156,5 @@ You can see that:
 - Showing messages on the snackbar is not re-rendering components
 - Clicking **Check if user is authenticated on actions** button is working now properly
 - We have a better separation of concerns
+
+To be continued....
