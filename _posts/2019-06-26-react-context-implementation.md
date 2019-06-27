@@ -33,7 +33,7 @@ So, our first implementation would look like (If you notice some slowness is bec
 ### Things we learned
 One of the things we noticed was the fact that every intent to show a new message in our snackbar was causing a re-render on every component. Please take a look at it and notice the Console logs, you will see all the components being rendered every time a message is shown:
 
-So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**. You can read more about this at: https://reactjs.org/docs/context.html#caveats
+So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**. You can read more about this at: <https://reactjs.org/docs/context.html#caveats>
 
 Meaning that we needed to find a way to pass the same `value` if it hasn't changed. That way, consumers won't be updated because there are no changes.
 
