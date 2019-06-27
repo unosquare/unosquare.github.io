@@ -170,7 +170,7 @@ Steps:
 	<li>Click again on Component C -> **Check if user is authenticated on actions**</li>
 </ol>
 
-<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14&runonclick=1" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+<iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-2-0xy57?fontsize=14&runonclick=1&codemirror=1" title="Unosquare best practices - React context #2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 What's happening? Consumers using `isAuthenticated` are seeing the proper value but actions on the Provider are seeing a different value.
 
