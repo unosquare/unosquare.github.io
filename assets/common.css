@@ -1,6 +1,10 @@
 ﻿.normal-list {
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    
     list-style-type: square;
+}
+
+.normal-list li{
+    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 body{
