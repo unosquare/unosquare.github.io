@@ -1,14 +1,17 @@
-﻿.post * {
+﻿.post p,
+.post strong,
+.post li,
+.post pre,
+.post span {
     font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 .normal-list {
-    
     list-style-type: square;
 }
 
 .normal-list li{
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    
 }
 
 body{
