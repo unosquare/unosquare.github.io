@@ -3,7 +3,7 @@ layout: default
 title: "Open Source Software Initiatives from Unosquare | IoT"
 description: "See all our hardware and iot projects and how useful they are."
 ---
-<div class="content-home py-0">
+<div class="content-home container py-0">
     <div class="main-hero hero">
         <img src="/assets/iot.jpg" class="px-5 img-cover" alt="IoT logo" />
         <div class="hero-title title-black">
