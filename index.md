@@ -64,7 +64,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
             </div>
         </div>
     </div>
-    <div class="content-home container">
+    <div class="content-home container pt-0">
         <div class="col-12 mt-5 p-0">
             <p>Imagine the outcome if everyone collaborated to make one gorgeous, flawless, optimized program, or product, or even a project.</p>
             <p>Open Source tries to achieve exactly this: instead of everyone making their own code, why not use something that is already created,
