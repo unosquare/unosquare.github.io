@@ -12,18 +12,11 @@ area: "blog"
             <div id="hero-label">We want to share some things we have learned over the time at Unosquare R&D.</div>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-md-12">
+    <div class="my-5">
             <!-- Blog posts -->
             {% for post in site.posts %}
             {% assign author = site.data.authors[post.author] %}
             <div class="post-head-container">
-                <div class="date-block-container">
-                    <span class="day">{{post.date.Day}}</span>
-                    <span class="month">{{post.date.Month.ToString("MMM")}}</span>
-                    <span class="year">{{post.date.Year}}</span>
-                </div>
-
                 <div class="title-container">
                     <h2 class="title-header">
                         <a class="title-text" href="{{ post.url }}">
@@ -33,18 +26,17 @@ area: "blog"
 
                     <div class="author-container">
                         <h6 class="author-link">
-                            By {{ author.name }}
+                            By {{ author.name }} - {{ post.date }}
                         </h6>
                     </div>
                     <markdown>{{ post.description }}</markdown>
                     <div>
                         {% for tag in post.tags %}
-                        <span class="badge badge-info">{{ tag }}</span>
+                        <span class="badge p-0">{{ tag }}</span>
                         {% endfor %}
                     </div>
                 </div>
             </div>
             {% endfor %}
-        </div>
     </div>
 </div>
