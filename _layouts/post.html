@@ -12,14 +12,14 @@ layout: default
         <div class="d-flex align-items-center">
             <h6 class="white-text text-uppercase">By {{ page.author }} - {{ page.date | date_to_string }}</h6>
         </div>
-        <div class="row">
+        <div>
             {% for tag in page.tags %}
-            <span class="white-text badge">{{ tag }}</span>
+            <span class="white-text badge p-0">{{ tag }}</span>
             {% endfor %}
         </div>
     </div>
 </div>
-<div class="row my-5 container content-home">
+<div class="container content-home">
     <div class="post markdown-body">
         {{ content }}
     </div>
