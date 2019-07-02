@@ -69,7 +69,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
 </div>
-<div class="content-home">
+<div class="content-home container">
     <h3 class="subtitle my-4">Open Source Projects</h3>
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
@@ -379,7 +379,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
 </div>
-<div id="banner" class="content-home my-4">
+<div id="banner" class="content-home container my-4">
     <div class="container">
         <div class="call-to-action-banner row">
             <div class="col-3 col-lg-1 icon">

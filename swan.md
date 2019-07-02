@@ -14,7 +14,7 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
         </div>
     </div>
 </div>
-<div class="content-home">
+<div class="content-home container">
     <h3 class="subtitle my-4">Swan's areas​</h3>
     <img src="/assets/swanAreas.png" class="px-5 swan-hex">
 </div>

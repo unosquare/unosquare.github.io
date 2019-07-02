@@ -16,7 +16,7 @@ description: "All the utilities for a web server in one place, written in C#"
         </div>
     </div>
 </div>
-<div class="content-home py-0">
+<div class="content-home container py-0">
     <div class="facts-four-columns">
         <div class="row">
             <div class="col-6 col-lg-3">
@@ -53,7 +53,7 @@ description: "All the utilities for a web server in one place, written in C#"
         </div>
     </div>
 </div>
-<div class="content-home">
+<div class="content-home container">
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
