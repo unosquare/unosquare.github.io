@@ -16,7 +16,7 @@ area: "blog"
             <!-- Blog posts -->
             {% for post in site.posts %}
             {% assign author = site.data.authors[post.author] %}
-            <div class="post-head-container">
+            <div class="mb-3" style="border-bottom: 1px solid;">
                 <div class="title-container">
                     <h2 class="title-header">
                         <a class="title-text" href="{{ post.url }}">
@@ -24,7 +24,7 @@ area: "blog"
                         </a>
                     </h2>
 
-                    <div class="author-container">
+                    <div>
                         <h6 class="author-link">
                             By {{ post.author }} - {{ post.date | date_to_string }}
                         </h6>
@@ -32,7 +32,7 @@ area: "blog"
                     <markdown>{{ post.description }}</markdown>
                     <div>
                         {% for tag in post.tags %}
-                        <span class="badge p-0">{{ tag }}</span>
+                        <span class="badge p-0" style="font-size: 14px;">{{ tag }}</span>
                         {% endfor %}
                     </div>
                 </div>

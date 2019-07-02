@@ -181,8 +181,14 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
     </div>
 </div>
 <div class="gray-section">
+    <div class="w-100 blue-box">
+        <div class="container content-home py-3">
+            <div class="d-flex align-items-center">
+                <h1 class="white-text text-uppercase">More projects from Unosquare</h1>
+            </div>
+        </div>
+    </div>
     <div class="content-home container pt-5">
-        <h3 class="subtitle">More projects from Unosquare</h3>
         <div class="row">
             <div class="col-12 col-lg-4 mb-4">
                 <div class="card">
