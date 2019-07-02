@@ -77,6 +77,10 @@ body{
     border-radius: 0;
 }
 
+.blog-entry {
+    border-bottom: 1px solid;
+}
+
 @media only screen and (max-width: 4200px) and (min-width: 1200px) {
     .card-head {
         min-height: 200px;

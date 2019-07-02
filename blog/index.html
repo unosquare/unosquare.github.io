@@ -1,40 +1,36 @@
 ---
 layout: default
-title: Things we have learned
+title: Unosquare R&D | Blog | Things we have learned
 area: "blog"
 ---
 
-<div class="container content-home">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>{{ page.title }}</h1>
-            <div style="width: 100%; height: 200px; overflow: hidden">
-                <img src="/assets/rdblog.jpg" class="img-fluid rounded" style="width:100%;margin-top: -160px;"
-                    alt="Things we have learned">
-            </div>
-            <h3 class="subtitle my-4">We want to share some things we have learned over the time at Unosquare R&D.</h3>
-            <hr />
+<div class="content-home py-0">
+    <div class="main-hero hero">
+        <img src="/assets/rdblog.jpg" class="px-5" alt="Swan logo" />
+        <div class="hero-title title-black">
+            <h2 class="text-uppercase">Things we have learned</h2>
+            <div id="hero-label">We want to share some things we have learned over the time at Unosquare R&D.</div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-8">
-
+    <div class="row mt-5">
+        <div class="col-md-12">
             <!-- Blog posts -->
             {% for post in site.posts %}
             {% assign author = site.data.authors[post.author] %}
             <div class="row">
-
                 <div class="col-md-12">
-                    <div class="card mb-4">
+                    <div class="blog-entry mb-4">
                         <div class="card-header">
-                            <a href="{{ post.url }}" class="float-right btn btn-success btn-sm">Read More <i
-                                    class="fa fa-arrow-circle-right"></i></a>
-                            <h2 class="card-title">{{ post.title }}</h2>
-                            <span class="text-muted float-left">Posted on {{ post.date | date_to_string }} by {{ author.name }}</span>
-                        </div>
-                        <div class="card-body p-3">
-                            <p class="card-text">{{ post.description }}</p>
-                            <div>
+                            <h2 class="card-title mb-0">{{ post.title }}</h2>
+                            <span class="text-muted float-left">Posted on {{ post.date | date_to_string }} by
+                                {{ author.name }}</span>
+                            </div>
+                            <div class="card-body p-3">
+                                <p class="card-text">{{ post.description }}</p>
+                                <a href="{{ post.url }}" class="link-blue button">
+                                    Read More
+                                </a>
+                             <div>
                                 {% for tag in post.tags %}
                                 <span class="badge badge-info">{{ tag }}</span>
                                 {% endfor %}
