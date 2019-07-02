@@ -4,7 +4,7 @@ title: Unosquare R&D | Blog | Things we have learned
 area: "blog"
 ---
 
-<div class="content-home py-0">
+<div class="content-home container py-0">
     <div class="main-hero hero">
         <img src="/assets/rdblog.jpg" class="px-5" alt="Swan logo" />
         <div class="hero-title title-black">
@@ -19,9 +19,9 @@ area: "blog"
             {% assign author = site.data.authors[post.author] %}
             <div class="post-head-container">
                 <div class="date-block-container">
-                    <span class="day">{{post.date.day}}</span>
-                    <span class="month">{{post.date.month.ToString("MMM")}}</span>
-                    <span class="year">{{post.date.yeay}}</span>
+                    <span class="day">{{post.date.Day}}</span>
+                    <span class="month">{{post.date.Month.ToString("MMM")}}</span>
+                    <span class="year">{{post.date.Year}}</span>
                 </div>
 
                 <div class="title-container">
