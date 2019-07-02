@@ -15,7 +15,13 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
     </div>
 </div>
 <div class="content-home container">
-    <h3 class="subtitle my-4">Swan's areas​</h3>
+    <div class="w-100 blue-box">
+        <div class="container content-home py-3">
+            <div class="d-flex align-items-center">
+                <h1 class="white-text text-uppercase">Swan's areas</h1>
+            </div>
+         </div>
+    </div>
     <img src="/assets/swanAreas.png" class="px-5 swan-hex">
 </div>
 <div class="gray-section">
