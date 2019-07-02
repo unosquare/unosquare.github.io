@@ -12,7 +12,7 @@ description: "See all our hardware and iot projects and how useful they are."
         </div>
     </div>
 </div>
-<div class="content-home">
+<div class="content-home container">
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">

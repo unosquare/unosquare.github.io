@@ -8,7 +8,7 @@ area: "blog"
     <div class="main-hero hero">
         <img src="/assets/rdblog.jpg" class="px-5" alt="Swan logo" />
         <div class="hero-title title-black">
-            <h2 class="text-uppercase">Things we have learned</h2>
+            <h2 class="text-uppercase">Blog - Things we have learned</h2>
             <div id="hero-label">We want to share some things we have learned over the time at Unosquare R&D.</div>
         </div>
     </div>
@@ -26,7 +26,7 @@ area: "blog"
 
                     <div class="author-container">
                         <h6 class="author-link">
-                            By {{ author.name }} - {{ post.date }}
+                            By {{ post.author }} - {{ post.date | date_to_string }}
                         </h6>
                     </div>
                     <markdown>{{ post.description }}</markdown>
