@@ -166,7 +166,6 @@ body{
         order: 1;
         padding: 5px;
         position: relative;
-        width: 10%;
     }
 }
 
@@ -246,7 +245,6 @@ body{
         height: 36%;
         margin-left: 10px;
         margin-top: 0;
-        order: 2;
         position: relative;
         width: 74%;
     }
@@ -255,7 +253,6 @@ body{
         height: 26px;
         margin-top: 0;
         margin-bottom: 0;
-        order: 1;
         position: relative;
     }
 
@@ -270,13 +267,11 @@ body{
         margin-top: 0;
         font-size: 25px;
         float: unset!important;
-        order: 1;
         padding-left: 0;
     }
 
     .title-text {
         float: none!important;
         font-size: 26px;
-        order: 1;
     }
 }
