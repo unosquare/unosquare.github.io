@@ -5,16 +5,17 @@ layout: default
 
 <div class="row">
     <div class="col-md-12 text-right">
-        <span class="badge badge-warning">Blog entry posted on {{ page.date | date_to_string }} by {{ author.name }}</span>
+        <span class="badge badge-warning">Posted on {{ page.date | date_to_string }} by {{ author.name }}</span>
         <br />
         {% for tag in page.tags %}
         <span class="badge badge-success">{{ tag }}</span>
         {% endfor %}
     </div>
 </div>
-<div class="row">
+<div class="row mb-5">
     <div class="col-md-12">
         <div class="post markdown-body">
+            {{ title }}
             {{ content }}
         </div>
     </div>
