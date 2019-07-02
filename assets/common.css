@@ -196,6 +196,18 @@ body{
     font-weight: 400;
 }
 
+.title-container {
+    display: inline-block;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.title-header {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
 @media (min-width: 1200px)
 {
     .day {
@@ -222,8 +234,23 @@ body{
         position: relative;
         text-transform: uppercase!important;
     }
-}
 
-.post-head-container {
-    margin-top: 25px;
+    .title-container {
+        display: inline-flex;
+        flex-flow: column wrap;
+        height: 36%;
+        margin-left: 10px;
+        margin-top: 0;
+        order: 2;
+        position: relative;
+        width: 74%;
+    }
+    .title-header {
+        display: flex;
+        height: 26px;
+        margin-top: 0;
+        margin-bottom: 0;
+        order: 1;
+        position: relative;
+    }
 }
