@@ -186,6 +186,16 @@ body{
     letter-spacing: 1px;
 }
 
+.post-head-container {
+    margin-top: 25px;
+}
+
+.author-link {
+    text-transform: uppercase!important;
+    color: #000;
+    font-weight: 400;
+}
+
 @media (min-width: 1200px)
 {
     .day {
@@ -200,4 +210,20 @@ body{
         font-size: 15px;
         order: 3;
     }
+    .post-head-container {
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .author-link {
+        color: #000;
+        font: 400 16px Oswald,Impact,sans-serif;
+        margin-top: 10px;
+        position: relative;
+        text-transform: uppercase!important;
+    }
+}
+
+.post-head-container {
+    margin-top: 25px;
 }

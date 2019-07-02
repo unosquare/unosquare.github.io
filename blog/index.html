@@ -16,7 +16,7 @@ area: "blog"
         <!-- Blog posts -->
         {% for post in site.posts %}
         {% assign author = site.data.authors[post.author] %}
-        <div class="mb-3">
+        <div class="post-head-container mb-3">
             <div class="date-block-container">
                 <span class="day">{{ post.date | date: "%d" }}</span>
                 <span class="month">{{ post.date | date: "%b" }}</span>
