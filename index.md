@@ -57,14 +57,14 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
     </div>
 </div>
 <div class="gray-section">
-    <div class="content-home container">
-        <div class="w-100 blue-box">
-            <div class="container content-home py-3">
-                <div class="d-flex align-items-center">
-                    <h1 class="white-text text-uppercase">Why is it important to use Open Source Software?</h1>
-                </div>
+    <div class="w-100 blue-box">
+        <div class="container content-home py-3">
+            <div class="d-flex align-items-center">
+                <h1 class="white-text text-uppercase">Why is it important to use Open Source Software?</h1>
             </div>
         </div>
+    </div>
+    <div class="content-home container">
         <div class="col-12 mt-5 p-0">
             <p>Imagine the outcome if everyone collaborated to make one gorgeous, flawless, optimized program, or product, or even a project.</p>
             <p>Open Source tries to achieve exactly this: instead of everyone making their own code, why not use something that is already created,
@@ -75,14 +75,14 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
     </div>
 </div>
-<div class="content-home container">
-    <div class="w-100 blue-box">
-        <div class="container content-home py-3">
-            <div class="d-flex align-items-center">
-                <h1 class="white-text text-uppercase">Open Source Projects</h1>
-            </div>
+<div class="w-100 blue-box mb-2">
+    <div class="container content-home py-3">
+        <div class="d-flex align-items-center">
+            <h1 class="white-text text-uppercase">Open Source Projects</h1>
         </div>
     </div>
+</div>
+<div class="content-home container">
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
