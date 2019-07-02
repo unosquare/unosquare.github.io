@@ -33,6 +33,11 @@ body{
     background-color: #165ffb;
 }
 
+.white-badge {
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .white-text {
     color: #fff;
 }
