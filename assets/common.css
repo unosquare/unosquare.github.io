@@ -130,3 +130,74 @@ body{
         height: auto;
     }
 }
+
+.date-block-container {
+    display: flex;
+    background-color: #165ffb;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.2;
+    width: 80px;
+}
+@media (min-width: 1200px) {
+    .date-block-container {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 105px;
+        padding: 8px;
+        position: static;
+        order: 1;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 1921px) and (min-width: 1308px)
+    {
+    .date-block-container {
+        align-items: center;
+        background-color: #165ffb;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+        line-height: 1.2;
+        order: 1;
+        padding: 5px;
+        position: relative;
+        width: 10%;
+    }
+}
+
+.day {
+    color: #fff;
+    font: 700 30px Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+.month {
+    color: #fff;
+    font: lighter 20px Segoe UI,Tahoma,Geneva,Verdana,sans-serif!important;
+    letter-spacing: -.2px;
+    text-transform: uppercase;
+}
+.year {
+    color: #fff;
+    font: lighter 15px Segoe UI,Tahoma,Geneva,Verdana,sans-serif!important;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 1200px)
+{
+    .day {
+        font-size: 30px;
+        order: 1;
+    }
+    .month {
+        font-size: 20px;
+        order: 2;
+    }
+    .year {
+        font-size: 15px;
+        order: 3;
+    }
+}
