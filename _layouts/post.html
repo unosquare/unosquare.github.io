@@ -3,15 +3,6 @@ layout: default
 ---
 {% assign author = site.data.authors[page.author] %}
 
-<div class="row">
-    <div class="col-md-12 text-right">
-        <span class="badge badge-warning">Posted on {{ page.date | date_to_string }} by {{ author.name }}</span>
-        <br />
-        {% for tag in page.tags %}
-        <span class="badge badge-success">{{ tag }}</span>
-        {% endfor %}
-    </div>
-</div>
 <div class="w-100 blue-box">
     <div class="container content-home py-3">
         <div class="d-flex align-items-center">

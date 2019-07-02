@@ -28,6 +28,15 @@ body{
     object-position: top;
 }
 
+.blue-box {
+    margin-top: 5px;
+    background-color: #165ffb;
+}
+
+.white-text {
+    color: #fff;
+}
+
 .img-cover{
     object-fit: cover !important;
 }
