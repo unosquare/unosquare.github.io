@@ -95,6 +95,10 @@ body{
     border-bottom: 1px solid;
 }
 
+.blog-post strong, ul {
+    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
 @media only screen and (max-width: 4200px) and (min-width: 1200px) {
     .card-head {
         min-height: 200px;
