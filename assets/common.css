@@ -148,7 +148,6 @@ body{
         height: 105px;
         padding: 8px;
         position: static;
-        order: 1;
         width: 90px;
     }
 }
@@ -163,7 +162,6 @@ body{
         flex-wrap: nowrap;
         height: 100%;
         line-height: 1.2;
-        order: 1;
         padding: 5px;
         position: relative;
     }
