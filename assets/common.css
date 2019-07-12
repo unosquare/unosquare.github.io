@@ -95,7 +95,11 @@ body{
     border-bottom: 1px solid;
 }
 
-.blog-post strong, ul {
+.blog-post strong, ul, em {
+    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+.blog-post strong em {
     font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
