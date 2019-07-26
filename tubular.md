@@ -41,29 +41,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
-                    <h4 class="text-uppercase">Tubular-React</h4>
-                    <span>By Unosquare</span>
-                    <p class="author-date">
-                        The DataGrid component can display tabular data.
-                        <br>
-                        Custom layout for columns and cells using render methods.<br>
-                        Use a remote or local datasource.<br>
-                        Remote data is paged in the server side.
-                    </p>
-                </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-react" class="link-blue button">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-            <div class="card-body p-3">
-                <div class="card-head">
-                    <h4 class="text-uppercase">Tubular for Angular6 (formerly Tubular2)</h4>
+                    <h4 class="text-uppercase">Tubular for Angular8 (formerly Tubular2)</h4>
                     <span>By Unosquare</span>
                     <p class="author-date">
                         A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
@@ -130,6 +108,28 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
                     <a href="https://github.com/unosquare/tubular-nodejs" class="link-blue button">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body p-3">
+                <div class="card-head">
+                    <h4 class="text-uppercase">Tubular-React</h4>
+                    <span>By Unosquare</span>
+                    <p class="author-date">
+                        The DataGrid component can display tabular data.
+                        <br>
+                        Custom layout for columns and cells using render methods.<br>
+                        Use a remote or local datasource.<br>
+                        Remote data is paged in the server side.
+                    </p>
+                </div>
+                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                    <a href="https://github.com/unosquare/tubular-react" class="link-blue button">
                         Read More
                     </a>
                 </div>
