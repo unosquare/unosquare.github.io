@@ -50,6 +50,9 @@ body{
     .main-hero .hero-title{
         position:relative;
     }
+    .main-hero{
+        height: initial !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
