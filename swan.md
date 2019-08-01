@@ -49,14 +49,14 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                 <div class="card">
                     <div class="card-body p-3">
                         <div class="card-head">
-                            <h4 class="text-uppercase">Swan ASP.NET Core 2</h4>
+                            <h4 class="text-uppercase">Swan ASP.NET Core 2.2</h4>
                             <span>By Unosquare</span>
                             <p>
-                                Set of libraries to use with ASP.NET Core 2.1 applications.
+                                Set of libraries to use with ASP.NET Core 2.2 applications.
                                 Also, includes a configure middleware and extension to setup your project.
-                                ASP.NET Core 2.1 came with a lot of changes, including authentication and
+                                ASP.NET Core 2.2 came with a lot of changes, including authentication and
                                 authorization,
-                                Swan ASP.NET Core 2.1 is easy to configure and start working on
+                                Swan ASP.NET Core 2.2 is easy to configure and start working on
                                 your project.
                             </p>
                         </div>
