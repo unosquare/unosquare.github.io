@@ -17,7 +17,7 @@ As we have seen tubular is a **definition,** due to the server and the client ar
 ​
 The **Tubular** library exposes a method extension that takes a **Grid Data Request** and the first transformation on our data (the data select) and create a **Grid Data Response.** 
 ​
-Imagine that you have an Orders Entity Framework DBSet which have the following columns:
+Imagine that you have an Orders Entity which have the following columns:
 ​
 * OrderID
 * CustomerName
@@ -26,6 +26,7 @@ Imagine that you have an Orders Entity Framework DBSet which have the following 
 * Amount 
 ​
 The next code snippet will return an objects payload with all the properties of the **Order** entity.
+
 ``` csharp
 ​
 [HttpPost] // -> Remember all the grid requests will be made on the POST request method
@@ -33,9 +34,7 @@ The next code snippet will return an objects payload with all the properties of 
 public  IActionResult GetOrders(GridDataRequest  request)
 {
 	// Generates a GridDataResponse using the GridDataRequest an IQueriable source like a DataSet in Entity Framework
-​
 	return  Ok(request.CreateGridDataResponse(DbContext.Orders.AsQueryable()));
-​
 }
 ​
 ```
@@ -51,9 +50,7 @@ This code snippet will return an objects payload with only three properties of t
 public  IActionResult GetOrders(GridDataRequest  request)
 ​
 {
-​
 	// Generates a GridDataResponse using the GridDataRequest an IQueriable source like a DataSet in Entity Framework
-​
 	return  Ok(request.CreateGridDataResponse(DbContext.Orders
 				.Select(x => new
 				{
