@@ -10,58 +10,50 @@ tags: Back-End Tubular C# .NET
 ---
 
 # Tubular .NET  
-
+​
 **Tubular .NET** is a server-side class library, that contains models and procedures which will transform our data in a **Grid Data Response**  _model_. These procedures will be in charge of performing filtering, sorting, searching as well as build aggregations on the data. 
-
+​
 As we have seen tubular is a **definition,** due to the server and the client aren't attached to any framework or programming language. In this case, we will lead you through the server made in .NET.
-
+​
 The **Tubular** library exposes a method extension that takes a **Grid Data Request** and the first transformation on our data (the data select) and create a **Grid Data Response.** 
-
+​
 Imagine that you have an Orders Entity Framework DBSet which have the following columns:
-
+​
 * OrderID
 * CustomerName
 * ShippedDate
 * ShipperCity
 * Amount 
-
+​
 The next code snippet will return an objects payload with all the properties of the **Order** entity.
 ``` csharp
-
+​
 [HttpPost] // -> Remember all the grid requests will be made on the POST request method
-
 [Route("paged")]
-
 public  IActionResult GetOrders(GridDataRequest  request)
-
 {
-
-// Generates a GridDataResponse using the GridDataRequest an IQueriable source like a DataSet in Entity Framework
-
-return  Ok(request.CreateGridDataResponse(DbContext.Orders
-
-.Select()
-
-.AsQueryable()));
-
-}
-
-```
-
-This code snippet will return an objects payload with only three properties of the **Order** entity. 
-
-``` csharp
-
-[HttpPost] // -> Remember all the grid requests will be made on the POST request method
-
-[Route("paged")]
-
-public  IActionResult GetOrders(GridDataRequest  request)
-
-{
-
 	// Generates a GridDataResponse using the GridDataRequest an IQueriable source like a DataSet in Entity Framework
-
+​
+	return  Ok(request.CreateGridDataResponse(DbContext.Orders.AsQueryable()));
+​
+}
+​
+```
+​
+This code snippet will return an objects payload with only three properties of the **Order** entity. 
+​
+``` csharp
+​
+[HttpPost] // -> Remember all the grid requests will be made on the POST request method
+​
+[Route("paged")]
+​
+public  IActionResult GetOrders(GridDataRequest  request)
+​
+{
+​
+	// Generates a GridDataResponse using the GridDataRequest an IQueriable source like a DataSet in Entity Framework
+​
 	return  Ok(request.CreateGridDataResponse(DbContext.Orders
 				.Select(x => new
 				{
@@ -70,24 +62,24 @@ public  IActionResult GetOrders(GridDataRequest  request)
 					x.ShipperCity
 				})
 				.AsQueryable()));
-
+​
 }
-
+​
 ```
-
-
+​
+​
 The _CreateGridDataResponse_ method searches over the request and performs the following actions:
-
+​
 1. First of all, it will be looking for the applied filters and **filter** the data (it is our second transformation).
-
+​
 2. After the filter, the resulting data is **sorted** according to the request (the third transformation). 
-
+​
 3. In the end, the **Aggregation** actions are built (The fourth and last transformation). 
-
+​
 Our **Data Grid Response** will look like:
-
+​
 **_All the properties_**
-
+​
 ``` JSON
 {
 	"Counter": 0,
@@ -171,11 +163,11 @@ Our **Data Grid Response** will look like:
 	"Amount": 28007
 	}
 }
-
+​
 ```
-
+​
 **_Only three properties_**
-
+​
 ``` JSON
 {
 	"Counter": 0,
@@ -239,5 +231,4 @@ Our **Data Grid Response** will look like:
 	"CustomerName": 500
 	}
 }
-
-```
+​``` 
