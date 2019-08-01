@@ -27,14 +27,14 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
 <div class="gray-section">
     <div class="content-home container">
         <div class="row">
-            <div class="col-12 col-lg-6 mb-4">
+            <div class="col-12 col-lg-4 mb-4">
                 <div class="card">
                     <div class="card-body p-3">
                         <div class="card-head">
                             <h4 class="text-uppercase">SWAN: Stuff We All Need</h4>
                             <span>By Unosquare</span>
-                            <p class="author-date">
-                                Swan is a collection of classes and extension methods that Unosquare and other developers have developed and evolved over the years. We found ourselves copying and pasting the same code for every project, each time we started it. We decided to kill that Ctrl-C/Ctrl-V cycle once and for all and Swan is the result. 
+                            <p>
+                                Swan is a collection of classes and extension methods that Unosquare and other developers have developed and evolved over the years. We found ourselves copying and pasting the same code for every project. We decided to kill that Ctrl-C/Ctrl-V cycle once and for all and Swan is the result. 
                             </p>
                         </div>
                         <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
@@ -45,24 +45,44 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mb-4">
+            <div class="col-12 col-lg-4 mb-4">
                 <div class="card">
                     <div class="card-body p-3">
                         <div class="card-head">
                             <h4 class="text-uppercase">Swan ASP.NET Core 2</h4>
                             <span>By Unosquare</span>
-                            <p class="author-date">
-                                A set of libraries to use with ASP.NET Core 2.1 applications.
+                            <p>
+                                Set of libraries to use with ASP.NET Core 2.1 applications.
                                 Also, includes a configure middleware and extension to setup your project.
                                 ASP.NET Core 2.1 came with a lot of changes, including authentication and
                                 authorization,
-                                here with Swan ASP.NET Core 2.1 is easy to configure and start working on
-                                your
-                                project.
+                                Swan ASP.NET Core 2.1 is easy to configure and start working on
+                                your project.
                             </p>
                         </div>
                         <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
                             <a href="https://github.com/unosquare/swan-aspnetcore" class="link-blue button">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body p-3">
+                        <div class="card-head">
+                            <h4 class="text-uppercase">Swan LDAP</h4>
+                            <span>By Unosquare</span>
+                            <p>
+                                SWAN LDAP Client was previously included as part of the main SWAN project,
+                                but since there is not too many products using an LDAP Client, we removed as a
+                                standalone library. Quickly connect and authenticate to your Active Directory in
+                                a secure, reliable and easy way.
+                            </p>
+                        </div>
+                        <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                            <a href="https://github.com/unosquare/swan-ldap" class="link-blue button">
                                 Read More
                             </a>
                         </div>
