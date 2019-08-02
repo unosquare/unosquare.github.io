@@ -19,6 +19,7 @@ pre code span {
     }
     /* Error */
     .highlight .k {
+        color: #00bfff;
         font-weight: bold
     }
     /* Keyword */
@@ -129,7 +130,7 @@ pre code span {
     }
     /* Literal.String */
     .highlight .na {
-        color: #008080
+        color: #ffbf00
     }
     /* Name.Attribute */
     .highlight .nb {
@@ -155,7 +156,7 @@ pre code span {
     }
     /* Name.Exception */
     .highlight .nf {
-        color: #990000;
+        color: #165FFB;
         font-weight: bold
     }
     /* Name.Function */

@@ -228,4 +228,3 @@ Our **Data Grid Response** will look like:
 	"CustomerName": 500
 	}
 }
-​``` 
