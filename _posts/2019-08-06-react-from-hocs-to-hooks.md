@@ -1,5 +1,5 @@
 ---
-author: alejandro_ocampo
+author: Alejandro Ocampo (@kadosh)
 layout: post
 title: "Replacing HOCs with hooks in tubular"
 date: 2019-06-26
