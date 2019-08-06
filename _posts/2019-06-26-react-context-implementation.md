@@ -1,5 +1,5 @@
 ---
-author: "Alejandro Ocampo"
+author: Alejandro Ocampo (@kadosh)
 layout: post
 title: "React Context Implementation"
 date: 2019-06-26
