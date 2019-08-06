@@ -22,7 +22,7 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
     </div>
 </div>
 <div class="content-home container">
-    <img src="/assets/swanAreas.png" class="px-5 swan-hex">
+    <img src="/assets/swanAreas.png" class="px-5 swan-hex" alt="SWAN Areas">
 </div>
 <div class="gray-section">
     <div class="content-home container">
