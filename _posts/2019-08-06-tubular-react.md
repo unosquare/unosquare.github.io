@@ -52,58 +52,8 @@ new  ColumnModel('Amount')
 
 ```
 
-But the **ColumnModel** provides several properties that can help to specify a column's behavior.  
+But you can use the **ColumnModel** to specify a column's behavior.  
 
-### Column Model 
-
-*  **Aggregate**: Describe the aggregate function that will be applied. Its type corresponds to **_AggregateFunctions_** enumeration that list all the possible functions that you can use:
-
-	* NONE
-	* SUM
-	* AVERAGE
-	* COUNT
-	* DISTINCT_COUNT
-	* MAX
-	* MIN
-*  **DataType**: Define the column data type using the **_ColumnDataType_** enumeration:
-
-	* STRING
-	* NUMERIC
-	* BOOLEAN
-	* DATE
-	* DATE_TIME
-	* DATE_TIME_UTC
-*  **Filter**: It is an object that set out the filter that was applied.
-
-*  **Filterable**: A boolean property used to set the capability of having a filter on the column or not.
-
-*  **IsKey**: Set if the column is the key of the object for example if it is an Id.
-
-*  **Label**: Some times you want to show another name for the column instead of the original name, you can use this property to do that.
-
-*  **Name**: The column name as it is in the entity.
-
-*  **Searchable**: A boolean property that indicates if the column will be employed when the free-text search is used.
-
-*  **SortDirection**: Another enumeration to set the sort's direction **_ColumnSortDirection_**:
-
-	* NONE
-	* ASCENDING
-	* DESCENDING
-
-*  **SortOrder**: When the sort is applied on several columns it will represent the number in order to be sort.
-
-*  **Sortable**: Provide the ability to be sortable or not.
-
-*  **Visible**: This property manage if the column will be seen in the grid or not.
-
-*  **hasFilter**: Boolean property that indicates if the column has a filter.
-
-  
-
-The use of this properties will spezialice the column's functioning.
-
-  
 
 ``` JavaScript
 import  React  from  'react';
