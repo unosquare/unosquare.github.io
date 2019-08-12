@@ -12,6 +12,9 @@ pre code span {
         color: #999988;
         font-style: italic
     }
+    .highlight .p {
+        color: #165FFB;
+    }
     /* Comment */
     .highlight .err {
         color: #a61717;
@@ -19,7 +22,7 @@ pre code span {
     }
     /* Error */
     .highlight .k {
-        color: #00bfff;
+        color: #CC8999;
         font-weight: bold
     }
     /* Keyword */
@@ -130,7 +133,7 @@ pre code span {
     }
     /* Literal.String */
     .highlight .na {
-        color: #ffbf00
+        color: #008000
     }
     /* Name.Attribute */
     .highlight .nb {
@@ -138,7 +141,7 @@ pre code span {
     }
     /* Name.Builtin */
     .highlight .nc {
-        color: #445588;
+        color: #165FFB;
         font-weight: bold
     }
     /* Name.Class */
@@ -165,7 +168,7 @@ pre code span {
     }
     /* Name.Namespace */
     .highlight .nt {
-        color: #000080
+        color: #165FFB;
     }
     /* Name.Tag */
     .highlight .nv {
