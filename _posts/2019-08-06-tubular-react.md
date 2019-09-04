@@ -3,8 +3,6 @@ author: "Ana Atayde"
 layout: post
 title: "Tubular React"
 date: 2019-08-05
-nocomments: false
-area: "blog"
 description: Tubular React, a client-side set of ReactJS components we use to design and build modern web applications.
 tags: Front-End Tubular React Javascript DataGrid WebApp
 ---

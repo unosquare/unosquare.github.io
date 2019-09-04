@@ -3,8 +3,6 @@ author: Alejandro Ocampo (@kadosh)
 layout: post
 title: "Replacing HOCs with hooks in tubular"
 date: 2019-08-06
-nocomments: false
-area: "blog"
 description: Once react introduced hooks new possibilites were opened at tubular-react. This is the story on how we moved our Data Sources from HOCs into a powerful hook.
 tags: React-Hooks Javascript Tubular-React
 ---

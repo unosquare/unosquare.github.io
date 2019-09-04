@@ -3,8 +3,6 @@ author: "Ana Atayde"
 layout: post
 title: "Tubular .NET"
 date: 2019-08-01
-nocomments: false
-area: "blog"
 description: Tubular .NET, a server-side class library to populate Tubular grids.
 tags: Back-End Tubular C# .NET
 ---

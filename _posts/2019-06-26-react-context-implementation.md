@@ -3,8 +3,6 @@ author: Alejandro Ocampo (@kadosh)
 layout: post
 title: "React Context Implementation"
 date: 2019-06-26
-nocomments: false
-area: "blog"
 description: A walkthrough our learning process while implementing React Context. The problems we faced and the things we learned.
 tags: React-Context React-Hooks Javascript
 ---
