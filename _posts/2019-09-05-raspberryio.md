@@ -8,20 +8,20 @@ description: An easy-to-use open-source API to bring the .NET power to the pytho
 tags: Raspberry RaspberryIO IoT API .NET
 ---
 
-[RaspberryIO](https://github.com/unosquare/raspberryio/) is an easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.
+[RaspberryIO](https://github.com/unosquare/raspberryio/) is an easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.<br/>
 ​
-RaspberryIO enables developers to use the various Raspberry Pi's hardware modules including the Camera to capture images and video, the GPIO pins, and both SPI and I2C buses.
+RaspberryIO enables developers to use the various Raspberry Pi's hardware modules including the Camera to capture images and video, the GPIO pins, and both SPI and I2C buses.<br/>
 ​
-RaspberryIO works as a high-level wrapper for low-level libraries that interacts directly with the Raspberry Pi hardware, as a result, several implementations could be done, targeting distinct low-level libraries. By now, we have fully implemented the [WiringPi](https://github.com/unosquare/wiringpi-dotnet/) library and we are working in the [PiGpio](https://github.com/unosquare/pigpio-dotnet/) implementation.
+RaspberryIO works as a high-level wrapper for low-level libraries that interacts directly with the Raspberry Pi hardware, as a result, several implementations could be done, targeting distinct low-level libraries. By now, we have fully implemented the [WiringPi](https://github.com/unosquare/wiringpi-dotnet/) library and we are working in the [PiGpio](https://github.com/unosquare/pigpio-dotnet/) implementation.<br/>
 ​
 ## Using RaspberryIO
 ​
-On this initial post, we are going to create a new console project to obtain general system information, deploying the project to the Raspberry Pi and finally run the application using .Net Core.
+On this initial post, we are going to create a new console project to obtain general system information, deploying the project to the Raspberry Pi and finally run the application using .Net Core.<br/>
 ​
 ### Create the project
 ​
  - Open Visual Studio and create a new Console App project.
- - Add the [RaspberryIO](https://www.nuget.org/packages/Unosquare.Raspberry.IO) nuget package. This library Contains classes to control general Raspberry Pi modules like Camera, Audio, Network and classes to get general system information.
+ - Add the [RaspberryIO](https://www.nuget.org/packages/Unosquare.Raspberry.IO) nuget package. This library Contains classes to control general Raspberry Pi modules like Camera, Audio, Network and classes to get general system information.<br/>
 	```
 	PM> Install-Package Unosquare.Raspberry.IO
 	```
@@ -39,25 +39,25 @@ On this initial post, we are going to create a new console project to obtain gen
 	    }
 	}
 	```
-**_Unosquare.RaspberryIO.Pi_** is your access point to the API. Through this static class you can access all API features. The **_Info_** property provides access to the **_SystemInfo_** class, this class allows you to obtain different system information, like board model, board revision, processor model, memory size, operating system, etc. In the above code, we are writing to the console the **_SystemInfo_** class, which _ToString_ overload is going to get the most common system information, nevertheless, you can access individual **_SystemInfo_**'s properties to get more specific and useful information.
+**_Unosquare.RaspberryIO.Pi_** is your access point to the API. Through this static class you can access all API features. The **_Info_** property provides access to the **_SystemInfo_** class, this class allows you to obtain different system information, like board model, board revision, processor model, memory size, operating system, etc. In the above code, we are writing to the console the **_SystemInfo_** class, which _ToString_ overload is going to get the most common system information, nevertheless, you can access individual **_SystemInfo_**'s properties to get more specific and useful information.<br/>
 ​
-_Note_: In future blog entries we are going to explore more features of the **_Pi_** class, like **_Gpio_** that allow access to the General Purpose Input/Output pins.
+_Note_: In future blog entries we are going to explore more features of the **_Pi_** class, like **_Gpio_** that allow access to the General Purpose Input/Output pins.<br/>
 ​
 ### Deploy to Raspberry Pi
 ​
-To deploy you application to the Raspberry you have two options:
+To deploy you application to the Raspberry you have two options:<br/>
 ​
- 1. Publish  your project from VS and then copying all the published files to the Raspberry using some FTP tool like [FileZilla](https://filezilla-project.org/).
- 2. Use a tool that publishes the project and copy the files to the Raspberry automatically, like [sshdeploy](https://github.com/unosquare/sshdeploy).
+ 1. Publish  your project from VS and then copying all the published files to the Raspberry using some FTP tool like [FileZilla](https://filezilla-project.org/).<br/>
+ 2. Use a tool that publishes the project and copy the files to the Raspberry automatically, like [sshdeploy](https://github.com/unosquare/sshdeploy).<br/>
 ​
-For this tutorial, we are going to use **_sshdeploy_**, a CLI utility that enables quick deployments over SSH. This app was specifically designed to streamline .NET application development for the Raspberry Pi.
+For this tutorial, we are going to use **_sshdeploy_**, a CLI utility that enables quick deployments over SSH. This app was specifically designed to streamline .NET application development for the Raspberry Pi.<br/>
 ​
-To install sshdeploy, open windows command prompt and run the next command:
+To install sshdeploy, open windows command prompt and run the next command:<br/>
 ```bash
 dotnet tool install -g dotnet-sshdeploy
 ```
-Add the next basic configuration to your csproj file:
-```xml
+Add the next basic configuration to your csproj file:<br/>
+```tsx
 <PropertyGroup>
 	<OutputType>Exe</OutputType>
 	<TargetFramework>netcoreapp2.2</TargetFramework>
@@ -70,24 +70,24 @@ Add the next basic configuration to your csproj file:
 	<SshDeployTargetPath>/home/pi/demo</SshDeployTargetPath>
 </PropertyGroup>
 ```
-*Note 1*: To use **_sshdeploy_**, SSH must be enabled in the Raspberry Pi. To enable SSH in the Raspberry Pi follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/).
-*Note 2*: You must use your actually Raspberry Pi IP address, user and password.
+*Note 1*: To use **_sshdeploy_**, SSH must be enabled in the Raspberry Pi. To enable SSH in the Raspberry Pi follow this [tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/).<br/>
+*Note 2*: You must use your actually Raspberry Pi IP address, user and password.<br/>
 ​
-Finally, to actually deploy the app to the Raspberry Pi, open windows command prompt, navigate to the path where the csproj file is and run the next command:
+Finally, to actually deploy the app to the Raspberry Pi, open windows command prompt, navigate to the path where the csproj file is and run the next command:<br/>
 ​
 ```bash
 dotnet-sshdeploy push -c Release
 ```
 ​
-The utility will publish the app and then will copy the required files to the specified path (_SshDeployTargetPath_).
+The utility will publish the app and then will copy the required files to the specified path (_SshDeployTargetPath_).<br/>
 ​
 ### Run the app
 ​
-In order to run the application you need to install .NET Core **SDK** or **runtime**. The software development kit (**SDK**) includes everything you need to build and run .NET Core applications, using command line tools and any editor (including Visual Studio). The **runtime** includes just the resources required to run existing .NET Core applications. The **runtime** is included in the **SDK**.
+In order to run the application you need to install .NET Core **SDK** or **runtime**. The software development kit (**SDK**) includes everything you need to build and run .NET Core applications, using command line tools and any editor (including Visual Studio). The **runtime** includes just the resources required to run existing .NET Core applications. The **runtime** is included in the **SDK**.<br/>
 ​
-Since we only need to run an existing application on the Raspberry Pi, we are going to install only the .NET Core **runtime**.
+Since we only need to run an existing application on the Raspberry Pi, we are going to install only the .NET Core **runtime**.<br/>
 ​
-To install .NET Core **runtime** execute the following commands:
+To install .NET Core **runtime** execute the following commands:<br/>
 ```
 $ sudo apt-get -y update
 $ sudo apt-get -y install libunwind8 gettext
@@ -97,7 +97,7 @@ $ sudo tar -xvf dotnet-runtime-2.2.6-linux-arm.tar.gz -C /opt/dotnet/
 $ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 ​
 ```
-This will install the latest version of .NET Core (2.2.6 at the moment). To verify the version of .NET Core run `dotnet --info`, you will see something like the next info message:
+This will install the latest version of .NET Core (2.2.6 at the moment). To verify the version of .NET Core run `dotnet --info`, you will see something like the next info message:<br/>
 ​
 ```
 Host (useful for support):
@@ -114,14 +114,14 @@ To install additional .NET Core runtimes or SDKs:
   https://aka.ms/dotnet-download
 ```
 ​
-_Note_: To check for newer versions of the .NET Core runtime (or SDK) visit [https://aka.ms/dotnet-download](https://aka.ms/dotnet-download).
+_Note_: To check for newer versions of the .NET Core runtime (or SDK) visit [https://aka.ms/dotnet-download](https://aka.ms/dotnet-download).<br/>
 ​
-Finally, navigate to the path where you publish your application and run it using the next command:
+Finally, navigate to the path where you publish your application and run it using the next command:<br/>
 ```bash
 $ dotnet GettingStarted.dll
 ```
 ​
-You will see some basic system information, something like this:
+You will see some basic system information, something like this:<br/>
 ```
 System Information
         LibraryVersion        :
@@ -144,4 +144,4 @@ System Information
         UptimeTimeSpan        : 00:50:29.9800000
 ```
 ​
-That’s all for this basic example. This was your first contact with **RaspberryIO**. In future blog entries, we are going to see more examples to go deeper in the API, using more hardware-related features, like the GPIO, the basic means to the Raspberry Pi to communicate with external devices.
+That’s all for this basic example. This was your first contact with **RaspberryIO**. In future blog entries, we are going to see more examples to go deeper in the API, using more hardware-related features, like the GPIO, the basic means to the Raspberry Pi to communicate with external devices.<br/>
