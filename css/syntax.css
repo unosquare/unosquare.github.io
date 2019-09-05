@@ -22,7 +22,7 @@ pre code span {
     }
     /* Error */
     .highlight .k {
-        color: #CC8999;
+        color: #3C1361;
         font-weight: bold
     }
     /* Keyword */
@@ -58,7 +58,7 @@ pre code span {
         /* Generic.Deleted */
         .highlight .gd .x {
             color: #000000;
-            background-color: #ffaaaa
+            background-color: #3C1361
         }
     /* Generic.Deleted.Specific */
     .highlight .ge {

@@ -147,7 +147,9 @@ body{
     background-color: #165ffb;
     padding: 10px;
     text-align: center;
+    flex-direction: column;
     line-height: 1.2;
+    height: min-content;
     width: 80px;
 }
 @media (min-width: 1200px) {
@@ -196,6 +198,8 @@ body{
 
 .post-head-container {
     margin-top: 25px;
+    flex-direction: row;
+    display: flex;
 }
 
 .author-link {
