@@ -1,15 +1,13 @@
 ---
 author: "Carlos Solorzano"
 layout: post
-title: "RaspberryIO"
+title: "RaspberryIO - Getting started"
 date: 2019-09-05
 area: "blog"
 description: An easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.
 tags: Raspberry RaspberryIO IoT API .NET
 ---
 
-# Getting started
-​
 [RaspberryIO](https://github.com/unosquare/raspberryio/) is an easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.
 ​
 RaspberryIO enables developers to use the various Raspberry Pi's hardware modules including the Camera to capture images and video, the GPIO pins, and both SPI and I2C buses.
