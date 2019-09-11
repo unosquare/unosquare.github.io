@@ -1,0 +1,92 @@
+﻿<div class="container" ng-controller="tubularDocCtrl">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="search" placeholder="search..." ng-model="search" class="form-control" />
+                <span class="input-group-btn" ng-show="search">
+                    <button class="btn btn-default" type="button" ng-click="search=''">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </span>
+            </div>
+            <h3>Introduction</h3>
+            <div class="list-group">
+                <a class="list-group-item" href="#!/Documentation">General Information</a>
+                <a class="list-group-item" href="#!/Documentation/StartGrid">Getting Started - Grids</a>
+                <a class="list-group-item" href="#!/Documentation/WebApi">Tubular Grids with DotNet Library</a>
+                <a class="list-group-item" href="#!/Documentation/WebApiNode">Tubular Grids with Node.js Library</a>
+                <a class="list-group-item" href="#!/Documentation/StartForm">Getting Started - Forms</a>
+                <a class="list-group-item" href="#!/Documentation/StartChart">Getting Started - Charts</a>
+            </div>
+            <div ng-repeat="(key, group) in items | filter: { docType: '!external', name: search } | groupBy: 'docType'">
+                <h3>{{key}}</h3>
+                <div class="list-group">
+                    <a class="list-group-item" ng-repeat="item in group | orderBy: 'name'"
+                       href="#!/Documentation/{{item.name}}">{{item.name}}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div ng-hide="doc" class="documentation">
+                <h1>Introduction</h1>
+
+                <p>
+                    Tubular provides several directives, services and some filters to deliver an unified UX. Please follow the next link classified by UX component. You can read
+                    about Tubular component or check every directive documentation in the left navigation menu. If you want to report an issue
+                    or you want to see a new feature, please report it at <a href="https://github.com/unosquare/tubular/issues">Tubular GitHub Issues Tracker</a>.
+                </p>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2>Grids (tbGrid Component)</h2>
+                        <p>
+                            The Grid component is a table-aware directive's set when you can build and design any tabular data connecting
+                            to different data sources like REST Services (using .NET Connector). You can learn more with the following links:
+                        </p>
+                        <ul>
+                            <a href="#!/Documentation/StartGrid">Getting Started - Grids</a>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>Forms (tbForm Component)</h2>
+
+                        <p>
+                            You can create forms with Tubular and take advantage of helpful controls with a lot of out-of-box features.
+                            The forms can be rendered in a page, a modal or even inside the <strong>tbGrid</strong>.
+                            Learn more at:
+                        </p>
+                        <ul>
+                            <a href="#!/Documentation/StartForm">Getting Started - Forms</a>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2>DotNet Documentation</h2>
+                        <p>
+                            Tubular DoNet Library provides an easy way to start working with Tubular grids in your backend.
+                        </p>
+                        <ul>
+                            <a href="https://unosquare.github.io/tubular-dotnet/api/Unosquare.Tubular.html">Tubular DotNet API Documentation</a>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>Charts</h2>
+                        <p>
+                            Tubular can help you to deliver charts using <a href="http://www.chartjs.org/">ChartJS</a> or <a href="http://www.highcharts.com/">HighCharts</a>.
+                            This module is new and it is work in progress.
+                        </p>
+                        <ul>
+                            <a href="#!/Documentation/StartChart">Getting Started - Charts</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div ng-include="doc">t</div>
+        </div>
+    </div>
+</div>

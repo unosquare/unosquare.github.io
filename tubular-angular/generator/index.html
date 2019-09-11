@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org/" lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tubular">
+        <meta name="keywords" content="application, html5, angularjs, responsive, web api">
+        <meta name="author" content="Unosquare Labs">
+
+        <title>Tubular AutoGenerator</title>
+
+        <!-- CSS (from CDN) -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/latest/css/font-awesome.min.css" />
+        <link href="//bootswatch.com/3/lumen/bootstrap.min.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/tubular/1.4.0/tubular-bundle.min.css" />
+
+        <!-- JS (from CDN) -->
+        <script src="//cdn.jsdelivr.net/g/angularjs@1.6.0(angular.min.js+angular-animate.min.js+angular-route.min.js),angular.bootstrap@2.5.0(ui-bootstrap.min.js+ui-bootstrap-tpls.min.js),momentjs@2.17.1"></script>
+    
+        <!-- Angular Application files -->
+        <script src="//cdn.jsdelivr.net/tubular/1.4.0/tubular-bundle.min.js"></script>
+        <script src="//unosquare.github.io/tubular/vendor/tubular/tubular-localdata-bundle.js"></script>
+        <script src="//unosquare.github.io/tubular/vendor/tubular/tubular-odata-bundle.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-cloak>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
+    </body>
+</html>

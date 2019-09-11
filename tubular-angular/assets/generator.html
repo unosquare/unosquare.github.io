@@ -1,0 +1,213 @@
+<div ng-controller="tubularGeneratorCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div ng-hide="step != 1">
+                    <p ng-show="views.length == 0">
+                        First you need to paste a sample model, it could be any <b>JSON</b> or you can use our <b>sample</b>.
+                        If you only want to play a little bit, give a try <a href="http://www.json-generator.com/">Json Generator</a>.
+                    </p>
+                    <p ng-show="views.length > 0">
+                        You can add more views to your project or just send your current work to Plunker.
+                    </p>
+                    <div class="pull-right">
+                        <div class="btn-group btn-group-md">
+                            <button class="btn btn-primary" ng-click="generateModel()" ng-disabled="basemodel.length == 0">
+                                <i class="fa fa-gear"></i>&nbsp;Generate
+                            </button>
+                            <button class="btn btn-default" ng-click="useSample()">
+                                <i class="fa fa-star"></i>&nbsp;Use Sample
+                            </button>
+                            <!-- <button class="btn btn-default" ng-click="useServerSample()">
+                                <i class="fa fa-globe"></i>&nbsp;Use Server Sample
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div ng-hide="step != 2">
+                    <p>Please setup anything you need before to continue.</p>
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button class="btn btn-warning btn-lg" ng-click="revert()">
+                                <i class="fa fa-arrow-left"></i>&nbsp;Start over
+                            </button>
+                            <button class="btn btn-primary btn-lg" ng-click="runGridTemplate()">
+                                <i class="fa fa-gear"></i>&nbsp;Continue
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div ng-hide="step != 3">
+                    <p>
+                        If you wish send this grid to <b>Plunker</b> and you can start right now to customize it. The Tubular
+                        grid is located as <i>grid.html</i>.
+                        <br />
+                        <b>Save and Continue</b> will save this grid locally and allow to add more views to edit later.
+                    </p>
+
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button class="btn btn-warning btn-lg" ng-click="revert()">
+                                <i class="fa fa-arrow-left"></i>&nbsp;Return to Setup
+                            </button>
+                            <button class="btn btn-success btn-lg" ng-click="cleanPlunker('grid')">
+                                <i class="fa fa-pencil"></i>&nbsp;Export to Plunker
+                            </button>
+                            <button class="btn btn-default btn-lg" ng-click="save('grid')">
+                                <i class="fa fa-plus"></i>&nbsp;Save and Continue
+                            </button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right" ng-show="views.length > 0">
+            <button class="btn btn-success" ng-click="plunker()">
+                <i class="fa fa-pencil"></i>&nbsp;Export All to Plunker
+            </button>
+            <button class="btn btn-danger" ng-click="clearViews()">
+                <i class="fa fa-trash"></i>&nbsp;Clear Project
+            </button>
+        </div>
+
+        <div class="row" ng-hide="step != 1">
+            <div class="col-xs-12">
+                <textarea ng-model="basemodel" class="form-control" rows="10" placeholder="Paste here a JSON model"></textarea>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row" ng-hide="step != 2">
+            <div class="col-xs-12">
+                <table class="table table-striped table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>
+                                Is Key? &nbsp;
+                                <i class="fa fa-question-circle" uib-tooltip="This key is used for CRUD operations"></i>
+                            </th>
+                            <th>Name</th>
+                            <th>Label</th>
+                            <th>Data Type</th>
+                            <th>
+                                Template &nbsp;
+                                <i class="fa fa-question-circle" uib-tooltip="Any valid AngularJS placeholder, row object is the current cursor"></i>
+                            </th>
+                            <th>Filter</th>
+                            <th>Searchable</th>
+                            <th>Sortable</th>
+                            <th>
+                                Sort Order &nbsp;
+                                <i class="fa fa-question-circle" uib-tooltip="If you set any order different to -1, it will sort in the first request"></i>
+                            </th>
+                            <th>Sort Direction</th>
+                            <th>Visible</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in columns">
+                            <td class="text-center">
+                                <tb-checkbox-field value="row.IsKey"></tb-checkbox-field>
+                            </td>
+                            <td>{{row.Name}}</td>
+                            <td><input type="text" class="form-control" ng-model="row.Label" /></td>
+                            <td>
+                                <select ng-options="dataType for dataType in enums.dataTypes" class="form-control" ng-model="row.DataType"></select>
+                            </td>
+                            <td><input type="text" class="form-control" ng-model="row.Template" /></td>
+                            <td class="text-center">
+                                <tb-checkbox-field value="row.Filter"></tb-checkbox-field>
+                            </td>
+                            <td class="text-center">
+                                <tb-checkbox-field value="row.Searchable"></tb-checkbox-field>
+                            </td>
+                            <td class="text-center">
+                                <tb-checkbox-field value="row.Sortable"></tb-checkbox-field>
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" min="0" max="50" ng-model="row.SortOrder" ng-disabled="row.Sortable == false" />
+                            </td>
+                            <td>
+                                <select class="form-control" ng-model="row.SortDirection" ng-disabled="row.Sortable == false || row.SortOrder <= 0">
+                                    <option value="">- Not set -</option>
+                                    <option value="Ascending">Ascending</option>
+                                    <option value="Descending">Descending</option>
+                                </select>
+                            </td>
+                            <td class="text-center">
+                                <tb-checkbox-field value="row.Visible"></tb-checkbox-field>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs" ng-click="removeColumn(row)">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr />
+                <div class="row">
+                    <h4>UI Options</h4>
+
+                    <div class="col-xs-8">
+                        <p>Please select which additional UI elements wants to show in your view.</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default" ng-model="uiOptions.Pager" uib-btn-checkbox>
+                                Pager
+                            </button>
+                            <button type="button" class="btn btn-default" ng-model="uiOptions.FreeTextSearch" uib-btn-checkbox>
+                                Free-text Search
+                            </button>
+                            <button type="button" class="btn btn-default" ng-model="uiOptions.PageSizeSelector" uib-btn-checkbox>
+                                Page Size Selector
+                            </button>
+                            <button type="button" class="btn btn-default" ng-model="uiOptions.PagerInfo" uib-btn-checkbox>
+                                Page Size Info
+                            </button>
+                            <button type="button" class="btn btn-default" ng-model="uiOptions.ExportCsv" uib-btn-checkbox>
+                                Export CSV & Print Button
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label>
+                            Editors
+                            &nbsp;<i class="fa fa-question-circle" uib-tooltip="A basic text editor will be added, but you can change it later"></i>
+                        </label>
+                        <select ng-model="uiOptions.Mode" class="form-control" ng-options="option for option in enums.gridModes"></select>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row" ng-hide="step != 3">
+            <div class="col-md-12">
+                <uib-tabset>
+                    <uib-tab heading="Preview">
+                        <div ng-include="templatename"></div>
+                    </uib-tab>
+                    <uib-tab heading="Source Code">
+                        <div class="clip_button btn btn-info btn-sm">
+                            <i class="fa fa-clipboard"></i>&nbsp; Copy
+                        </div>
+                        <hr />
+                        <div hljs source="gridmodelExport"></div>
+                    </uib-tab>
+                </uib-tabset>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        new ZeroClipboard($('.clip_button')).on('ready', function () {
+            this.on('copy', function (event) {
+                event.clipboardData.setData('text/plain', $(event.target).next().text());
+            });
+        });
+    });
+
+</script>

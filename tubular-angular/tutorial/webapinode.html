@@ -1,0 +1,61 @@
+<h1>Tubular Grids with Node.js module (backend)</h1>
+
+<p><a href="https://github.com/unosquare/tubular-nodejs">Tubular Node.js</a> provides an easy way to integrate Tubular Angular Components easily with any WebApi library.</p>
+
+<p>You can install from npm:</p>
+
+<div hljs>
+    $ npm install tubular-nodejs --save
+</div>
+
+<p>Use the following snippet if you're using express on your backend. That will handle a Tubular Grid request/response with a JSON data connector. You only need a json file like the one at: </p>
+
+<a href="https://github.com/unosquare/tubular/blob/master/test/integration/tbnodejs/public/sources/clients.json">JSON Payload</a>
+
+<div hljs>
+    const express = require('express');
+    const app = express();
+    
+    var tbNode = require('tubular-nodejs')('jsondata');
+    var data = require('/path/to/some/clients.json/file');
+    
+    app.post('/clients', function (req, res) {
+        tbNode.createGridResponse(req.body, data).then(function(response){
+        return res.json(response);
+        });
+    });
+    
+    app.listen(3000, function () {
+        console.log('Example app listening on port 3000!')
+    });
+</div>
+
+Or you can just use the following snippet to use our <a href="http://knexjs.org/">Knex.js</a> connector.
+
+<div hljs>
+    const express = require('express');
+    const app = express();
+    
+    var tbNode = require('tubular-nodejs')('knexjs');
+    var knex = require('knex')({
+        client: 'mysql',
+        connection: {
+            host: 'yourhost',
+            user: 'youruser',
+            port: 3306,
+            password: '',
+            database: 'yourdatabase'
+        }
+    });
+    
+    app.post('/clients', function (req, res) {
+        let queryBuilder = knex.select('first_name', 'last_name', 'address_id').from('clients');
+        tbNode.createGridResponse(req.body, queryBuilder).then(function(response){
+        return res.json(response);
+        });
+    });
+    
+    app.listen(3000, function () {
+        console.log('Example app listening on port 3000!')
+    });
+</div>
