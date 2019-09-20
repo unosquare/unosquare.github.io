@@ -5,7 +5,7 @@ title: "RaspberryIO - Getting started"
 date: 2019-09-05
 area: "blog"
 description: An easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.
-tags: Raspberry RaspberryIO IoT API .NET
+tags: Raspberry RaspberryIO IoT API .NET NET.Core
 ---
 ​
 [RaspberryIO](https://github.com/unosquare/raspberryio/) is an easy-to-use open-source API to bring the .NET power to the python-centered Raspberry Pi development world.  
@@ -16,7 +16,7 @@ RaspberryIO works as a high-level wrapper for low-level libraries that interacts
   
 ## Using RaspberryIO  
   
-On this initial post, we are going to create a new console project to obtain general system information, deploying the project to the Raspberry Pi and finally run the application using .Net Core.  
+On this initial post, we are going to create a new console project to obtain general system information, deploying the project to the Raspberry Pi and finally run the application using .NET Core.  
   
 ### Create the project  
   
