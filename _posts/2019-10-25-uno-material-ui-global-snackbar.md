@@ -13,7 +13,7 @@ On this episode, I want to show you one of the reusable and useful React compone
 
 We have published a library called _uno-material-ui_, which you can find at: https://github.com/unosquare/uno-material-ui. As you may noticed, this is assuming you are working with **Material-UI**. If you don't know it, please take a look at it: https://material-ui.com/
 
-And you can immediately start using it in your project the traditional:
+And you can immediately start using it in your project with the traditional:
 > npm i uno-material-ui
 
 But I really want to focus on one of those components: the **GlobalSnackbar**.
