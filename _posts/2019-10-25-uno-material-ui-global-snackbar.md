@@ -70,9 +70,9 @@ If you have a project where you're using React and Material-UI you can give it a
 
 ## Why it was made that way?
 You might be curious about three main things:
-1) Why not using **React Context**?
-2) What in the world is the ```snackbarService```? What kind of Angular stuff is this?
-3) How is this actually working?
+1. Why not using **React Context**?
+2. What in the world is the ```snackbarService```? What kind of Angular stuff is this?
+3. How is this actually working?
 
 Believe me, it is simpler than you might think. It is just a simple implementation of the **Observer Pattern** along with some attention to **render responsibly** and a **Singleton**.
 
