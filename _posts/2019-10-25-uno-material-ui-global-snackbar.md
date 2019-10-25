@@ -22,6 +22,7 @@ But I really want to focus on one of those components: the **GlobalSnackbar**.
 Well, it is as simple as a normal Snackbar, it shows a message to the user.
 ## How to use it?
 In order to use it in your project, you will need to do three things:
+
 1) Include the ```<SnackbarContainer />``` right after your [Theme Provider](https://material-ui.com/customization/theming/#theme-provider). Something like this:
 
 ```tsx
