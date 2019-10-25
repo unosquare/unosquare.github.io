@@ -42,7 +42,7 @@ That ```<SnackbarContainer />``` will hold the Snackbar messages for your applic
 ```ts
 import { snackbarService } from 'uno-material-ui';
 ```
-3) Then, let's simply call the ```snackbarService.showSnackbar(messageText, messageType)``` on your component. Something like this:
+3) Then, let's call the ```snackbarService.showSnackbar(messageText, messageType)``` on your component. Something like this:
 
 ```tsx
 ...
