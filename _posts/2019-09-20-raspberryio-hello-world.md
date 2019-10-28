@@ -6,6 +6,7 @@ date: 2019-09-20
 area: "blog"
 description: First interaction with Raspberry Pi GPIO pins.
 tags: Raspberry RaspberryIO GPIO IoT API .NET NET.Core
+featuredImage: "https://user-images.githubusercontent.com/5455304/65348529-0582f280-dba7-11e9-9576-4c0ddcf7e50a.png"
 ---
 
 ## GPIO  
