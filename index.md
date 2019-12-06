@@ -225,11 +225,11 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                         <div class="card-head">
                             <h4 class="text-uppercase">uno-material-ui</h4>
                             <p class="author-date">
-                                The no-frills micro ORM for SQL Server.
+                                Components and extensions for Material UI (React).
                             </p>
                         </div>
                         <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                            <a href="https://github.com/unosquare/pocodata" class="link-blue">
+                            <a href="https://github.com/unosquare/uno-material-ui" class="link-blue">
                                 Read More
                             </a>
                         </div>
