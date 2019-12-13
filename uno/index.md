@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Open Source Software Initiatives from Unosquare | React"
-description: "Check out our React libraries with useful functions, hooks and components"
+title: "Open Source Software Initiatives from Unosquare | Uno"
+description: "Check out our Uno libraries with useful typescript functions, React hooks and components"
 ---
 <div class="container content-home">
   <div class="main-hero hero">
       <img src="/assets/coding-like-a-god.jpg" class="px-5" alt="React logo" />
       <div class="hero-title title-black">
-          <h2 class="text-uppercase">React</h2>
+          <h2 class="text-uppercase">Uno</h2>
           <div id="hero-label">
-            Save time using our libraries featuring hooks, HOCs and even components
+            Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components
           </div>
           <a class="link-gray" href="https://github.com/unosquare/uno-react"> Read more
           </a>
@@ -18,7 +18,26 @@ description: "Check out our React libraries with useful functions, hooks and com
 </div>
 <div class="container content-home">
 <div class="row">
-    <div class="col-12 col-lg-6 mb-4">
+    <div class="col-12 col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body p-3">
+                <div class="card-head">
+                    <h4 class="text-uppercase">uno-js</h4>
+                    <span>By Unosquare</span>
+                    <p>
+                        Useful typescript functions. Optimized and tested.
+                    </p>
+                </div>
+                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                    <a href="https://github.com/unosquare/uno-js" class="link-blue button">
+                        Read More
+                    </a>
+                    <img src="/assets/github.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
@@ -36,7 +55,7 @@ description: "Check out our React libraries with useful functions, hooks and com
             </div>
         </div>
     </div>
-    <div class="col-12 col-lg-6 mb-4">
+    <div class="col-12 col-lg-4 mb-4">
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
