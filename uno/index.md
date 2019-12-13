@@ -28,11 +28,13 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                         Useful typescript functions. Optimized and tested.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="actions">
                     <a href="https://github.com/unosquare/uno-js" class="link-blue button">
                         Read More
                     </a>
-                    <img src="/assets/github.png" />
+                    <a href="https://github.com/unosquare/uno-js" class="d-flex justify-content-end">
+                        <img src="/assets/github.png" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -47,7 +49,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                         Common functions, HOCs and hooks for React. Constantly growing and tested by our team. 
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="actions">
                     <a href="https://github.com/unosquare/uno-react" class="link-blue button">
                         Read More
                     </a>
@@ -65,7 +67,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                         Components and extensions for Material UI (React).
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="actions">
                     <a href="https://github.com/unosquare/uno-material-ui" class="link-blue button">
                         Read More
                     </a>
