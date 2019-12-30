@@ -3,20 +3,10 @@ layout: default
 title: "Open Source Software Initiatives from Unosquare | Uno"
 description: "Check out our Uno libraries with useful typescript functions, React hooks and components"
 ---
+
 <div class="container content-home">
-  <div class="main-hero hero">
-      <img src="/assets/coding-like-a-god.jpg" class="px-5" alt="React logo" />
-      <div class="hero-title title-black">
-          <h2 class="text-uppercase">Uno</h2>
-          <div id="hero-label">
-            Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components
-          </div>
-          <a class="link-gray" href="https://github.com/unosquare/uno-react"> Read more
-          </a>
-      </div>
-  </div>
-</div>
-<div class="container content-home">
+<h2>Uno</h2>
+<h6>Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components</h6>
 <div class="row">
     <div class="col-12 col-lg-4 mb-4">
         <div class="card">
@@ -29,7 +19,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                     </p>
                 </div>
                 <div class="actions">
-                    <a href="https://github.com/unosquare/uno-js" class="link-blue button">
+                    <a href="https://unosquare.github.io/uno/uno-js" class="link-blue button">
                         Read More
                     </a>
                     <a href="https://github.com/unosquare/uno-js" class="d-flex justify-content-end">
@@ -50,8 +40,11 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                     </p>
                 </div>
                 <div class="actions">
-                    <a href="https://github.com/unosquare/uno-react" class="link-blue button">
+                    <a href="https://unosquare.github.io/uno/uno-react" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/uno-react" class="d-flex justify-content-end">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -68,8 +61,11 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
                     </p>
                 </div>
                 <div class="actions">
-                    <a href="https://github.com/unosquare/uno-material-ui" class="link-blue button">
+                    <a href="https://unosquare.github.io/uno/uno-material-ui" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/uno-material-ui" class="d-flex justify-content-end">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
