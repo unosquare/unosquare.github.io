@@ -18,9 +18,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
           <div class="uno-sandbox">
           <iframe
-            src="https://codesandbox.io/embed/happy-albattani-q4okk?expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark"
+            src="https://codesandbox.io/embed/uno-jsobjectdifference-q4okk?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=preview"
             style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-            title="Uno-JS/objectDifference"
+            title="uno-js/objectDifference"
             allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
           ></iframe>
