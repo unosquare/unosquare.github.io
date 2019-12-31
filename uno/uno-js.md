@@ -121,7 +121,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 </div>
 </div>
 <div class="container content-home">
-  <div class="mb-4 d-flex flex-row">
+  <div class="mb-4 d-flex flex-column">
     <div>
       <h4 class="blue-title">toTitleCase</h4>
       <p>
