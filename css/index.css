@@ -6,3 +6,9 @@
 .blue-title {
   color: #165FFB;
 }
+
+.toc {
+  position: sticky;
+  height: 400px;
+  top: -5;
+}

@@ -8,7 +8,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
   <h2>uno-js</h2>
   <p>String and array manipulation, easy-to-use fetch controller and more, written in Typescript</p>
 </div>
-<div class="container content-home pt-0">
+<div class="container content-home pt-0 d-flex flex-row">
   <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div id="colorGenerator">
       <h4 class="blue-title">colorGenerator</h4>
@@ -35,7 +35,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       ></iframe>
     </div>
   </div>
-  <div class="col-2">
+  <div class="col-2 toc">
   <ul>
     <a class="navbar-brand" href="#">Table of Content</a>
     <li>
