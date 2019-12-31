@@ -9,7 +9,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
   <p>String and array manipulation, easy-to-use fetch controller and more, written in Typescript</p>
 </div>
 <div class="container content-home pt-0">
-  <div class="mb-4 d-flex flex-column">
+  <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div>
       <h4 class="blue-title">colorGenerator</h4>
       <p>
@@ -38,7 +38,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 </div>
 <div class="gray-section">
 <div class="container content-home">
-  <div class="mb-4 d-flex flex-column">
+  <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div>
       <h4 class="blue-title">humanize</h4>
       <p>
@@ -65,7 +65,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 </div>
 </div>
 <div class="container content-home">
-  <div class="mb-4 d-flex flex-column">
+  <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div>
       <h4 class="blue-title">objectDifference</h4>
       <p>
@@ -93,7 +93,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 </div>
 <div class="gray-section">
 <div class="container content-home">
-  <div class="mb-4 d-flex flex-column">
+  <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div>
       <h4 class="blue-title">removeDuplicated</h4>
       <p>
@@ -121,7 +121,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 </div>
 </div>
 <div class="container content-home">
-  <div class="mb-4 d-flex flex-column">
+  <div class="mb-4 col-10 p-0 d-flex flex-column">
     <div>
       <h4 class="blue-title">toTitleCase</h4>
       <p>
@@ -145,4 +145,22 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       ></iframe>
     </div>
   </div>
+</div>
+<div>
+  <nav id="navbar-example3" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link" href="#item-1">Item 1</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+      </nav>
+      <a class="nav-link" href="#item-2">Item2</a>
+      <a class="nav-link" href="#item-3">Item3</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+      </nav>
+    </nav>
+  </nav>
 </div>
