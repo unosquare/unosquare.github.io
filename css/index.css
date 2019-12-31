@@ -3,11 +3,6 @@
   justify-content: space-between;
 }
 
-.uno-desc {
-  width: 25%;
-  padding-right: 5%;
-}
-
-.uno-sandbox {
-  width: 70%;
+.blue-title {
+  color: #165FFB;
 }
