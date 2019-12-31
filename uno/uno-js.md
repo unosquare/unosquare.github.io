@@ -35,7 +35,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       ></iframe>
     </div>
   </div>
-  <div class="col-12">
+  <div class="col-2">
   <ul>
     <a class="navbar-brand" href="#">Table of Content</a>
     <li>
