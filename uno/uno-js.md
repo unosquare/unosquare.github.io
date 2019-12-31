@@ -17,9 +17,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </p>
       <strong>Parameters</strong>
       <p>
-        startValue: Starting array with RGB values. <br/>
-        endValue: Ending array with RGB values. <br/>
-        factor: The factor which will multiply the values.
+        array: Starting array with RGB values. <br/>
+        array: Ending array with RGB values. <br/>
+        int: The factor which will multiply the values.
       </p>
       <strong>Return</strong>
       <p>
@@ -35,6 +35,14 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       ></iframe>
     </div>
   </div>
+  <div class="col-12">
+  <ul>
+    <a class="navbar-brand" href="#">Table of Content</a>
+    <li>
+      <a class="nav-link" href="#colorGenerator">colorGenerator</a>
+   </li>
+</ul>
+</div>
 </div>
 <div class="gray-section">
 <div class="container content-home">
@@ -145,12 +153,4 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       ></iframe>
     </div>
   </div>
-</div>
-<div>
-  <ul>
-    <a class="navbar-brand" href="#">Table of Content</a>
-    <li>
-      <a class="nav-link" href="#colorGenerator">colorGenerator</a>
-   </li>
-</ul>
 </div>
