@@ -33,6 +33,27 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </div>
         </div>
         <div class="mb-4">
+            <div id="debounce">
+                <h4 class="blue-title">debounce</h4>
+                <p>
+                    Perfect to work with search inputs, this function delay its execution, and if the function is called again, it interrupts the first one, 
+                </p>
+                <strong>Parameters</strong>
+                <p>
+                    function: Function to be executed after the lapse finishes.
+                    <br/> int: Milliseconds until the function will execute.
+                </p>
+                <strong>Return</strong>
+                <p>
+                    Array with generated string RGB values in the following format: "rgba(r,g,b,a)"
+                </p>
+            </div>
+            <div>
+                <iframe src="https://codesandbox.io/embed/uno-jsdebounce-wqh11?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split" style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="uno-js/debounce"
+                sandbox="allow-scripts allow-same-origin"></iframe>
+            </div>
+        </div>
+        <div class="mb-4">
             <div id="humanize">
                 <h4 class="blue-title">humanize</h4>
                 <p>
@@ -59,8 +80,8 @@ description: "Check out uno-js, a Typescript library for array and string manipu
                 </p>
                 <strong>Parameters</strong>
                 <p>
-                    object: First object to compare.
-                    <br/> object: Second object to compare.
+                    object: First object to be compared.
+                    <br/> object: Second object to be compared.
                 </p>
                 <strong>Return</strong>
                 <p>
@@ -118,6 +139,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             <p class="navbar-brand" href="#">Table of Content</p>
             <li>
                 <a class="nav-link" href="#colorGenerator">colorGenerator</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#debounce">debounce</a>
             </li>
             <li>
                 <a class="nav-link" href="#humanize">humanize</a>
