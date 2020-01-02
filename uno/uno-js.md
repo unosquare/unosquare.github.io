@@ -33,7 +33,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </div>
         </div>
         <div class="mb-4">
-            <div>
+            <div id="humanize">
                 <h4 class="blue-title">humanize</h4>
                 <p>
                     It returns a humanized string.
@@ -52,7 +52,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </div>
         </div>
         <div class="mb-4">
-            <div>
+            <div id="objectDifference">
                 <h4 class="blue-title">objectDifference</h4>
                 <p>
                     Get the difference between 2 objects and return an object with the previous and new values of each difference.
@@ -73,7 +73,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </div>
         </div>
         <div class="mb-4">
-            <div>
+            <div id="removeDuplicated">
                 <h4 class="blue-title">removeDuplicated</h4>
                 <p>
                     Remove the duplicated entries in an object array by prop.
@@ -94,7 +94,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </div>
         </div>
         <div class="mb-4">
-            <div>
+            <div id="toTitleCase">
                 <h4 class="blue-title">toTitleCase</h4>
                 <p>
                     Returns the given string in Title Case
@@ -115,9 +115,21 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     </div>
     <div class="col-2 toc">
         <ul>
-            <a class="navbar-brand" href="#">Table of Content</a>
+            <p class="navbar-brand" href="#">Table of Content</p>
             <li>
                 <a class="nav-link" href="#colorGenerator">colorGenerator</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#humanize">humanize</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#objectDifference">objectDifference</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#removeDuplicated">removeDuplicated</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#toTitleCase">toTitleCase</a>
             </li>
         </ul>
     </div>
