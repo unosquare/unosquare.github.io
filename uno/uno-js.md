@@ -36,7 +36,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             <div id="debounce">
                 <h4 class="blue-title">debounce</h4>
                 <p>
-                    Perfect to work with search inputs, this function delay its execution, and if the function is called again, it interrupts the first one, 
+                    This function delays its execution and if the function is called again, it interrupts the first one and restarts the timer, so this ensures that the function is only called once in the lapse defined.
                 </p>
                 <strong>Parameters</strong>
                 <p>
@@ -45,7 +45,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
                 </p>
                 <strong>Return</strong>
                 <p>
-                    Array with generated string RGB values in the following format: "rgba(r,g,b,a)"
+                    Function, it will be executed once the lapse finishes without interruptions.
                 </p>
             </div>
             <div>
