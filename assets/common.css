@@ -21,7 +21,11 @@ body {
   position: relative;
 }
 
-.table {
+.table,
+thead,
+tr,
+td,
+th {
     font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
