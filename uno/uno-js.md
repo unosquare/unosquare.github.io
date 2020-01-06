@@ -39,10 +39,14 @@ description: "Check out uno-js, a Typescript library for array and string manipu
                     This function delays its execution and if the function is called again, it interrupts the first one and restarts the timer, so this ensures that the function is only called once in the lapse defined.
                 </p>
                 <strong>Parameters</strong>
-                <p>
-                    function: Function to be executed after the lapse finishes.
-                    <br/> int: Milliseconds until the function will execute.
-                </p>
+                <table>
+                    <tr>
+                        <td>function: Function to be executed after the lapse finishes.</td>
+                    </tr>
+                    <tr>
+                        <td>int: Milliseconds until the function will execute.</td>
+                    </tr>
+                </table>
                 <strong>Return</strong>
                 <p>
                     Function, it will be executed once the lapse finishes without interruptions.
