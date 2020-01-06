@@ -9,10 +9,10 @@ description: "Check out uno-js, a Typescript library for array and string manipu
         <div class="d-flex flex-row space-between">
           <h2>uno-js</h2>
           <a href="https://github.com/unosquare/uno-js" class="first-icon">
-            <img class="icon" src="assets/npm.svg" alt="uno-js npm" />
+            <img class="icon" src="/assets/npm.svg" alt="uno-js npm" />
           </a>
           <a href="https://github.com/unosquare/uno-js">
-            <img class="icon" src="assets/github.png" alt="uno-js Github Repo" />
+            <img class="icon" src="/assets/github.png" alt="uno-js Github Repo" />
           </a>
         </div>
         <p>String and array manipulation, easy-to-use fetch controller and more, written in Typescript.</p>
