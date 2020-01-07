@@ -106,7 +106,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           <div id="humanize">
             <h4 class="blue-title">humanize</h4>
             <p>
-              It RETURNs a humanized string.
+              It returns a humanized string.
             </p>
             <h6>PARAMETERS</h6>
             <table class="table table-striped w-100 mt-2">
@@ -168,7 +168,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </table>
             <h6>RETURN</h6>
             <p>
-              RETURNs an object where each prop is an object with the difference, formated as: <br /> {[prop]: {prev:
+              Returns an object where each prop is an object with the difference, formated as: <br /> {[prop]: {prev:
               "Old
               value", new: "New value", type: [prop]}}
             </p>
@@ -224,7 +224,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           <div id="toTitleCase">
             <h4 class="blue-title">toTitleCase</h4>
             <p>
-              RETURNs the given string in Title Case
+              Returns the given string in Title Case
             </p>
             <h6>PARAMETERS</h6>
             <table class="table table-striped w-100 mt-2">
