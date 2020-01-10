@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Common functions, and hooks for React."
-description: "Check out uno-js, a Typescript library for array and string manipulation."
+title: "Open Source Software Initiatives from Unosquare | uno-js"
+description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
 
 <div class="container content-home d-flex flex-row">
@@ -9,16 +9,16 @@ description: "Check out uno-js, a Typescript library for array and string manipu
         <div class="d-flex flex-row space-between">
           <h2>uno-react
           </h2>
-          <a href="https://www.npmjs.com/package/uno-js" class="first-icon">
-            <img class="npm-icon" src="/assets/npm.svg" alt="uno-js npm" title="uno-js npm"/>
+          <a href="https://www.npmjs.com/package/uno-react" class="first-icon">
+            <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
           </a>
-          <a href="https://github.com/unosquare/uno-js">
-            <img class="github-icon" src="/assets/github.png" alt="uno-js Github Repo" title="uno-js Github Repo"/>
+          <a href="https://github.com/unosquare/uno-react">
+            <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
           </a>
         </div>
         <p>Common functions, and hooks for React.</p>
         <div class="mb-4">
-          <div id="colorGenerator">
+          <div id="useClickOutside">
             <h4 class="blue-title">useClickOutside</h4>
             <p>
               This hook allows to call a given function when a click event occurs outside the component.
@@ -58,7 +58,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="debounce">
+          <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>
             <p>
               This hooks run an effect with a debounce. Each time any input change, it will be registered;
@@ -104,7 +104,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="humanize">
+          <div id="useEffectWithLoading">
             <h4 class="blue-title">useEffectWithLoading</h4>
             <p>
               This hook handles the process of getting a external resource like a fetch or reading a file,
@@ -153,7 +153,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="objectDifference">
+          <div id="useNow">
             <h4 class="blue-title">useNow</h4>
             <p>
               This hook keep the current Date object updated.
@@ -172,7 +172,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="removeDuplicated">
+          <div id="usePersistedState">
             <h4 class="blue-title">usePersistedState</h4>
             <p>
               This hook allows us to set and get values from the localStorage.
@@ -213,7 +213,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useResolutionSwitch">
             <h4 class="blue-title">useResolutionSwitch</h4>
             <p>
               This hook listen to the resize window event and keep the isResolution flag updated.
@@ -253,7 +253,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useStateForField">
             <h4 class="blue-title">useStateForField</h4>
             <p>
               Similar to useStateForModel this hook helps us to keep the value of a variable
@@ -291,7 +291,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
             <p>
               This hook allows us to keep updated the values of a model that are related to an input,
@@ -334,7 +334,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
             <p>
               This hook allows us to keep updated the values of a model that are related to an input,
@@ -377,7 +377,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
             <p>
               This hook allows us to keep updated the values of a model that are related to an input, 
@@ -428,7 +428,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
             <p>
               This hook allows us to keep updated the values of a model that are related to an input, 
@@ -468,7 +468,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
             <p>
               This component extends the original ValidatorForm rules. This component works for wrap TextValidator component(s) and for register any other custom rules, this rules can be used in the wrapped components.
@@ -500,22 +500,37 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             <p class="navbar-brand pl-3">Table of Content</p>
           </li>
           <li>
-            <a class="nav-link" href="#colorGenerator">colorGenerator</a>
+            <a class="nav-link" href="#useClickOutside">useClickOutside</a>
           </li>
           <li>
-            <a class="nav-link" href="#debounce">debounce</a>
+            <a class="nav-link" href="#useEffectWithDebounce">useEffectWithDebounce</a>
           </li>
           <li>
-            <a class="nav-link" href="#humanize">humanize</a>
+            <a class="nav-link" href="#useEffectWithLoading">useEffectWithLoading</a>
           </li>
           <li>
-            <a class="nav-link" href="#objectDifference">objectDifference</a>
+            <a class="nav-link" href="#useNow">useNow</a>
           </li>
           <li>
-            <a class="nav-link" href="#removeDuplicated">removeDuplicated</a>
+            <a class="nav-link" href="#usePersistedState">usePersistedState</a>
           </li>
           <li>
-            <a class="nav-link" href="#toTitleCase">toTitleCase</a>
+            <a class="nav-link" href="#useResolutionSwitch">useResolutionSwitch</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#useStateForField">useStateForField</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#useStateForModel">useStateForModel</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#useStateForModelWithLoading">useStateForModelWithLoading</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#useToggle">useToggle</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#ValidatorForm">ValidatorForm</a>
           </li>
         </ul>
       </div>
