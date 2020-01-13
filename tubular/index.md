@@ -23,7 +23,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular Dotnet</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         Tubular provides .NET Framework and .NET Core Library to create
                         REST service to use with Tubular Angular Components easily with any WebApi library
@@ -43,7 +42,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular Common</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         Tubular Common provides TypeScript and Javascript models and data
                         transformer to use any Tubular DataGrid component with an array of Javascript
@@ -63,7 +61,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular-React</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         The DataGrid component can display tabular data.
                         <br>
@@ -85,7 +82,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular for AngularJS (formerly Tubular)</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         Provides a set of directives and services using AngularJS as a framework.
                         Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
@@ -104,7 +100,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular for Angular8 (formerly Tubular2)</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
                     </p>
@@ -122,7 +117,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
             <div class="card-body p-3">
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular NodeJS</h4>
-                    <span>By Unosquare</span>
                     <p class="author-date">
                         Tubular Node.js provides an easy way to integrate
                         Tubular Angular Components easily with any Node.js WebApi library.

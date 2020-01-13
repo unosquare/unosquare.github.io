@@ -60,7 +60,6 @@ description: "All the utilities for a web server in one place, written in C#"
                 <div class="card-body p-3">
                     <div class="card-head">
                         <h4 class="text-uppercase">embedio-cli</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             A dotnet global tool that enables start any web folder or EmbedIO assembly
                             (WebAPI or WebSocket) from command line.
@@ -79,7 +78,6 @@ description: "All the utilities for a web server in one place, written in C#"
                 <div class="card-body p-3">
                     <div class="card-head">
                         <h4 class="text-uppercase">EmbedIO BearerToken</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Allow to authenticate with a Bearer Token. It uses a Token endpoint (at
                             /token
@@ -102,7 +100,6 @@ description: "All the utilities for a web server in one place, written in C#"
                 <div class="card-body p-3">
                     <div class="card-head">
                         <h4 class="text-uppercase">EmbedIO LiteLibWebApi</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Allow to expose a sqlite database as REST api using EmbedIO WebApi and
                             LiteLib
@@ -122,7 +119,6 @@ description: "All the utilities for a web server in one place, written in C#"
                 <div class="card-body p-3">
                     <div class="card-head">
                         <h4 class="text-uppercase">EmbedIO OWIN</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             EmbedIO can use the OWIN platform in two different approach:
                             You can use EmbedIO as OWIN server and use all OWIN framework with EmbedIO
