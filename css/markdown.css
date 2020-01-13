@@ -5,6 +5,9 @@
 .list-element {
   font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
+.subtitle {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
 .description {
   font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
@@ -573,6 +576,7 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
   font-weight: 600;
   line-height: 1.25;
   margin-bottom: 16px;
