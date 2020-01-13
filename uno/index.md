@@ -6,7 +6,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
 
 <div class="container content-home">
 <h2>Uno</h2>
-<h6 class="description">Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components</h6>
+<h6 class="regular-font">Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components</h6>
 <div class="row">
     <div class="col-12 col-lg-4 mb-4">
         <div class="card">

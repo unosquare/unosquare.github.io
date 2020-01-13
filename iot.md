@@ -52,11 +52,11 @@ description: "See all our hardware and iot projects and how useful they are."
                         <p class="author-date">
                             Library Features
                             <ul>
-                                <li class="list-element">All documented commands are implemented (2018-06-25)</li>
-                                <li class="list-element">Operations are all asynchronous</li>
-                                <li class="list-element">No dependencies</li>
-                                <li class="list-element">Nice sample application included for testing</li>
-                                <li class="list-element">MIT License</li>
+                                <li class="regular-font">All documented commands are implemented (2018-06-25)</li>
+                                <li class="regular-font">Operations are all asynchronous</li>
+                                <li class="regular-font">No dependencies</li>
+                                <li class="regular-font">Nice sample application included for testing</li>
+                                <li class="regular-font">MIT License</li>
                             </ul>
                         </p>
                     </div>

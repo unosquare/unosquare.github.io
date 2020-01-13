@@ -273,8 +273,7 @@ em {
   }
   .author-link {
     color: #000;
-    font: 400 16px Impact, sans-serif;
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    font: 400 16px Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
     margin-top: 10px;
     position: relative;
     text-transform: uppercase !important;
