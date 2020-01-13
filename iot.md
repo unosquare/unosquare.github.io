@@ -16,14 +16,9 @@ description: "See all our hardware and iot projects and how useful they are."
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                        <img alt="raspberryIO logo" src="https://github.com/unosquare/raspberryio/blob/master/logos/raspberryio-logo-256.png?raw=true"
-                            class="logo p-5">
-                        -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">RaspberryIO</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Pi's hardware access from Mono<br>
                             The Raspberry Pi's IO Functionality in an easy-to-use API for Mono/.NET/C#. Our
@@ -43,14 +38,9 @@ description: "See all our hardware and iot projects and how useful they are."
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                        <img alt="WaveShare logo" src="https://raw.githubusercontent.com/unosquare/wsfingerprint/master/logos/wsfp-logo-32.png"
-                            class="logo">
-                        -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">WaveShare Fingerprint Reader</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Library Features
                             <ul>
@@ -72,14 +62,9 @@ description: "See all our hardware and iot projects and how useful they are."
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                        <img alt="raspberryIO libpigpio logo" src="https://raw.githubusercontent.com/unosquare/pigpio-dotnet/master/Support/pigpio-dotnet.png"
-                            class="logo">
-                            -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">Raspbery Pi - libpigpio for .net</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Provides complete managed access to the popular pigpio C library<br>
                             The premise is simple: using the powerful features of C# to control the ARM
@@ -102,7 +87,6 @@ description: "See all our hardware and iot projects and how useful they are."
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">SparkFun Fingerprint Reader (GT-521Fxx)</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Full implemented async commands for .NET (Mono and .NET Core too).
                         </p>
@@ -121,7 +105,6 @@ description: "See all our hardware and iot projects and how useful they are."
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">TinySine USB/Wireless Relay Module TOSR1x - Interfacing
                             Library for .NET</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             Full implemented async commands for .NET (Mono and .NET Core too).
                         </p>
@@ -139,7 +122,6 @@ description: "See all our hardware and iot projects and how useful they are."
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">libfprint-cs</h4>
-                        <span>By Unosquare</span>
                         <p class="author-date">
                             The long-awaited C# (.net/mono) wrapper for the great fingerprint reader
                             interfacing

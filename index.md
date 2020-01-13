@@ -276,6 +276,23 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                 <div class="card">
                     <div class="card-body p-3">
                         <div class="card-head">
+                            <h4 class="text-uppercase">uno-JS</h4>
+                            <p class="author-date">
+                                Unosquare Typescript/JavaScript Library, zero dependencies.
+                            </p>
+                        </div>
+                        <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                            <a href="https://github.com/unosquare/uno-js" class="link-blue">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body p-3">
+                        <div class="card-head">
                             <h4 class="text-uppercase">SparkFun Fingerprint Reader (GT-521Fxx)</h4>
                             <p class="author-date">
                                 Full implemented async commands for .NET (Mono and .NET Core too).

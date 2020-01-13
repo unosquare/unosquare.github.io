@@ -32,7 +32,6 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                     <div class="card-body p-3">
                         <div class="card-head">
                             <h4 class="text-uppercase">SWAN: Stuff We All Need</h4>
-                            <span>By Unosquare</span>
                             <p>
                                 Swan is a collection of classes and extension methods that Unosquare and other developers have developed and evolved over the years. We found ourselves copying and pasting the same code for every project. We decided to kill that Ctrl-C/Ctrl-V cycle once and for all and Swan is the result. 
                             </p>
@@ -50,7 +49,6 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                     <div class="card-body p-3">
                         <div class="card-head">
                             <h4 class="text-uppercase">Swan ASP.NET Core 2.2</h4>
-                            <span>By Unosquare</span>
                             <p>
                                 Set of libraries to use with ASP.NET Core 2.2 applications.
                                 Also, includes a configure middleware and extension to setup your project.
@@ -73,7 +71,6 @@ description: "Avoid rewriting code using SWAN, give to your project a quick star
                     <div class="card-body p-3">
                         <div class="card-head">
                             <h4 class="text-uppercase">Swan LDAP</h4>
-                            <span>By Unosquare</span>
                             <p>
                                 SWAN LDAP Client was previously included as part of the main SWAN project,
                                 but since there is not too many products using an LDAP Client, we removed as a
