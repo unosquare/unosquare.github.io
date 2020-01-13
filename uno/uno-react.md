@@ -428,7 +428,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
         </div>
         <div class="mb-4">
-          <div id="useStateForModelWithLoading">
+          <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
             <p>
               This hook handles the switch on boolean values. The value will be 
