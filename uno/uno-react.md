@@ -7,8 +7,7 @@ description: "Check out uno-react, a Typescript library with common functions an
 <div class="container content-home d-flex flex-row">
       <div class="col-10 p-0">
         <div class="d-flex flex-row space-between">
-          <h2>uno-react
-          </h2>
+          <h2>uno-react</h2>
           <a href="https://www.npmjs.com/package/uno-react" class="first-icon">
             <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
           </a>
