@@ -16,10 +16,6 @@ description: "See all our hardware and iot projects and how useful they are."
     <div class="row">
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                        <img alt="raspberryIO logo" src="https://github.com/unosquare/raspberryio/blob/master/logos/raspberryio-logo-256.png?raw=true"
-                            class="logo p-5">
-                        -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">RaspberryIO</h4>
@@ -42,9 +38,6 @@ description: "See all our hardware and iot projects and how useful they are."
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                    <img alt="WaveShare logo" src="https://raw.githubusercontent.com/unosquare/wsfingerprint/master/logos/wsfp-logo-32.png"class="logo">
-                -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">WaveShare Fingerprint Reader</h4>
@@ -69,10 +62,6 @@ description: "See all our hardware and iot projects and how useful they are."
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <!--
-                        <img alt="raspberryIO libpigpio logo" src="https://raw.githubusercontent.com/unosquare/pigpio-dotnet/master/Support/pigpio-dotnet.png"
-                            class="logo">
-                            -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">Raspbery Pi - libpigpio for .net</h4>
