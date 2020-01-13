@@ -22,7 +22,7 @@ body {
 }
 
 .link-blue,
-.nav-link,
+.a,
 .footer-title,
 .table,
 thead,
@@ -75,6 +75,10 @@ th {
   object-fit: cover !important;
 }
 
+#hero-label {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
 @media only screen and (max-width: 500px) {
   .main-hero .hero-title {
     font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
@@ -92,7 +96,6 @@ th {
   }
 
   #hero-label {
-    font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
     font-size: 18px;
   }
 }
