@@ -428,14 +428,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
         </div>
         <div class="mb-4">
-          <div id="useStateForModelWithLoading">
-            <h4 class="blue-title">useStateForModelWithLoading</h4>
+          <div id="useToggle">
+            <h4 class="blue-title">useToggle</h4>
             <p>
-              This hook allows us to keep updated the values of a model that are related to an input, 
-              handling the input's onChange calls like useStateForModel does, but in additino this hook 
-              allows us to load the data from an external resource.
-              This hook is a mix between useStateForModel and useEffectWithLoading, you can use it just 
-              as useStateForModel and handle the loading with the extra variable returned isLoading.
+              This hook handles the switch on boolean values. The value will be 
+              toggled each time the function toggle is called.
             </p>
             <h6>PARAMETERS</h6>
             <table class="table table-striped w-100 mt-2">
