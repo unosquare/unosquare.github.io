@@ -17,8 +17,16 @@ body {
   max-width: none;
 }
 
+.footer-title {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
 .hero {
   position: relative;
+}
+
+.nav-link {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 .table,
@@ -26,11 +34,15 @@ thead,
 tr,
 td,
 th {
-    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .github-icon {
   width: 32px;
+}
+
+.link-blue {
+  font-family: Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 .npm-icon{

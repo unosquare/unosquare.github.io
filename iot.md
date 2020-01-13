@@ -43,20 +43,19 @@ description: "See all our hardware and iot projects and how useful they are."
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
                 <!--
-                        <img alt="WaveShare logo" src="https://raw.githubusercontent.com/unosquare/wsfingerprint/master/logos/wsfp-logo-32.png"
-                            class="logo">
-                        -->
+                    <img alt="WaveShare logo" src="https://raw.githubusercontent.com/unosquare/wsfingerprint/master/logos/wsfp-logo-32.png"class="logo">
+                -->
                 <div class="card-body p-3">
                     <div class="card-head-xl">
                         <h4 class="text-uppercase">WaveShare Fingerprint Reader</h4>
                         <p class="author-date">
                             Library Features
                             <ul>
-                                <li class="regular-font">All documented commands are implemented (2018-06-25)</li>
-                                <li class="regular-font">Operations are all asynchronous</li>
-                                <li class="regular-font">No dependencies</li>
-                                <li class="regular-font">Nice sample application included for testing</li>
-                                <li class="regular-font">MIT License</li>
+                                <li>All documented commands are implemented (2018-06-25)</li>
+                                <li>Operations are all asynchronous</li>
+                                <li>No dependencies</li>
+                                <li>Nice sample application included for testing</li>
+                                <li>MIT License</li>
                             </ul>
                         </p>
                     </div>
