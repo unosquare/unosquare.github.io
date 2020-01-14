@@ -222,6 +222,80 @@ description: "Check out uno-js, a Typescript library for array and string manipu
         </div>
         <div class="mb-4">
           <div id="toTitleCase">
+            <h4 class="blue-title">toDate</h4>
+            <p>
+              Iterate between object props to convert any valid string into a Date object
+            </p>
+            <h6>PARAMETERS</h6>
+            <table class="table table-striped w-100 mt-2">
+              <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Optional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Object</td>
+                  <td>Object containing valid props for string conversion.</td>
+                  <td>No</td>
+                </tr>
+              </tbody>
+            </table>
+            <h6>RETURN</h6>
+            <p>
+              None
+            </p>
+          </div>
+          <div>
+            <iframe
+              src="https://codesandbox.io/embed/uno-jstodate-29d36?fontsize=14&hidenavigation=1&theme=dark"
+              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
+              title="uno-JS/toDate"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div id="toTitleCase">
+            <h4 class="blue-title">toLocalTime</h4>
+            <p>
+              Iterate between object props to convert any date to locale timezone
+            </p>
+            <h6>PARAMETERS</h6>
+            <table class="table table-striped w-100 mt-2">
+              <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Optional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Object</td>
+                  <td>Object containing valid props for string conversion.</td>
+                  <td>No</td>
+                </tr>
+              </tbody>
+            </table>
+            <h6>RETURN</h6>
+            <p>
+              None
+            </p>
+          </div>
+          <div>
+            <iframe
+              src="https://codesandbox.io/embed/uno-jstolocaltime-3jq9f?fontsize=14&hidenavigation=1&theme=dark"
+              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
+              title="uno-JS/toLocalTime"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div id="toTitleCase">
             <h4 class="blue-title">toTitleCase</h4>
             <p>
               Returns the given string in Title Case
