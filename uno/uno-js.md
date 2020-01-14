@@ -221,7 +221,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="toDate">
             <h4 class="blue-title">toDate</h4>
             <p>
               Iterate between object props to convert any valid string into a Date object
@@ -258,7 +258,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
         <div class="mb-4">
-          <div id="toTitleCase">
+          <div id="toLocalTitle">
             <h4 class="blue-title">toLocalTime</h4>
             <p>
               Iterate between object props to convert any date to locale timezone
@@ -351,7 +351,14 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             <a class="nav-link" href="#removeDuplicated">removeDuplicated</a>
           </li>
           <li>
+            <a class="nav-link" href="#toDate">toDate</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#toLocalTime">toLocalTime</a>
+          </li>
+          <li>
             <a class="nav-link" href="#toTitleCase">toTitleCase</a>
           </li>
         </ul>
       </div>
+</div>
