@@ -48,28 +48,21 @@ description: "Check out uno-react, a Typescript library with common functions an
             <p>
               None
             </p>
-          </div>
-
+        </div>
 ```tsx
 {% raw %}
 import { SnackbarContainer } from 'uno-material-ui';
-
-...
-<ThemeProvider theme={outerTheme}>
-...
-  <SnackbarContainer />
-...
-</ThemeProvider>
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
 {% endraw %}
 ```
-
-<button onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
-
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>
             <p>
-              This hooks run an effect with a debounce. Each time any input change, it will be registered;
+              This hooks run an effect with a debounce. Each time any input change, it will be registered.
               when happens the debounce time whitout changes, the effect will be run. (This function does not return anything).
             </p>
             <h6>PARAMETERS</h6>
@@ -104,15 +97,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Function, it will be executed once the lapse finishes without interruptions.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactuseeffectwithdebounce-demo-08ugt?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-react/useEffectWithDebounce-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useEffectWithLoading">
             <h4 class="blue-title">useEffectWithLoading</h4>
@@ -155,15 +149,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Boolean - A flag that indicates if the data has been fetched or not.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactuseeffectwithloading-demo-t9p6v?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useEffectWithLoading-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useNow">
             <h4 class="blue-title">useNow</h4>
@@ -176,15 +171,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Date - The current date.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusenow-demo-hbe1t?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useNow-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="usePersistedState">
             <h4 class="blue-title">usePersistedState</h4>
@@ -219,15 +215,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Function - The function to set the value. Note: This function expects an Object as a parameter.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusepersistedstate-demo-ome0b?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/usePersistedState-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useResolutionSwitch">
             <h4 class="blue-title">useResolutionSwitch</h4>
@@ -261,15 +258,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               boolean - true when window outerSize is smaller than the outerWith passed as a parameter.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactuseresolutionswitch-demo-ex1fg?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useResolutionSwitch-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useStateForField">
             <h4 class="blue-title">useStateForField</h4>
@@ -301,15 +299,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Function - This function helps us to update the value manually.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateforfield-demo-2xuq3?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useStateForField-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
@@ -346,15 +345,16 @@ import { SnackbarContainer } from 'uno-material-ui';
               Function - This function should be called on the onChange event.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateformodel-demo-lmkuh?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useStateForModel-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
@@ -408,6 +408,15 @@ import { SnackbarContainer } from 'uno-material-ui';
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
@@ -447,6 +456,15 @@ import { SnackbarContainer } from 'uno-material-ui';
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
