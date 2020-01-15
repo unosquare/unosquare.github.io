@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Tubular React Common functions and hooks | tubular-react-common"
-description: "Check out uno-react, a Typescript library with common functions and hooks for React"
+description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
 
 <div class="container content-home d-flex flex-row">
