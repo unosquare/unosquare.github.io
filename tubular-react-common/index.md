@@ -155,19 +155,47 @@ description: "Check out uno-react, a Typescript library with common functions an
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
         <p>
-          This hook keep the current Date object updated.
-          The value will be updated each second.
+          This hook allows to Create  .
         </p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Array</td>
+              <td>Array of column models to render data on the grid.</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Object</td>
+              <td>Source of the data to be presented.</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Object</td>
+              <td>Options to be present on the grid.</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
         <h6>RETURN</h6>
         <p>
-          Date - The current date.
+          Object - The current data to be rendered to the grid.
+          Function - The function to sort or control the grid.
         </p>
-      </div>
       <div>
         <iframe
-          src="https://codesandbox.io/embed/uno-reactusenow-demo-hbe1t?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+          src="https://codesandbox.io/embed/usetbtable-hook-example-tqtit?fontsize=14&hidenavigation=1&theme=dark"
           style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useNow" sandbox="allow-scripts allow-same-origin"></iframe>
+          title="useTbTable-Hook-Example"
+          sandbox="allow-scripts allow-same-origin"
+        ></iframe>
       </div>
     </div>
     <div class="mb-4">
