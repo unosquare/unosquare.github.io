@@ -50,7 +50,8 @@ description: "Check out uno-react, a Typescript library with common functions an
             </p>
           </div>
 
-{% highlight typescript %}
+<pre><code class="typescript">
+{% raw %}
 import { SnackbarContainer } from 'uno-material-ui';
 
 ...
@@ -59,11 +60,11 @@ import { SnackbarContainer } from 'uno-material-ui';
   <SnackbarContainer />
 ...
 </ThemeProvider>
-{% endhighlight %}
+{% endraw %}
+</code></pre>
 
-<button onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c')">Open CodeSanbox</button>
-          </div>
-        </div>
+<button onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
+
         <div class="mb-4">
           <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>

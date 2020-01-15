@@ -268,7 +268,8 @@
     };
 
     function convert(e, id) {
-        $(this).prev().html('<iframe src="https://codesandbox.io/embed/' + id + '?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-scripts allow-same-origin" ></iframe>');
+        $(e).prev().html('<iframe src="https://codesandbox.io/embed/' + id + '?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-scripts allow-same-origin" ></iframe>');
+        $(e).hide();
     }
     </script>
 
