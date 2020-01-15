@@ -282,9 +282,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uiindeterminatedloading-vubgx?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uiloadingicon-ugguf?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/IndeterminatedLoading" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/LoadingIcon"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -314,9 +316,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uimenulist-uzuhe?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/MenuList"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -345,9 +349,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uinavbar-nsk7f?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/NavBar"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -408,9 +414,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uitextvalidator-zh9xl?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/TextValidator"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -439,9 +447,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uithumbnailphoto-y8bbb?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/ThumbnailPhoto"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -471,9 +481,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-material-uititle-gw7xq?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-material-ui/Title"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -526,3 +538,4 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </li>
         </ul>
       </div>
+</div>
