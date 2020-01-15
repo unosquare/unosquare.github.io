@@ -59,6 +59,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ConfirmationDialog">
             <h4 class="blue-title">ConfirmationDialog</h4>
@@ -97,6 +106,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ErrorBoundary">
             <h4 class="blue-title">ErrorBoundary</h4>
@@ -122,6 +140,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             </table>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="FixedLinearProgress">
             <h4 class="blue-title">FixedLinearProgress</h4>
@@ -158,6 +185,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
               title="uno-material-ui/FixedLinearProgress" sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="FormModal">
             <h4 class="blue-title">FormModal</h4>
@@ -194,6 +230,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
               title="uno-material-ui/FormModal" sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="FormSwitch">
             <h4 class="blue-title">FormSwitch</h4>
@@ -225,6 +270,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
               title="uno-material-ui/FormSwitch" sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="IndeterminatedLoading">
             <h4 class="blue-title">IndeterminatedLoading</h4>
@@ -256,6 +310,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
               title="uno-material-ui/IndeterminatedLoading" sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="LoadingIcon">
             <h4 class="blue-title">LoadingIcon</h4>
@@ -289,6 +352,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="MenuList">
             <h4 class="blue-title">MenuList</h4>
@@ -323,6 +395,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="NavBar">
             <h4 class="blue-title">NavBar</h4>
@@ -356,6 +437,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">SnackbarContainer</h4>
@@ -388,6 +478,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
               title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">TextValidator</h4>
@@ -421,6 +520,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ThumbnailPhoto">
             <h4 class="blue-title">ThumbnailPhoto</h4>
@@ -454,6 +562,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="Title">
             <h4 class="blue-title">Title</h4>
@@ -488,6 +605,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
             ></iframe>
           </div>
         </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
       </div>
       <div class="col-2 toc">
         <ul>

@@ -33,13 +33,16 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - That adds another count whenever grid is refreshed.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useClickOutside" sandbox="allow-scripts allow-same-origin"></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
@@ -59,13 +62,16 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - Function to toggle the value of the flag.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseeffectwithdebounce-demo-08ugt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithDebounce"
-          sandbox="allow-scripts allow-same-origin"></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTbList">
         <h4 class="blue-title">useTbList</h4>
@@ -108,13 +114,16 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Boolean - A flag that indicates if the data has been fetched or not.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseeffectwithloading-demo-t9p6v?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithLoading"
-          sandbox="allow-scripts allow-same-origin"></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
@@ -161,15 +170,16 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Object - A Tubular state with all the tubular properties.
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/usetbtable-hook-example-tqtit?fontsize=14&hidenavigation=1&theme=dark"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useTbTable-Hook-Example"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
@@ -214,15 +224,16 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/usetubular-hook-example-otdbu?fontsize=14&hidenavigation=1&theme=dark"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useTubular-Hook-Example"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+import { SnackbarContainer } from 'uno-material-ui';
+  <ThemeProvider theme={outerTheme}>
+    <SnackbarContainer />
+  </ThemeProvider>
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>
   </div>
   <div class="col-2 toc">
     <ul>
