@@ -50,18 +50,17 @@ description: "Check out uno-react, a Typescript library with common functions an
             </p>
           </div>
 
-```tsx
-...
+{% highlight typescript %}
 import { SnackbarContainer } from 'uno-material-ui';
 
 ...
 <ThemeProvider theme={outerTheme}>
 ...
-<SnackbarContainer />
+  <SnackbarContainer />
 ...
 </ThemeProvider>
+{% endhighlight %}
 
-```
 <button onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c')">Open CodeSanbox</button>
           </div>
         </div>
