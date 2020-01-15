@@ -51,9 +51,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useClickOutside" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-react/useClickOutside-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -97,9 +99,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactuseeffectwithdebounce-demo-08ugt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithDebounce"
-              sandbox="allow-scripts allow-same-origin"></iframe>
+              src="https://codesandbox.io/embed/uno-reactuseeffectwithdebounce-demo-08ugt?fontsize=14&hidenavigation=1&theme=dark"
+              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
+              title="uno-react/useEffectWithDebounce-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -146,9 +150,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactuseeffectwithloading-demo-t9p6v?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithLoading"
-              sandbox="allow-scripts allow-same-origin"></iframe>
+              src="https://codesandbox.io/embed/uno-reactuseeffectwithloading-demo-t9p6v?fontsize=14&hidenavigation=1&theme=dark"
+              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
+              title="uno-React/useEffectWithLoading-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -165,9 +171,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusenow-demo-hbe1t?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusenow-demo-hbe1t?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useNow" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/useNow-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -206,9 +214,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusepersistedstate-demo-ome0b?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusepersistedstate-demo-ome0b?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="usePersistedState" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/usePersistedState-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -246,9 +256,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactuseresolutionswitch-demo-ex1fg?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useResolutionSwitch" sandbox="allow-scripts allow-same-origin"></iframe>
+              src="https://codesandbox.io/embed/uno-reactuseresolutionswitch-demo-ex1fg?fontsize=14&hidenavigation=1&theme=dark"
+              style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+              title="uno-React/useResolutionSwitch-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -284,9 +296,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateforfield-demo-2xuq3?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusestateforfield-demo-2xuq3?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useStateForField" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/useStateForField-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -327,52 +341,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateformodel-demo-lmkuh?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusestateformodel-demo-lmkuh?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useStateForModel" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
-        </div>
-        <div class="mb-4">
-          <div id="useStateForModel">
-            <h4 class="blue-title">useStateForModel</h4>
-            <p>
-              This hook allows us to keep updated the values of a model that are related to an input,
-              handling the input's onChange calls. During the first render the model will have the initialValue.
-            </p>
-            <h6>PARAMETERS</h6>
-            <table class="table table-striped w-100 mt-2">
-              <thead>
-                <tr>
-                  <th scope="col">Type</th>
-                  <th scope="col">Description</th>
-                  <th scope="col">Optional</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Object</td>
-                  <td>Initial value or initial model.</td>
-                  <td>No</td>
-                </tr>
-              </tbody>
-            </table>
-            <p>
-              Note: The handleChange method will update the model by the target.name
-              event property if it is found, otherwise it will be added to the model.
-              Note: Calling the handleChange method with an object as a param instead of an event,
-              the object will be merged with the current model.
-            </p>
-            <h6>RETURN</h6>
-            <p>
-              Object - The current value, that keeps the information updated.
-              Function - This function should be called on the onChange event.
-            </p>
-          </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateformodel-demo-lmkuh?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useStateForModel" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/useStateForModel-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -421,9 +394,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateformodelwithloading-demo-6294s?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusestateformodelwithloading-demo-6294s?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useStateForModelWithLoading" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/useStateForModelWithLoading-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -458,9 +433,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusetoggle-demo-i39t7?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reactusetoggle-demo-i39t7?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useToggle" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/useToggle-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
         <div class="mb-4">
@@ -484,9 +461,11 @@ description: "Check out uno-react, a Typescript library with common functions an
           </div>
           <div>
             <iframe
-              src="https://codesandbox.io/embed/uno-reactusetoggle-demo-i39t7?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
+              src="https://codesandbox.io/embed/uno-reacttextvalidator-demo-9l3sl?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="useToggle" sandbox="allow-scripts allow-same-origin"></iframe>
+              title="uno-React/TextValidator-Demo"
+              sandbox="allow-scripts allow-same-origin"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -530,3 +509,4 @@ description: "Check out uno-react, a Typescript library with common functions an
           </li>
         </ul>
       </div>
+</div>
