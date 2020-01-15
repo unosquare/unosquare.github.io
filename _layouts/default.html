@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
     <link rel="stylesheet" type="text/css" href="/css/markdown.css" />
     <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 </head>
 
 <body>
@@ -260,6 +262,16 @@
         ga('send', 'pageview');
     </script>
     <script src="//www.unosquare.com/js/bundle.js"></script>
+    <script>
+    window.onload = () => {
+        hljs.initHighlightingOnLoad();
+    };
+
+    function convert(e, id) {
+        $(this).prev().html('<iframe src="https://codesandbox.io/embed/' + id + '?fontsize=14&hidenavigation=1&theme=dark" style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-scripts allow-same-origin" ></iframe>');
+    }
+    </script>
+
 </body>
 
 </html>

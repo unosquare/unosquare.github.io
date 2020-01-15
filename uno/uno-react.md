@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Open Source Software Initiatives from Unosquare | uno-js"
+title: "Open Source Software Initiatives from Unosquare | uno-react"
 description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
 
@@ -49,13 +49,20 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-react/useClickOutside-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
+
+```tsx
+...
+import { SnackbarContainer } from 'uno-material-ui';
+
+...
+<ThemeProvider theme={outerTheme}>
+...
+<SnackbarContainer />
+...
+</ThemeProvider>
+
+```
+<button onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c')">Open CodeSanbox</button>
           </div>
         </div>
         <div class="mb-4">
@@ -352,10 +359,10 @@ description: "Check out uno-react, a Typescript library with common functions an
           <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
             <p>
-              This hook allows us to keep updated the values of a model that are related to an input, 
-              handling the input's onChange calls like useStateForModel does, but in additino this hook 
+              This hook allows us to keep updated the values of a model that are related to an input,
+              handling the input's onChange calls like useStateForModel does, but in additino this hook
               allows us to load the data from an external resource.
-              This hook is a mix between useStateForModel and useEffectWithLoading, you can use it just 
+              This hook is a mix between useStateForModel and useEffectWithLoading, you can use it just
               as useStateForModel and handle the loading with the extra variable returned isLoading.
             </p>
             <h6>PARAMETERS</h6>
@@ -405,7 +412,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
             <p>
-              This hook handles the switch on boolean values. The value will be 
+              This hook handles the switch on boolean values. The value will be
               toggled each time the function toggle is called.
             </p>
             <h6>PARAMETERS</h6>
@@ -510,3 +517,4 @@ description: "Check out uno-react, a Typescript library with common functions an
         </ul>
       </div>
 </div>
+```
