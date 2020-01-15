@@ -20,33 +20,17 @@ description: "Check out uno-react, a Typescript library with common functions an
       <div id="useGridRefresh">
         <h4 class="blue-title">useGridRefresh</h4>
         <p>
-          This hook allows to call a given function when a click event occurs outside the component.
+          useGridRefresh contains a state hook conformed by a number that initaly is zero, 
+          and returns the number and a function that adds one to the number each time that the the hook is executed
         </p>
         <h6>PARAMETERS</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Description</th>
-              <th scope="col">Optional</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>React.FunctionComponent</td>
-              <td>The component to be wrapped</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Function</td>
-              <td>The function that will be called when the click event occurs outside the component</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>No parameters</p>
         <h6>RETURN</h6>
         <p>
-          None
+          Number - Number of refreshings executed over the grid - Initial value: 0.
+        </p>
+        <p>
+          Function - That adds another count whenever grid is refreshed.
         </p>
       </div>
       <div>
@@ -60,39 +44,19 @@ description: "Check out uno-react, a Typescript library with common functions an
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
         <p>
-          This hooks run an effect with a debounce. Each time any input change, it will be registered;
-          when happens the debounce time whitout changes, the effect will be run. (This function does not return anything).
+          useMasterDetails contains a state hook conformed by a boolean, and returns 
+          the boolean and a function to change the boolean to the opposite value.
         </p>
         <h6>PARAMETERS</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Description</th>
-              <th scope="col">Optional</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Function</td>
-              <td>The function that will be run.</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Number</td>
-              <td>Time that have to happend to run the effect.</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Array</td>
-              <td>An array of variables that the effect depends on.</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>
+          No parameters
+        </p>
         <h6>RETURN</h6>
         <p>
-          Function, it will be executed once the lapse finishes without interruptions.
+          Boolean - Flag to toggle use of master details.
+        </p>
+        <p>
+          Function - Function to toggle the value of the flag.
         </p>
       </div>
       <div>
@@ -155,7 +119,10 @@ description: "Check out uno-react, a Typescript library with common functions an
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
         <p>
-          This hook allows to Create  .
+          useTbTable hook returns a tubular table instance conformer by a tubular API that returns 
+          a set of functions that you can execute over your source data and a tubular state with 
+          all the tubular properties, this allows manipulating all the tubular features, 
+          performing changes in our tubular instance.
         </p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
@@ -169,25 +136,30 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>Array</td>
-              <td>Array of column models to render data on the grid.</td>
+              <td>Array with the column model description.</td>
               <td>No</td>
             </tr>
             <tr>
               <td>Object</td>
-              <td>Source of the data to be presented.</td>
+              <td>The source of data.</td>
               <td>No</td>
             </tr>
             <tr>
               <td>Object</td>
-              <td>Options to be present on the grid.</td>
+              <td>
+                Options that you can set up if you want 
+                a particular behavior on the grid.
+                If you don’t send them, the hook creates 
+                them with default values.
+              </td>
               <td>Yes</td>
             </tr>
           </tbody>
         </table>
         <h6>RETURN</h6>
         <p>
-          Object - The current data to be rendered to the grid.
-          Function - The function to sort or control the grid.
+          Object - A Tubular state with all the tubular properties.
+          Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
       <div>
         <iframe
@@ -202,7 +174,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
         <p>
-          This hook allows to create a Tubular grid.
+          This hook allows manipulating all the Tubular features, performing changes in our Tubular instance.
         </p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
@@ -216,25 +188,30 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>Array</td>
-              <td>Array of column models to render data on the grid.</td>
+              <td>Array with the column model description.</td>
               <td>No</td>
             </tr>
             <tr>
               <td>Object</td>
-              <td>Source of the data to be presented.</td>
+              <td>The source of data.</td>
               <td>No</td>
             </tr>
             <tr>
               <td>Object</td>
-              <td>Options to be present on the grid.</td>
+              <td>
+                Options that you can set up if you want 
+                a particular behavior on the grid.
+                If you don’t send them, the hook creates 
+                them with default values.
+              </td>
               <td>Yes</td>
             </tr>
           </tbody>
         </table>
         <h6>RETURN</h6>
         <p>
-          Object - The current data to be rendered to the grid.
-          Function - The function to sort or control the grid.
+          Object - A Tubular state with all the tubular properties.
+          Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
       </div>
       <div>
