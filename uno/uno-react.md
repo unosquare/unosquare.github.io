@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Open Source Software Initiatives from Unosquare | uno-js"
+title: "Open Source Software Initiatives from Unosquare | uno-react"
 description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
 
