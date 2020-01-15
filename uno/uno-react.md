@@ -49,7 +49,7 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
           </div>
-<div class="post markdown-body">
+<span class="post markdown-body">
 ```tsx
 ...
 import { SnackbarContainer } from 'uno-material-ui';
@@ -61,7 +61,7 @@ import { SnackbarContainer } from 'uno-material-ui';
    ...
 </ThemeProvider>
 ```
-</div>
+</span>
             <iframe
               src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark"
               style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
