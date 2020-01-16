@@ -37,36 +37,19 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
 ```tsx
 {% raw %}
 import React from "react";
-import "./styles.css";
 import { useGridRefresh } from "tubular-react-common";
-import columns from "./columns";
-import DataTable from "./DataTable";
 const UseTubularExample = () => {
-  var stars = "";
   const [refresh, forceRefresh] = useGridRefresh();
   const forceGridRefresh = () => {
-    let tbTable = document.getElementById("tbTable");
-    let loader = document.getElementById("loader");
-    tbTable.style.display = "none";
-    loader.style.display = "block";
-    let loading = setInterval(() => getStars(), 1000);
     setTimeout(() => {
       forceRefresh();
-      clearInterval(loading);
-      tbTable.style.display = "block";
-      loader.style.display = "none";
     }, 8000);
-  };
-  const getStars = () => {
-    stars += "*";
-    document.getElementById("loader").innerHTML = stars;
   };
   return (
     <>
       <button onClick={() => forceGridRefresh()}>Force Refresh</button>
       <div
         id="loader"
-        style={{ color: "red", display: "none", margin: "5px" }}
       />
       <DataTable
         gridName="tbTable"
@@ -193,65 +176,24 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useTbList } from "tubular-react-common";
-import { TbList } from "./TbList";
-import columns from "./columns";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-const MyListItem: React.FunctionComponent = ({
-  rowStyle,
-  selectedIndex,
-  onItemClick,
-  row
-}: any) => {
-  return (
-    <ListItem
-      button={true}
-      selected={selectedIndex === 0}
-      onClick={onItemClick}
-      style={rowStyle}
-    >
-      <ListItemText primary={`${row.OrderID} - ${row.CustomerName}`} />
-    </ListItem>
-  );
-};
 const UseTbListExample: React.FunctionComponent<any> = () => {
   const tbList = useTbList(
     columns,
     "https://tubular.azurewebsites.net/api/orders/paged"
   );
-  const rowClick = (row: any) => {
-    console.log("You clicked on a row: ", row);
-  };
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>
-    setAnchorEl(event.currentTarget);
-  const handleClose = () => setAnchorEl(null);
   const sortEvent = columnName => tbList.api.sortByColumn(columnName);
-  const handleColumnSelect = (colName: string) => (event: any) => {
-    sortEvent(colName);
-    handleClose();
-  };
   return (
     <div className="root" style={{ width: 200, height: 500 }}>
       <div>
-        <ButtonGroup
-          variant="contained"
+        <Button>Sort by</Button>
+        <Button
           color="primary"
-          aria-label="split button"
+          size="small"
+          onClick={handleClick}
         >
-          <Button>Sort by</Button>
-          <Button
-            color="primary"
-            size="small"
-            aria-controls={Boolean(anchorEl) ? "split-button-menu" : undefined}
-            aria-expanded={Boolean(anchorEl) ? "true" : undefined}
-            aria-label="select merge strategy"
-            aria-haspopup="menu"
-            onClick={handleClick}
-          >
-            <ArrowDropDownIcon />
-          </Button>
-        </ButtonGroup>
+          <ArrowDropDownIcon />
+        </Button>
         <Menu
           id="simple-menu"
           anchorEl={anchorEl}

@@ -251,10 +251,18 @@ const y1 = { name: "John", age: 5, gender: "Male" };
 const y2 = { name: "John", age: 5, gender: "Male" };
 const array = [x1, x2, y1, y2];
 const unique = removeDuplicated([x1, x2, y1, y2], "name");
-console.log("Original array");
-console.log(array);
-console.log("Result by name");
-console.log(unique);
+/* array: [
+    { name: "Mike", age: 3, gender: "Male" };
+    { name: "Mike", age: 3, gender: "Male" };
+    { name: "John", age: 5, gender: "Male" };
+    { name: "John", age: 5, gender: "Male" };
+  ]
+
+  unique: [
+    { name: "Mike", age: 3, gender: "Male" };
+    { name: "John", age: 5, gender: "Male" };
+  ]
+*/
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSanbox</button>
