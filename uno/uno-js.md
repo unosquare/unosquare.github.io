@@ -151,8 +151,10 @@ showDebounce();
 {% raw %}
 import { humanize } from "uno-js";
 const toHumanize = "thisIsAnAwesomeExample";
-console.log(`Original: ${toHumanize}`);
-console.log(`Result: ${humanize(toHumanize)}`);
+/*
+  Original: thisIsAnAwesomeExample
+  Result: This Is An Awesome Example
+*/
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSanbox</button>
@@ -351,7 +353,7 @@ ReactDOM.render(<App />, rootElement);
 {% raw %}
 import { toTitleCase } from "uno-js";
 const x = "heLLo WoRld!";
-console.log(toTitleCase(x));
+/* x = Hello World */
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSanbox</button>
