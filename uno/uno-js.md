@@ -257,7 +257,6 @@ const unique = removeDuplicated([x1, x2, y1, y2], "name");
     { name: "John", age: 5, gender: "Male" };
     { name: "John", age: 5, gender: "Male" };
   ]
-
   unique: [
     { name: "Mike", age: 3, gender: "Male" };
     { name: "John", age: 5, gender: "Male" };
