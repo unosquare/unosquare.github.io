@@ -51,10 +51,49 @@ description: "Check out uno-react, a Typescript library with common functions an
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useClickOutside } from "uno-react";
+import "./styles.css";
+function App() {
+  const [color, setColor] = React.useState("green");
+  const onClick = () => setColor("green");
+  const toBeEnhanced = () => (
+    <div
+      className="DemoDiv"
+      style={{
+        backgroundColor: color,
+        color: "#fff",
+        height: "100%",
+        padding: "5px"
+      }}
+      onClick={onClick}
+    >
+      Click me to reset!
+    </div>
+  );
+  const functionToApply = () => setColor("red");
+  const Enhanced = useClickOutside(toBeEnhanced, functionToApply);
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useClickOutside</h2>
+      <h3>Click outside component to see magic!</h3>
+      <div
+        style={{
+          height: "100px",
+          width: "100px",
+          display: "block",
+          margin: "auto"
+        }}
+      >
+        <Enhanced />
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
@@ -100,10 +139,30 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useEffectWithDebounce, useStateForField } from "uno-react";
+import "./styles.css";
+function App() {
+  const [searchText, handleChange, setSearchText] = useStateForField("");
+  const debounceTime = 2000; // 2 Seconds
+  const searchUsers = () => console.log(`searching: ${searchText}`);
+  useEffectWithDebounce(searchUsers, debounceTime, [searchText]);
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useEffectWithDebounce</h2>
+      <h3>Constantly check for changes!</h3>
+      <>
+        <h1>Input: </h1>
+        <input value={searchText} onChange={handleChange} />
+        <p> Open the console </p>
+      </>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
@@ -152,10 +211,46 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useEffectWithLoading } from "uno-react";
+import "./styles.css";
+function getMyData(input) {
+  return new Promise<{}>(resolve => {
+    setTimeout(() => resolve(input), 5000);
+  });
+}
+function App() {
+  const myId = "Hey! I'm your data! :D";
+  const myDefault = "";
+  const inputs = [];
+  const [myData, isLoading] = useEffectWithLoading(
+    () => getMyData(myId),
+    myDefault,
+    inputs
+  );
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useEffectWithLoading</h2>
+      <h3>Wait for your info to load!</h3>
+      <div>
+        {isLoading ? (
+          <div>Loading ...</div>
+        ) : (
+          <form>
+            <label>
+              <h1>Data loaded</h1>
+              {myData}
+            </label>
+          </form>
+        )}
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</button>
@@ -174,10 +269,23 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useNow } from "uno-react";
+import "./styles.css";
+function App() {
+  const [now] = useNow();
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useNow</h2>
+      <h3>Watch the seconds fly by!</h3>
+      <div>Seconds: {now.getSeconds()}</div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</button>
@@ -218,10 +326,33 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { usePersistedState } from "uno-react";
+import "./styles.css";
+function App() {
+  const key = "exampleToken";
+  const defaultValue = "unosquareToken";
+  const [token, setToken] = usePersistedState(defaultValue, key);
+  const changeValue = () => setToken("1928238475");
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>usePersistedState</h2>
+      <h3>Change value and watch the console!</h3>
+      <div>
+        <h1>{token}</h1>
+        <button onClick={changeValue}>Change value</button>
+      </div>
+      <br />
+      <div>{`This value is now in your Local Storage: ${localStorage.getItem(
+        key
+      )}`}</div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</button>
@@ -261,10 +392,25 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useResolutionSwitch } from "uno-react";
+import "./styles.css";
+function App() {
+  const outerWidth = 1000;
+  const timeout = 1000;
+  const [size] = useResolutionSwitch(outerWidth, timeout);
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useResolutionSwitch</h2>
+      <h3>Resize the window and watch the magic!</h3>
+      <h1>{size ? "mobile" : "desktop"}</h1>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</button>
@@ -302,10 +448,28 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useStateForField } from "uno-react";
+import "./styles.css";
+function App() {
+  const [myValue, handleChange, setMyValue] = useStateForField("");
+  const reset = () => setMyValue("");
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useStateForField</h2>
+      <h3>Enter a new input to see magic!</h3>
+      <div>
+        <h1>{myValue}</h1>
+        <input value={myValue} onChange={handleChange} />
+        <button onClick={reset}>Reset value</button>
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement)
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</button>
@@ -348,10 +512,35 @@ import { SnackbarContainer } from 'uno-material-ui';
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useStateForModel } from "uno-react";
+import "./styles.css";
+function App() {
+  const [model, handleChange] = useStateForModel({
+    id: 1,
+    name: "John",
+    lastName: "Doe"
+  });
+  const changeName = () => handleChange({ name: "John" });
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useStateForModel</h2>
+      <h3>Write your name and watch what happens!</h3>
+      <div>
+        <h1>
+          {model.id} - {model.name} - {model.lastName}
+        </h1>
+        <input name="name" onChange={handleChange} value={model.name} />
+        <input name="lastName" onChange={handleChange} value={model.lastName} />
+        <button onClick={changeName}>Reset Name</button>
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</button>
@@ -398,25 +587,37 @@ import { SnackbarContainer } from 'uno-material-ui';
               Boolean - A flag that indicates if the data has been fetched or not.
               Function - This function should be called on the onChange event.
             </p>
-          </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusestateformodelwithloading-demo-6294s?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useStateForModelWithLoading-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
+          </div>>
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useEffectWithDebounce, useStateForField } from "uno-react";
+import "./styles.css";
+function App() {
+  const [searchText, handleChange, setSearchText] = useStateForField("");
+  const debounceTime = 2000; // 2 Seconds
+  const searchUsers = () => console.log(`searching: ${searchText}`);
+  useEffectWithDebounce(searchUsers, debounceTime, [searchText]);
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useEffectWithDebounce</h2>
+      <h3>Constantly check for changes!</h3>
+      <>
+        <h1>Input: </h1>
+        <input value={searchText} onChange={handleChange} />
+        <p> Open the console </p>
+      </>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
@@ -447,24 +648,35 @@ import { SnackbarContainer } from 'uno-material-ui';
               Function - The function that toggles the value.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reactusetoggle-demo-i39t7?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/useToggle-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useToggle } from "uno-react";
+import "./styles.css";
+function App() {
+  const defaultValue = false;
+  const [myValue, toggle] = useToggle(defaultValue);
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>useToggle</h2>
+      <h3>Switch on and off!</h3>
+      <div>
+        <h1 style={{ color: myValue ? "#00f" : "#f00" }}>
+          {myValue ? "On" : "Off"}
+        </h1>
+        <button onClick={toggle}>Toggle</button>
+      </div>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 {% endraw %}
 ```
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
@@ -484,15 +696,49 @@ import { SnackbarContainer } from 'uno-material-ui';
               isPasswordMatch: Verify that the input is equal to another value. (e.g. when validated password & password verfication fields).
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-reacttextvalidator-demo-9l3sl?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-React/TextValidator-Demo"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { useStateForModel, ValidatorForm } from "uno-react";
+import { TextValidator } from "uno-material-ui";
+import "./styles.css";
+function App() {
+  const [fields, handleChange] = useStateForModel({
+    isNotAllBlanks: ""
+  });
+  const onSubmit = () => console.log("has submitted");
+  return (
+    <div className="App">
+      <h1>Uno-React</h1>
+      <h2>ValidatorForm</h2>
+      <h3>Make sure you're filling everything right!</h3>
+      <ValidatorForm
+        onSubmit={onSubmit}
+        autoComplete="off"
+        instantValidate={true}
+      >
+        <TextValidator
+          id="isNotAllBlanks"
+          name="isNotAllBlanks"
+          value={fields.isNotAllBlanks}
+          onChange={handleChange}
+          validators={["required", "isNotAllBlanks:5"]}
+          errorMessages={[
+            "This field is required",
+            "The minimum length is 5 characters, blank spaces are ignored"
+          ]}
+        />
+      </ValidatorForm>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSanbox</button>
       </div>
       <div class="col-2 toc">
         <ul>

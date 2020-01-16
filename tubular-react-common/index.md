@@ -36,10 +36,48 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
     </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import React from "react";
+import "./styles.css";
+import { useGridRefresh } from "tubular-react-common";
+import columns from "./columns";
+import DataTable from "./DataTable";
+const UseTubularExample = () => {
+  var stars = "";
+  const [refresh, forceRefresh] = useGridRefresh();
+  const forceGridRefresh = () => {
+    let tbTable = document.getElementById("tbTable");
+    let loader = document.getElementById("loader");
+    tbTable.style.display = "none";
+    loader.style.display = "block";
+    let loading = setInterval(() => getStars(), 1000);
+    setTimeout(() => {
+      forceRefresh();
+      clearInterval(loading);
+      tbTable.style.display = "block";
+      loader.style.display = "none";
+    }, 8000);
+  };
+  const getStars = () => {
+    stars += "*";
+    document.getElementById("loader").innerHTML = stars;
+  };
+  return (
+    <>
+      <button onClick={() => forceGridRefresh()}>Force Refresh</button>
+      <div
+        id="loader"
+        style={{ color: "red", display: "none", margin: "5px" }}
+      />
+      <DataTable
+        gridName="tbTable"
+        columns={columns}
+        dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+        deps={[refresh]}
+      />
+    </>
+  );
+};
+export default UseTubularExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
@@ -65,10 +103,41 @@ import { SnackbarContainer } from 'uno-material-ui';
     </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import React from "react";
+import "./styles.css";
+import { useMasterDetails } from "tubular-react-common";
+const MasterDetailRow = ({ columns, row, index }) => {
+  const [open, openDetails] = useMasterDetails();
+  const openMasterDetails = () => {
+    openDetails();
+  };
+  return (
+    <>
+      <tr key={index}>
+        <td role="row" key={row.OrderID}>
+          <span style={{ paddingRight: "5px" }}>
+            Order {row[columns[0].name]}
+          </span>
+          <button onClick={openMasterDetails}>Show details</button>
+        </td>
+      </tr>
+      {open && (
+        <tr key={index}>
+          {columns
+            .filter(col => col.visible)
+            .map(col => {
+              return (
+                <td role="cell" key={col.name}>
+                  {row[col.name]}
+                </td>
+              );
+            })}
+        </tr>
+      )}
+    </>
+  );
+};
+export default MasterDetailRow;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
@@ -117,10 +186,99 @@ import { SnackbarContainer } from 'uno-material-ui';
     </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import * as React from "react";
+import Button from "@material-ui/core/Button";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import { useTbList } from "tubular-react-common";
+import { TbList } from "./TbList";
+import columns from "./columns";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+const MyListItem: React.FunctionComponent = ({
+  rowStyle,
+  selectedIndex,
+  onItemClick,
+  row
+}: any) => {
+  return (
+    <ListItem
+      button={true}
+      selected={selectedIndex === 0}
+      onClick={onItemClick}
+      style={rowStyle}
+    >
+      <ListItemText primary={`${row.OrderID} - ${row.CustomerName}`} />
+    </ListItem>
+  );
+};
+const UseTbListExample: React.FunctionComponent<any> = () => {
+  const tbList = useTbList(
+    columns,
+    "https://tubular.azurewebsites.net/api/orders/paged"
+  );
+  const rowClick = (row: any) => {
+    console.log("You clicked on a row: ", row);
+  };
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) =>
+    setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
+  const sortEvent = columnName => tbList.api.sortByColumn(columnName);
+  const handleColumnSelect = (colName: string) => (event: any) => {
+    sortEvent(colName);
+    handleClose();
+  };
+  return (
+    <div className="root" style={{ width: 200, height: 500 }}>
+      <div>
+        <ButtonGroup
+          variant="contained"
+          color="primary"
+          aria-label="split button"
+        >
+          <Button>Sort by</Button>
+          <Button
+            color="primary"
+            size="small"
+            aria-controls={Boolean(anchorEl) ? "split-button-menu" : undefined}
+            aria-expanded={Boolean(anchorEl) ? "true" : undefined}
+            aria-label="select merge strategy"
+            aria-haspopup="menu"
+            onClick={handleClick}
+          >
+            <ArrowDropDownIcon />
+          </Button>
+        </ButtonGroup>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl}
+          keepMounted={true}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
+          <MenuItem onClick={handleColumnSelect("CustomerName")}>
+            CustomerName
+          </MenuItem>
+          <MenuItem onClick={handleColumnSelect("ShipperCity")}>
+            ShipperCity
+          </MenuItem>
+        </Menu>
+      </div>
+      <div style={{ width: "250px", height: "100%" }}>
+        <TbList
+          tbInstance={tbList}
+          listItemComponent={MyListItem}
+          onItemClick={rowClick}
+        />
+      </div>
+    </div>
+  );
+};
+export default UseTbListExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
@@ -173,10 +331,59 @@ import { SnackbarContainer } from 'uno-material-ui';
     </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import React from "react";
+import "./styles.css";
+import { useTbTable } from "tubular-react-common";
+import columns from "./columns";
+import localData from "./localData";
+const UseTbTableExample = () => {
+  const { state, api } = useTbTable(columns, localData);
+  return (
+    <>
+      <table>
+        <thead>
+          <tr role="rowheader">
+            {state.columns
+              .filter(col => col.visible)
+              .map(col => {
+                return <th key={col.name}>{col.label}</th>;
+              })}
+          </tr>
+        </thead>
+        <tbody>
+          {state.data.map((row, index) => {
+            return (
+              <tr key={index}>
+                {state.columns
+                  .filter(col => col.visible)
+                  .map(col => {
+                    return (
+                      <td role="cell" key={col.name}>
+                        {row[col.name]}
+                      </td>
+                    );
+                  })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <br />
+      <div>
+        <button onClick={() => api.goToPage(state.page + 1)}>
+          Go to next page
+        </button>
+        <button onClick={() => api.goToPage(state.page - 1)}>
+          Go to previous page
+        </button>
+        <button onClick={() => api.sortColumn("CustomerName")}>
+          Sort by Customer Name
+        </button>
+      </div>
+    </>
+  );
+};
+export default UseTbTableExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
@@ -227,10 +434,59 @@ import { SnackbarContainer } from 'uno-material-ui';
     </div>
 ```tsx
 {% raw %}
-import { SnackbarContainer } from 'uno-material-ui';
-  <ThemeProvider theme={outerTheme}>
-    <SnackbarContainer />
-  </ThemeProvider>
+import React from "react";
+import "./styles.css";
+import { useTubular } from "tubular-react-common";
+import columns from "./columns";
+import localData from "./localData";
+const UseTubularExample = () => {
+  const { state, api } = useTubular(columns, localData);
+  return (
+    <>
+      <table>
+        <thead>
+          <tr role="rowheader">
+            {state.columns
+              .filter(col => col.visible)
+              .map(col => {
+                return <th key={col.name}>{col.label}</th>;
+              })}
+          </tr>
+        </thead>
+        <tbody>
+          {state.data.map((row, index) => {
+            return (
+              <tr key={index}>
+                {state.columns
+                  .filter(col => col.visible)
+                  .map(col => {
+                    return (
+                      <td role="cell" key={col.name}>
+                        {row[col.name]}
+                      </td>
+                    );
+                  })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <br />
+      <div>
+        <button onClick={() => api.goToPage(state.page + 1)}>
+          Go to next page
+        </button>
+        <button onClick={() => api.goToPage(state.page - 1)}>
+          Go to previous page
+        </button>
+        <button onClick={() => api.sortColumn("CustomerName")}>
+          Sort by Customer Name
+        </button>
+      </div>
+    </>
+  );
+};
+export default UseTubularExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>

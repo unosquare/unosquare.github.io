@@ -54,13 +54,16 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               Array with generated string RGB values in the following format: "rgba(r,g,b,a)"
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jscolorgenerator-ke1rl?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-js/colorGenerator" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { colorGenerator } from "uno-js";
+const x = [0, 0, 0];
+const y = [90, 60, 30];
+console.log(colorGenerator(x, y, 3));
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="debounce">
             <h4 class="blue-title">debounce</h4>
@@ -95,13 +98,26 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               Function, it will be executed once the lapse finishes without interruptions.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jsdebounce-wqh11?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="uno-js/debounce"
-              sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { debounce } from 'uno-js';
+const fn = debounce(() => {
+  console.log('Hello!');
+}, 150);
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+const showDebounce = async () => {
+  fn();
+  await delay(100);
+  fn();
+  await delay(100);
+  fn();
+  await delay(300);
+}
+showDebounce();
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="humanize">
             <h4 class="blue-title">humanize</h4>
@@ -130,13 +146,16 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               A humanized string
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jshumanize-dp40n?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="uno-js/humanize"
-              sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { humanize } from "uno-js";
+const toHumanize = "thisIsAnAwesomeExample";
+console.log(`Original: ${toHumanize}`);
+console.log(`Result: ${humanize(toHumanize)}`);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="objectDifference">
             <h4 class="blue-title">objectDifference</h4>
@@ -173,13 +192,22 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               value", new: "New value", type: [prop]}}
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jsobjectdifference-q4okk?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-js/objectDifference" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { objectDifference } from "uno-js";
+const x = { name: "Mike", age: 3, gender: "Male" };
+const y = { name: "John", age: 5, gender: "Male" };
+const difference = objectDifference(x, y);
+console.log("Object 1");
+console.log(x);
+console.log("Object 2");
+console.log(y);
+console.log("Result");
+console.log(difference);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="removeDuplicated">
             <h4 class="blue-title">removeDuplicated</h4>
@@ -213,13 +241,23 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               An array with unique objects.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jsremoveduplicated-6pmtz?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-js/removeDuplicated" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { removeDuplicated } from "uno-js";
+const x1 = { name: "Mike", age: 3, gender: "Male" };
+const x2 = { name: "Mike", age: 3, gender: "Male" };
+const y1 = { name: "John", age: 5, gender: "Male" };
+const y2 = { name: "John", age: 5, gender: "Male" };
+const array = [x1, x2, y1, y2];
+const unique = removeDuplicated([x1, x2, y1, y2], "name");
+console.log("Original array");
+console.log(array);
+console.log("Result by name");
+console.log(unique);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="toDate">
             <h4 class="blue-title">toDate</h4>
@@ -248,15 +286,32 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               None
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jstodate-29d36?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-JS/toDate"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import * as React from "react";
+import ReactDOM from "react-dom";
+import { toDate } from "uno-js";
+import "./styles.css";
+const MyObject: any = {
+  myDateString: "08.17.1994"
+};
+function App() {
+  toDate(MyObject);
+  return (
+    <div className="App">
+      <h1>Uno-JS</h1>
+      <h2>toDate</h2>
+      <h3>Convert a string date to a Date object</h3>
+      <p>{MyObject.myDateString.toISOString()}</p>
+    </div>
+  );
+}
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="toTitleCase">
             <h4 class="blue-title">toTitleCase</h4>
@@ -285,13 +340,15 @@ description: "Check out uno-js, a Typescript library for array and string manipu
               A Title Case string.
             </p>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-jstotitlecase-208pm?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-js/toTitleCase" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import { toTitleCase } from "uno-js";
+const x = "heLLo WoRld!";
+console.log(toTitleCase(x));
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSanbox</button>
       </div>
       <div class="col-2 toc">
         <ul>
