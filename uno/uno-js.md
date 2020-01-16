@@ -199,12 +199,11 @@ import { objectDifference } from "uno-js";
 const x = { name: "Mike", age: 3, gender: "Male" };
 const y = { name: "John", age: 5, gender: "Male" };
 const difference = objectDifference(x, y);
-console.log("Object 1");
-console.log(x);
-console.log("Object 2");
-console.log(y);
-console.log("Result");
-console.log(difference);
+/*
+  Object1: { name: "Mike", age: 3, gender: "Male" };
+  Object2: { name: "John", age: 5, gender: "Male" };
+  difference: [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
+*/
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSanbox</button>

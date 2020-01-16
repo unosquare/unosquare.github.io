@@ -36,8 +36,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
     </div>
 ```tsx
 {% raw %}
-import React from "react";
-import { useGridRefresh } from "tubular-react-common";
 const UseTubularExample = () => {
   const [refresh, forceRefresh] = useGridRefresh();
   const forceGridRefresh = () => {
@@ -60,7 +58,6 @@ const UseTubularExample = () => {
     </>
   );
 };
-export default UseTubularExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
@@ -86,9 +83,6 @@ export default UseTubularExample;
     </div>
 ```tsx
 {% raw %}
-import React from "react";
-import "./styles.css";
-import { useMasterDetails } from "tubular-react-common";
 const MasterDetailRow = ({ columns, row, index }) => {
   const [open, openDetails] = useMasterDetails();
   const openMasterDetails = () => {
@@ -120,7 +114,6 @@ const MasterDetailRow = ({ columns, row, index }) => {
     </>
   );
 };
-export default MasterDetailRow;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
@@ -169,20 +162,11 @@ export default MasterDetailRow;
     </div>
 ```tsx
 {% raw %}
-import * as React from "react";
-import Button from "@material-ui/core/Button";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import { useTbList } from "tubular-react-common";
 const UseTbListExample: React.FunctionComponent<any> = () => {
   const tbList = useTbList(
     columns,
     "https://tubular.azurewebsites.net/api/orders/paged"
   );
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const sortEvent = columnName => tbList.api.sortByColumn(columnName);
   return (
     <div className="root" style={{ width: 200, height: 500 }}>
       <div>
@@ -194,13 +178,7 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
         >
           <ArrowDropDownIcon />
         </Button>
-        <Menu
-          id="simple-menu"
-          anchorEl={anchorEl}
-          keepMounted={true}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-        >
+        <Menu>
           <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
           <MenuItem onClick={handleColumnSelect("CustomerName")}>
             CustomerName
@@ -220,7 +198,6 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
     </div>
   );
 };
-export default UseTbListExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
@@ -273,11 +250,6 @@ export default UseTbListExample;
     </div>
 ```tsx
 {% raw %}
-import React from "react";
-import "./styles.css";
-import { useTbTable } from "tubular-react-common";
-import columns from "./columns";
-import localData from "./localData";
 const UseTbTableExample = () => {
   const { state, api } = useTbTable(columns, localData);
   return (
@@ -325,7 +297,6 @@ const UseTbTableExample = () => {
     </>
   );
 };
-export default UseTbTableExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
@@ -376,11 +347,6 @@ export default UseTbTableExample;
     </div>
 ```tsx
 {% raw %}
-import React from "react";
-import "./styles.css";
-import { useTubular } from "tubular-react-common";
-import columns from "./columns";
-import localData from "./localData";
 const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
@@ -428,7 +394,6 @@ const UseTubularExample = () => {
     </>
   );
 };
-export default UseTubularExample;
 {% endraw %}
 ```
 <button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>
