@@ -33,13 +33,34 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - That adds another count whenever grid is refreshed.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseclickoutside-demo-flf7c?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useClickOutside" sandbox="allow-scripts allow-same-origin"></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+const UseTubularExample = () => {
+  const [refresh, forceRefresh] = useGridRefresh();
+  const forceGridRefresh = () => {
+    setTimeout(() => {
+      forceRefresh();
+    }, 8000);
+  };
+  return (
+    <>
+      <button onClick={() => forceGridRefresh()}>Force Refresh</button>
+      <div
+        id="loader"
+      />
+      <DataTable
+        gridName="tbTable"
+        columns={columns}
+        dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+        deps={[refresh]}
+      />
+    </>
+  );
+};
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
@@ -59,13 +80,43 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - Function to toggle the value of the flag.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseeffectwithdebounce-demo-08ugt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithDebounce"
-          sandbox="allow-scripts allow-same-origin"></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+const MasterDetailRow = ({ columns, row, index }) => {
+  const [open, openDetails] = useMasterDetails();
+  const openMasterDetails = () => {
+    openDetails();
+  };
+  return (
+    <>
+      <tr key={index}>
+        <td role="row" key={row.OrderID}>
+          <span style={{ paddingRight: "5px" }}>
+            Order {row[columns[0].name]}
+          </span>
+          <button onClick={openMasterDetails}>Show details</button>
+        </td>
+      </tr>
+      {open && (
+        <tr key={index}>
+          {columns
+            .filter(col => col.visible)
+            .map(col => {
+              return (
+                <td role="cell" key={col.name}>
+                  {row[col.name]}
+                </td>
+              );
+            })}
+        </tr>
+      )}
+    </>
+  );
+};
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTbList">
         <h4 class="blue-title">useTbList</h4>
@@ -108,13 +159,48 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Boolean - A flag that indicates if the data has been fetched or not.
         </p>
       </div>
+    </div>
+```tsx
+{% raw %}
+const UseTbListExample: React.FunctionComponent<any> = () => {
+  const tbList = useTbList(
+    columns,
+    "https://tubular.azurewebsites.net/api/orders/paged"
+  );
+  return (
+    <div className="root" style={{ width: 200, height: 500 }}>
       <div>
-        <iframe
-          src="https://codesandbox.io/embed/uno-reactuseeffectwithloading-demo-t9p6v?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;" title="useEffectWithLoading"
-          sandbox="allow-scripts allow-same-origin"></iframe>
+        <Button>Sort by</Button>
+        <Button
+          color="primary"
+          size="small"
+          onClick={handleClick}
+        >
+          <ArrowDropDownIcon />
+        </Button>
+        <Menu>
+          <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
+          <MenuItem onClick={handleColumnSelect("CustomerName")}>
+            CustomerName
+          </MenuItem>
+          <MenuItem onClick={handleColumnSelect("ShipperCity")}>
+            ShipperCity
+          </MenuItem>
+        </Menu>
+      </div>
+      <div style={{ width: "250px", height: "100%" }}>
+        <TbList
+          tbInstance={tbList}
+          listItemComponent={MyListItem}
+          onItemClick={rowClick}
+        />
       </div>
     </div>
+  );
+};
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
@@ -161,15 +247,59 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Object - A Tubular state with all the tubular properties.
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/usetbtable-hook-example-tqtit?fontsize=14&hidenavigation=1&theme=dark"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useTbTable-Hook-Example"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+const UseTbTableExample = () => {
+  const { state, api } = useTbTable(columns, localData);
+  return (
+    <>
+      <table>
+        <thead>
+          <tr role="rowheader">
+            {state.columns
+              .filter(col => col.visible)
+              .map(col => {
+                return <th key={col.name}>{col.label}</th>;
+              })}
+          </tr>
+        </thead>
+        <tbody>
+          {state.data.map((row, index) => {
+            return (
+              <tr key={index}>
+                {state.columns
+                  .filter(col => col.visible)
+                  .map(col => {
+                    return (
+                      <td role="cell" key={col.name}>
+                        {row[col.name]}
+                      </td>
+                    );
+                  })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <br />
+      <div>
+        <button onClick={() => api.goToPage(state.page + 1)}>
+          Go to next page
+        </button>
+        <button onClick={() => api.goToPage(state.page - 1)}>
+          Go to previous page
+        </button>
+        <button onClick={() => api.sortColumn("CustomerName")}>
+          Sort by Customer Name
+        </button>
+      </div>
+    </>
+  );
+};
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
     <div class="mb-4">
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
@@ -214,15 +344,59 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
       </div>
-      <div>
-        <iframe
-          src="https://codesandbox.io/embed/usetubular-hook-example-otdbu?fontsize=14&hidenavigation=1&theme=dark"
-          style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-          title="useTubular-Hook-Example"
-          sandbox="allow-scripts allow-same-origin"
-        ></iframe>
-      </div>
     </div>
+```tsx
+{% raw %}
+const UseTubularExample = () => {
+  const { state, api } = useTubular(columns, localData);
+  return (
+    <>
+      <table>
+        <thead>
+          <tr role="rowheader">
+            {state.columns
+              .filter(col => col.visible)
+              .map(col => {
+                return <th key={col.name}>{col.label}</th>;
+              })}
+          </tr>
+        </thead>
+        <tbody>
+          {state.data.map((row, index) => {
+            return (
+              <tr key={index}>
+                {state.columns
+                  .filter(col => col.visible)
+                  .map(col => {
+                    return (
+                      <td role="cell" key={col.name}>
+                        {row[col.name]}
+                      </td>
+                    );
+                  })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <br />
+      <div>
+        <button onClick={() => api.goToPage(state.page + 1)}>
+          Go to next page
+        </button>
+        <button onClick={() => api.goToPage(state.page - 1)}>
+          Go to previous page
+        </button>
+        <button onClick={() => api.sortColumn("CustomerName")}>
+          Sort by Customer Name
+        </button>
+      </div>
+    </>
+  );
+};
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>
   </div>
   <div class="col-2 toc">
     <ul>

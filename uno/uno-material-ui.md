@@ -50,15 +50,34 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uibuttonwithloading-gkg1q?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/ButtonWithLoading"
-              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import React from "react";
+import ReactDOM from "react-dom";
+import { ButtonWithLoading } from "uno-material-ui";
+import "./styles.css";
+const App = () => {
+  const [fetching, setFetching] = React.useState(false);
+  const start = () => setFetching(true);
+  if (fetching) {
+    setTimeout(() => setFetching(false), 4000);
+  }
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>ButtonWIthLoading</h2>
+      <ButtonWithLoading isFetching={fetching} onClick={start}>
+        Save
+      </ButtonWithLoading>
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ConfirmationDialog">
             <h4 class="blue-title">ConfirmationDialog</h4>
@@ -88,15 +107,38 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uiconfirmationdialog-gwgre?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/ConfirmationDialog"
-              sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import React from "react";
+import ReactDOM from "react-dom";
+import { ConfirmationDialog } from "uno-material-ui";
+import "./styles.css";
+const App = () => {
+  const [open, setOpen] = React.useState(false);
+  const onCancel = () => setOpen(false);
+  const onOpen = () => setOpen(true);
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>ConfirmationDialog</h2>
+      <Button onClick={onOpen}>Open Dialog</Button>
+      <ConfirmationDialog
+        onClose={onCancel}
+        open={open}
+        title={"Confirmation Dialog"}
+        contentText={"Are you sure?"}
+        onAgreeAction={onCancel}
+      />
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ErrorBoundary">
             <h4 class="blue-title">ErrorBoundary</h4>
@@ -151,13 +193,34 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uifixedlinearprogress-zyylp?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/FixedLinearProgress" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import React from "react";
+import ReactDOM from "react-dom";
+import { FixedLinearProgress } from "uno-material-ui";
+import "./styles.css";
+const App = () => {
+  const [fetching, setFetching] = React.useState(false);
+  const onLoading = () => setFetching(true);
+  if (fetching) {
+    setTimeout(() => setFetching(false), 4000);
+  }
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>FixedLinearProgress</h2>
+      <FixedLinearProgress isLoading={fetching} />
+      <Button onClick={onLoading}>Start loading!</Button>
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="FormModal">
             <h4 class="blue-title">FormModal</h4>
@@ -187,13 +250,89 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uiformmodal-ewusv?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/FormModal" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import TextField from "@material-ui/core/TextField";
+import CancelIcon from "@material-ui/icons/Cancel";
+import SaveIcon from "@material-ui/icons/Save";
+import React from "react";
+import ReactDOM from "react-dom";
+import { FormModal } from "uno-material-ui";
+import "./styles.css";
+const initialState = { Comments: "" };
+const App = () => {
+  const [open, setOpen] = React.useState(false);
+  const [state, setState] = React.useState(initialState);
+  const onCancel = () => setOpen(false);
+  const onOpen = () => setOpen(true);
+  const changeNotes = (event: any) =>
+    setState({
+      ...state,
+      Comments: event.target.value
+    });
+  const handleSubmit = () => {
+    alert("Hi, this is the comment:" + state.Comments);
+    onCancel();
+  };
+  const Actions: React.FunctionComponent = () => (
+    <Grid
+      alignItems="center"
+      container={true}
+      direction="row"
+      justify="space-between"
+    >
+      <Grid item={true}>
+        <Button color="secondary" onClick={onCancel} startIcon={<CancelIcon />}>
+          Cancel
+        </Button>
+      </Grid>
+      <Grid item={true}>
+        <Button
+          color="primary"
+          startIcon={<SaveIcon />}
+          type="submit"
+          variant="contained"
+        >
+          Save
+        </Button>
+      </Grid>
+    </Grid>
+  );
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>FormModal</h2>
+      <Button onClick={onOpen}>Open Dialog</Button>
+      <FormModal
+        actions={<Actions />}
+        onClose={onCancel}
+        onSubmit={handleSubmit}
+        open={open}
+        maxWidth="md"
+        fullWidth={true}
+        title="Form Modal"
+      >
+        <TextField
+          fullWidth={true}
+          label="Notes"
+          multiline={true}
+          variant="outlined"
+          value={state.Comments}
+          onChange={changeNotes}
+          rows={4}
+        />
+      </FormModal>
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="FormSwitch">
             <h4 class="blue-title">FormSwitch</h4>
@@ -218,13 +357,38 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uiformswitch-796ng?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/FormSwitch" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import React from "react";
+import ReactDOM from "react-dom";
+import { FormSwitch } from "uno-material-ui";
+import "./styles.css";
+const App = () => {
+  const [value, setValue] = React.useState(false);
+  const onChange = () => {
+    setValue(!value);
+  };
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>FormSwitch</h2>
+      <FormSwitch checked={value} label="Switchable" onChange={onChange} />
+      <FormSwitch
+        checked={true}
+        disabled={true}
+        label="Disabled"
+        labelPlacement="bottom-start"
+        onChange={onChange}
+      />
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="IndeterminatedLoading">
             <h4 class="blue-title">IndeterminatedLoading</h4>
@@ -249,13 +413,34 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uiindeterminatedloading-vubgx?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/IndeterminatedLoading" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import React from "react";
+import ReactDOM from "react-dom";
+import { IndeterminatedLoading } from "uno-material-ui";
+import "./styles.css";
+const App = () => {
+  const [fetching, setFetching] = React.useState(false);
+  const startFetching = () => setFetching(true);
+  if (fetching) {
+    setTimeout(() => setFetching(false), 4000);
+  }
+  return (
+    <div className="App">
+      <h1>uno-material-ui</h1>
+      <h2>IndeterminatedLoading</h2>
+      <Button onClick={startFetching}> Start Fetching </Button>
+      <IndeterminatedLoading isLoading={fetching} />
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="LoadingIcon">
             <h4 class="blue-title">LoadingIcon</h4>
@@ -280,15 +465,26 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uiloadingicon-ugguf?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/LoadingIcon"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import React from "react";
+import "./styles.css";
+import { LoadingIcon } from "uno-material-ui";
+export default function App() {
+  return (
+    <div className="App">
+      <h1>LoadingIcon</h1>
+      <h2>You can represent a loading process on screen</h2>
+      <LoadingIcon color="primary" />
+      <LoadingIcon color="secondary" />
+      <LoadingIcon color="default" />
+    </div>
+  );
+}
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="MenuList">
             <h4 class="blue-title">MenuList</h4>
@@ -314,15 +510,46 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uimenulist-uzuhe?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/MenuList"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Build from "@material-ui/icons/Build";
+import Dashboard from "@material-ui/icons/Dashboard";
+import makeStyles from "@material-ui/styles/makeStyles";
+import * as React from "react";
+import { MenuList } from "uno-material-ui";
+import "./styles.css";
+const useStyles = makeStyles(() => ({
+  icon: {
+    color: "#00f",
+    marginRight: "5px"
+  }
+}));
+const App: React.FunctionComponent = () => {
+  const classes = useStyles({});
+  return (
+    <div className="App">
+      <h1>MenuList</h1>
+      <h2>Create a custom list!</h2>
+      <MenuList>
+        <ListItem button={true}>
+          <Dashboard className={classes.icon} />
+          <ListItemText secondary="Dashboard" />
+        </ListItem>
+        <ListItem button={true}>
+          <Build className={classes.icon} />
+          <ListItemText secondary="Tools" />
+        </ListItem>
+      </MenuList>
+    </div>
+  );
+};
+export default App;
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="NavBar">
             <h4 class="blue-title">NavBar</h4>
@@ -347,15 +574,26 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uinavbar-nsk7f?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/NavBar"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import * as React from "react";
+import "./styles.css";
+import { NavBar } from "uno-material-ui";
+export default function App() {
+  return (
+    <div className="App">
+      <NavBar title={"NavBar"} />
+      <br />
+      <br />
+      <br />
+      <h2>Set a header navigation bar and customize at your will!</h2>
+    </div>
+  );
+}
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">SnackbarContainer</h4>
@@ -381,13 +619,85 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uisnackbar-lwylt?fontsize=14&hidenavigation=1&theme=dark&previewwindow=console&view=split"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/SnackbarContainer" sandbox="allow-scripts allow-same-origin"></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import makeStyles from "@material-ui/styles/makeStyles";
+import React from "react";
+import ReactDOM from "react-dom";
+import { SnackbarContainer, snackbarService } from "uno-material-ui";
+import "./styles.css";
+const useStyles = makeStyles({
+  error: {
+    color: "red"
+  },
+  flexContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    paddingBottom: "40px"
+  },
+  info: {
+    color: "blue"
+  },
+  success: {
+    color: "green"
+  },
+  warning: {
+    color: "orange"
+  }
+});
+let count = 0;
+const App = props => {
+  const classes = useStyles(props);
+  const info = { messageText: "Hey! Check this snackbar", messageType: "info" };
+  const warning = { messageText: "Hey! Be careful", messageType: "warning" };
+  const error = { messageText: "Hey! This is broken", messageType: "error" };
+  const success = {
+    messageText: "Hey! Everything is awesome",
+    messageType: "success"
+  };
+  count++; //Increase the re-renders counter
+  const onOpenInfo = () => {
+    snackbarService.showSnackbar(info.messageText, info.messageType);
+  };
+  const onOpenWarning = () => {
+    snackbarService.showSnackbar(warning.messageText, warning.messageType);
+  };
+  const onOpenError = () => {
+    snackbarService.showSnackbar(error.messageText, error.messageType);
+  };
+  const onOpenSuccess = () => {
+    snackbarService.showSnackbar(success.messageText);
+  };
+  return (
+    <div className="App">
+      <SnackbarContainer />
+      <h1>uno-material-ui</h1>
+      <h2>Snackbar</h2>
+      <div># of re-renders: {count}</div>
+      <div className={classes.flexContainer}>
+        <Button className={classes.info} onClick={onOpenInfo}>
+          Open Info Snackbar
+        </Button>
+        <Button className={classes.warning} onClick={onOpenWarning}>
+          Open Warning Snackbar
+        </Button>
+        <Button className={classes.error} onClick={onOpenError}>
+          Open Error Snackbar
+        </Button>
+        <Button className={classes.success} onClick={onOpenSuccess}>
+          Open Success Snackbar
+        </Button>
+      </div>
+    </div>
+  );
+};
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">TextValidator</h4>
@@ -412,21 +722,54 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uitextvalidator-zh9xl?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/TextValidator"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import Button from "@material-ui/core/Button";
+import makeStyles from "@material-ui/styles/makeStyles";
+import * as React from "react";
+import "./styles.css";
+import { useStateForModel, ValidatorForm } from "uno-react";
+import { TextValidator } from "uno-material-ui";
+const useStyles = makeStyles({
+  form: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center"
+  }
+});
+const App: React.FunctionComponent = (props: any) => {
+  const classes = useStyles(props);
+  const [data, handleChange] = useStateForModel({ name: "" });
+  const sendData = () => handleChange({ name: "" });
+  return (
+    <div className="App">
+      <h1>TextValidator</h1>
+      <h2>Set your own rules to your forms!</h2>
+      <ValidatorForm className={classes.form} onSubmit={sendData}>
+        <TextValidator
+          id="name"
+          label="Name"
+          name="name"
+          onChange={handleChange}
+          value={data.name}
+          validators={["required"]}
+          errorMessages={["This field is required"]}
+        />
+        <Button type="submit">Submit</Button>
+      </ValidatorForm>
+    </div>
+  );
+};
+export default App;
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="ThumbnailPhoto">
             <h4 class="blue-title">ThumbnailPhoto</h4>
-            <p>
-              An small avatar to display a photo with tooltip.
-            </p>
+            <p>An small avatar to display a photo with tooltip.</p>
             <h6>PARAMETERS</h6>
             <table class="table table-striped w-100 mt-2">
               <thead>
@@ -445,15 +788,35 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uithumbnailphoto-y8bbb?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/ThumbnailPhoto"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import React from "react";
+import "./styles.css";
+import { ThumbnailPhoto } from "uno-material-ui";
+export default function App() {
+  return (
+    <div className="App">
+      <h1>ThumbnailPhoto</h1>
+      <h2>Create your custom presentation cards!</h2>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center"
+        }}
+      >
+        <ThumbnailPhoto
+          fullName="John Doe"
+          imgSrc="https://avatars0.githubusercontent.com/u/1775792?s=400&v=4"
+          placement="right"
+        />
+      </div>
+    </div>
+  );
+}
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="Title">
             <h4 class="blue-title">Title</h4>
@@ -479,15 +842,28 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
-          <div>
-            <iframe
-              src="https://codesandbox.io/embed/uno-material-uititle-gw7xq?fontsize=14&hidenavigation=1&theme=dark"
-              style="width:100%; height:300px; border:0; border-radius: 4px; overflow:hidden;"
-              title="uno-material-ui/Title"
-              sandbox="allow-scripts allow-same-origin"
-            ></iframe>
-          </div>
         </div>
+```tsx
+{% raw %}
+import React from "react";
+import "./styles.css";
+import { Title } from "uno-material-ui";
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Title</h1>
+      <h2>Put your own title to your page and tab!</h2>
+      <Title
+        prefix="Unosquare"
+        suffix="uno-material-ui"
+        value="This is a title"
+      />
+    </div>
+  );
+}
+{% endraw %}
+```
+<button class="nav-link link-blue" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSanbox</button>
       </div>
       <div class="col-2 toc">
         <ul>
