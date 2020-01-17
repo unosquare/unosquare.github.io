@@ -51,8 +51,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import React from "react";
 import ReactDOM from "react-dom";
 import { ButtonWithLoading } from "uno-material-ui";
@@ -75,9 +76,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="ConfirmationDialog">
             <h4 class="blue-title">ConfirmationDialog</h4>
@@ -108,8 +112,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -136,9 +141,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="ErrorBoundary">
             <h4 class="blue-title">ErrorBoundary</h4>
@@ -194,8 +202,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -218,9 +227,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="FormModal">
             <h4 class="blue-title">FormModal</h4>
@@ -251,8 +263,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
@@ -330,9 +343,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="FormSwitch">
             <h4 class="blue-title">FormSwitch</h4>
@@ -358,8 +374,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import React from "react";
 import ReactDOM from "react-dom";
 import { FormSwitch } from "uno-material-ui";
@@ -386,9 +403,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="IndeterminatedLoading">
             <h4 class="blue-title">IndeterminatedLoading</h4>
@@ -414,8 +434,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -438,9 +459,12 @@ const App = () => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="LoadingIcon">
             <h4 class="blue-title">LoadingIcon</h4>
@@ -466,8 +490,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import React from "react";
 import "./styles.css";
 import { LoadingIcon } from "uno-material-ui";
@@ -482,9 +507,12 @@ export default function App() {
     </div>
   );
 }
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="MenuList">
             <h4 class="blue-title">MenuList</h4>
@@ -511,8 +539,9 @@ export default function App() {
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Build from "@material-ui/icons/Build";
@@ -547,9 +576,12 @@ const App: React.FunctionComponent = () => {
   );
 };
 export default App;
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="NavBar">
             <h4 class="blue-title">NavBar</h4>
@@ -575,8 +607,9 @@ export default App;
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import "./styles.css";
 import { NavBar } from "uno-material-ui";
@@ -591,9 +624,12 @@ export default function App() {
     </div>
   );
 }
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">SnackbarContainer</h4>
@@ -620,8 +656,9 @@ export default function App() {
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/styles/makeStyles";
 import React from "react";
@@ -695,9 +732,12 @@ const App = props => {
 };
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">TextValidator</h4>
@@ -723,8 +763,9 @@ ReactDOM.render(<App />, rootElement);
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/styles/makeStyles";
 import * as React from "react";
@@ -763,9 +804,12 @@ const App: React.FunctionComponent = (props: any) => {
   );
 };
 export default App;
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="ThumbnailPhoto">
             <h4 class="blue-title">ThumbnailPhoto</h4>
@@ -789,8 +833,9 @@ export default App;
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import React from "react";
 import "./styles.css";
 import { ThumbnailPhoto } from "uno-material-ui";
@@ -814,9 +859,12 @@ export default function App() {
     </div>
   );
 }
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="Title">
             <h4 class="blue-title">Title</h4>
@@ -843,8 +891,9 @@ export default function App() {
             </table>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import React from "react";
 import "./styles.css";
 import { Title } from "uno-material-ui";
@@ -861,9 +910,12 @@ export default function App() {
     </div>
   );
 }
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSanbox</button>
+<br />
+<br />
       </div>
       <div class="col-2 toc">
         <ul>
