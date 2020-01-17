@@ -34,8 +34,9 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         </p>
       </div>
     </div>
+<div>
+
 ```tsx
-{% raw %}
 const UseTubularExample = () => {
   const [refresh, forceRefresh] = useGridRefresh();
   const forceGridRefresh = () => {
@@ -58,9 +59,12 @@ const UseTubularExample = () => {
     </>
   );
 };
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
+<br />
+<br />
     <div class="mb-4">
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
@@ -81,8 +85,9 @@ const UseTubularExample = () => {
         </p>
       </div>
     </div>
+<div>
+
 ```tsx
-{% raw %}
 const MasterDetailRow = ({ columns, row, index }) => {
   const [open, openDetails] = useMasterDetails();
   const openMasterDetails = () => {
@@ -114,9 +119,12 @@ const MasterDetailRow = ({ columns, row, index }) => {
     </>
   );
 };
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
+<br />
+<br />
     <div class="mb-4">
       <div id="useTbList">
         <h4 class="blue-title">useTbList</h4>
@@ -160,8 +168,9 @@ const MasterDetailRow = ({ columns, row, index }) => {
         </p>
       </div>
     </div>
+<div>
+
 ```tsx
-{% raw %}
 const UseTbListExample: React.FunctionComponent<any> = () => {
   const tbList = useTbList(
     columns,
@@ -198,9 +207,12 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
     </div>
   );
 };
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
+<br />
+<br />
     <div class="mb-4">
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
@@ -248,8 +260,9 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
     </div>
+<div>
+
 ```tsx
-{% raw %}
 const UseTbTableExample = () => {
   const { state, api } = useTbTable(columns, localData);
   return (
@@ -297,9 +310,12 @@ const UseTbTableExample = () => {
     </>
   );
 };
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
+<br />
+<br />
     <div class="mb-4">
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
@@ -345,8 +361,9 @@ const UseTbTableExample = () => {
         </p>
       </div>
     </div>
+<div>
+
 ```tsx
-{% raw %}
 const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
@@ -394,9 +411,12 @@ const UseTubularExample = () => {
     </>
   );
 };
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>
+<br />
+<br />
   </div>
   <div class="col-2 toc">
     <ul>
