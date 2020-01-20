@@ -55,14 +55,17 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
-import { colorGenerator } from "uno-js";
-const x = [0, 0, 0];
-const y = [90, 60, 30];
-console.log(colorGenerator(x, y, 3));
-{% endraw %}
+import { colorGenerator } from "uno-js";  
+  const x = [0, 0, 0];
+  const y = [90, 60, 30];
+  colorGenerator(x, y, 3);
+  // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="debounce">
@@ -99,8 +102,9 @@ console.log(colorGenerator(x, y, 3));
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import { debounce } from 'uno-js';
 const fn = debounce(() => {
   console.log('Hello!');
@@ -115,8 +119,9 @@ const showDebounce = async () => {
   await delay(300);
 }
 showDebounce();
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="humanize">
@@ -147,16 +152,15 @@ showDebounce();
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import { humanize } from "uno-js";
-const toHumanize = "thisIsAnAwesomeExample";
-/*
-  Original: thisIsAnAwesomeExample
-  Result: This Is An Awesome Example
-*/
-{% endraw %}
+const toHumanize = humanize("thisIsAnAwesomeExample");
+// => This Is An Awesome Example
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="objectDifference">
@@ -195,19 +199,18 @@ const toHumanize = "thisIsAnAwesomeExample";
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import { objectDifference } from "uno-js";
 const x = { name: "Mike", age: 3, gender: "Male" };
 const y = { name: "John", age: 5, gender: "Male" };
+
 const difference = objectDifference(x, y);
-/*
-  Object1: { name: "Mike", age: 3, gender: "Male" };
-  Object2: { name: "John", age: 5, gender: "Male" };
-  difference: [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
-*/
-{% endraw %}
+// => [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="removeDuplicated">
@@ -243,28 +246,21 @@ const difference = objectDifference(x, y);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import { removeDuplicated } from "uno-js";
 const x1 = { name: "Mike", age: 3, gender: "Male" };
 const x2 = { name: "Mike", age: 3, gender: "Male" };
 const y1 = { name: "John", age: 5, gender: "Male" };
 const y2 = { name: "John", age: 5, gender: "Male" };
 const array = [x1, x2, y1, y2];
+
 const unique = removeDuplicated([x1, x2, y1, y2], "name");
-/* array: [
-    { name: "Mike", age: 3, gender: "Male" };
-    { name: "Mike", age: 3, gender: "Male" };
-    { name: "John", age: 5, gender: "Male" };
-    { name: "John", age: 5, gender: "Male" };
-  ]
-  unique: [
-    { name: "Mike", age: 3, gender: "Male" };
-    { name: "John", age: 5, gender: "Male" };
-  ]
-*/
-{% endraw %}
+// => [{ name: "Mike", age: 3, gender: "Male" }, { name: "John", age: 5, gender: "Male" }]
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="toDate">
@@ -295,8 +291,9 @@ const unique = removeDuplicated([x1, x2, y1, y2], "name");
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { toDate } from "uno-js";
@@ -311,14 +308,15 @@ function App() {
       <h1>Uno-JS</h1>
       <h2>toDate</h2>
       <h3>Convert a string date to a Date object</h3>
-      <p>{MyObject.myDateString.toISOString()}</p>
+      <p>{MyObject.myDateString.toISOString()}</p> /
     </div>
   );
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="toTitleCase">
@@ -349,13 +347,16 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import { toTitleCase } from "uno-js";
-const x = "heLLo WoRld!";
-/* x = Hello World */
-{% endraw %}
+
+const x = toTitleCase("heLLo WoRld!");
+// => Hello World
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSanbox</button>
       </div>
       <div class="col-2 toc">

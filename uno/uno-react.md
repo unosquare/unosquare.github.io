@@ -49,8 +49,9 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useClickOutside } from "uno-react";
@@ -94,9 +95,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>
@@ -137,15 +141,16 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useEffectWithDebounce, useStateForField } from "uno-react";
 import "./styles.css";
 function App() {
   const [searchText, handleChange, setSearchText] = useStateForField("");
-  const debounceTime = 2000; // 2 Seconds
+  const debounceTime = 2000;
   const searchUsers = () => console.log(`searching: ${searchText}`);
   useEffectWithDebounce(searchUsers, debounceTime, [searchText]);
   return (
@@ -163,9 +168,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useEffectWithLoading">
             <h4 class="blue-title">useEffectWithLoading</h4>
@@ -209,8 +217,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useEffectWithLoading } from "uno-react";
@@ -251,9 +260,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useNow">
             <h4 class="blue-title">useNow</h4>
@@ -267,8 +279,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useNow } from "uno-react";
@@ -286,9 +299,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="usePersistedState">
             <h4 class="blue-title">usePersistedState</h4>
@@ -324,8 +340,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { usePersistedState } from "uno-react";
@@ -353,9 +370,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useResolutionSwitch">
             <h4 class="blue-title">useResolutionSwitch</h4>
@@ -390,8 +410,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useResolutionSwitch } from "uno-react";
@@ -411,9 +432,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useStateForField">
             <h4 class="blue-title">useStateForField</h4>
@@ -446,8 +470,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useStateForField } from "uno-react";
@@ -470,9 +495,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement)
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
@@ -510,8 +538,9 @@ ReactDOM.render(<App />, rootElement)
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useStateForModel } from "uno-react";
@@ -541,9 +570,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
@@ -589,8 +621,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useEffectWithDebounce, useStateForField } from "uno-react";
@@ -615,9 +648,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSanbox</button>
+<br/>
+<br/>
         <div class="mb-4">
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
@@ -649,8 +685,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useToggle } from "uno-react";
@@ -674,9 +711,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSanbox</button>
+<br />
+<br />
         <div class="mb-4">
           <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
@@ -697,8 +737,9 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<div>
+
 ```tsx
-{% raw %}
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { useStateForModel, ValidatorForm } from "uno-react";
@@ -736,9 +777,12 @@ function App() {
 }
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-{% endraw %}
 ```
+
+</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSanbox</button>
+</br>
+</br>
       </div>
       <div class="col-2 toc">
         <ul>
@@ -781,4 +825,3 @@ ReactDOM.render(<App />, rootElement);
         </ul>
       </div>
 </div>
-```

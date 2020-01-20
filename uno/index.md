@@ -12,7 +12,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
-                    <h4 class="text-uppercase">uno-js</h4>
+                    <h4>uno-js</h4>
                     <p>
                         Useful typescript functions. Optimized and tested.
                     </p>
@@ -32,7 +32,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
-                    <h4 class="text-uppercase">uno-react</h4>
+                    <h4>uno-react</h4>
                     <p>
                         Common functions, HOCs and hooks for React. Constantly growing and tested by our team. 
                     </p>
@@ -52,7 +52,7 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
         <div class="card">
             <div class="card-body p-3">
                 <div class="card-head">
-                    <h4 class="text-uppercase">uno-material-ui</h4>
+                    <h4>uno-material-ui</h4>
                     <p>
                         Components and extensions for Material UI (React).
                     </p>
