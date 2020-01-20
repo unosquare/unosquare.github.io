@@ -70,7 +70,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-react" class="link-blue button">
+                    <a href="https://unosquare.github.io/tubular-react" class="link-blue button">
                         Read More
                     </a>
                 </div>
@@ -87,11 +87,8 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://unosquare.github.io/tubular/tubular-react-common" class="link-blue button">
+                    <a href="https://unosquare.github.io/tubular-react-common" class="link-blue button">
                         Read More
-                    </a>
-                    <a href="https://github.com/unosquare/tubular-react-common" class="d-flex justify-content-end">
-                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>

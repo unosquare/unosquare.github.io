@@ -62,9 +62,7 @@ const UseTubularExample = () => {
 ```
 
 </div>
-<button class="nav-link link-blue" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</button>
-
-
+<a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSanbox</a>
     <div class="mb-4">
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
@@ -122,9 +120,7 @@ const MasterDetailRow = ({ columns, row, index }) => {
 ```
 
 </div>
-<button class="nav-link link-blue" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</button>
-
-
+<a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSanbox</a>
     <div class="mb-4">
       <div id="useTbList">
         <h4 class="blue-title">useTbList</h4>
@@ -210,9 +206,7 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
 ```
 
 </div>
-<button class="nav-link link-blue" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</button>
-
-
+<a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSanbox</a>
     <div class="mb-4">
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
@@ -313,9 +307,7 @@ const UseTbTableExample = () => {
 ```
 
 </div>
-<button class="nav-link link-blue" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</button>
-
-
+<a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSanbox</a>
     <div class="mb-4">
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
@@ -414,9 +406,7 @@ const UseTubularExample = () => {
 ```
 
 </div>
-<button class="nav-link link-blue" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</button>
-
-
+<a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSanbox</a>
   </div>
   <div class="col-2 toc">
     <ul>

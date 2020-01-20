@@ -49,7 +49,6 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -97,10 +96,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>
@@ -141,7 +137,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -170,10 +165,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useEffectWithLoading">
             <h4 class="blue-title">useEffectWithLoading</h4>
@@ -217,7 +209,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -262,10 +253,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useNow">
             <h4 class="blue-title">useNow</h4>
@@ -279,7 +267,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -301,10 +288,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="usePersistedState">
             <h4 class="blue-title">usePersistedState</h4>
@@ -340,7 +324,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -372,10 +355,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useResolutionSwitch">
             <h4 class="blue-title">useResolutionSwitch</h4>
@@ -410,7 +390,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -434,10 +413,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useStateForField">
             <h4 class="blue-title">useStateForField</h4>
@@ -470,7 +446,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -497,10 +472,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement)
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
@@ -538,7 +510,6 @@ ReactDOM.render(<App />, rootElement)
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -572,10 +543,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
@@ -621,7 +589,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -650,10 +617,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSanbox</button>
-<br/>
-<br/>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
@@ -685,7 +649,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -713,10 +676,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSanbox</button>
-<br />
-<br />
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSanbox</a>
         <div class="mb-4">
           <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
@@ -737,7 +697,6 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 import * as React from "react";
@@ -779,10 +738,7 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-</div>
-<button class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSanbox</button>
-</br>
-</br>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSanbox</a>
       </div>
       <div class="col-2 toc">
         <ul>
