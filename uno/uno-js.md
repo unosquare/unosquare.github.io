@@ -58,11 +58,14 @@ description: "Check out uno-js, a Typescript library for array and string manipu
 <div>
 
 ```tsx
+{% raw %}
 import { colorGenerator } from "uno-js";  
-  const x = [0, 0, 0];
-  const y = [90, 60, 30];
-  colorGenerator(x, y, 3);
-  // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
+
+const x = [0, 0, 0];
+const y = [90, 60, 30];
+colorGenerator(x, y, 3);
+// => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
+{% endraw %}
 ```
 
 </div>
@@ -294,26 +297,11 @@ const unique = removeDuplicated([x1, x2, y1, y2], "name");
 <div>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { toDate } from "uno-js";
-import "./styles.css";
-const MyObject: any = {
-  myDateString: "08.17.1994"
-};
-function App() {
-  toDate(MyObject);
-  return (
-    <div className="App">
-      <h1>Uno-JS</h1>
-      <h2>toDate</h2>
-      <h3>Convert a string date to a Date object</h3>
-      <p>{MyObject.myDateString.toISOString()}</p> /
-    </div>
-  );
-}
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const MyObject: any = { myDateString: "08.17.1994" };
+
+toDate(MyObject);
+// TODO: Complete
 ```
 
 </div>
