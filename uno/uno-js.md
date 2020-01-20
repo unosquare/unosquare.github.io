@@ -55,7 +55,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             </p>
           </div>
         </div>
-<div>
 
 ```tsx
 {% raw %}
@@ -68,7 +67,6 @@ colorGenerator(x, y, 3);
 {% endraw %}
 ```
 
-</div>
 <button class="nav-link link-blue" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSanbox</button>
         <div class="mb-4">
           <div id="debounce">
