@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Tubular React Common functions and hooks | tubular-react-common"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---

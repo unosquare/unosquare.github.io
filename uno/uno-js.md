@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | uno-js"
 description: "Check out uno-js, a Typescript library for array and string manipulation."
 ---

@@ -1,5 +1,5 @@
 ﻿---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | Home"
 description: "Check Unosquare's Open Source Software Initiatives for several technologies"
 ---

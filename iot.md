@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | IoT"
 description: "See all our hardware and iot projects and how useful they are."
 ---

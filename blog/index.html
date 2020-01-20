@@ -1,47 +1,48 @@
 ---
-layout: default
+layout: page
 title: Unosquare R&D | Blog | Things we have learned
 area: "blog"
 ---
 
-<div class="content-home container py-0">
-    <div class="main-hero hero">
-        <img src="/assets/rdblog.jpg" class="px-5" alt="Unosquare R&D" />
-        <div class="hero-title title-black">
-            <h2 class="text-uppercase">Blog - Things we have learned</h2>
-            <div id="hero-label">We want to share some things we have learned over the time at Unosquare R&D.</div>
-        </div>
+<div class="main-hero hero">
+  <img src="/assets/rdblog.jpg" class="px-5" alt="Unosquare R&D" />
+  <div class="hero-title title-black">
+    <h2 class="text-uppercase">Blog - Things we have learned</h2>
+    <div id="hero-label">
+      We want to share some things we have learned over the time at Unosquare
+      R&D.
     </div>
-    <div class="my-5">
-        <!-- Blog posts -->
-        {% for post in site.posts %}
-        {% assign author = site.data.authors[post.author] %}
-        <div class="post-head-container mb-3">
-            <div class="date-block-container">
-                <span class="day">{{ post.date | date: "%d" }}</span>
-                <span class="month">{{ post.date | date: "%b" }}</span>
-                <span class="year">{{ post.date | date: "%y" }}</span>
-            </div>
-            <div class="title-container">
-                <h2 class="title-header">
-                    <a class="title-text" href="{{ post.url }}">
-                        <span>{{post.title}}</span>
-                    </a>
-                </h2>
+  </div>
+</div>
+<div class="my-5">
+  <!-- Blog posts -->
+  {% for post in site.posts %} {% assign author = site.data.authors[post.author]
+  %}
+  <div class="post-head-container mb-3">
+    <div class="date-block-container">
+      <span class="day">{{ post.date | date: "%d" }}</span>
+      <span class="month">{{ post.date | date: "%b" }}</span>
+      <span class="year">{{ post.date | date: "%y" }}</span>
+    </div>
+    <div class="title-container">
+      <h2 class="title-header">
+        <a class="title-text" href="{{ post.url }}">
+          <span>{{post.title}}</span>
+        </a>
+      </h2>
 
-                <div>
-                    <h6 class="author-link">
-                        By {{ post.author }}
-                    </h6>
-                </div>
-                <markdown>{{ post.description }}</markdown>
-                <div>
-                    {% for tag in post.tags %}
-                    <span class="badge p-0" style="font-size: 14px;">{{ tag }}</span>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+      <div>
+        <h6 class="author-link">
+          By {{ post.author }}
+        </h6>
+      </div>
+      <markdown>{{ post.description }}</markdown>
+      <div>
+        {% for tag in post.tags %}
+        <span class="badge p-0" style="font-size: 14px;">{{ tag }}</span>
         {% endfor %}
+      </div>
     </div>
+  </div>
+  {% endfor %}
 </div>

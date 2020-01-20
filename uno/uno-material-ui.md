@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | uno-material-ui"
 description: "Check out uno-material-ui, a Typescript library with components and extensions for Material UI (React)."
 ---

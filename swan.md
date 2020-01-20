@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | Swan"
 description: "Avoid rewriting code using SWAN, give to your project a quick start"
 ---

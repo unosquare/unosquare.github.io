@@ -1,12 +1,13 @@
 ---
-layout: default
+layout: page
 title: "Open Source Software Initiatives from Unosquare | Uno"
 description: "Check out our Uno libraries with useful typescript functions, React hooks and components"
 ---
 
-<div class="container content-home">
-<h2>Uno</h2>
-<h6>Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components</h6>
+## Uno
+
+Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components.
+
 <div class="row">
     <div class="col-12 col-lg-4 mb-4">
         <div class="card">
@@ -68,4 +69,3 @@ description: "Check out our Uno libraries with useful typescript functions, Reac
             </div>
         </div>
     </div>
-</div>
