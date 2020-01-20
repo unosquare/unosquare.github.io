@@ -13,12 +13,13 @@ During this implementation we have learned several things about react.
 
 ## First attempt
 
-Our first approach was creating a simple GlobalContextProvider, exposing some information about the user: 
+Our first approach was creating a simple GlobalContextProvider, exposing some information about the user:
 
-- IsAuthenticated 
+- IsAuthenticated
 - Username
 
-And some common actions like: 
+And some common actions like:
+
 - login
 - logout
 - setSnackbarMessage
@@ -28,6 +29,7 @@ So, our first implementation would look like (If you notice some slowness is bec
 <iframe src="https://codesandbox.io/embed/unosquare-best-practices-react-context-1-kqbux?fontsize=14&runonclick=1&codemirror=1&module=/src/globalContextProvider.tsx" title="Unosquare best practices - React context #1" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 ### Things we learned
+
 One of the things we noticed was the fact that every intent to show a new message in our snackbar was causing a re-render on every component. Please take a look at it and notice the Console logs, you will see all the components being rendered every time a message is shown:
 
 So, we learned that: **Creating the object on the `Provider value={}` will re-render any consumer even if the properties inside `value` are the same**. You can read more about this at: <https://reactjs.org/docs/context.html#caveats>
@@ -35,6 +37,7 @@ So, we learned that: **Creating the object on the `Provider value={}` will re-re
 Meaning that we needed to find a way to pass the same `value` if it hasn't changed. That way, consumers won't be updated because there are no changes.
 
 ## Second attempt
+
 This can be done by putting that value on a hook.
 
 ```tsx
@@ -83,7 +86,6 @@ As you can see, we're not passing `getMessage` value to the provider, because th
 
 So, think about this: If any `Consumer` sends a message to the Snackbar, that is going to execute the render on the Provider, but **even though there was a change on the `getMessage` state, the value for the provider has not changed**, which means that no consumer needs to be updated. **We're re-rendering responsibly**.
 
-
 But now let's see another issue. This is a tricky one. In order to see it, we will add a new action as follows:
 
 ```tsx
@@ -101,7 +103,7 @@ isValidSession: () => {
       getProviderValue
     );
   }
-}
+};
 ```
 
 So, let's understand this simple function, we're just checking `getProviderValue.isAuthenticated` and showing a message indicating the result. Now, with these changes we will be avoiding the re-render of all the components (you can check the console logs) but let's get into the new issue.
@@ -122,6 +124,7 @@ What's happening? Consumers using `isAuthenticated` are seeing the proper value 
 Is this something wrong with our Context Provider? The answer is: **NO!** Take a look at the following isolated example:
 
 Steps:
+
 1. Open the app
 2. Click on the **Increment** button several times
 3. Click **Check value** button
@@ -138,6 +141,7 @@ So, there's a workaround for this:
 At that moment I was thinking about another way to implement this. So, why not separating concerns a little bit more?
 
 ## Third attempt
+
 Why not having a Context specifically to handle state and another one to provide logic/actions? That way we could also separate logic by domain on its own Context.
 
 Let's give it a try. We will do the following:
