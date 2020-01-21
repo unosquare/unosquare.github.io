@@ -1,21 +1,31 @@
-
-<div class="d-flex flex-row space-between">
-  <h1>tubular-react<h1>
-  <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
-    <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
-  </a>
-  <a href="https://github.com/unosquare/tubular-react">
-    <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
-  </a>
+---
+layout: page
+title: "Open Source Software Initiatives from Unosquare | Tubular"
+description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
+---
+<div class="container content-home d-flex flex-row">
+  <div class="col-10 p-0">
+    <div class="d-flex flex-row space-between">
+      <h1>tubular-react<h1>
+      <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
+        <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
+      </a>
+      <a href="https://github.com/unosquare/tubular-react">
+        <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
+      </a>
+    </div>
+  </div>
+  <p>Tubular-React is a Material-UI table with local or remote data-source. Featuring:</p>
+  <ul>
+    <li>-Define a custom layout for columns and cells using render methods.</li>
+    <li>-Use a remote or local datasource. Remote datasource use a specific Request and Response format.</li>
+    <li>-Sort and filter multiple columns.</li>
+    <li>-Free-text search of string columns.</li>
+    <li>-Page data. Remote data is paged in the server side.</li>
+    <li>-Export data to a CSV file.</li>
+    <li>-Print data.</li>
+  </ul>
 </div>
-Tubular-React is a Material-UI table with local or remote data-source. Featuring:
-- Define a custom layout for columns and cells using render methods.
-- Use a remote or local datasource. Remote datasource use a specific Request and Response format.
-- Sort and filter multiple columns.
-- Free-text search of string columns.
-- Page data. Remote data is paged in the server side.
-- Export data to a CSV file.
-- Print data.
 
 ## DataGrid
 The grid will connect to a remote datasource or have a local datasource depending on what's
