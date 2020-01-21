@@ -309,6 +309,7 @@ const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
     <>
+      ```
       <table>
         <thead>
           <tr role="rowheader">
@@ -337,6 +338,7 @@ const UseTubularExample = () => {
           })}
         </tbody>
       </table>
+      ```
       <button onClick={() => api.goToPage(state.page + 1)}>
         Go to next page
       </button>
