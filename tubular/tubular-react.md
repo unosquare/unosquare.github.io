@@ -7,11 +7,11 @@ description: "Check out uno-react, a Typescript library with common functions an
   <div class="col-10 p-0">
     <div class="d-flex flex-row space-between">
       <h2>tubular-react</h2>
-      <a href="https://www.npmjs.com/package/uno-react" class="first-icon">
-        <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
+      <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
+        <img class="npm-icon" src="/assets/npm.svg" alt="tubular-react npm" title="tubular-react npm"/>
       </a>
-      <a href="https://github.com/unosquare/uno-react">
-        <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
+      <a href="https://github.com/unosquare/tubular-react">
+        <img class="github-icon" src="/assets/github.png" alt="tubular-react Github Repo" title="tubular-react Github Repo"/>
       </a>
     </div>
     <p>Tubular-React is a Material-UI table with local or remote data-source. Featuring:</p>
@@ -144,6 +144,34 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
     </div>
+    <h3>Examples</h3>
+    <p>Example of DataGrid with footer component.</p>
+    <code>
+      <pre>
+        import columns from "./columns";
+        import { DataGrid, ToolbarOptions } from "tubular-react";
+        const tbFooter = ({ aggregates }: any) => (
+          <TableRow>
+            <TableCell>Total:</TableCell>
+            <TableCell>{aggregates && aggregates.CustomerName}</TableCell>
+            <TableCell />
+            <TableCell />
+            <TableCell />
+            <TableCell />
+          </TableRow>
+        );
+        const RemoteDataGrid: React.FunctionComponent = () => {
+          return (
+            <DataGrid
+              gridName="Tubular-React"
+              columns={columns}
+              dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+              footerComponent={tbFooter}
+            />
+          );
+        };
+      </pre>
+    </code>
   </div>
   <div class="col-2 toc">
     <ul>
@@ -160,36 +188,6 @@ description: "Check out uno-react, a Typescript library with common functions an
   </div>
 </div>
 
-# Examples
-### Example of DataGrid with footer component.
-```tsx
-import columns from "./columns";
-import { DataGrid, ToolbarOptions } from "tubular-react";
-
-const tbFooter = ({ aggregates }: any) => (
-  <TableRow>
-    <TableCell>Total:</TableCell>
-    <TableCell>{aggregates && aggregates.CustomerName}</TableCell>
-    <TableCell />
-    <TableCell />
-    <TableCell />
-    <TableCell />
-  </TableRow>
-);
-
-const RemoteDataGrid: React.FunctionComponent = () => {
-  return (
-    <DataGrid
-      gridName="Tubular-React"
-      columns={columns}
-      dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-      footerComponent={tbFooter}
-    />
-  );
-};
-
-export default RemoteDataGrid;
-```
 [![Edit RemoteDataGrid -footerComponent example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Example of DataGrid with Toolbar options.
