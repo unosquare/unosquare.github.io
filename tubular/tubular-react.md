@@ -53,7 +53,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             <tr>
               <td>dataSource</td>
               <td>
-                <ul>
+                <ul style="list-style-type:disc;">
                   <li>Object[]</li>
                   <li>string</li>
                   <li>Request</li>
