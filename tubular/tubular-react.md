@@ -169,7 +169,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Open CodeSandbox</a>
     </div>
     <div>
       <p>Example of DataGrid with Toolbar options.</p>
@@ -194,7 +194,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
     </div>
     <div>
       <p>Example of DataGrid with custom number of items per page.</p>
@@ -217,7 +217,132 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+    </div>
+    <div>
+      <p>Example of DataGrid with onRowClick event.</p>
+      <code>
+        <pre>
+          import { DataGrid } from "tubular-react";
+          import columns from "./columns";
+          const RemoteDataGrid: React.FunctionComponent = () => {
+            const rowClick = (row: {}) => {
+              console.log("You clicked on a row: ", row);
+              alert("You clicked on the order Id: " + row.OrderID);
+            };
+            return (
+              < DataGrid
+                gridName="Tubular-React"
+                columns={columns}
+                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                onRowClick={rowClick}
+              / >
+            );
+          };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onrowclick-example-ulurp?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+    </div>
+    <div class="mb-4">
+      <div id="ColumnModel">
+        <h4 class="blue-title">ColumnModel</h4>
+        <p>
+          It represents a DataGrid column and its constructor 
+          requires a name identifier as well as an object of 
+          column options with the following properties:
+        </p>
+        <h6>PROPERTIES</h6>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Description</td>
+              <td>Optional</td>
+              <td>Default value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>string</td>
+              <td>Name of the Column</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Aggregate</td>
+              <td>Function[]</td>
+              <td>Functions for aggregation of data</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>DataType</td>
+              <td>ColumnDataType</td>
+              <td>Column's data type</td>
+              <td>Yes</td>
+              <td>STRING</td>
+            </tr>
+            <tr>
+              <td>Filterable</td>
+              <td>Boolean</td>
+              <td>Flag to determine if column can be filtered</td>
+              <td>Yes</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>IsKey</td>
+              <td>Boolean</td>
+              <td>Determine if column is key</td>
+              <td>Yes</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Label</td>
+              <td>string</td>
+              <td>Label to show</td>
+              <td>Yes</td>
+              <td>*Name of the column*</td>
+            </tr>
+            <tr>
+              <td>Searchable</td>
+              <td>Boolean</td>
+              <td>Set if the column is searchable</td>
+              <td>Yes</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>SortDirection</td>
+              <td>ColumnSortDirection</td>
+              <td>Direction in which data is sorted</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>SortOrder</td>
+              <td>number</td>
+              <td>Order to sort the data</td>
+              <td>Yes</td>
+              <td>-1</td>
+            </tr>
+            <tr>
+              <td>Sortable</td>
+              <td>Boolean</td>
+              <td>Flag to determine if data can be sorted</td>
+              <td>Yes</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Visible</td>
+              <td>Boolean</td>
+              <td>Flag to hide/view the column on grid</td>
+              <td>Yes</td>
+              <td>true</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <div class="col-2 toc">
@@ -234,30 +359,6 @@ description: "Check out uno-react, a Typescript library with common functions an
     </ul>
   </div>
 </div>
-
-### Example of DataGrid with onRowClick event.
-``` tsx
-import { DataGrid } from "tubular-react";
-import columns from "./columns";
-
-const RemoteDataGrid: React.FunctionComponent = () => {
-  const rowClick = (row: {}) => {
-    console.log("You clicked on a row: ", row);
-    alert("You clicked on the order Id: " + row.OrderID);
-  };
-  return (
-    <DataGrid
-      gridName="Tubular-React"
-      columns={columns}
-      dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-      onRowClick={rowClick}
-    />
-  );
-};
-
-export default RemoteDataGrid;
-```
-[![Edit RemoteDataGrid -onRowClick example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-onrowclick-example-ulurp?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Example of DataGrid with custom row component.
 ``` tsx
@@ -409,101 +510,6 @@ export default LocalDataGrid;
 ```
 [![Edit LocalDataGrid - example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark)
 
-## ColumnModel
-It represents a DataGrid column and its constructor requires a 
-name identifier as well as an object of column options with the following properties:
-
-**PROPERTIES**
-<table>
-  <thead>
-    <tr>
-      <td>Name</td>
-      <td>Type</td>
-      <td>Description</td>
-      <td>Optional</td>
-      <td>Default value</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Name</td>
-      <td>string</td>
-      <td>Name of the Column</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>Aggregate</td>
-      <td>Function[]</td>
-      <td>Functions for aggregation of data</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>DataType</td>
-      <td>ColumnDataType</td>
-      <td>Column's data type</td>
-      <td>Yes</td>
-      <td>STRING</td>
-    </tr>
-    <tr>
-      <td>Filterable</td>
-      <td>Boolean</td>
-      <td>Flag to determine if column can be filtered</td>
-      <td>Yes</td>
-      <td>false</td>
-    </tr>
-    <tr>
-      <td>IsKey</td>
-      <td>Boolean</td>
-      <td>Determine if column is key</td>
-      <td>Yes</td>
-      <td>false</td>
-    </tr>
-    <tr>
-      <td>Label</td>
-      <td>string</td>
-      <td>Label to show</td>
-      <td>Yes</td>
-      <td>*Name of the column*</td>
-    </tr>
-    <tr>
-      <td>Searchable</td>
-      <td>Boolean</td>
-      <td>Set if the column is searchable</td>
-      <td>Yes</td>
-      <td>true</td>
-    </tr>
-    <tr>
-      <td>SortDirection</td>
-      <td>ColumnSortDirection</td>
-      <td>Direction in which data is sorted</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>SortOrder</td>
-      <td>number</td>
-      <td>Order to sort the data</td>
-      <td>Yes</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <td>Sortable</td>
-      <td>Boolean</td>
-      <td>Flag to determine if data can be sorted</td>
-      <td>Yes</td>
-      <td>false</td>
-    </tr>
-    <tr>
-      <td>Visible</td>
-      <td>Boolean</td>
-      <td>Flag to hide/view the column on grid</td>
-      <td>Yes</td>
-      <td>true</td>
-    </tr>
-  </tbody>
-</table>
 
 # Examples
 ### Example of Column configurations
