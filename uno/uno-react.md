@@ -49,7 +49,8 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
         </div>
-<code>
+
+``` tsx
 import { useClickOutside } from "uno-react";
 
 function App() {
@@ -89,7 +90,8 @@ function App() {
     </div>
   );
 }
-</code>
+```
+
 <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useEffectWithDebounce">
