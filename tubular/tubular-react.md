@@ -1,4 +1,4 @@
-# Tubular React
+# tubular-react
 Tubular-React is a Material-UI table with local or remote data-source. Featuring:
 - Define a custom layout for columns and cells using render methods.
 - Use a remote or local datasource. Remote datasource use a specific Request and Response format.
@@ -57,7 +57,7 @@ passed in the dataSource property.
     </tr>
     <tr>
       <td>detailComponent</td>
-      <td>React.ReactElement<DetailComponent></td>
+      <td>React.ReactElement</td>
       <td>Element used to render row details</td>
       <td>No</td>
       <td>None</td>
@@ -92,21 +92,21 @@ passed in the dataSource property.
     </tr>
     <tr>
       <td>rowComponent</td>
-      <td>React.FunctionComponent<TbRowProps></td>
+      <td>React.FunctionComponent</td>
       <td>Custom row component</td>
       <td>Yes</td>
       <td>None</td>
     </tr>
     <tr>
       <td>rowMobileComponent</td>
-      <td>React.FunctionComponent<TbRowProps></td>
+      <td>React.FunctionComponent</td>
       <td>Custom row component for mobile version</td>
       <td>Yes</td>
       <td>None</td>
     </tr>
     <tr>
       <td>footerComponent</td>
-      <td>React.FunctionComponent<any></td>
+      <td>React.FunctionComponent</td>
       <td>Custom component for Grid footer</td>
       <td>Yes</td>
       <td>None</td>
@@ -173,10 +173,6 @@ import { DataGrid, ToolbarOptions } from "tubular-react";
 
 const RemoteDataGrid: React.FunctionComponent = () => {
   const toolbarOptions = new ToolbarOptions({
-    advancePagination: false,
-    bottomPager: false,
-    exportButton: false,
-    printButton: false,
     searchText: false,
     topPager: false
   });
@@ -203,13 +199,7 @@ import columns from "./columns";
 
 const RemoteDataGrid: React.FunctionComponent = () => {
   const toolbarOptions = new ToolbarOptions({
-    advancePagination: false,
-    bottomPager: false,
-    exportButton: false,
     itemsPerPage: 15,
-    printButton: false,
-    searchText: false,
-    topPager: false
   });
   return (
     <DataGrid
@@ -261,11 +251,10 @@ import CheckBox from "@material-ui/icons/CheckBox";
 import CheckBoxOutlineBlank from "@material-ui/icons/CheckBoxOutlineBlank";
 import { formatDate } from "tubular-common";
 
-const CustomTbRow: React.FunctionComponent<TbRowProps> = ({
+const CustomTbRow: React.FunctionComponent = ({
   row,
-  onRowClick
 }: TbRowProps) => (
-  <TableRow hover={true} key={row.OrderID} onClick={onRowClick}>
+  <TableRow hover={true} key={row.OrderID}>
     <TableCell padding="default">{row.OrderID} </TableCell>
     <TableCell padding="default">{row.CustomerName} </TableCell>
     <TableCell padding="default">
@@ -283,18 +272,12 @@ const CustomTbRow: React.FunctionComponent<TbRowProps> = ({
 
 const RemoteDataGrid: React.FunctionComponent = () => {
 
-  const rowClick = (row: {}) => {
-    console.log("You clicked on a row: ", row);
-    alert("You clicked on the order Id: " + row.OrderID);
-  };
-
   return (
     <DataGrid
       gridName="Tubular-React"
       columns={columns}
       dataSource="https://tubular.azurewebsites.net/api/orders/paged"
       rowComponent={CustomTbRow}
-      onRowClick={rowClick}
     />
   );
 };
@@ -340,16 +323,7 @@ import { DataGrid } from "tubular-react";
 import columns from "./columns";
 
 const mobileBreakpointWidth = 800;
-
 const RemoteDataGrid: React.FunctionComponent = () => {
-  const toolbarOptions = new ToolbarOptions({
-    advancePagination: false,
-    bottomPager: false,
-    exportButton: false,
-    printButton: false,
-    searchText: false,
-    topPager: false
-  });
 
   return (
     <>
@@ -358,7 +332,6 @@ const RemoteDataGrid: React.FunctionComponent = () => {
         gridName="Tubular-React"
         columns={columns}
         dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-        toolbarOptions={toolbarOptions}
         mobileBreakpointWidth={mobileBreakpointWidth}
       />
     </>
@@ -371,22 +344,11 @@ export default RemoteDataGrid;
 
 ### Example of OnError messages on DataGrid.
 ``` tsx
-import * as React from "react";
 import { DataGrid, ToolbarOptions } from "tubular-react";
-import columns from "./columns";
 import Snackbar from "@material-ui/core/Snackbar";
 
 const RemoteDataGrid: React.FunctionComponent = () => {
   const [getErrorMessage, setErrorMessage] = React.useState(null as string);
-
-  const toolbarOptions = new ToolbarOptions({
-    advancePagination: false,
-    bottomPager: false,
-    exportButton: false,
-    printButton: false,
-    searchText: false,
-    topPager: false
-  });
 
   return (
     <>
@@ -404,44 +366,21 @@ const RemoteDataGrid: React.FunctionComponent = () => {
         dataSource="https://tubular.azurewebsites.net/api/orders/paged"
         gridName="LocalDataGrid"
         onError={setErrorMessage}
-        toolbarOptions={toolbarOptions}
       />
     </>
   );
 };
 
-export default RemoteDataGrid;
 ```
 [![Edit RemoteDataGrid - onError Example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-onerror-example-vyhze?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Example of DataGrid with localDataSource
 ``` tsx
-import * as React from "react";
 import { DataGrid, ToolbarOptions } from "tubular-react";
 import columns from "./columns";
 
 const localData = [
-  {
-    OrderID: 1,
-    CustomerName: "Microsoft",
-    ShippedDate: "2016-03-19T19:00:00",
-    ShipperCity: "Guadalajara, JAL, Mexico",
-    Amount: 300.0
-  },
-  {
-    OrderID: 2,
-    CustomerName: "Microsoft",
-    ShippedDate: "2016-11-08T18:00:00",
-    ShipperCity: "Los Angeles, CA, USA",
-    Amount: 9.0
-  },
-  {
-    OrderID: 3,
-    CustomerName: "Unosquare LLC",
-    ShippedDate: "2016-11-08T18:00:00",
-    ShipperCity: "Guadalajara, JAL, Mexico",
-    Amount: 92.0
-  },
+  // Collection of data
 ];
 
 const LocalDataGrid: React.FunctionComponent = () => {
@@ -463,19 +402,96 @@ It represents a DataGrid column and its constructor requires a
 name identifier as well as an object of column options with the following properties:
 
 **PROPERTIES**
-| Name | Type | Description | Optional | Default value |
-|------|------|-------------|----------|---------------|
-| Name | string | Name of the Column | No | None |
-| Aggregate | Function[] | Functions for aggregation of data | Yes | None |
-| DataType | ColumnDataType | Column's data type | Yes | STRING |
-| Filterable | Boolean | Flag to determine if column can be filtered | Yes | false |
-| IsKey | Boolean | Determine if column is key | Yes | false |
-| Label | string | Label to show  | Yes | *Name of the column* |
-| Searchable | Boolean | Set if the column is searchable | Yes | true |
-| SortDirection | ColumnSortDirection | Direction in which data is sorted | Yes | None |
-| SortOrder | number | Order to sort the data | Yes | -1 |
-| Sortable | Boolean | Flag to determine if data can be sorted | Yes | false |
-| Visible | Boolean | Flag to hide/view the column on grid | Yes | true |
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>Optional</td>
+      <td>Default value</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name<td>
+      <td>string</td>
+      <td>Name of the Column</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Aggregate</td>
+      <td>Function[]</td>
+      <td>Functions for aggregation of data</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>DataType</td>
+      <td>ColumnDataType</td>
+      <td>Column's data type</td>
+      <td>Yes</td>
+      <td>STRING</td>
+    </tr>
+    <tr>
+      <td>Filterable</td>
+      <td>Boolean</td>
+      <td>Flag to determine if column can be filtered</td>
+      <td>Yes</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>IsKey</td>
+      <td>Boolean</td>
+      <td>Determine if column is key</td>
+      <td>Yes</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>Label</td>
+      <td>string</td>
+      <td>Label to show</td>
+      <td>Yes</td>
+      <td>*Name of the column*</td>
+    </tr>
+    <tr>
+      <td>Searchable</td>
+      <td>Boolean</td>
+      <td>Set if the column is searchable</td>
+      <td>Yes</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>SortDirection</td>
+      <td>ColumnSortDirection</td>
+      <td>Direction in which data is sorted</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>SortOrder</td>
+      <td>number</td>
+      <td>Order to sort the data</td>
+      <td>Yes</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>Sortable</td>
+      <td>Boolean</td>
+      <td>Flag to determine if data can be sorted</td>
+      <td>Yes</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>Visible</td>
+      <td>Boolean</td>
+      <td>Flag to hide/view the column on grid</td>
+      <td>Yes</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
 
 # Examples
 ### Example of Column configurations
