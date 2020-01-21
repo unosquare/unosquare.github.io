@@ -222,34 +222,28 @@ const UseTbTableExample = () => {
   const { state, api } = useTbTable(columns, localData);
   return (
     <>
-      <table>
-        <thead>
-          <tr role="rowheader">
+      <tr role="rowheader">
+        {state.columns
+          .filter(col => col.visible)
+          .map(col => {
+            return <th key={col.name}>{col.label}</th>;
+          })}
+      </tr>
+      {state.data.map((row, index) => {
+        return (
+          <tr key={index}>
             {state.columns
               .filter(col => col.visible)
               .map(col => {
-                return <th key={col.name}>{col.label}</th>;
+                return (
+                  <td role="cell" key={col.name}>
+                    {row[col.name]}
+                  </td>
+                );
               })}
           </tr>
-        </thead>
-        <tbody>
-          {state.data.map((row, index) => {
-            return (
-              <tr key={index}>
-                {state.columns
-                  .filter(col => col.visible)
-                  .map(col => {
-                    return (
-                      <td role="cell" key={col.name}>
-                        {row[col.name]}
-                      </td>
-                    );
-                  })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+        );
+      })}
       <button onClick={() => api.goToPage(state.page + 1)}>
         Go to next page
       </button>
@@ -314,6 +308,7 @@ const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
     <>
+      {% raw %}
       <table>
         <thead>
           <tr role="rowheader">
@@ -342,6 +337,7 @@ const UseTubularExample = () => {
           })}
         </tbody>
       </table>
+      {% endraw %}
       <button onClick={() => api.goToPage(state.page + 1)}>
         Go to next page
       </button>
