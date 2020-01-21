@@ -32,14 +32,14 @@ description: "Check out uno-react, a Typescript library with common functions an
           depending on what's passed in the dataSource property.
         </p>
         <h6>PROPERTIES</h6>
-        <table>
+        <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
-              <td>Name</td>
-              <td>Type</td>
-              <td>Description</td>
-              <td>Optional</td>
-              <td>Default value</td>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
             </tr>
           </thead>
           <tbody>
