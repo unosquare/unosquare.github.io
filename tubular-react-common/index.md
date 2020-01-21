@@ -158,42 +158,32 @@ const MasterDetailRow = ({ columns, row, index }) => {
       </div>
     </div>
 <pre>
-
-```tsx
-const UseTbListExample: React.FunctionComponent<any> = () => {
+const UseTbListExample: React.FunctionComponent = () => {
   const tbList = useTbList(
     columns,
     "https://tubular.azurewebsites.net/api/orders/paged"
   );
   return (
-    <div>
-      <div>
-        <Button>Sort by</Button>
-        <Button onClick={handleClick}>
-          <ArrowDropDownIcon />
-        </Button>
-        <Menu>
-          <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
-          <MenuItem onClick={handleColumnSelect("CustomerName")}>
-            CustomerName
-          </MenuItem>
-          <MenuItem onClick={handleColumnSelect("ShipperCity")}>
-            ShipperCity
-          </MenuItem>
-        </Menu>
-      </div>
-      <div>
-        <TbList
-          tbInstance={tbList}
-          listItemComponent={MyListItem}
-          onItemClick={rowClick}
-        />
-      </div>
-    </div>
+    <Button>Sort by</Button>
+    <Button onClick={handleClick}>
+      <ArrowDropDownIcon />
+    </Button>
+    <Menu>
+      <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
+      <MenuItem onClick={handleColumnSelect("CustomerName")}>
+        CustomerName
+      </MenuItem>
+      <MenuItem onClick={handleColumnSelect("ShipperCity")}>
+        ShipperCity
+      </MenuItem>
+    </Menu>
+    <TbList
+      tbInstance={tbList}
+      listItemComponent={MyListItem}
+      onItemClick={rowClick}
+    />
   );
 };
-```
-
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     <div class="mb-4">
@@ -278,18 +268,15 @@ const UseTbTableExample = () => {
           })}
         </tbody>
       </table>
-      
-      <div>
-        <button onClick={() => api.goToPage(state.page + 1)}>
-          Go to next page
-        </button>
-        <button onClick={() => api.goToPage(state.page - 1)}>
-          Go to previous page
-        </button>
-        <button onClick={() => api.sortColumn("CustomerName")}>
-          Sort by Customer Name
-        </button>
-      </div>
+      <button onClick={() => api.goToPage(state.page + 1)}>
+        Go to next page
+      </button>
+      <button onClick={() => api.goToPage(state.page - 1)}>
+        Go to previous page
+      </button>
+      <button onClick={() => api.sortColumn("CustomerName")}>
+        Sort by Customer Name
+      </button>
     </>
   );
 };
@@ -377,18 +364,15 @@ const UseTubularExample = () => {
           })}
         </tbody>
       </table>
-      
-      <div>
-        <button onClick={() => api.goToPage(state.page + 1)}>
-          Go to next page
-        </button>
-        <button onClick={() => api.goToPage(state.page - 1)}>
-          Go to previous page
-        </button>
-        <button onClick={() => api.sortColumn("CustomerName")}>
-          Sort by Customer Name
-        </button>
-      </div>
+      <button onClick={() => api.goToPage(state.page + 1)}>
+        Go to next page
+      </button>
+      <button onClick={() => api.goToPage(state.page - 1)}>
+        Go to previous page
+      </button>
+      <button onClick={() => api.sortColumn("CustomerName")}>
+        Sort by Customer Name
+      </button>
     </>
   );
 };
