@@ -13,3 +13,11 @@
   height: 400px;
   top: -5px;
 }
+
+.pre-block {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 450px;
+  width: 780px;
+  font-family: Consolas, serif;
+}
