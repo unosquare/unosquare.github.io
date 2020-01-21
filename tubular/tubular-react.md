@@ -345,19 +345,19 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
   </div>
-  <div class="col-2 toc">
-    <ul>
-      <li>
-        <p class="navbar-brand pl-3">Table of Content</p>
-      </li>
-      <li>
-        <a class="nav-link" href="#DataGrid">DataGrid</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#ColumnModel">ColumnModel</a>
-      </li>
-    </ul>
-  </div>
+</div>
+<div class="col-2 toc">
+  <ul>
+    <li>
+      <p class="navbar-brand pl-3">Table of Content</p>
+    </li>
+    <li>
+      <a class="nav-link" href="#DataGrid">DataGrid</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#ColumnModel">ColumnModel</a>
+    </li>
+  </ul>
 </div>
 
 ### Example of DataGrid with custom row component.
