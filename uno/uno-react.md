@@ -74,7 +74,7 @@ function App() {
   const Enhanced = useClickOutside(toBeEnhanced, functionToApply);
   return (
 
-    ``` tsx
+    {% raw %}
     <div className="App">
       <h1>Uno-React</h1>
       <h2>useClickOutside</h2>
@@ -90,8 +90,8 @@ function App() {
         <Enhanced />
       </div>
     </div>
-    ```
-    
+    {% endraw %}
+
   );
 }
 
