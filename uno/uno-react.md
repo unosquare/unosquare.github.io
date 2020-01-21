@@ -51,8 +51,8 @@ description: "Check out uno-react, a Typescript library with common functions an
         </div>
 <pre>
 
+``` tsx
 import { useClickOutside } from "uno-react";
-
 function App() {
   const [color, setColor] = React.useState("green");
   const onClick = () => setColor("green");
@@ -73,8 +73,6 @@ function App() {
   const functionToApply = () => setColor("red");
   const Enhanced = useClickOutside(toBeEnhanced, functionToApply);
   return (
-
-    {% raw %}
     <div className="App">
       <h1>Uno-React</h1>
       <h2>useClickOutside</h2>
@@ -90,10 +88,9 @@ function App() {
         <Enhanced />
       </div>
     </div>
-    {% endraw %}
-
   );
 }
+```
 
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSandbox</a>
