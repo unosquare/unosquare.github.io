@@ -35,7 +35,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
       </div>
     </div>
     <pre>
-    ```tsx
     const UseTubularExample = () => {
       const [refresh, forceRefresh] = useGridRefresh();
       const forceGridRefresh = () => {
@@ -58,7 +57,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         </>
       );
     };
-    ```
     </pre>
     <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
     <div class="mb-4">
