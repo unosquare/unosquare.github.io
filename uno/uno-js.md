@@ -56,14 +56,18 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { colorGenerator } from "uno-js";  
 
 const x = [0, 0, 0];
 const y = [90, 60, 30];
 colorGenerator(x, y, 3);
 // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="debounce">
             <h4 class="blue-title">debounce</h4>
@@ -100,6 +104,8 @@ colorGenerator(x, y, 3);
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { debounce } from 'uno-js';
 const fn = debounce(() => {
   console.log('Hello!');
@@ -114,9 +120,10 @@ const showDebounce = async () => {
   await delay(300);
 }
 showDebounce();
-</pre>
+```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="humanize">
             <h4 class="blue-title">humanize</h4>
@@ -147,11 +154,15 @@ showDebounce();
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { humanize } from "uno-js";
 const toHumanize = humanize("thisIsAnAwesomeExample");
 // => This Is An Awesome Example
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="objectDifference">
             <h4 class="blue-title">objectDifference</h4>
@@ -190,14 +201,18 @@ const toHumanize = humanize("thisIsAnAwesomeExample");
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { objectDifference } from "uno-js";
 const x = { name: "Mike", age: 3, gender: "Male" };
 const y = { name: "John", age: 5, gender: "Male" };
 
 const difference = objectDifference(x, y);
 // => [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="removeDuplicated">
             <h4 class="blue-title">removeDuplicated</h4>
@@ -233,6 +248,8 @@ const difference = objectDifference(x, y);
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { removeDuplicated } from "uno-js";
 const x1 = { name: "Mike", age: 3, gender: "Male" };
 const x2 = { name: "Mike", age: 3, gender: "Male" };
@@ -242,8 +259,10 @@ const array = [x1, x2, y1, y2];
 
 const unique = removeDuplicated([x1, x2, y1, y2], "name");
 // => [{ name: "Mike", age: 3, gender: "Male" }, { name: "John", age: 5, gender: "Male" }]
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="toDate">
             <h4 class="blue-title">toDate</h4>
@@ -274,13 +293,17 @@ const unique = removeDuplicated([x1, x2, y1, y2], "name");
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { toDate } from "uno-js";
 const MyObject: any = { myDateString: "08.17.1994" };
 
 toDate(MyObject);
 // => 1994-08-17T06:00:00.000Z
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="toTitleCase">
             <h4 class="blue-title">toTitleCase</h4>
@@ -311,12 +334,16 @@ toDate(MyObject);
           </div>
         </div>
 <pre class="pre-block">
+
+``` tsx
 import { toTitleCase } from "uno-js";
 
 const x = toTitleCase("heLLo WoRld!");
 // => Hello World
+```
+
 </pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSanbox</a>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
       </div>
       <div class="col-2 toc">
         <ul>

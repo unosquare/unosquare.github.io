@@ -49,6 +49,7 @@ description: "Check out uno-react, a Typescript library with common functions an
               None
             </p>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -96,7 +97,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useEffectWithDebounce">
             <h4 class="blue-title">useEffectWithDebounce</h4>
@@ -137,6 +139,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -165,7 +168,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useEffectWithLoading">
             <h4 class="blue-title">useEffectWithLoading</h4>
@@ -209,6 +213,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -253,7 +258,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useNow">
             <h4 class="blue-title">useNow</h4>
@@ -267,6 +273,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -288,7 +295,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="usePersistedState">
             <h4 class="blue-title">usePersistedState</h4>
@@ -324,6 +332,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -355,7 +364,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useResolutionSwitch">
             <h4 class="blue-title">useResolutionSwitch</h4>
@@ -390,6 +400,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -413,7 +424,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useStateForField">
             <h4 class="blue-title">useStateForField</h4>
@@ -446,6 +458,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -472,7 +485,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement)
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useStateForModel">
             <h4 class="blue-title">useStateForModel</h4>
@@ -510,6 +524,7 @@ ReactDOM.render(<App />, rootElement)
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -543,7 +558,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useStateForModelWithLoading">
             <h4 class="blue-title">useStateForModelWithLoading</h4>
@@ -589,6 +605,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -617,7 +634,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="useToggle">
             <h4 class="blue-title">useToggle</h4>
@@ -649,6 +667,7 @@ ReactDOM.render(<App />, rootElement);
             </p>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -676,27 +695,31 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="ValidatorForm">
             <h4 class="blue-title">ValidatorForm</h4>
             <p>
               This component extends the original ValidatorForm rules. This component works for wrap TextValidator component(s) and for register any other custom rules, this rules can be used in the wrapped components.
-              Rules:
-              isNotAllBlanks: Validates that the input is not empty, white spaces are ignored.
-              maxNaturalNumber: Validates that the input number si not greather than the given.
-              validateEndDate: Validates than endDate is later than startDate.
-              startDateGreaterThanEndDate: Validates that a date is bigger than other.
-              isImage: Verify that the input correspond to a image name with image file extension.
-              atLeastOneLowerAndUpperCase: Verify that the input has at least one letter in lower case and one in upper case.
-              atLeastOneNumber: Verify that the input has at least one number.
-              atLeastOneSpecialCharacter: Verify that the input has at least one special character (e.g. * # $ &).
-              pincodeValidator: Verify the input contains only numeric values and has a length of 6 characters.
-              password: Validated that the input has at least a length of 8 characteres and contains especial characters, lower case & upper case characters.
-              isPasswordMatch: Verify that the input is equal to another value. (e.g. when validated password & password verfication fields).
             </p>
+            <b>Rules:</b>
+            <ul>
+              <li>isNotAllBlanks: Validates that the input is not empty, white spaces are ignored.</li>
+              <li>maxNaturalNumber: Validates that the input number si not greather than the given.</li>
+              <li>validateEndDate: Validates than endDate is later than startDate.</li>
+              <li>startDateGreaterThanEndDate: Validates that a date is bigger than other.</li>
+              <li>isImage: Verify that the input correspond to a image name with image file extension.</li>
+              <li>atLeastOneLowerAndUpperCase: Verify that the input has at least one letter in lower case and one in upper case.</li>
+              <li>atLeastOneNumber: Verify that the input has at least one number.</li>
+              <li>atLeastOneSpecialCharacter: Verify that the input has at least one special character (e.g. * # $ &).</li>
+              <li>pincodeValidator: Verify the input contains only numeric values and has a length of 6 characters.</li>
+              <li>password: Validated that the input has at least a length of 8 characteres and contains especial characters, lower case & upper case characters.</li>
+              <li>isPasswordMatch: Verify that the input is equal to another value. (e.g. when validated password & password verfication fields).</li>
+            </ul>
           </div>
         </div>
+<pre>
 
 ```tsx
 import * as React from "react";
@@ -738,7 +761,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 ```
 
-<a class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSanbox</a>
+</pre>
+<a class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
       </div>
       <div class="col-2 toc">
         <ul>
