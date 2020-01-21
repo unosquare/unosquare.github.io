@@ -304,6 +304,7 @@ const UseTbTableExample = () => {
       </div>
     </div>
 <pre>
+<code>
 const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
@@ -350,6 +351,7 @@ const UseTubularExample = () => {
     </>
   );
 };
+</code>
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
   </div>
