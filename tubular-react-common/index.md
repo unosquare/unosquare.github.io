@@ -304,12 +304,10 @@ const UseTbTableExample = () => {
       </div>
     </div>
 <pre>
-<code>
-const UseTubularExample = () => {
-  const { state, api } = useTubular(columns, localData);
+<code>const UseTubularExample = () => {</code>
+  <code>const { state, api } = useTubular(columns, localData);</code>
   return (
     <>
-      {% raw %}
       <table>
         <thead>
           <tr role="rowheader">
@@ -338,7 +336,6 @@ const UseTubularExample = () => {
           })}
         </tbody>
       </table>
-      {% endraw %}
       <button onClick={() => api.goToPage(state.page + 1)}>
         Go to next page
       </button>
