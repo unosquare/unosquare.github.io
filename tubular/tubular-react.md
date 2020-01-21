@@ -414,7 +414,7 @@ name identifier as well as an object of column options with the following proper
   </thead>
   <tbody>
     <tr>
-      <td>Name<td>
+      <td>Name</td>
       <td>string</td>
       <td>Name of the Column</td>
       <td>No</td>
@@ -537,5 +537,3 @@ const columns = [
 ];
 export default columns;
 ```
-
-
