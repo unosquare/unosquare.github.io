@@ -3,7 +3,6 @@ layout: page
 title: "Open Source Software Initiatives from Unosquare | uno-react"
 description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
-
 <div class="container content-home d-flex flex-row">
       <div class="col-10 p-0">
         <div class="d-flex flex-row space-between">
