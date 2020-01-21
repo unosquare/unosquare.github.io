@@ -34,35 +34,33 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         </p>
       </div>
     </div>
-<pre>
-
-```tsx
-const UseTubularExample = () => {
-  const [refresh, forceRefresh] = useGridRefresh();
-  const forceGridRefresh = () => {
-    setTimeout(() => {
-      forceRefresh();
-    }, 8000);
-  };
-  return (
-    <>
-      <button onClick={() => forceGridRefresh()}>Force Refresh</button>
-      <div
-        id="loader"
-      />
-      <DataTable
-        gridName="tbTable"
-        columns={columns}
-        dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-        deps={[refresh]}
-      />
-    </>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
+    <pre>
+    ```tsx
+    const UseTubularExample = () => {
+      const [refresh, forceRefresh] = useGridRefresh();
+      const forceGridRefresh = () => {
+        setTimeout(() => {
+          forceRefresh();
+        }, 8000);
+      };
+      return (
+        <>
+          <button onClick={() => forceGridRefresh()}>Force Refresh</button>
+          <div
+            id="loader"
+          />
+          <DataTable
+            gridName="tbTable"
+            columns={columns}
+            dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+            deps={[refresh]}
+          />
+        </>
+      );
+    };
+    ```
+    </pre>
+    <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
     <div class="mb-4">
       <div id="useMasterDetails">
         <h4 class="blue-title">useMasterDetails</h4>
