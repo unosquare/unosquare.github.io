@@ -3,6 +3,7 @@ layout: page
 title: "Open Source Software Initiatives from Unosquare | Tubular"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
+<div class="container content-home d-flex flex-row">
   <div class="col-10 p-0">
     <div class="d-flex flex-row space-between">
       <h1>tubular-react<h1>
@@ -535,5 +536,4 @@ const columns = [
 ];
 export default columns;
 ```
-
-
+</div>
