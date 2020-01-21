@@ -144,8 +144,8 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
     </div>
+    <h3>Examples</h3>
     <div>
-      <h3>Examples</h3>
       <p>Example of DataGrid with footer component.</p>
       <code>
         <pre>
@@ -169,10 +169,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Edit on CodeSandbox</a>
     </div>
     <div>
-      <h3>Examples</h3>
       <p>Example of DataGrid with Toolbar options.</p>
       <code>
         <pre>
@@ -195,10 +194,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
     </div>
     <div>
-      <h3>Examples</h3>
       <p>Example of DataGrid with custom number of items per page.</p>
       <code>
         <pre>
@@ -219,7 +217,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           };
         </pre>
       </code>
-      <a href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc">
