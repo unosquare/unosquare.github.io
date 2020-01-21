@@ -52,10 +52,8 @@ description: "Check out uno-react, a Typescript library with common functions an
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useClickOutside } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [color, setColor] = React.useState("green");
   const onClick = () => setColor("green");
@@ -93,8 +91,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -142,10 +138,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useEffectWithDebounce, useStateForField } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [searchText, handleChange, setSearchText] = useStateForField("");
   const debounceTime = 2000;
@@ -164,8 +158,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -216,10 +208,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useEffectWithLoading } from "uno-react";
-import "./styles.css";
+
 function getMyData(input) {
   return new Promise<{}>(resolve => {
     setTimeout(() => resolve(input), 5000);
@@ -254,8 +244,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -276,10 +264,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useNow } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [now] = useNow();
   return (
@@ -291,8 +277,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -335,10 +319,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { usePersistedState } from "uno-react";
-import "./styles.css";
+
 function App() {
   const key = "exampleToken";
   const defaultValue = "unosquareToken";
@@ -360,8 +342,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -403,10 +383,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useResolutionSwitch } from "uno-react";
-import "./styles.css";
+
 function App() {
   const outerWidth = 1000;
   const timeout = 1000;
@@ -420,8 +398,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -461,10 +437,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useStateForField } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [myValue, handleChange, setMyValue] = useStateForField("");
   const reset = () => setMyValue("");
@@ -481,8 +455,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement)
 ```
 
 </pre>
@@ -527,10 +499,8 @@ ReactDOM.render(<App />, rootElement)
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useStateForModel } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [model, handleChange] = useStateForModel({
     id: 1,
@@ -554,8 +524,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -608,10 +576,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useEffectWithDebounce, useStateForField } from "uno-react";
-import "./styles.css";
+
 function App() {
   const [searchText, handleChange, setSearchText] = useStateForField("");
   const debounceTime = 2000; // 2 Seconds
@@ -630,8 +596,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -670,10 +634,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useToggle } from "uno-react";
-import "./styles.css";
+
 function App() {
   const defaultValue = false;
   const [myValue, toggle] = useToggle(defaultValue);
@@ -691,8 +653,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
@@ -722,11 +682,8 @@ ReactDOM.render(<App />, rootElement);
 <pre>
 
 ```tsx
-import * as React from "react";
-import ReactDOM from "react-dom";
 import { useStateForModel, ValidatorForm } from "uno-react";
-import { TextValidator } from "uno-material-ui";
-import "./styles.css";
+
 function App() {
   const [fields, handleChange] = useStateForModel({
     isNotAllBlanks: ""
@@ -757,8 +714,6 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ```
 
 </pre>
