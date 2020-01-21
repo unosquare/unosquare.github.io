@@ -144,30 +144,83 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
     </div>
-    <h3>Examples</h3>
-    <p>Example of DataGrid with footer component.</p>
-    <code>
-      <pre>
-        import columns from "./columns";
-        import { DataGrid, ToolbarOptions } from "tubular-react";
-        const tbFooter = ({ aggregates }: any) => (
-          < tr >
-            < tdTotal:< /td >
-            < td >{aggregates && aggregates.CustomerName}< /td >
-          < /tr >
-        );
-        const RemoteDataGrid: React.FunctionComponent = () => {
-          return (
-            < DataGrid
-              gridName="Tubular-React"
-              columns={columns}
-              dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-              footerComponent={tbFooter}
-            >
+    <div>
+      <h3>Examples</h3>
+      <p>Example of DataGrid with footer component.</p>
+      <code>
+        <pre>
+          import columns from "./columns";
+          import { DataGrid, ToolbarOptions } from "tubular-react";
+          const tbFooter = ({ aggregates }: any) => (
+            < tr >
+              < tdTotal:< /td >
+              < td >{aggregates && aggregates.CustomerName}< /td >
+            < /tr >
           );
-        };
-      </pre>
-    </code>
+          const RemoteDataGrid: React.FunctionComponent = () => {
+            return (
+              < DataGrid
+                gridName="Tubular-React"
+                columns={columns}
+                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                footerComponent={tbFooter}
+              >
+            );
+          };
+        </pre>
+      </code>
+      <a href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Edit on CodeSandbox</a>
+    </div>
+    <div>
+      <h3>Examples</h3>
+      <p>Example of DataGrid with Toolbar options.</p>
+      <code>
+        <pre>
+          import columns from "./columns";
+          import { DataGrid, ToolbarOptions } from "tubular-react";
+          const RemoteDataGrid: React.FunctionComponent = () => {
+            const toolbarOptions = new ToolbarOptions({
+              searchText: false,
+              topPager: false
+            });
+            return (
+              < DataGrid
+                gridName="Tubular-React"
+                columns={columns}
+                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                toolbarOptions={toolbarOptions}
+                footerComponent={tbFooter}
+              / >
+            );
+          };
+        </pre>
+      </code>
+      <a href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+    </div>
+    <div>
+      <h3>Examples</h3>
+      <p>Example of DataGrid with custom number of items per page.</p>
+      <code>
+        <pre>
+          import { DataGrid, ToolbarOptions } from "tubular-react";
+          import columns from "./columns";
+          const RemoteDataGrid: React.FunctionComponent = () => {
+            const toolbarOptions = new ToolbarOptions({
+              itemsPerPage: 15,
+            });
+            return (
+              < DataGrid
+                gridName="Tubular-React"
+                columns={columns}
+                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                toolbarOptions={toolbarOptions}
+              / >
+            );
+          };
+        </pre>
+      </code>
+      <a href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Edit on CodeSandbox</a>
+    </div>
   </div>
   <div class="col-2 toc">
     <ul>
@@ -183,56 +236,6 @@ description: "Check out uno-react, a Typescript library with common functions an
     </ul>
   </div>
 </div>
-
-[![Edit RemoteDataGrid -footerComponent example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)
-
-### Example of DataGrid with Toolbar options.
-```tsx
-import columns from "./columns";
-import { DataGrid, ToolbarOptions } from "tubular-react";
-
-const RemoteDataGrid: React.FunctionComponent = () => {
-  const toolbarOptions = new ToolbarOptions({
-    searchText: false,
-    topPager: false
-  });
-  return (
-    <DataGrid
-      gridName="Tubular-React"
-      columns={columns}
-      dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-      toolbarOptions={toolbarOptions}
-      footerComponent={tbFooter}
-    />
-  );
-};
-
-export default RemoteDataGrid;
-```
-[![Edit RemoteDataGrid -footerComponent example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)
-
-### Example of DataGrid with custom number of items per page.
-``` tsx
-import { DataGrid, ToolbarOptions } from "tubular-react";
-import columns from "./columns";
-
-const RemoteDataGrid: React.FunctionComponent = () => {
-  const toolbarOptions = new ToolbarOptions({
-    itemsPerPage: 15,
-  });
-  return (
-    <DataGrid
-      gridName="Tubular-React"
-      columns={columns}
-      dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-      toolbarOptions={toolbarOptions}
-    />
-  );
-};
-
-export default RemoteDataGrid;
-```
-[![Edit RemoteDataGrid -itemsPerPage example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Example of DataGrid with onRowClick event.
 ``` tsx
