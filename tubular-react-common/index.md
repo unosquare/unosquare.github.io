@@ -77,8 +77,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
       </div>
     </div>
 <pre>
-
-```tsx
 const MasterDetailRow = ({ columns, row, index }) => {
   const [open, openDetails] = useMasterDetails();
   const openMasterDetails = () => {
@@ -110,8 +108,6 @@ const MasterDetailRow = ({ columns, row, index }) => {
     </>
   );
 };
-```
-
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
     <div class="mb-4">
@@ -158,8 +154,6 @@ const MasterDetailRow = ({ columns, row, index }) => {
       </div>
     </div>
 <pre>
-
-``` tsx
 const UseTbListExample: React.FunctionComponent = () => {
   const tbList = useTbList(
     columns,
@@ -183,8 +177,6 @@ const UseTbListExample: React.FunctionComponent = () => {
     />
   );
 };
-```
-
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     <div class="mb-4">
@@ -235,8 +227,6 @@ const UseTbListExample: React.FunctionComponent = () => {
         </p>
     </div>
 <pre>
-
-```tsx
 const UseTbTableExample = () => {
   const { state, api } = useTbTable(columns, localData);
   return (
@@ -281,8 +271,6 @@ const UseTbTableExample = () => {
     </>
   );
 };
-```
-
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
     <div class="mb-4">
@@ -331,8 +319,6 @@ const UseTbTableExample = () => {
       </div>
     </div>
 <pre>
-
-```tsx
 const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
@@ -377,8 +363,6 @@ const UseTubularExample = () => {
     </>
   );
 };
-```
-
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
   </div>
