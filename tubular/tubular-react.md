@@ -16,15 +16,14 @@ description: "Check out uno-react, a Typescript library with common functions an
     </div>
     <p>Tubular-React is a Material-UI table with local or remote data-source. Featuring:</p>
     <ul style="list-style-type:disc;">
-      <li>- Define a custom layout for columns and cells using render methods.
-      <li>- Use a remote or local datasource. Remote datasource use a specific Request and Response format.
-      <li>- Sort and filter multiple columns.
-      <li>- Free-text search of string columns.
-      <li>- Page data. Remote data is paged in the server side.
-      <li>- Export data to a CSV file.
-      <li>- Print data.
+      <li>Define a custom layout for columns and cells using render methods.</li>
+      <li>Use a remote or local datasource. Remote datasource use a specific Request and Response format.</li>
+      <li>Sort and filter multiple columns.</li>
+      <li>Free-text search of string columns.</li>
+      <li>Page data. Remote data is paged in the server side.</li>
+      <li>Export data to a CSV file.</li>
+      <li>Print data.</li>
     <ul>
-  </div>
   <div class="col-2 toc">
     <ul>
       <li>
