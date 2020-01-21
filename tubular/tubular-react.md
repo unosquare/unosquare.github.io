@@ -3,7 +3,6 @@ layout: page
 title: "Open Source Software Initiatives from Unosquare | Tubular"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
-<div class="container content-home d-flex flex-row">
   <div class="col-10 p-0">
     <div class="d-flex flex-row space-between">
       <h1>tubular-react<h1>
@@ -25,7 +24,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
     <li>-Export data to a CSV file.</li>
     <li>-Print data.</li>
   </ul>
-</div>
 
 ## DataGrid
 The grid will connect to a remote datasource or have a local datasource depending on what's
