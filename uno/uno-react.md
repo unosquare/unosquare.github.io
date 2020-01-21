@@ -58,7 +58,7 @@ function App() {
   const onClick = () => setColor("green");
   const toBeEnhanced = () => (
     <div
-      className="DemoDiv"
+      className='DemoDiv'
       style={{
         backgroundColor: color,
         color: "#fff",
@@ -73,6 +73,8 @@ function App() {
   const functionToApply = () => setColor("red");
   const Enhanced = useClickOutside(toBeEnhanced, functionToApply);
   return (
+
+    ``` tsx
     <div className="App">
       <h1>Uno-React</h1>
       <h2>useClickOutside</h2>
@@ -88,6 +90,8 @@ function App() {
         <Enhanced />
       </div>
     </div>
+    ```
+    
   );
 }
 
