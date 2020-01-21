@@ -45,9 +45,6 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
       return (
         <>
           <button onClick={() => forceGridRefresh()}>Force Refresh</button>
-          <div
-            id="loader"
-          />
           <DataTable
             gridName="tbTable"
             columns={columns}
@@ -169,14 +166,10 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
     "https://tubular.azurewebsites.net/api/orders/paged"
   );
   return (
-    <div className="root" style={{ width: 200, height: 500 }}>
+    <div>
       <div>
         <Button>Sort by</Button>
-        <Button
-          color="primary"
-          size="small"
-          onClick={handleClick}
-        >
+        <Button onClick={handleClick}>
           <ArrowDropDownIcon />
         </Button>
         <Menu>
@@ -189,7 +182,7 @@ const UseTbListExample: React.FunctionComponent<any> = () => {
           </MenuItem>
         </Menu>
       </div>
-      <div style={{ width: "250px", height: "100%" }}>
+      <div>
         <TbList
           tbInstance={tbList}
           listItemComponent={MyListItem}
