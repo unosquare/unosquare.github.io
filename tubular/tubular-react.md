@@ -25,7 +25,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       <li>Print data.</li>
     <ul>
     <div class="mb-4">
-      <div id="useClickOutside">
+      <div id="DataGrid">
         <h4 class="blue-title">DataGrid</h4>
         <p>
           The grid will connect to a remote datasource or have a local datasource 
