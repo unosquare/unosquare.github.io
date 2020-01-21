@@ -158,16 +158,15 @@ const MasterDetailRow = ({ columns, row, index }) => {
       </div>
     </div>
 <pre>
+
+``` tsx
 const UseTbListExample: React.FunctionComponent = () => {
   const tbList = useTbList(
     columns,
     "https://tubular.azurewebsites.net/api/orders/paged"
   );
   return (
-    <Button>Sort by</Button>
-    <Button onClick={handleClick}>
-      <ArrowDropDownIcon />
-    </Button>
+    <button>Sort by</button>
     <Menu>
       <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
       <MenuItem onClick={handleColumnSelect("CustomerName")}>
@@ -184,6 +183,8 @@ const UseTbListExample: React.FunctionComponent = () => {
     />
   );
 };
+```
+
 </pre>
 <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     <div class="mb-4">
