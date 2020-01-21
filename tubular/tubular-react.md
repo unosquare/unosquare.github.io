@@ -14,6 +14,16 @@ description: "Check out uno-react, a Typescript library with common functions an
         <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
       </a>
     </div>
+    <p>Tubular-React is a Material-UI table with local or remote data-source. Featuring:</p>
+    <ul style="list-style-type:disc;">
+      <li>- Define a custom layout for columns and cells using render methods.
+      <li>- Use a remote or local datasource. Remote datasource use a specific Request and Response format.
+      <li>- Sort and filter multiple columns.
+      <li>- Free-text search of string columns.
+      <li>- Page data. Remote data is paged in the server side.
+      <li>- Export data to a CSV file.
+      <li>- Print data.
+    <ul>
   </div>
   <div class="col-2 toc">
     <ul>
@@ -29,19 +39,6 @@ description: "Check out uno-react, a Typescript library with common functions an
     </ul>
   </div>
 </div>
-
-# tubular-react
-Tubular-React is a Material-UI table with local or remote data-source. Featuring:
-- Define a custom layout for columns and cells using render methods.
-- Use a remote or local datasource. Remote datasource use a specific Request and Response format.
-- Sort and filter multiple columns.
-- Free-text search of string columns.
-- Page data. Remote data is paged in the server side.
-- Export data to a CSV file.
-- Print data.
-
-[![Tubular React - npm](/assets/npm.svg "npm")](https://www.npmjs.com/package/uno-react)
-[![Tubular React - GitHub](/assets/github.png "GitHub")](https://github.com/unosquare/uno-react)
 
 ## DataGrid
 The grid will connect to a remote datasource or have a local datasource depending on what's
