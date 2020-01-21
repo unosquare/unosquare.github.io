@@ -151,19 +151,19 @@ description: "Check out uno-react, a Typescript library with common functions an
         import columns from "./columns";
         import { DataGrid, ToolbarOptions } from "tubular-react";
         const tbFooter = ({ aggregates }: any) => (
-          <tr>
-            <td>Total:</td>
-            <td>{aggregates && aggregates.CustomerName}</td>
-          </tr>
+          &lttr&gt
+            &lttdTotal:&lt/td&gt
+            &lttd&gt{aggregates && aggregates.CustomerName}&lt/td&gt
+          &lt/tr&gt
         );
         const RemoteDataGrid: React.FunctionComponent = () => {
           return (
-            <DataGrid
+            &ltDataGrid
               gridName="Tubular-React"
               columns={columns}
               dataSource="https://tubular.azurewebsites.net/api/orders/paged"
               footerComponent={tbFooter}
-            />
+            /&gt
           );
         };
       </pre>
