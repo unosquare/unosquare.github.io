@@ -309,17 +309,18 @@ const UseTubularExample = () => {
   const { state, api } = useTubular(columns, localData);
   return (
     <>
-      `<table>`
-        `<thead>`
-          `<tr role="rowheader">`
+
+<table>
+        <thead>
+          <tr role="rowheader">
             {state.columns
               .filter(col => col.visible)
               .map(col => {
                 return <th key={col.name}>{col.label}</th>;
               })}
-          `</tr>`
-        `</thead>`
-        `<tbody>`
+          </tr>
+        </thead>
+        <tbody>
           {state.data.map((row, index) => {
             return (
               <tr key={index}>
@@ -335,8 +336,9 @@ const UseTubularExample = () => {
               </tr>
             );
           })}
-        `</tbody>`
-      `</table>`
+        </tbody>
+
+</table>
       <button onClick={() => api.goToPage(state.page + 1)}>
         Go to next page
       </button>
