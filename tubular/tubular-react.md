@@ -131,9 +131,6 @@ passed in the dataSource property.
 # Examples
 ### Example of DataGrid with footer component.
 ```tsx
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
-import * as React from "react";
 import columns from "./columns";
 import { DataGrid, ToolbarOptions } from "tubular-react";
 
@@ -165,9 +162,6 @@ export default RemoteDataGrid;
 
 ### Example of DataGrid with Toolbar options.
 ```tsx
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
-import * as React from "react";
 import columns from "./columns";
 import { DataGrid, ToolbarOptions } from "tubular-react";
 
@@ -193,7 +187,6 @@ export default RemoteDataGrid;
 
 ### Example of DataGrid with custom number of items per page.
 ``` tsx
-import * as React from "react";
 import { DataGrid, ToolbarOptions } from "tubular-react";
 import columns from "./columns";
 
@@ -217,7 +210,6 @@ export default RemoteDataGrid;
 
 ### Example of DataGrid with onRowClick event.
 ``` tsx
-import * as React from "react";
 import { DataGrid } from "tubular-react";
 import columns from "./columns";
 
@@ -242,13 +234,8 @@ export default RemoteDataGrid;
 
 ### Example of DataGrid with custom row component.
 ``` tsx
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
-import * as React from "react";
 import columns from "./columns";
 import { DataGrid, ToolbarOptions, TbRowProps } from "tubular-react";
-import CheckBox from "@material-ui/icons/CheckBox";
-import CheckBoxOutlineBlank from "@material-ui/icons/CheckBoxOutlineBlank";
 import { formatDate } from "tubular-common";
 
 const CustomTbRow: React.FunctionComponent = ({
@@ -317,9 +304,7 @@ export default RemoteDataGrid;
 
 ### Example of DataGrid with MobileResolution breakpoint.
 ```tsx
-import * as React from "react";
-import { ToolbarOptions } from "tubular-react";
-import { DataGrid } from "tubular-react";
+import { DataGrid, ToolbarOptions } from "tubular-react";
 import columns from "./columns";
 
 const mobileBreakpointWidth = 800;
