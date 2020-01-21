@@ -161,15 +161,6 @@ const UseTbListExample: React.FunctionComponent = () => {
   );
   return (
     <button>Sort by</button>
-    <Menu>
-      <MenuItem onClick={handleColumnSelect("OrderID")}>OrderID</MenuItem>
-      <MenuItem onClick={handleColumnSelect("CustomerName")}>
-        CustomerName
-      </MenuItem>
-      <MenuItem onClick={handleColumnSelect("ShipperCity")}>
-        ShipperCity
-      </MenuItem>
-    </Menu>
     <TbList
       tbInstance={tbList}
       listItemComponent={MyListItem}
