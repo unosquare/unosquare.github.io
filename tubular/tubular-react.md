@@ -1,4 +1,13 @@
-# Tubular React
+
+<div class="d-flex flex-row space-between">
+  <h1>tubular-react<h1>
+  <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
+    <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
+  </a>
+  <a href="https://github.com/unosquare/tubular-react">
+    <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
+  </a>
+</div>
 Tubular-React is a Material-UI table with local or remote data-source. Featuring:
 - Define a custom layout for columns and cells using render methods.
 - Use a remote or local datasource. Remote datasource use a specific Request and Response format.
@@ -8,29 +17,122 @@ Tubular-React is a Material-UI table with local or remote data-source. Featuring
 - Export data to a CSV file.
 - Print data.
 
-[![Tubular React - npm](/assets/npm.svg "npm")](https://www.npmjs.com/package/uno-react)
-[![Tubular React - GitHub](/assets/github.png "GitHub")](https://github.com/unosquare/uno-react)
-
 ## DataGrid
 The grid will connect to a remote datasource or have a local datasource depending on what's
 passed in the dataSource property.
 
 **PROPERTIES**
-| Name | Type | Description | Optional | Default value |
-|------|------|-------------|----------|---------------|
-| columns | ColumnModel[] | Array that defines the type of columns to be rendered on the grid | No | None |
-| dataSource | <ul><li>Object[]</li><li>string</li><li>Request</li><li>TubularHttpClientAbstract</li></ul> | Source of the data for the grid | No | None |
-| deps | any[] | Array of dependencies for grid | No | None |
-| detailComponent | React.ReactElement<DetailComponent> | Element used to render row details | No | None |
-| gridName | string | Name of the grid - *Note: two or more grids with same name may cause problems* | No | None |
-| storage | DataGridStorage | Save data to localStorage | Yes | None |
-| toolbarOptions | ToolbarOptions | Options to present on the grid | Yes | None |
-| mobileBreakpointWidth | number | Minimum width to change style to mobile version | Yes | None |
-| rowComponent | React.FunctionComponent<TbRowProps> | Custom row component | Yes | None |
-| rowMobileComponent | React.FunctionComponent<TbRowProps> | Custom row component for mobile version | Yes | None |
-| footerComponent | React.FunctionComponent<any> | Custom component for Grid footer | Yes | None |
-| onError | Function | Function to handle errors | Yes | None |
-| onRowClick | Function | Function to handle when a row is clicked | Yes | None |
+<table>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+      <td>Optional</td>
+      <td>Default value</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>columns</td>
+      <td>ColumnModel[]</td>
+      <td>Array that defines the type of columns to be rendered on the grid</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>dataSource</td>
+      <td>
+        <ul>
+          <li>Object[]</li>
+          <li>string</li>
+          <li>Request</li>
+          <li>TubularHttpClientAbstract</li>
+        </ul>
+      </td>
+      <td>Source of the data for the grid</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>deps</td>
+      <td>any[]</td>
+      <td>Array of dependencies for grid</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>detailComponent</td>
+      <td>React.ReactElement<DetailComponent></td>
+      <td>Element used to render row details</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>gridName</td>
+      <td>string</td>
+      <td>Name of the grid - *Note: two or more grids with same name may cause problems*</td>
+      <td>No</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>storage</td>
+      <td>DataGridStorage</td>
+      <td>Save data to localStorage</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>toolbarOptions</td>
+      <td>ToolbarOptions</td>
+      <td>Options to present on the grid</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>mobileBreakpointWidth</td>
+      <td>number</td>
+      <td>Minimum width to change style to mobile version</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>rowComponent</td>
+      <td>React.FunctionComponent<TbRowProps></td>
+      <td>Custom row component</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>rowMobileComponent</td>
+      <td>React.FunctionComponent<TbRowProps></td>
+      <td>Custom row component for mobile version</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>footerComponent</td>
+      <td>React.FunctionComponent<any></td>
+      <td>Custom component for Grid footer</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>onError</td>
+      <td>Function</td>
+      <td>Function to handle errors</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>onRowClick</td>
+      <td>Function</td>
+      <td>Function to handle when a row is clicked</td>
+      <td>Yes</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
 
 # Examples
 ### Example of DataGrid with footer component.
