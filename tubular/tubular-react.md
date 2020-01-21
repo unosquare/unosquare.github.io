@@ -24,6 +24,127 @@ description: "Check out uno-react, a Typescript library with common functions an
       <li>Export data to a CSV file.</li>
       <li>Print data.</li>
     <ul>
+    <div class="mb-4">
+      <div id="useClickOutside">
+        <h4 class="blue-title">DataGrid</h4>
+        <p>
+          The grid will connect to a remote datasource or have a local datasource 
+          depending on what's passed in the dataSource property.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Description</td>
+              <td>Optional</td>
+              <td>Default value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>columns</td>
+              <td>ColumnModel[]</td>
+              <td>Array that defines the type of columns to be rendered on the grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>dataSource</td>
+              <td>
+                <ul>
+                  <li>Object[]</li>
+                  <li>string</li>
+                  <li>Request</li>
+                  <li>TubularHttpClientAbstract</li>
+                </ul>
+              </td>
+              <td>Source of the data for the grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>deps</td>
+              <td>any[]</td>
+              <td>Array of dependencies for grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>detailComponent</td>
+              <td>React.ReactElement</td>
+              <td>Element used to render row details</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>gridName</td>
+              <td>string</td>
+              <td>Name of the grid - *Note: two or more grids with same name may cause problems*</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>storage</td>
+              <td>DataGridStorage</td>
+              <td>Save data to localStorage</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>toolbarOptions</td>
+              <td>ToolbarOptions</td>
+              <td>Options to present on the grid</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>mobileBreakpointWidth</td>
+              <td>number</td>
+              <td>Minimum width to change style to mobile version</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>rowComponent</td>
+              <td>React.FunctionComponent</td>
+              <td>Custom row component</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>rowMobileComponent</td>
+              <td>React.FunctionComponent</td>
+              <td>Custom row component for mobile version</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>footerComponent</td>
+              <td>React.FunctionComponent</td>
+              <td>Custom component for Grid footer</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>onError</td>
+              <td>Function</td>
+              <td>Function to handle errors</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>onRowClick</td>
+              <td>Function</td>
+              <td>Function to handle when a row is clicked</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
   <div class="col-2 toc">
     <ul>
       <li>
@@ -38,123 +159,6 @@ description: "Check out uno-react, a Typescript library with common functions an
     </ul>
   </div>
 </div>
-
-## DataGrid
-The grid will connect to a remote datasource or have a local datasource depending on what's
-passed in the dataSource property.
-
-**PROPERTIES**
-<table>
-  <thead>
-    <tr>
-      <td>Name</td>
-      <td>Type</td>
-      <td>Description</td>
-      <td>Optional</td>
-      <td>Default value</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>columns</td>
-      <td>ColumnModel[]</td>
-      <td>Array that defines the type of columns to be rendered on the grid</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>dataSource</td>
-      <td>
-        <ul>
-          <li>Object[]</li>
-          <li>string</li>
-          <li>Request</li>
-          <li>TubularHttpClientAbstract</li>
-        </ul>
-      </td>
-      <td>Source of the data for the grid</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>deps</td>
-      <td>any[]</td>
-      <td>Array of dependencies for grid</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>detailComponent</td>
-      <td>React.ReactElement</td>
-      <td>Element used to render row details</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>gridName</td>
-      <td>string</td>
-      <td>Name of the grid - *Note: two or more grids with same name may cause problems*</td>
-      <td>No</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>storage</td>
-      <td>DataGridStorage</td>
-      <td>Save data to localStorage</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>toolbarOptions</td>
-      <td>ToolbarOptions</td>
-      <td>Options to present on the grid</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>mobileBreakpointWidth</td>
-      <td>number</td>
-      <td>Minimum width to change style to mobile version</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>rowComponent</td>
-      <td>React.FunctionComponent</td>
-      <td>Custom row component</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>rowMobileComponent</td>
-      <td>React.FunctionComponent</td>
-      <td>Custom row component for mobile version</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>footerComponent</td>
-      <td>React.FunctionComponent</td>
-      <td>Custom component for Grid footer</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>onError</td>
-      <td>Function</td>
-      <td>Function to handle errors</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-    <tr>
-      <td>onRowClick</td>
-      <td>Function</td>
-      <td>Function to handle when a row is clicked</td>
-      <td>Yes</td>
-      <td>None</td>
-    </tr>
-  </tbody>
-</table>
 
 # Examples
 ### Example of DataGrid with footer component.
