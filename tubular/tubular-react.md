@@ -143,242 +143,243 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-    </div>
-    <h3>Examples</h3>
-    <div>
-      <p>Example of DataGrid with footer component.</p>
-      <code>
-        <pre>
-          import columns from "./columns";
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          const tbFooter = ({ aggregates }: any) => (
-            < tr >
-              < tdTotal:< /td >
-              < td >{aggregates && aggregates.CustomerName}< /td >
-            < /tr >
-          );
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                footerComponent={tbFooter}
-              >
+      </div>
+      <h3>Examples</h3>
+      <div>
+        <p>Example of DataGrid with footer component.</p>
+        <code>
+          <pre>
+            import columns from "./columns";
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            const tbFooter = ({ aggregates }: any) => (
+              < tr >
+                < tdTotal:< /td >
+                < td >{aggregates && aggregates.CustomerName}< /td >
+              < /tr >
             );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with Toolbar options.</p>
-      <code>
-        <pre>
-          import columns from "./columns";
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            const toolbarOptions = new ToolbarOptions({
-              searchText: false,
-              topPager: false
-            });
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                toolbarOptions={toolbarOptions}
-                footerComponent={tbFooter}
-              / >
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with custom number of items per page.</p>
-      <code>
-        <pre>
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          import columns from "./columns";
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            const toolbarOptions = new ToolbarOptions({
-              itemsPerPage: 15,
-            });
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                toolbarOptions={toolbarOptions}
-              / >
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with onRowClick event.</p>
-      <code>
-        <pre>
-          import { DataGrid } from "tubular-react";
-          import columns from "./columns";
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            const rowClick = (row: {}) => {
-              console.log("You clicked on a row: ", row);
-              alert("You clicked on the order Id: " + row.OrderID);
-            };
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                onRowClick={rowClick}
-              / >
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onrowclick-example-ulurp?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with custom row component.</p>
-      <code>
-        <pre>
-          import { DataGrid, ToolbarOptions, TbRowProps } from "tubular-react";
-          const CustomTbRow: React.FunctionComponent = ({
-            row,
-          }: TbRowProps) => (
-            < TableRow hover={true} key={row.OrderID}>
-              < TableCell padding="default">{row.OrderID} < /TableCell>
-              < TableCell padding="default">{row.CustomerName} < /TableCell>
-              < TableCell padding="default">{row.ShipperCity}< /TableCell>
-              < TableCell padding="default" align={"right"} >
-                {row.Amount || 0}
-              < /TableCell>
-              < TableCell padding="default">
-                {row.IsShipped ? < CheckBox /> : < CheckBoxOutlineBlank />}
-              < /TableCell>
-            < /TableRow>
-          );
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                rowComponent={CustomTbRow}
-              />
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-rowcomponent-example-j9h69?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with Detail component.</p>
-      <code>
-        <pre>
-          import * as React from "react";
-          import { DataGrid, DetailBaseComponent, ToolbarOptions } from "tubular-react";
-          import columns from "./columns";
-          export interface DetailBaseComponentProps { row: any; }
-          const DetailComponent: DetailBaseComponent = ({
-            row
-          }: DetailBaseComponentProps) => <>This is a test with the row #{row.OrderID}</>;
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                detailComponent={< DetailComponent />}
-              />
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-detailcomponent-example-yusvc?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with MobileResolution breakpoint.</p>
-      <code>
-        <pre>
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          import columns from "./columns";
-          const mobileBreakpointWidth = 800;
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            return (
-              <>
-                < h4>Try to change the resolution...< /h4>
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
                 < DataGrid
                   gridName="Tubular-React"
                   columns={columns}
                   dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                  mobileBreakpointWidth={mobileBreakpointWidth}
-                />
-              </>
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-mobilebreakpointwidthwidth-example-lumcz?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of OnError messages on DataGrid.</p>
-      <code>
-        <pre>
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          import Snackbar from "@material-ui/core/Snackbar";
-          const RemoteDataGrid: React.FunctionComponent = () => {
-            const [getErrorMessage, setErrorMessage] = React.useState(null as string);
-            return (
-              <>
-                {getErrorMessage && (
-                  < Snackbar
-                    anchorOrigin={{ vertical: "top", horizontal: "center" }}
-                    style={{ paddingTop: "10px" }}
-                    open={true}
-                    ContentProps={{ "aria-describedby": "message-id" }}
-                    message={< span id="message-id">{getErrorMessage}< /span>}
-                  />
-                )}
+                  footerComponent={tbFooter}
+                >
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with Toolbar options.</p>
+        <code>
+          <pre>
+            import columns from "./columns";
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const toolbarOptions = new ToolbarOptions({
+                searchText: false,
+                topPager: false
+              });
+              return (
                 < DataGrid
+                  gridName="Tubular-React"
                   columns={columns}
                   dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                  gridName="LocalDataGrid"
-                  onError={setErrorMessage}
+                  toolbarOptions={toolbarOptions}
+                  footerComponent={tbFooter}
+                / >
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom number of items per page.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const toolbarOptions = new ToolbarOptions({
+                itemsPerPage: 15,
+              });
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  toolbarOptions={toolbarOptions}
+                / >
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with onRowClick event.</p>
+        <code>
+          <pre>
+            import { DataGrid } from "tubular-react";
+            import columns from "./columns";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const rowClick = (row: {}) => {
+                console.log("You clicked on a row: ", row);
+                alert("You clicked on the order Id: " + row.OrderID);
+              };
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  onRowClick={rowClick}
+                / >
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onrowclick-example-ulurp?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              < TableRow hover={true} key={row.OrderID}>
+                < TableCell padding="default">{row.OrderID} < /TableCell>
+                < TableCell padding="default">{row.CustomerName} < /TableCell>
+                < TableCell padding="default">{row.ShipperCity}< /TableCell>
+                < TableCell padding="default" align={"right"} >
+                  {row.Amount || 0}
+                < /TableCell>
+                < TableCell padding="default">
+                  {row.IsShipped ? < CheckBox /> : < CheckBoxOutlineBlank />}
+                < /TableCell>
+              < /TableRow>
+            );
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  rowComponent={CustomTbRow}
                 />
-              </>
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onerror-example-vyhze?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
-    </div>
-    <div>
-      <p>Example of DataGrid with localDataSource</p>
-      <code>
-        <pre>
-          import { DataGrid, ToolbarOptions } from "tubular-react";
-          import columns from "./columns";
-          const localData = [
-            // Collection of data
-          ];
-          const LocalDataGrid: React.FunctionComponent = () => {
-            return (
-              < DataGrid
-                gridName="Tubular-React"
-                columns={columns}
-                dataSource={localData}
-              />
-            );
-          };
-        </pre>
-      </code>
-      <a class="nav-link link-blue button" href="https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-rowcomponent-example-j9h69?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with Detail component.</p>
+        <code>
+          <pre>
+            import * as React from "react";
+            import { DataGrid, DetailBaseComponent, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            export interface DetailBaseComponentProps { row: any; }
+            const DetailComponent: DetailBaseComponent = ({
+              row
+            }: DetailBaseComponentProps) => <>This is a test with the row #{row.OrderID}</>;
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  detailComponent={< DetailComponent />}
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-detailcomponent-example-yusvc?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with MobileResolution breakpoint.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const mobileBreakpointWidth = 800;
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                <>
+                  < h4>Try to change the resolution...< /h4>
+                  < DataGrid
+                    gridName="Tubular-React"
+                    columns={columns}
+                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                    mobileBreakpointWidth={mobileBreakpointWidth}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-mobilebreakpointwidthwidth-example-lumcz?fontsize=14&hidenavigation=1&theme=dark">Open   CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of OnError messages on DataGrid.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import Snackbar from "@material-ui/core/Snackbar";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const [getErrorMessage, setErrorMessage] = React.useState(null as string);
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: "top", horizontal: "center" }}
+                      style={{ paddingTop: "10px" }}
+                      open={true}
+                      ContentProps={{ "aria-describedby": "message-id" }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < DataGrid
+                    columns={columns}
+                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                    gridName="LocalDataGrid"
+                    onError={setErrorMessage}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onerror-example-vyhze?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
+      <div>
+        <p>Example of DataGrid with localDataSource</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const localData = [
+              // Collection of data
+            ];
+            const LocalDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource={localData}
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" href="https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+      </div>
     </div>
     <div class="mb-4">
       <div id="ColumnModel">
@@ -529,7 +530,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       <a class="nav-link link-blue button" href="https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
     </div>
   </div>
-  <div class="col-2 toc">
+  <div class="col-2 toc d-sm-none d-md-none">
     <ul>
       <li>
         <p class="navbar-brand pl-3">Table of Content</p>
