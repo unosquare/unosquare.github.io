@@ -567,6 +567,560 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
     <div class="mb-4">
+      <div id="GridHeader">
+        <h4 class="blue-title">GridHeader</h4>
+        <p>
+          Sets the header row for a grid.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tbTableInstance</td>
+              <td>ITbTableInstance</td>
+              <td>Instance of a table to render its props</td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>detailComponent</td>
+              <td>React.ReactElement</td>
+              <td>Component that renders a row's details</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="GridHeaderCell">
+        <h4 class="blue-title">GridHeaderCell</h4>
+        <p>
+          Sets the header cell for a grid.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>column</td>
+              <td>ColumnModel</td>
+              <td>Column to get data for cell</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>key</td>
+              <td>string</td>
+              <td>Key for the cell</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>setActiveColumn</td>
+              <td>Function</td>
+              <td>Function to configure column as active</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>sortColumn</td>
+              <td>Function</td>
+              <td>Function to sort the data of the column</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="MasterDetailRow">
+        <h4 class="blue-title">MasterDetailRow</h4>
+        <p> Sets the header cell for a grid. </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>detail</td>
+              <td>React.ReactElement</td>
+              <td>Detail component to render details of a render</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>renderCells</td>
+              <td>any</td>
+              <td>Object to render </td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>style</td>
+              <td>React.CSSProperties</td>
+              <td>Object to style component</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>clickEvent</td>
+              <td>Function</td>
+              <td>Function to handle onClick events</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>rowData</td>
+              <td>Object</td>
+              <td>Object to represent data of the column</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>columns</td>
+              <td>ColumnModel[]</td>
+              <td>Columns of header details</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="MobileDataGridTable">
+        <h4 class="blue-title">MobileDataGridTable</h4>
+        <p>Sets the row for a mobile grid.</p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tbTableInstance</td>
+              <td>ITbTableInstance</td>
+              <td>Instance of table to represent data</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>rowComponent</td>
+              <td>React.FunctionComponent</td>
+              <td>Component for custom row</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>onRowClick</td>
+              <td>Function</td>
+              <td>Function to handle when row is clicked</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="NoDataRow">
+        <h4 class="blue-title">NoDataRow</h4>
+        <p>Sets the row for a mobile grid.</p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>columns</td>
+              <td>ColumnModel[]</td>
+              <td>Columns </td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>styles</td>
+              <td>any</td>
+              <td>Object to style grid </td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="DialogModal">
+        <h4 class="blue-title">DialogModal</h4>
+        <p>Opens a modal dialog when clicking a row.</p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>anchorFilter</td>
+              <td>HTMLElement</td>
+              <td>Element binding filter dialog</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>activeColumn</td>
+              <td>ColumnModel</td>
+              <td>Active column of the Grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>setAnchorFilter</td>
+              <td>Function</td>
+              <td>Function to configure anchor to UI element</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>setFilter</td>
+              <td>Function</td>
+              <td>Function to filter the Column data</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>handleFilterChange</td>
+              <td>Function</td>
+              <td>Function to handle the UI rendering changes</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
       <div id="TbMobileRow">
         <h4 class="blue-title">TbMobileRow</h4>
         <p>
