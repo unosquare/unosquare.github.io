@@ -406,7 +406,8 @@ description: "Check out uno-react, a Typescript library with common functions an
         </code>
         <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
-    </div></div><div class="mb-4">
+    </div>
+    <div class="mb-4">
       <div id="TbMobileRow">
         <h4 class="blue-title">TbMobileRow</h4>
         <p>
