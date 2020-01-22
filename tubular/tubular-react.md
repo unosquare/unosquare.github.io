@@ -23,7 +23,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       <li>Page data. Remote data is paged in the server side.</li>
       <li>Export data to a CSV file.</li>
       <li>Print data.</li>
-    <ul>
+    </ul>
     <div class="mb-4">
       <div id="DataGrid">
         <h4 class="blue-title">DataGrid</h4>
