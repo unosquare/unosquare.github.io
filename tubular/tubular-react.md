@@ -169,7 +169,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark)">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with Toolbar options.</p>
@@ -194,7 +194,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-footercomponent-example-rr4op?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with custom number of items per page.</p>
@@ -217,7 +217,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-itemsperpage-example-ny2k5?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-itemsperpage-example-ny2k5');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with onRowClick event.</p>
@@ -241,7 +241,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onrowclick-example-ulurp?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-onrowclick-example-ulurp');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with custom row component.</p>
@@ -275,7 +275,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-rowcomponent-example-j9h69?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with Detail component.</p>
@@ -300,7 +300,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-detailcomponent-example-yusvc?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-detailcomponent-example-yusvc');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with MobileResolution breakpoint.</p>
@@ -324,7 +324,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-mobilebreakpointwidthwidth-example-lumcz?fontsize=14&hidenavigation=1&theme=dark">Open   CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of OnError messages on DataGrid.</p>
@@ -356,7 +356,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/remotedatagrid-onerror-example-vyhze?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-onerror-example-vyhze');">Open CodeSandbox</a>
       </div>
       <div>
         <p>Example of DataGrid with localDataSource</p>
@@ -378,7 +378,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'localdatagrid-example-vpcs2');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -526,7 +526,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             ];
           </pre>
         </code>
-        <a class="nav-link link-blue button" href="https://codesandbox.io/s/localdatagrid-example-vpcs2?fontsize=14&hidenavigation=1&theme=dark">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" onclick="convert(this, 'localdatagrid-example-vpcs2');">Open CodeSandbox</a>
       </div>
     </div>
   </div>
