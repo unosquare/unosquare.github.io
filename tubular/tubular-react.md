@@ -357,7 +357,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             <tr>
               <td>onClickCallback</td>
               <td>Function</td>
-              <td>Function to handle the click event over a grid's row - <i>Takes a row object as parameter</i></td>
+              <td>Function to handle the click event over a grid's row - Takes a row object as parameter</td>
               <td>No</td>
               <td>None</td>
             </tr>
@@ -415,7 +415,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             <tr>
               <td>onRowClick</td>
               <td>Function</td>
-              <td>Function to be passed when row element is clicked - <i>Note: Takes a row object</i></td>
+              <td>Function to be passed when row element is clicked - Note: Takes a row object</td>
               <td>Yes</td>
               <td>None</td>
             </tr>
@@ -512,7 +512,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             <tr>
               <td>onRowClick</td>
               <td>Function</td>
-              <td>Function to be passed when row element is clicked - <i>Note: Takes a row object</i></td>
+              <td>Function to be passed when row element is clicked - Note: Takes a row object</td>
               <td>Yes</td>
               <td>None</td>
             </tr>
@@ -595,7 +595,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             <tr>
               <td>onRowClick</td>
               <td>Function</td>
-              <td>Function to handle the click event over a grid's row - <i>Takes a row object as parameter</i></td>
+              <td>Function to handle the click event over a grid's row - Takes a row object as parameter</td>
               <td>No</td>
               <td>None</td>
             </tr>
