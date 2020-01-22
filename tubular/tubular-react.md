@@ -567,6 +567,74 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
     <div class="mb-4">
+      <div id="TbMobileRow">
+        <h4 class="blue-title">TbMobileRow</h4>
+        <p>
+          The grid will connect to a remote datasource or have a local datasource 
+          depending on what's passed in the dataSource property.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>columns</td>
+              <td>ColumnModel[]</td>
+              <td>Columns to be rendered on the row</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>onRowClick</td>
+              <td>Function</td>
+              <td>Function to handle the click event over a grid's row - <i>Takes a row object as parameter</i></td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>row</td>
+              <td>Object</td>
+              <td>Row from the data grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with MobileResolution breakpoint.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const mobileBreakpointWidth = 800;
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                <>
+                  < h4>Try to change the resolution...< /h4>
+                  < DataGrid
+                    gridName="Tubular-React"
+                    columns={columns}
+                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                    mobileBreakpointWidth={mobileBreakpointWidth}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
       <div id="TbRow">
         <h4 class="blue-title">TbRow</h4>
         <p>
@@ -651,81 +719,16 @@ description: "Check out uno-react, a Typescript library with common functions an
         <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
-    <div class="mb-4">
-      <div id="TbMobileRow">
-        <h4 class="blue-title">TbMobileRow</h4>
-        <p>
-          The grid will connect to a remote datasource or have a local datasource 
-          depending on what's passed in the dataSource property.
-        </p>
-        <h6>PROPERTIES</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>columns</td>
-              <td>ColumnModel[]</td>
-              <td>Columns to be rendered on the row</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>onRowClick</td>
-              <td>Function</td>
-              <td>Function to handle the click event over a grid's row - <i>Takes a row object as parameter</i></td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>row</td>
-              <td>Object</td>
-              <td>Row from the data grid</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <p>Example of DataGrid with MobileResolution breakpoint.</p>
-        <code>
-          <pre>
-            import { DataGrid, ToolbarOptions } from "tubular-react";
-            import columns from "./columns";
-            const mobileBreakpointWidth = 800;
-            const RemoteDataGrid: React.FunctionComponent = () => {
-              return (
-                <>
-                  < h4>Try to change the resolution...< /h4>
-                  < DataGrid
-                    gridName="Tubular-React"
-                    columns={columns}
-                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                    mobileBreakpointWidth={mobileBreakpointWidth}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
-      </div>
-    </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
       <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
-      <li><a class="nav-link" href="#TbRow">TbRow</a></li>
+      <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
+      <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
+      <li><a class="nav-link" href="#GridBody">GridBody</a></li>
       <li><a class="nav-link" href="#TbMobileRow">TbMobileRow</a></li>
+      <li><a class="nav-link" href="#TbRow">TbRow</a></li>
     </ul>
   </div>
 </div>
