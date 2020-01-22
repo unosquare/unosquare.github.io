@@ -389,7 +389,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           column options with the following properties:
         </p>
         <h6>PROPERTIES</h6>
-        <table>
+        <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
               <td>Name</td>
