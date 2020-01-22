@@ -4,7 +4,7 @@ title: "Open Source Software Initiatives from Unosquare | uno-react"
 description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
 <div class="container content-home d-flex flex-row">
-  <div class="col-10 p-0">
+  <div class="col-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
       <h2>tubular-react</h2>
       <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
