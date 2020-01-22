@@ -530,7 +530,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
   </div>
-  <div class="col-2 toc d-sm-none d-md-none">
+  <div class="col-2 toc">
     <ul>
       <li>
         <p class="navbar-brand pl-3">Table of Content</p>
