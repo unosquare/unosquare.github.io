@@ -1218,7 +1218,7 @@ description: "Check out uno-react, a Typescript library with common functions an
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
-      <li><a class="nav-link" href="#AdvancedPaginationActions">AdvancedPaginationActions</a></li>
+      <li><a class="nav-link" href="#AdvancePaginationActions">AdvancedPaginationActions</a></li>
       <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
       <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
       <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
