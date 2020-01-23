@@ -1337,7 +1337,7 @@ description: "Check out uno-react, a Typescript library with common functions an
     </div>
     <div class="mb-4">
       <div id="TbList">
-        <h4 class="blue-title">Paginator</h4>
+        <h4 class="blue-title">TbList</h4>
         <p>
           Paginator component to handle when grid contains tpp much data
         </p>
@@ -1425,8 +1425,8 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
     <div class="mb-4">
-      <div id="Paginator">
-        <h4 class="blue-title">Paginator</h4>
+      <div id="TbListItem">
+        <h4 class="blue-title">TbListItem</h4>
         <p>
           Paginator component to handle when grid contains tpp much data
         </p>
@@ -1670,6 +1670,7 @@ description: "Check out uno-react, a Typescript library with common functions an
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
+      <li><a class="nav-link" href="#DataGrid">AdvancedPaginationActions</a></li>
       <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
       <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
       <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
@@ -1680,6 +1681,11 @@ description: "Check out uno-react, a Typescript library with common functions an
       <li><a class="nav-link" href="#MasterDetailRow">MasterDetailRow</a></li>
       <li><a class="nav-link" href="#MobileDataGridTable">MobileDataGridTable</a></li>
       <li><a class="nav-link" href="#NoDataRow">NoDataRow</a></li>
+      <li><a class="nav-link" href="#OperatorsDropdown">OperatorsDropdown</a></li>
+      <li><a class="nav-link" href="#Paginator">Paginator</a></li>
+      <li><a class="nav-link" href="#SearchTextInput">SearchTextInput</a></li>
+      <li><a class="nav-link" href="#TbList">TbList</a></li>
+      <li><a class="nav-link" href="#TbListItem">TbListItem</a></li>
       <li><a class="nav-link" href="#TbMobileRow">TbMobileRow</a></li>
       <li><a class="nav-link" href="#TbRow">TbRow</a></li>
     </ul>
