@@ -3,7 +3,6 @@ layout: page
 title: "Tubular React Common functions and hooks | tubular-react-common"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
-
 <div class="container content-home d-flex flex-row">
   <div class="col-10 p-0">
     <div class="d-flex flex-row space-between">
@@ -33,41 +32,49 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - That adds another count whenever grid is refreshed.
         </p>
       </div>
+      <code>
+        <pre>
+        const UseTubularExample = () => {
+          const [refresh, forceRefresh] = useGridRefresh();
+          const forceGridRefresh = () => {
+            setTimeout(() => {
+              forceRefresh();
+            }, 8000);
+          };
+          return (
+            <>
+              < button onClick={() => forceGridRefresh()}>Force Refresh</button>
+              < DataTable
+                gridName="tbTable"
+                columns={columns}
+                dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                deps={[refresh]}
+              />
+            </>
+          );
+        };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
     </div>
-    <pre>
-    const UseTubularExample = () => {
-      const [refresh, forceRefresh] = useGridRefresh();
-      const forceGridRefresh = () => {
-        setTimeout(() => {
-          forceRefresh();
-        }, 8000);
-      };
-      return (
-        <>
-          <button onClick={() => forceGridRefresh()}>Force Refresh</button>
-          <DataTable
-            gridName="tbTable"
-            columns={columns}
-            dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-            deps={[refresh]}
-          />
-        </>
-      );
-    };
-    </pre>
-    <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
     <div class="mb-4">
       <div id="useMasterDetails">
-        <h4 class="blue-title">useMasterDetails</h4>
+        <h4 class="blue-title">
+          useMasterDetails
+        </h4>
         <p>
           useMasterDetails contains a state hook conformed by a boolean, and returns 
           the boolean and a function to change the boolean to the opposite value.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>
+          PARAMETERS
+        </h6>
         <p>
           No parameters
         </p>
-        <h6>RETURN</h6>
+        <h6>
+          RETURN
+        </h6>
         <p>
           Boolean - Flag to toggle use of master details.
         </p>
@@ -75,41 +82,43 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           Function - Function to toggle the value of the flag.
         </p>
       </div>
+      <code>
+        <pre>
+          const MasterDetailRow = ({ columns, row, index }) => {
+            const [open, openDetails] = useMasterDetails();
+            const openMasterDetails = () => {
+              openDetails();
+            };
+            return (
+              <>
+                < tr key={index}>
+                  < td role="row" key={row.OrderID}>
+                    < span style={{ paddingRight: "5px" }}>
+                      Order {row[columns[0].name]}
+                    < /span>
+                    < button onClick={openMasterDetails}>Show details</button>
+                  < /td>
+                < /tr>
+                {open && (
+                  < tr key={index}>
+                    {columns
+                      .filter(col => col.visible)
+                      .map(col => {
+                        return (
+                          < td role="cell" key={col.name}>
+                            {row[col.name]}
+                          < /td>
+                        );
+                      })}
+                  < /tr>
+                )}
+              </>
+            );
+          };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
     </div>
-<pre>
-const MasterDetailRow = ({ columns, row, index }) => {
-  const [open, openDetails] = useMasterDetails();
-  const openMasterDetails = () => {
-    openDetails();
-  };
-  return (
-    <>
-      <tr key={index}>
-        <td role="row" key={row.OrderID}>
-          <span style={{ paddingRight: "5px" }}>
-            Order {row[columns[0].name]}
-          </span>
-          <button onClick={openMasterDetails}>Show details</button>
-        </td>
-      </tr>
-      {open && (
-        <tr key={index}>
-          {columns
-            .filter(col => col.visible)
-            .map(col => {
-              return (
-                <td role="cell" key={col.name}>
-                  {row[col.name]}
-                </td>
-              );
-            })}
-        </tr>
-      )}
-    </>
-  );
-};
-</pre>
-<a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
     <div class="mb-4">
       <div id="useTbList">
         <h4 class="blue-title">useTbList</h4>
@@ -152,24 +161,26 @@ const MasterDetailRow = ({ columns, row, index }) => {
           Boolean - A flag that indicates if the data has been fetched or not.
         </p>
       </div>
+      <code>
+        <pre>
+          const UseTbListExample: React.FunctionComponent = () => {
+            const tbList = useTbList(
+              columns,
+              "https://tubular.azurewebsites.net/api/orders/paged"
+            );
+            return (
+              < button>Sort by</button>
+              < TbList
+                tbInstance={tbList}
+                listItemComponent={MyListItem}
+                onItemClick={rowClick}
+              />
+            );
+          };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     </div>
-<pre>
-const UseTbListExample: React.FunctionComponent = () => {
-  const tbList = useTbList(
-    columns,
-    "https://tubular.azurewebsites.net/api/orders/paged"
-  );
-  return (
-    <button>Sort by</button>
-    <TbList
-      tbInstance={tbList}
-      listItemComponent={MyListItem}
-      onItemClick={rowClick}
-    />
-  );
-};
-</pre>
-<a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     <div class="mb-4">
       <div id="useTbTable">
         <h4 class="blue-title">useTbTable</h4>
@@ -216,48 +227,51 @@ const UseTbListExample: React.FunctionComponent = () => {
           Object - A Tubular state with all the tubular properties.
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
+      </div>
+      <code>
+        <pre>
+          const UseTbTableExample = () => {
+            const { state, api } = useTbTable(columns, localData);
+            return (
+              <>
+                < tr role="rowheader">
+                  {state.columns
+                    .filter(col => col.visible)
+                    .map(col => {
+                      return < th key={col.name}>{col.label}< /th>;
+                    })}
+                < /tr>
+                {state.data.map((row, index) => {
+                  return (
+                    < tr key={index}>
+                      {state.columns
+                        .filter(col => col.visible)
+                        .map(col => {
+                          return (
+                            < td role="cell" key={col.name}>
+                              {row[col.name]}
+                            < /td>
+                          );
+                        })}
+                    < /tr>
+                  );
+                })}
+                < button onClick={() => api.goToPage(state.page + 1)}>
+                  Go to next page
+                < /button>
+                < button onClick={() => api.goToPage(state.page - 1)}>
+                  Go to previous page
+                < /button>
+                < button onClick={() => api.sortColumn("CustomerName")}>
+                  Sort by Customer Name
+                < /button>
+              </>
+            );
+          };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
     </div>
-<pre>
-const UseTbTableExample = () => {
-  const { state, api } = useTbTable(columns, localData);
-  return (
-    <>
-      <tr role="rowheader">
-        {state.columns
-          .filter(col => col.visible)
-          .map(col => {
-            return <th key={col.name}>{col.label}</th>;
-          })}
-      </tr>
-      {state.data.map((row, index) => {
-        return (
-          <tr key={index}>
-            {state.columns
-              .filter(col => col.visible)
-              .map(col => {
-                return (
-                  <td role="cell" key={col.name}>
-                    {row[col.name]}
-                  </td>
-                );
-              })}
-          </tr>
-        );
-      })}
-      <button onClick={() => api.goToPage(state.page + 1)}>
-        Go to next page
-      </button>
-      <button onClick={() => api.goToPage(state.page - 1)}>
-        Go to previous page
-      </button>
-      <button onClick={() => api.sortColumn("CustomerName")}>
-        Sort by Customer Name
-      </button>
-    </>
-  );
-};
-</pre>
-<a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
     <div class="mb-4">
       <div id="useTubular">
         <h4 class="blue-title">useTubular</h4>
@@ -302,58 +316,56 @@ const UseTbTableExample = () => {
           Function - A Tubular instance conformer that returns a set of functions to execute over your source data.
         </p>
       </div>
-    </div>
-<code>
-<pre>
-const UseTubularExample = () => {
-  const { state, api } = useTubular(columns, localData);
-  return (
-    <>
-
-<table>
-        <thead>
-          <tr role="rowheader">
-            {state.columns
-              .filter(col => col.visible)
-              .map(col => {
-                return <th key={col.name}>{col.label}</th>;
-              })}
-          </tr>
-        </thead>
-        <tbody>
-          {state.data.map((row, index) => {
+      <code>
+        <pre>
+          const UseTubularExample = () => {
+            const { state, api } = useTubular(columns, localData);
             return (
-              <tr key={index}>
-                {state.columns
-                  .filter(col => col.visible)
-                  .map(col => {
-                    return (
-                      <td role="cell" key={col.name}>
-                        {row[col.name]}
-                      </td>
-                    );
-                  })}
-              </tr>
+              <>
+                < table>
+                  < thead>
+                    < tr role="rowheader">
+                      {state.columns
+                        .filter(col => col.visible)
+                        .map(col => {
+                          return < th key={col.name}>{col.label}< /th>;
+                        })}
+                    < /tr>
+                  < /thead>
+                  < tbody>
+                    {state.data.map((row, index) => {
+                      return (
+                        < tr key={index}>
+                          {state.columns
+                            .filter(col => col.visible)
+                            .map(col => {
+                              return (
+                                < td role="cell" key={col.name}>
+                                  {row[col.name]}
+                                < /td>
+                              );
+                            })}
+                        < /tr>
+                      );
+                    })}
+                  < /tbody>
+                < /table>
+                < button onClick={() => api.goToPage(state.page + 1)}>
+                  Go to next page
+                < /button>
+                < button onClick={() => api.goToPage(state.page - 1)}>
+                  Go to previous page
+                < /button>
+                < button onClick={() => api.sortColumn("CustomerName")}>
+                  Sort by Customer Name
+                < /button>
+              </>
             );
-          })}
-        </tbody>
-
-</table>
-      <button onClick={() => api.goToPage(state.page + 1)}>
-        Go to next page
-      </button>
-      <button onClick={() => api.goToPage(state.page - 1)}>
-        Go to previous page
-      </button>
-      <button onClick={() => api.sortColumn("CustomerName")}>
-        Sort by Customer Name
-      </button>
-    </>
-  );
-};
-</pre>
-</code>
-<a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
+          };
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
+    </div>
   </div>
   <div class="col-2 toc">
     <ul>
