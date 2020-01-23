@@ -470,6 +470,107 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
     <div class="mb-4">
+      <div id="DialogModal">
+        <h4 class="blue-title">DialogModal</h4>
+        <p>Opens a modal dialog when clicking a row.</p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>anchorFilter</td>
+              <td>HTMLElement</td>
+              <td>Element binding filter dialog</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>activeColumn</td>
+              <td>ColumnModel</td>
+              <td>Active column of the Grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>setAnchorFilter</td>
+              <td>Function</td>
+              <td>Function to configure anchor to UI element</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>setFilter</td>
+              <td>Function</td>
+              <td>Function to filter the Column data</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>handleFilterChange</td>
+              <td>Function</td>
+              <td>Function to handle the UI rendering changes</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>Example of DataGrid with custom row component.</p>
+        <code>
+          <pre>
+            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
+            const CustomTbRow: React.FunctionComponent = ({
+              row,
+            }: TbRowProps) => (
+              return (
+                <>
+                  {getErrorMessage && (
+                    < Snackbar
+                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                      style={{ paddingTop: '10px' }}
+                      open={true}
+                      ContentProps={{ 'aria-describedby': 'message-id' }}
+                      message={< span id="message-id">{getErrorMessage}< /span>}
+                    />
+                  )}
+                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
+                    No card grid!
+                  < /Typography>
+                  < Table>
+                    < TableHead>
+                      < TableRow>
+                        < Paginator
+                          tbTableInstance={tbTableInstance}
+                          rowsPerPageOptions={null}
+                          advancePagination={false}
+                        />
+                      < /TableRow>
+                    < /TableHead>
+                  < /Table>
+                  < DataGridTable
+                    tbTableInstance={tbTableInstance}
+                    rowComponent={CustomTbRow}
+                    footerComponent={tbFooter}
+                    onRowClick={onRowClick}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+      </div>
+    </div>
+    <div class="mb-4">
       <div id="GridBody">
         <h4 class="blue-title">GridBody</h4>
         <p>
@@ -1020,107 +1121,6 @@ description: "Check out uno-react, a Typescript library with common functions an
       </div>
     </div>
     <div class="mb-4">
-      <div id="DialogModal">
-        <h4 class="blue-title">DialogModal</h4>
-        <p>Opens a modal dialog when clicking a row.</p>
-        <h6>PROPERTIES</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>anchorFilter</td>
-              <td>HTMLElement</td>
-              <td>Element binding filter dialog</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>activeColumn</td>
-              <td>ColumnModel</td>
-              <td>Active column of the Grid</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>setAnchorFilter</td>
-              <td>Function</td>
-              <td>Function to configure anchor to UI element</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>setFilter</td>
-              <td>Function</td>
-              <td>Function to filter the Column data</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>handleFilterChange</td>
-              <td>Function</td>
-              <td>Function to handle the UI rendering changes</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
-    </div>
-    <div class="mb-4">
       <div id="TbMobileRow">
         <h4 class="blue-title">TbMobileRow</h4>
         <p>
@@ -1280,7 +1280,13 @@ description: "Check out uno-react, a Typescript library with common functions an
       <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
       <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
       <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
+      <li><a class="nav-link" href="#DialogModal">DialogModal</a></li>
       <li><a class="nav-link" href="#GridBody">GridBody</a></li>
+      <li><a class="nav-link" href="#GridHeader">GridHeader</a></li>
+      <li><a class="nav-link" href="#GridHeaderCell">GridHeaderCell</a></li>
+      <li><a class="nav-link" href="#MasterDetailRow">MasterDetailRow</a></li>
+      <li><a class="nav-link" href="#MobileDataGridTable">MobileDataGridTable</a></li>
+      <li><a class="nav-link" href="#NoDataRow">NoDataRow</a></li>
       <li><a class="nav-link" href="#TbMobileRow">TbMobileRow</a></li>
       <li><a class="nav-link" href="#TbRow">TbRow</a></li>
     </ul>
