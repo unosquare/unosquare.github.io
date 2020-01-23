@@ -4,7 +4,7 @@ title: "Tubular React Common functions and hooks | tubular-react-common"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
 <div class="container content-home d-flex flex-row">
-  <div class="col-10 p-0">
+  <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
       <h2>tubular react common</h2>
       <a href="https://www.npmjs.com/package/tubular-react-common" class="first-icon">
@@ -367,7 +367,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
       <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
     </div>
   </div>
-  <div class="col-2 toc">
+  <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li>
         <p class="navbar-brand pl-3">Table of Content</p>
