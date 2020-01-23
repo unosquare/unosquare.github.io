@@ -91,52 +91,6 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of the Advance Pagination actions.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
     </div>
     <div class="mb-4">
       <div id="DataGrid">
@@ -386,52 +340,6 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
     </div>
     <div class="mb-4">
       <div id="DialogModal">
@@ -487,51 +395,60 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+    </div>
+    <div class="mb-4">
+      <div id="ExportButton">
+        <h4 class="blue-title">ExportButton</h4>
+        <p>Button utilized to export the data grid into a file</p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>type</td>
+              <td>string</td>
+              <td>Type of exporting</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>gridName</td>
+              <td>string</td>
+              <td>Name of the grid exporting the data</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>filteredRecordCount</td>
+              <td>number</td>
+              <td>Count of records filtered to be exported</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>toolTip</td>
+              <td>string</td>
+              <td>Tolltip description for </td>
+              <td>Yes</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>exportTo</td>
+              <td>Function</td>
+              <td>Function for exporting </td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="mb-4">
@@ -584,50 +501,6 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({row}: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
     </div>
     <div class="mb-4">
       <div id="GridHeader">
@@ -664,51 +537,48 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+    </div>
+    <div class="mb-4">
+      <div id="GridToolbar">
+        <h4 class="blue-title">GridToolbar</h4>
+        <p>
+          Toolbar options of the Grid.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>toolbarOptions</td>
+              <td>ToolbarOptions</td>
+              <td>Options included on the grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>gridName</td>
+              <td>string</td>
+              <td>Name of the grid that has this toolbar options assigned</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>tbTableInstance</td>
+              <td>ITbTableInstance</td>
+              <td>Table assigned to the grid.</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <div class="mb-4">
@@ -759,52 +629,6 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -869,7 +693,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
       <div>
-        <p>Example of DataGrid with custom row component.</p>
+        <p>Example of DataGrid with details row.</p>
         <code>
           <pre>
             import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
@@ -955,52 +779,6 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
     </div>
     <div class="mb-4">
       <div id="NoDataRow">
@@ -1034,52 +812,6 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of DataGrid with custom row component.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1116,52 +848,6 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of the Operator dropdown.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1206,52 +892,6 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of the Advance Pagination actions.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-      </div>
     </div>
     <div class="mb-4">
       <div id="SearchTextInput">
@@ -1287,52 +927,6 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of the Search input.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1465,52 +1059,6 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of the Advance Pagination actions.</p>
-        <code>
-          <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
-              return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1670,14 +1218,16 @@ description: "Check out uno-react, a Typescript library with common functions an
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
-      <li><a class="nav-link" href="#DataGrid">AdvancedPaginationActions</a></li>
+      <li><a class="nav-link" href="#AdvancedPaginationActions">AdvancedPaginationActions</a></li>
       <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
       <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
       <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
       <li><a class="nav-link" href="#DialogModal">DialogModal</a></li>
+      <li><a class="nav-link" href="#ExportButton">ExportButton</a></li>
       <li><a class="nav-link" href="#GridBody">GridBody</a></li>
       <li><a class="nav-link" href="#GridHeader">GridHeader</a></li>
       <li><a class="nav-link" href="#GridHeaderCell">GridHeaderCell</a></li>
+      <li><a class="nav-link" href="#GridToolbar">GridToolbar</a></li>
       <li><a class="nav-link" href="#MasterDetailRow">MasterDetailRow</a></li>
       <li><a class="nav-link" href="#MobileDataGridTable">MobileDataGridTable</a></li>
       <li><a class="nav-link" href="#NoDataRow">NoDataRow</a></li>
