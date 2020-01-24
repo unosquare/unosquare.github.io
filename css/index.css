@@ -10,8 +10,8 @@
 
 .toc {
   position: sticky;
-  height: 400px;
-  top: -5px;
+  height: max-content;
+  top: 18px;
 }
 
 .pre-block {
