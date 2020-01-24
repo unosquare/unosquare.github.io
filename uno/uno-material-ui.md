@@ -70,9 +70,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="ConfirmationDialog">
