@@ -237,7 +237,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -736,7 +736,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1015,7 +1015,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1126,7 +1126,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1211,7 +1211,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
   </div>

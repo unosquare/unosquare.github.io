@@ -55,7 +55,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         };
         </pre>
       </code>
-      <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useMasterDetails">
@@ -117,7 +117,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useTbList">
@@ -179,7 +179,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useTbTable">
@@ -270,7 +270,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useTubular">
@@ -364,7 +364,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" style="width:max-content!important" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
