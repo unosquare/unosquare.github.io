@@ -43,13 +43,13 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                 <div class="card-head">
                     <h4 class="text-uppercase">Tubular Common</h4>
                     <p class="author-date">
-                        Tubular Common provides TypeScript and Javascript models and data
+                        tubular-common provides TypeScript and Javascript models and data
                         transformer to use any Tubular DataGrid component with an array of Javascript
                         objects.
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-common" class="link-blue button">
+                    <a href="https://unosquare.github.io/tubular/tubular-common" class="link-blue button">
                         Read More
                     </a>
                 </div>
