@@ -443,26 +443,14 @@ description: "Check out uno-react, a Typescript library with common functions an
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
-      <li><a class="nav-link" href="#AdvancePaginationActions">AdvancedPaginationActions</a></li>
-      <li><a class="nav-link" href="#DataGrid">DataGrid</a></li>
-      <li><a class="nav-link" href="#DataGridCard">DataGridCard</a></li>
-      <li><a class="nav-link" href="#DataGridTable">DataGridTable</a></li>
-      <li><a class="nav-link" href="#DialogModal">DialogModal</a></li>
-      <li><a class="nav-link" href="#ExportButton">ExportButton</a></li>
-      <li><a class="nav-link" href="#GridBody">GridBody</a></li>
-      <li><a class="nav-link" href="#GridHeader">GridHeader</a></li>
-      <li><a class="nav-link" href="#GridHeaderCell">GridHeaderCell</a></li>
-      <li><a class="nav-link" href="#GridToolbar">GridToolbar</a></li>
-      <li><a class="nav-link" href="#MasterDetailRow">MasterDetailRow</a></li>
-      <li><a class="nav-link" href="#MobileDataGridTable">MobileDataGridTable</a></li>
-      <li><a class="nav-link" href="#NoDataRow">NoDataRow</a></li>
-      <li><a class="nav-link" href="#OperatorsDropdown">OperatorsDropdown</a></li>
-      <li><a class="nav-link" href="#Paginator">Paginator</a></li>
-      <li><a class="nav-link" href="#SearchTextInput">SearchTextInput</a></li>
-      <li><a class="nav-link" href="#TbList">TbList</a></li>
-      <li><a class="nav-link" href="#TbListItem">TbListItem</a></li>
-      <li><a class="nav-link" href="#TbMobileRow">TbMobileRow</a></li>
-      <li><a class="nav-link" href="#TbRow">TbRow</a></li>
+      <li><a class="nav-link" href="#ShallowHttpClient">ShallowHttpClient</a></li>
+      <li><a class="nav-link" href="#TubularHttpClient">TubularHttpClient</a></li>
+      <li><a class="nav-link" href="#TubularHttpClientAbstract">TubularHttpClientAbstract</a></li>
+      <li><a class="nav-link" href="#ColumnModel">ColumnModel</a></li>
+      <li><a class="nav-link" href="#GridRequest">GridRequest</a></li>
+      <li><a class="nav-link" href="#DataGridStorage">DataGridStorage</a></li>
+      <li><a class="nav-link" href="#LocalStorage">LocalStorage</a></li>
+      <li><a class="nav-link" href="#NullStorage">NullStorage</a></li>
     </ul>
   </div>
 </div>
