@@ -154,7 +154,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useEffectWithLoading">
@@ -237,7 +237,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useNow">
@@ -267,7 +267,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="usePersistedState">
@@ -329,7 +329,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useResolutionSwitch">
@@ -382,7 +382,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useStateForField">
@@ -436,7 +436,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useStateForModel">
@@ -502,7 +502,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useStateForModelWithLoading">
@@ -571,7 +571,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="useToggle">
@@ -625,7 +625,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="ValidatorForm">
@@ -683,7 +683,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
