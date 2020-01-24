@@ -4,7 +4,7 @@ title: "Open Source Software Initiatives from Unosquare | uno-js"
 description: "Check out uno-js, a Typescript library for array and string manipulation."
 ---
 <div class="container content-home d-flex flex-row">
-  <div class="col-10 p-0">
+  <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
       <h2>uno-js</h2>
       <a href="https://www.npmjs.com/package/uno-js" class="first-icon">
@@ -321,7 +321,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       <a class="nav-link link-blue" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
     </div>
   </div>
-  <div class="col-2 toc">
+  <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
       <li><a class="nav-link" href="#colorGenerator">colorGenerator</a></li>

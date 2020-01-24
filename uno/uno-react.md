@@ -4,7 +4,7 @@ title: "Open Source Software Initiatives from Unosquare | uno-react"
 description: "Check out uno-react, a Typescript library with common functions and hooks for React"
 ---
 <div class="container content-home d-flex flex-row">
-  <div class="col-10 p-0">
+  <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
       <h2>uno-react</h2>
       <a href="https://www.npmjs.com/package/uno-react" class="first-icon">
@@ -686,46 +686,20 @@ description: "Check out uno-react, a Typescript library with common functions an
       <a class="nav-link link-blue" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
     </div>
   </div>
-  <div class="col-2 toc">
-    </div>
-      <ul>
-        <li>
-          <p class="navbar-brand pl-3">Table of Content</p>
-        </li>
-        <li>
-          <a class="nav-link" href="#useClickOutside">useClickOutside</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useEffectWithDebounce">useEffectWithDebounce</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useEffectWithLoading">useEffectWithLoading</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useNow">useNow</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#usePersistedState">usePersistedState</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useResolutionSwitch">useResolutionSwitch</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useStateForField">useStateForField</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useStateForModel">useStateForModel</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useStateForModelWithLoading">useStateForModelWithLoading</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#useToggle">useToggle</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#ValidatorForm">ValidatorForm</a>
-        </li>
-      </ul>
-    </div>
+  <div class="col-2 toc d-none d-lg-block">
+    <ul>
+      <li><p class="navbar-brand pl-3">Table of Content</p></li>
+      <li><a class="nav-link" href="#useClickOutside">useClickOutside</a></li>
+      <li><a class="nav-link" href="#useEffectWithDebounce">useEffectWithDebounce</a></li>
+      <li><a class="nav-link" href="#useEffectWithLoading">useEffectWithLoading</a></li>
+      <li><a class="nav-link" href="#useNow">useNow</a></li>
+      <li><a class="nav-link" href="#usePersistedState">usePersistedState</a></li>
+      <li><a class="nav-link" href="#useResolutionSwitch">useResolutionSwitch</a></li>
+      <li><a class="nav-link" href="#useStateForField">useStateForField</a></li>
+      <li><a class="nav-link" href="#useStateForModel">useStateForModel</a></li>
+      <li><a class="nav-link" href="#useStateForModelWithLoading">useStateForModelWithLoading</a></li>
+      <li><a class="nav-link" href="#useToggle">useToggle</a></li>
+      <li><a class="nav-link" href="#ValidatorForm">ValidatorForm</a></li>
+    </ul>
   </div>
 </div>
