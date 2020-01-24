@@ -159,7 +159,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
-      <div>
+      </div>
     </div>
     <div class="mb-4">
       <div id="objectDifference">

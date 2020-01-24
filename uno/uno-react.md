@@ -339,7 +339,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       </code>
       <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSandbox</a>
-      <div>
+      </div>
     </div>
     <div class="mb-4">
       <div id="useResolutionSwitch">
@@ -705,7 +705,7 @@ description: "Check out uno-react, a Typescript library with common functions an
       </code>
       <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
-      <div>
+      </div>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
