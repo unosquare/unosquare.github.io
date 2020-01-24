@@ -369,24 +369,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
   </div>
   <div class="col-2 toc d-none d-lg-block">
     <ul>
-      <li>
-        <p class="navbar-brand pl-3">Table of Content</p>
-      </li>
-      <li>
-        <a class="nav-link" href="#useGridRefresh">useGridRefresh</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#useMasterDetails">useMasterDetails</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#useTbList">useTbList</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#useTbTable">useTbTable</a>
-      </li>
-      <li>
-        <a class="nav-link" href="#useTubular">useTubular</a>
-      </li>
+      <li><p class="navbar-brand pl-3">Table of Content</p></li>
+      <li><a class="nav-link" href="#useGridRefresh">useGridRefresh</a></li>
+      <li><a class="nav-link" href="#useMasterDetails">useMasterDetails</a></li>
+      <li><a class="nav-link" href="#useTbList">useTbList</a></li>
+      <li><a class="nav-link" href="#useTbTable">useTbTable</a></li>
+      <li><a class="nav-link" href="#useTubular">useTubular</a></li>
     </ul>
   </div>
 </div>
