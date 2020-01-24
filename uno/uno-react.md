@@ -236,7 +236,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             );
           }
         </pre>
-      <code>
+      </code>
       <a class="nav-link link-blue" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
@@ -611,14 +611,14 @@ description: "Check out uno-react, a Typescript library with common functions an
             const [myValue, toggle] = useToggle(defaultValue);
             return (
               < div className="App">
-                < h1>Uno-React</h1>
-                < h2>useToggle</h2>
-                < h3>Switch on and off!</h3>
+                < h1>Uno-React< /h1>
+                < h2>useToggle< /h2>
+                < h3>Switch on and off!< /h3>
                 < div>
                   < h1 style={{ color: myValue ? "#00f" : "#f00" }}>
                     {myValue ? "On" : "Off"}
                   < /h1>
-                  < button onClick={toggle}>Toggle</button>
+                  < button onClick={toggle}>Toggle< /button>
                 < /div>
               < /div>
             );
