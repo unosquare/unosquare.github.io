@@ -62,9 +62,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="debounce">
@@ -118,9 +116,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           showDebounce();
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="humanize">
@@ -157,9 +153,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => This Is An Awesome Example
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="objectDifference">
@@ -206,9 +200,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="removeDuplicated">
@@ -253,9 +245,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: "Mike", age: 3, gender: "Male" }, { name: "John", age: 5, gender: "Male" }]
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="toDate">
@@ -293,9 +283,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => 1994-08-17T06:00:00.000Z
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="toTitleCase">
@@ -330,9 +318,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => Hello World
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">

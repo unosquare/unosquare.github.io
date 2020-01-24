@@ -70,7 +70,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
       </div>
     </div>
@@ -127,9 +127,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="ErrorBoundary">
@@ -209,9 +207,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="FormModal">
@@ -293,9 +289,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="FormSwitch">
@@ -346,9 +340,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="IndeterminatedLoading">
@@ -394,9 +386,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="LoadingIcon">
@@ -438,9 +428,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="MenuList">
@@ -488,9 +476,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="NavBar">
@@ -529,9 +515,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="TextValidator">
@@ -586,9 +570,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="TextValidator">
@@ -641,9 +623,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="ThumbnailPhoto">
@@ -687,9 +667,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSandbox</a>
     </div>
     <div class="mb-4">
       <div id="Title">
@@ -734,7 +712,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSandbox</a>
       </div>
     </div>
