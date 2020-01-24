@@ -237,9 +237,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-          <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
-        </div>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -738,9 +736,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-          <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-        </div>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1019,9 +1015,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-          <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-        </div>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1132,9 +1126,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-          <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
-        </div>
+        <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
       </div>
     </div>
     <div class="mb-4">
@@ -1219,9 +1211,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
-          <a class="nav-link link-blue button" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
-        </div>
+        <a class="nav-link link-blue button calltoaction calltoaction-sm d-flex justify-content-end m-0" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
       </div>
     </div>
   </div>
