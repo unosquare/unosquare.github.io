@@ -241,7 +241,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <div>
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
       </div>
     </div>
