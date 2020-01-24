@@ -14,7 +14,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         <img class="github-icon" src="/assets/github.png" alt="tubular-react Github Repo" title="tubular-react Github Repo"/>
       </a>
     </div>
-    <p>Tubular-React is a Material-UI table with local or remote data-source. Featuring:</p>
+    <p>tubular-react is a Material-UI table with local or remote data-source. Featuring:</p>
     <ul style="list-style-type:disc;">
       <li>Define a custom layout for columns and cells using render methods.</li>
       <li>Use a remote or local datasource. Remote datasource use a specific Request and Response format.</li>

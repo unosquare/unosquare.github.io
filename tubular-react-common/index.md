@@ -6,7 +6,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
 <div class="container content-home d-flex flex-row">
   <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
-      <h2>tubular react common</h2>
+      <h2>tubular-react-common</h2>
       <a href="https://www.npmjs.com/package/tubular-react-common" class="first-icon">
         <img class="npm-icon" src="/assets/npm.svg" alt="uno-react npm" title="uno-react npm"/>
       </a>
@@ -14,7 +14,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         <img class="github-icon" src="/assets/github.png" alt="uno-react Github Repo" title="uno-react Github Repo"/>
       </a>
     </div>
-    <p>Tubular React Common functions and hooks.</p>
+    <p>tubular-react-common functions and hooks.</p>
     <div class="mb-4">
       <div id="useGridRefresh">
         <h4 class="blue-title">useGridRefresh</h4>
