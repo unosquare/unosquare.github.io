@@ -3,7 +3,6 @@ layout: page
 title: "Open Source Software Initiatives from Unosquare | uno-material-ui"
 description: "Check out uno-material-ui, a Typescript library with components and extensions for Material UI (React)."
 ---
-
 <div class="container content-home d-flex flex-row">
       <div class="col-10 p-0">
         <div class="d-flex flex-row space-between">
@@ -50,32 +49,29 @@ description: "Check out uno-material-ui, a Typescript library with components an
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { ButtonWithLoading } from "uno-material-ui";
+              const App = () => {
+                const [fetching, setFetching] = React.useState(false);
+                const start = () => setFetching(true);
+                if (fetching) {
+                  setTimeout(() => setFetching(false), 4000);
+                }
+                return (
+                  < div className="App">
+                    < h1>uno-material-ui< /h1>
+                    < h2>ButtonWIthLoading< /h2>
+                    < ButtonWithLoading isFetching={fetching} onClick={start}>
+                      Save
+                    < /ButtonWithLoading>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-``` tsx
-import { ButtonWithLoading } from "uno-material-ui";
-
-const App = () => {
-  const [fetching, setFetching] = React.useState(false);
-  const start = () => setFetching(true);
-  if (fetching) {
-    setTimeout(() => setFetching(false), 4000);
-  }
-  return (
-    <div className="App">
-      <h1>uno-material-ui</h1>
-      <h2>ButtonWIthLoading</h2>
-      <ButtonWithLoading isFetching={fetching} onClick={start}>
-        Save
-      </ButtonWithLoading>
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="ConfirmationDialog">
             <h4 class="blue-title">ConfirmationDialog</h4>
@@ -105,35 +101,32 @@ const App = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { ConfirmationDialog } from "uno-material-ui";
+              const App = () => {
+                const [open, setOpen] = React.useState(false);
+                const onCancel = () => setOpen(false);
+                const onOpen = () => setOpen(true);
+                return (
+                  < div className="App">
+                    < h1>uno-material-ui< /h1>
+                    < h2>ConfirmationDialog< /h2>
+                    < Button onClick={onOpen}>Open Dialog< /Button>
+                    < ConfirmationDialog
+                      onClose={onCancel}
+                      open={open}
+                      title={"Confirmation Dialog"}
+                      contentText={"Are you sure?"}
+                      onAgreeAction={onCancel}
+                    />
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-``` tsx
-import { ConfirmationDialog } from "uno-material-ui";
-
-const App = () => {
-  const [open, setOpen] = React.useState(false);
-  const onCancel = () => setOpen(false);
-  const onOpen = () => setOpen(true);
-  return (
-    <div className="App">
-      <h1>uno-material-ui</h1>
-      <h2>ConfirmationDialog</h2>
-      <Button onClick={onOpen}>Open Dialog</Button>
-      <ConfirmationDialog
-        onClose={onCancel}
-        open={open}
-        title={"Confirmation Dialog"}
-        contentText={"Are you sure?"}
-        onAgreeAction={onCancel}
-      />
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="ErrorBoundary">
             <h4 class="blue-title">ErrorBoundary</h4>
@@ -188,36 +181,32 @@ const App = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import Button from "@material-ui/core/Button";
+              import React from "react";
+              import ReactDOM from "react-dom";
+              import { FixedLinearProgress } from "uno-material-ui";
+              import "./styles.css";
+              const App = () => {
+                const [fetching, setFetching] = React.useState(false);
+                const onLoading = () => setFetching(true);
+                if (fetching) {
+                  setTimeout(() => setFetching(false), 4000);
+                }
+                return (
+                  < div className="App">
+                    < h1>uno-material-ui< /h1>
+                    < h2>FixedLinearProgress< /h2>
+                    < FixedLinearProgress isLoading={fetching} />
+                    < Button onClick={onLoading}>Start loading!< /Button>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import Button from "@material-ui/core/Button";
-import React from "react";
-import ReactDOM from "react-dom";
-import { FixedLinearProgress } from "uno-material-ui";
-import "./styles.css";
-const App = () => {
-  const [fetching, setFetching] = React.useState(false);
-  const onLoading = () => setFetching(true);
-  if (fetching) {
-    setTimeout(() => setFetching(false), 4000);
-  }
-  return (
-    <div className="App">
-      <h1>uno-material-ui</h1>
-      <h2>FixedLinearProgress</h2>
-      <FixedLinearProgress isLoading={fetching} />
-      <Button onClick={onLoading}>Start loading!</Button>
-    </div>
-  );
-};
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="FormModal">
             <h4 class="blue-title">FormModal</h4>
@@ -247,62 +236,59 @@ ReactDOM.render(<App />, rootElement);
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { FormModal } from "uno-material-ui";
+              const initialState = { Comments: "" };
+              const App = () => {
+                const [open, setOpen] = React.useState(false);
+                const [state, setState] = React.useState(initialState);
+                const onCancel = () => setOpen(false);
+                const onOpen = () => setOpen(true);
+                const changeNotes = (event: any) =>
+                  setState({
+                    ...state,
+                    Comments: event.target.value
+                  });
+                const handleSubmit = () => {
+                  alert("Hi, this is the comment:" + state.Comments);
+                  onCancel();
+                };
+                const Actions: React.FunctionComponent = () => (
+                      < Button onClick={onCancel}> Cancel < /Button>
+                      < Button type="submit"> Save < /Button>
+                );
+                return (
+                  < div>
+                    < h1>uno-material-ui< /h1>
+                    < h2>FormModal< /h2>
+                    < Button onClick={onOpen}>Open Dialog< /Button>
+                    < FormModal
+                      actions={< Actions />}
+                      onClose={onCancel}
+                      onSubmit={handleSubmit}
+                      open={open}
+                      maxWidth="md"
+                      fullWidth={true}
+                      title="Form Modal"
+                    >
+                      < TextField
+                        fullWidth={true}
+                        label="Notes"
+                        multiline={true}
+                        variant="outlined"
+                        value={state.Comments}
+                        onChange={changeNotes}
+                        rows={4}
+                      />
+                    < /FormModal>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { FormModal } from "uno-material-ui";
-
-const initialState = { Comments: "" };
-const App = () => {
-  const [open, setOpen] = React.useState(false);
-  const [state, setState] = React.useState(initialState);
-  const onCancel = () => setOpen(false);
-  const onOpen = () => setOpen(true);
-  const changeNotes = (event: any) =>
-    setState({
-      ...state,
-      Comments: event.target.value
-    });
-  const handleSubmit = () => {
-    alert("Hi, this is the comment:" + state.Comments);
-    onCancel();
-  };
-  const Actions: React.FunctionComponent = () => (
-        <Button onClick={onCancel}> Cancel </Button>
-        <Button type="submit"> Save </Button>
-  );
-  return (
-    <div>
-      <h1>uno-material-ui</h1>
-      <h2>FormModal</h2>
-      <Button onClick={onOpen}>Open Dialog</Button>
-      <FormModal
-        actions={<Actions />}
-        onClose={onCancel}
-        onSubmit={handleSubmit}
-        open={open}
-        maxWidth="md"
-        fullWidth={true}
-        title="Form Modal"
-      >
-        <TextField
-          fullWidth={true}
-          label="Notes"
-          multiline={true}
-          variant="outlined"
-          value={state.Comments}
-          onChange={changeNotes}
-          rows={4}
-        />
-      </FormModal>
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="FormSwitch">
             <h4 class="blue-title">FormSwitch</h4>
@@ -327,36 +313,33 @@ const App = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { FormSwitch } from "uno-material-ui";
+              const App = () => {
+                const [value, setValue] = React.useState(false);
+                const onChange = () => {
+                  setValue(!value);
+                };
+                return (
+                  < div className="App">
+                    < h1>uno-material-ui< /h1>
+                    < h2>FormSwitch< /h2>
+                    < FormSwitch checked={value} label="Switchable" onChange={onChange} />
+                    < FormSwitch
+                      checked={true}
+                      disabled={true}
+                      label="Disabled"
+                      labelPlacement="bottom-start"
+                      onChange={onChange}
+                    />
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { FormSwitch } from "uno-material-ui";
-
-const App = () => {
-  const [value, setValue] = React.useState(false);
-  const onChange = () => {
-    setValue(!value);
-  };
-  return (
-    <div className="App">
-      <h1>uno-material-ui</h1>
-      <h2>FormSwitch</h2>
-      <FormSwitch checked={value} label="Switchable" onChange={onChange} />
-      <FormSwitch
-        checked={true}
-        disabled={true}
-        label="Disabled"
-        labelPlacement="bottom-start"
-        onChange={onChange}
-      />
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="IndeterminatedLoading">
             <h4 class="blue-title">IndeterminatedLoading</h4>
@@ -381,31 +364,28 @@ const App = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { IndeterminatedLoading } from "uno-material-ui";
+              const App = () => {
+                const [fetching, setFetching] = React.useState(false);
+                const startFetching = () => setFetching(true);
+                if (fetching) {
+                  setTimeout(() => setFetching(false), 4000);
+                }
+                return (
+                  < div className="App">
+                    < h1>uno-material-ui< /h1>
+                    < h2>IndeterminatedLoading< /h2>
+                    < Button onClick={startFetching}> Start Fetching < /Button>
+                    < IndeterminatedLoading isLoading={fetching} />
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { IndeterminatedLoading } from "uno-material-ui";
-
-const App = () => {
-  const [fetching, setFetching] = React.useState(false);
-  const startFetching = () => setFetching(true);
-  if (fetching) {
-    setTimeout(() => setFetching(false), 4000);
-  }
-  return (
-    <div className="App">
-      <h1>uno-material-ui</h1>
-      <h2>IndeterminatedLoading</h2>
-      <Button onClick={startFetching}> Start Fetching </Button>
-      <IndeterminatedLoading isLoading={fetching} />
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="LoadingIcon">
             <h4 class="blue-title">LoadingIcon</h4>
@@ -430,26 +410,24 @@ const App = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { LoadingIcon } from "uno-material-ui";
+              export default function App() {
+                return (
+                  < div className="App">
+                    < h1>LoadingIcon< /h1>
+                    < h2>You can represent a loading process on screen< /h2>
+                    < LoadingIcon color="primary" />
+                    < LoadingIcon color="secondary" />
+                    < LoadingIcon color="default" />
+                  < /div>
+                );
+              }
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { LoadingIcon } from "uno-material-ui";
-export default function App() {
-  return (
-    <div className="App">
-      <h1>LoadingIcon</h1>
-      <h2>You can represent a loading process on screen</h2>
-      <LoadingIcon color="primary" />
-      <LoadingIcon color="secondary" />
-      <LoadingIcon color="default" />
-    </div>
-  );
-}
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="MenuList">
             <h4 class="blue-title">MenuList</h4>
@@ -475,32 +453,29 @@ export default function App() {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { MenuList } from "uno-material-ui";
+              const App: React.FunctionComponent = () => {
+                return (
+                  < div className="App">
+                    < h1>MenuList< /h1>
+                    < h2>Create a custom list!< /h2>
+                    < MenuList>
+                      < ListItem button={true}>
+                        < ListItemText secondary="Dashboard" />
+                      < /ListItem>
+                      < ListItem button={true}>
+                        < ListItemText secondary="Tools" />
+                      < /ListItem>
+                    < /MenuList>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { MenuList } from "uno-material-ui";
-
-const App: React.FunctionComponent = () => {
-  return (
-    <div className="App">
-      <h1>MenuList</h1>
-      <h2>Create a custom list!</h2>
-      <MenuList>
-        <ListItem button={true}>
-          <ListItemText secondary="Dashboard" />
-        </ListItem>
-        <ListItem button={true}>
-          <ListItemText secondary="Tools" />
-        </ListItem>
-      </MenuList>
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="NavBar">
             <h4 class="blue-title">NavBar</h4>
@@ -525,23 +500,21 @@ const App: React.FunctionComponent = () => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { NavBar } from "uno-material-ui";
+              export default function App() {
+                return (
+                  < div className="App">
+                    < NavBar title={"NavBar"} />
+                    < h2>Set a header navigation bar and customize at your will!< /h2>
+                  < /div>
+                );
+              }
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { NavBar } from "uno-material-ui";
-export default function App() {
-  return (
-    <div className="App">
-      <NavBar title={"NavBar"} />
-      <h2>Set a header navigation bar and customize at your will!</h2>
-    </div>
-  );
-}
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">SnackbarContainer</h4>
@@ -567,39 +540,36 @@ export default function App() {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { SnackbarContainer, snackbarService } from "uno-material-ui";
+              let count = 0;
+              const App = props => {
+                const success = {
+                  messageText: "Hey! Everything is awesome",
+                  messageType: "success"
+                };
+                const onOpenSuccess = () => {
+                  snackbarService.showSnackbar(success.messageText);
+                };
+                return (
+                  < div className="App">
+                    < SnackbarContainer />
+                    < h1>uno-material-ui< /h1>
+                    < h2>Snackbar< /h2>
+                    < div># of re-renders: {count}< /div>
+                    < div className={classes.flexContainer}>
+                      < Button className={classes.info} onClick={onOpenInfo}>
+                        Open Info Snackbar
+                      < /Button>
+                    < /div>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { SnackbarContainer, snackbarService } from "uno-material-ui";
-
-let count = 0;
-const App = props => {
-  const success = {
-    messageText: "Hey! Everything is awesome",
-    messageType: "success"
-  };
-  const onOpenSuccess = () => {
-    snackbarService.showSnackbar(success.messageText);
-  };
-  return (
-    <div className="App">
-      <SnackbarContainer />
-      <h1>uno-material-ui</h1>
-      <h2>Snackbar</h2>
-      <div># of re-renders: {count}</div>
-      <div className={classes.flexContainer}>
-        <Button className={classes.info} onClick={onOpenInfo}>
-          Open Info Snackbar
-        </Button>
-      </div>
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="TextValidator">
             <h4 class="blue-title">TextValidator</h4>
@@ -624,38 +594,35 @@ const App = props => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { TextValidator } from "uno-material-ui";
+              const App: React.FunctionComponent = (props: any) => {
+                const [data, handleChange] = useStateForModel({ name: "" });
+                const sendData = () => handleChange({ name: "" });
+                return (
+                  < div className="App">
+                    < h1>TextValidator< /h1>
+                    < h2>Set your own rules to your forms!< /h2>
+                    < ValidatorForm className={classes.form} onSubmit={sendData}>
+                      < TextValidator
+                        id="name"
+                        label="Name"
+                        name="name"
+                        onChange={handleChange}
+                        value={data.name}
+                        validators={["required"]}
+                        errorMessages={["This field is required"]}
+                      />
+                      < Button type="submit">Submit< /Button>
+                    < /ValidatorForm>
+                  < /div>
+                );
+              };
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { TextValidator } from "uno-material-ui";
-
-const App: React.FunctionComponent = (props: any) => {
-  const [data, handleChange] = useStateForModel({ name: "" });
-  const sendData = () => handleChange({ name: "" });
-  return (
-    <div className="App">
-      <h1>TextValidator</h1>
-      <h2>Set your own rules to your forms!</h2>
-      <ValidatorForm className={classes.form} onSubmit={sendData}>
-        <TextValidator
-          id="name"
-          label="Name"
-          name="name"
-          onChange={handleChange}
-          value={data.name}
-          validators={["required"]}
-          errorMessages={["This field is required"]}
-        />
-        <Button type="submit">Submit</Button>
-      </ValidatorForm>
-    </div>
-  );
-};
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="ThumbnailPhoto">
             <h4 class="blue-title">ThumbnailPhoto</h4>
@@ -678,31 +645,28 @@ const App: React.FunctionComponent = (props: any) => {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { ThumbnailPhoto } from "uno-material-ui";
+              export default function App() {
+                return (
+                  < div className="App">
+                    < h1>ThumbnailPhoto< /h1>
+                    < h2>Create your custom presentation cards!< /h2>
+                    < div>
+                      < ThumbnailPhoto
+                        fullName="John Doe"
+                        imgSrc="https://avatars0.githubusercontent.com/u/1775792?s=400&v=4"
+                        placement="right"
+                      />
+                    < /div>
+                  < /div>
+                );
+              }
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-```tsx
-import { ThumbnailPhoto } from "uno-material-ui";
-
-export default function App() {
-  return (
-    <div className="App">
-      <h1>ThumbnailPhoto</h1>
-      <h2>Create your custom presentation cards!</h2>
-      <div>
-        <ThumbnailPhoto
-          fullName="John Doe"
-          imgSrc="https://avatars0.githubusercontent.com/u/1775792?s=400&v=4"
-          placement="right"
-        />
-      </div>
-    </div>
-  );
-}
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSandbox</a>
         <div class="mb-4">
           <div id="Title">
             <h4 class="blue-title">Title</h4>
@@ -728,77 +692,44 @@ export default function App() {
               </tbody>
             </table>
           </div>
+          <code>
+            <pre class="pre-block">
+              import { Title } from "uno-material-ui";
+              export default function App() {
+                return (
+                  < div className="App">
+                    < h1>Title< /h1>
+                    < h2>Put your own title to your page and tab!< /h2>
+                    < Title
+                      prefix="Unosquare"
+                      suffix="uno-material-ui"
+                      value="This is a title"
+                    />
+                  < /div>
+                );
+              }
+            </pre>
+          </code>
+          <a class="nav-link link-blue" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSandbox</a>
         </div>
-<pre class="pre-block">
-
-``` tsx
-import { Title } from "uno-material-ui";
-
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Title</h1>
-      <h2>Put your own title to your page and tab!</h2>
-      <Title
-        prefix="Unosquare"
-        suffix="uno-material-ui"
-        value="This is a title"
-      />
-    </div>
-  );
-}
-```
-
-</pre>
-<a class="nav-link link-blue" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSandbox</a>
       </div>
       <div class="col-2 toc">
         <ul>
-          <li>
-            <p class="navbar-brand pl-3">Table of Content</p>
-          </li>
-          <li>
-            <a class="nav-link" href="#ButtonWithLoading">ButtonWithLoading</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#ConfirmationDialog">ConfirmationDialog</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#ErrorBoundary">ErrorBoundary</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#FixedLinearProgress">FixedLinearProgress</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#FormModal">FormModal</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#FormSwitch">FormSwitch</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#IndeterminatedLoading">IndeterminatedLoading</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#LoadingIcon">LoadingIcon</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#MenuList">MenuList</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#NavBar">NavBar</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#SnackbarContainer">SnackbarContainer</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#TextValidator">TextValidator</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#ThumbnailPhoto">ThumbnailPhoto</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#Title">Title</a>
-          </li>
+          <li><p class="navbar-brand pl-3">Table of Content</p></li>
+          <li><a class="nav-link" href="#ButtonWithLoading">ButtonWithLoading</a></li>
+          <li><a class="nav-link" href="#ConfirmationDialog">ConfirmationDialog</a></li>
+          <li><a class="nav-link" href="#ErrorBoundary">ErrorBoundary</a></li>
+          <li><a class="nav-link" href="#FixedLinearProgress">FixedLinearProgress</a></li>
+          <li><a class="nav-link" href="#FormModal">FormModal</a></li>
+          <li><a class="nav-link" href="#FormSwitch">FormSwitch</a></li>
+          <li><a class="nav-link" href="#IndeterminatedLoading">IndeterminatedLoading</a></li>
+          <li><a class="nav-link" href="#LoadingIcon">LoadingIcon</a></li>
+          <li><a class="nav-link" href="#MenuList">MenuList</a></li>
+          <li><a class="nav-link" href="#NavBar">NavBar</a></li>
+          <li><a class="nav-link" href="#SnackbarContainer">SnackbarContainer</a></li>
+          <li><a class="nav-link" href="#TextValidator">TextValidator</a></li>
+          <li><a class="nav-link" href="#ThumbnailPhoto">ThumbnailPhoto</a></li>
+          <li><a class="nav-link" href="#Title">Title</a></li>
         </ul>
       </div>
 </div>
