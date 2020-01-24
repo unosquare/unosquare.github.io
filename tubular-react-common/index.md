@@ -55,7 +55,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
         };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'usegridrefresh-hook-example-tmgf2');">Open CodeSandbox</a>
       </div>
     </div>
@@ -119,7 +119,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'usemasterdetails-hook-example-sjzwo');">Open CodeSandbox</a>
       </div>
     </div>
@@ -183,7 +183,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'usetblistexample-sort-by-z36pr');">Open CodeSandbox</a>
       </div>
     </div>
@@ -276,7 +276,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'usetbtable-hook-example-tqtit');">Open CodeSandbox</a>
       </div>
     </div>
@@ -372,7 +372,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
           };
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
+      <div class="calltoaction calltoaction-md d-flex justify-content-end m-0">
         <a class="nav-link link-blue button" onclick="convert(this, 'usetubular-hook-example-otdbu');">Open CodeSandbox</a>
       </div>
     </div>
