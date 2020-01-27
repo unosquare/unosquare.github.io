@@ -303,9 +303,7 @@ description: "Check out uno-react, a Typescript library with common functions an
     <div class="mb-4">
       <div id="DataGridStorage">
         <h4 class="blue-title">DataGridStorage</h4>
-        <p>
-          Define an object to store grid data.
-        </p>
+        <p>Define an object to store grid data.</p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -367,7 +365,7 @@ description: "Check out uno-react, a Typescript library with common functions an
     <div class="mb-4">
       <div id="LocalStorage">
         <h4 class="blue-title">LocalStorage</h4>
-        <p>Stores the data of the grid on the local storage. Implements DataGridStorage interface</p>
+        <p>Stores the data of the grid on the local storage. Implements <b>DataGridStorage</b> interface</p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -436,7 +434,7 @@ description: "Check out uno-react, a Typescript library with common functions an
     <div class="mb-4">
       <div id="NullStorage">
         <h4 class="blue-title">NullStorage</h4>
-        <p>Implements DataGridStorage with null results.</p>
+        <p>Implements <b>DataGridStorage</b> interface with null results.</p>
       </div>
     </div>
   </div>

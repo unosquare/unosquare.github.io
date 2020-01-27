@@ -113,7 +113,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Array that defines the type of columns to be rendered on the grid</td>
               <td>No</td>
               <td>None</td>
@@ -260,7 +260,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Columns that compose the grid</td>
               <td>No</td>
               <td>None</td>
@@ -366,7 +366,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
             <tr>
               <td>activeColumn</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
               <td>Active column of the Grid</td>
               <td>No</td>
               <td>None</td>
@@ -601,7 +601,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>column</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
               <td>Column to get data for cell</td>
               <td>No</td>
               <td>None</td>
@@ -684,7 +684,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Columns of header details</td>
               <td>No</td>
               <td>None</td>
@@ -798,7 +798,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Columns </td>
               <td>No</td>
               <td>None</td>
@@ -834,7 +834,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>activeColumn</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel</a></td>
               <td>Active column of the grid</td>
               <td>No</td>
               <td>None</td>
@@ -1082,7 +1082,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           <tbody>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Columns to be rendered on the row</td>
               <td>No</td>
               <td>None</td>
@@ -1164,7 +1164,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             </tr>
             <tr>
               <td>columns</td>
-              <td><a href="https://github.com/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
+              <td><a href="https://unosquare.github.io/unosquare/tubular/tubular-common#ColumnModel">ColumnModel[]</a></td>
               <td>Columns to be rendered on the row</td>
               <td>No</td>
               <td>None</td>
