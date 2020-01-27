@@ -32,7 +32,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     <a href="https://unosquare.github.io/tubular-dotnet/api/Unosquare.Tubular.html" class="link-blue button">
                         Read More
                     </a>
-                    <a href="https://github.com/unosquare/tubular-dotnet" class="d-flex justify-content-end">
+                    <a href="https://github.com/unosquare/tubular-dotnet">
                         <img src="/assets/github.png" />
                     </a>
                 </div>
