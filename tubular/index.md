@@ -28,12 +28,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         (ASP.NET Web API for example).
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex row align-items-center m-0">
+                <div class="calltoaction calltoaction-sm d-flex row align-items-between m-0">
                     <a href="https://unosquare.github.io/tubular-dotnet/api/Unosquare.Tubular.html" class="link-blue button">
                         Read More
                     </a>
                     <a href="https://github.com/unosquare/tubular-dotnet">
-                        <img src="/assets/github.png" />
+                        <img src="/assets/github.png"/>
                     </a>
                 </div>
             </div>
