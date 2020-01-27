@@ -54,7 +54,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TubularHttpClient">
         <h4 class="blue-title">TubularHttpClient</h4>
@@ -90,7 +90,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TubularHttpClientAbstract">
         <h4 class="blue-title">TubularHttpClientAbstract</h4>
@@ -132,7 +132,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ColumnModel">
         <h4 class="blue-title">ColumnModel</h4>
@@ -244,7 +244,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="GridRequest">
         <h4 class="blue-title">GridRequest</h4>
@@ -307,7 +307,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="DataGridStorage">
         <h4 class="blue-title">DataGridStorage</h4>
@@ -370,7 +370,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="LocalStorage">
         <h4 class="blue-title">LocalStorage</h4>
@@ -440,7 +440,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="NullStorage">
         <h4 class="blue-title">NullStorage</h4>

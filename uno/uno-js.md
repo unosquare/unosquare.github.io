@@ -64,7 +64,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jscolorgenerator-ke1rl', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="debounce">
         <h4 class="blue-title">debounce</h4>
@@ -119,7 +119,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsdebounce-wqh11', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="humanize">
         <h4 class="blue-title">humanize</h4>
@@ -157,7 +157,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="objectDifference">
         <h4 class="blue-title">objectDifference</h4>
@@ -205,7 +205,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsobjectdifference-q4okk', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="removeDuplicated">
         <h4 class="blue-title">removeDuplicated</h4>
@@ -251,7 +251,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="toDate">
         <h4 class="blue-title">toDate</h4>
@@ -290,7 +290,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36', 'editor,console');">Open CodeSandbox</a>
     </div>
-    <hr/>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="toTitleCase">
         <h4 class="blue-title">toTitleCase</h4>
