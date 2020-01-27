@@ -33,7 +33,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Read More
                     </a>
                     <a href="https://github.com/unosquare/tubular-dotnet">
-                        <img src="/assets/github.png"/>
+                        <img class="github-icon" src="/assets/github.png"/>
                     </a>
                 </div>
             </div>
