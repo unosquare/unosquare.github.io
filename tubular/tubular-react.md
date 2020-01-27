@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Open Source Software Initiatives from Unosquare | uno-react"
-description: "Check out uno-react, a Typescript library with common functions and hooks for React"
+title: "Open Source Software Initiatives from Unosquare | tubular-react"
+description: "Check out tubular-react, a Material UI table with local and remote data-source."
 ---
 <div class="container content-home d-flex flex-row">
   <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
@@ -92,6 +92,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="DataGrid">
         <h4 class="blue-title">DataGrid</h4>
@@ -237,9 +238,10 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="DataGridCard">
         <h4 class="blue-title">DataGridCard</h4>
@@ -283,6 +285,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="DataGridTable">
         <h4 class="blue-title">DataGridTable</h4>
@@ -341,6 +344,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="DialogModal">
         <h4 class="blue-title">DialogModal</h4>
@@ -396,6 +400,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="ExportButton">
         <h4 class="blue-title">ExportButton</h4>
@@ -451,6 +456,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="GridBody">
         <h4 class="blue-title">GridBody</h4>
@@ -502,6 +508,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="GridHeader">
         <h4 class="blue-title">GridHeader</h4>
@@ -538,6 +545,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="GridToolbar">
         <h4 class="blue-title">GridToolbar</h4>
@@ -581,6 +589,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="GridHeaderCell">
         <h4 class="blue-title">GridHeaderCell</h4>
@@ -631,6 +640,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="MasterDetailRow">
         <h4 class="blue-title">MasterDetailRow</h4>
@@ -736,9 +746,10 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="MobileDataGridTable">
         <h4 class="blue-title">MobileDataGridTable</h4>
@@ -780,6 +791,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="NoDataRow">
         <h4 class="blue-title">NoDataRow</h4>
@@ -814,6 +826,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="OperatorsDropdown">
         <h4 class="blue-title">OperatorsDropdown</h4>
@@ -850,6 +863,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="Paginator">
         <h4 class="blue-title">Paginator</h4>
@@ -893,6 +907,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="SearchTextInput">
         <h4 class="blue-title">SearchTextInput</h4>
@@ -929,6 +944,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="TbList">
         <h4 class="blue-title">TbList</h4>
@@ -1015,9 +1031,10 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="TbListItem">
         <h4 class="blue-title">TbListItem</h4>
@@ -1061,6 +1078,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="TbMobileRow">
         <h4 class="blue-title">TbMobileRow</h4>
@@ -1126,9 +1144,10 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="TbRow">
         <h4 class="blue-title">TbRow</h4>
@@ -1211,7 +1230,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
   </div>

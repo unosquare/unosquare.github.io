@@ -1,250 +1,349 @@
 ---
 layout: page
-title: "Tubular Common Models and Data Transformer | tubular-common"
-description: "Utilize Unosquare's tool to model and transform data with tubular-common"
+title: "Tubular .NET Library | tubular-dotnet"
+description: "Create REST service and use it with any WebApi library"
 ---
 <div class="container content-home d-flex flex-row">
   <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
     <div class="d-flex flex-row space-between">
-      <h2>tubular-common</h2>
-      <a href="https://www.npmjs.com/package/tubular-react" class="first-icon">
-        <img class="npm-icon" src="/assets/npm.svg" alt="tubular-react npm" title="tubular-react npm"/>
-      </a>
-      <a href="https://github.com/unosquare/tubular-react">
-        <img class="github-icon" src="/assets/github.png" alt="tubular-react Github Repo" title="tubular-react Github Repo"/>
+      <h2>tubular-dotnet</h2>
+      <a href="https://github.com/unosquare/tubular-dotnet">
+        <img class="github-icon" src="/assets/github.png" alt="tubular-dotnet Github Repo" title="tubular-dotnet Github Repo"/>
       </a>
     </div>
     <p>
-      Tubular Common provides TypeScript and Javascript models and data transformer 
-      to use any Tubular DataGrid component with an array of Javascript objects.
+      Tubular provides .NET Framework and .NET Core Library to create REST service 
+      to use with Tubular Angular Components easily with any WebApi library (ASP.NET Web API for example).
     </p>
     <div class="mb-4">
-      <div id="ShallowHttpClient">
-        <h4 class="blue-title">ShallowHttpClient</h4>
-        <p>
-          Request to server
-        </p>
-        <h6>PROPERTIES</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>request</td>
-              <td>string</td>
-              <td>Server URL to fetch data</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>handler</td>
-              <td>FetchHandler</td>
-              <td>Hnadler for fetching operations</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-          </tbody>
-        </table>
+      <div id="Installation">
+        <h4 class="blue-title">Installation</h4>
+        <p>Install the latest NuGet from Visual Studio's Package Manager</p>
+        <code>
+          <pre class="pre-block">
+            PM> Install-Package Tubular.ServerSide
+          </pre>
+        </code>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
-      <div id="TubularHttpClient">
-        <h4 class="blue-title">TubularHttpClient</h4>
+      <div id="GlobalSettings">
         <p>
-          Handle requests for Tubular grid.
+          You can access global settings by using the static object 
+          TubularDefaultSettings and setup common behavior in Tubular.
         </p>
-        <h6>PROPERTIES</h6>
+        <h6>SETTINGS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
+              <th>Setting</th>
               <th>Default value</th>
+              <th>Notes</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>request</td>
+              <td>AdjustTimezoneOffset</td>
+              <td>true</td>
               <td>
-                <ul style="list-style-type:disc;">
-                  <li>string</li>
-                  <li>Request</li>
-                  <li>TubularHttpClientAbstract</li>
-                </ul>
+                Determines if the DateTime from a Response should adjust 
+                the timezone offset send by within the Request.
               </td>
-              <td>Request performed to fetch data from/to server</td>
-              <td>No</td>
-              <td>None</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
-      <div id="TubularHttpClientAbstract">
-        <h4 class="blue-title">TubularHttpClientAbstract</h4>
-        <p>
-          Interface to create Tubular requests.
-        </p>
+      <div id="Common">
+        <h4 class="blue-title">Common</h4>
+        <p>Types for the .NET library.</p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
               <th>Name</th>
-              <th>Type</th>
               <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
+              <th>Values</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>request</td>
+              <td>SortDirection</td>
+              <td>Direction to sort data on a grid</td>
               <td>
                 <ul style="list-style-type:disc">
-                  <li>string</li>
-                  <li>Request</li>
+                  <li>None</li>
+                  <li>Ascending</li>
+                  <li>Descending</li>
                 </ul>
               </td>
-              <td>Fetch request performed by the class</td>
-              <td>No</td>
-              <td>None</td>
+            </tr>
+            <tr>
+              <td>CompareOperators</td>
+              <td>Operators to compare data</td>
+              <td>
+                <ul style="list-style-type:disc">
+                  <li>None</li>
+                  <li>Auto</li>
+                  <li>Equals</li>
+                  <li>NotEquals</li>
+                  <li>Contains</li>
+                  <li>StartsWith</li>
+                  <li>EndsWith</li>
+                  <li>Gte - Greater Than or Equal</li>
+                  <li>Gt</li>
+                  <li>Lte</li>
+                  <li>Lt</li>
+                  <li>Multiple</li>
+                  <li>Between</li>
+                  <li>NotContains</li>
+                  <li>NotStartsWith</li>
+                  <li>NotEndsWith</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>DataType</td>
+              <td>Types for the data of a grid column</td>
+              <td>
+                <ul style="list-style-type:disc">
+                  <li>String</li>
+                  <li>Numeric</li>
+                  <li>DateTime</li>
+                  <li>Date</li>
+                  <li>Boolean</li>
+                  <li>DateTimeUtc</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>AggregationFunction</td>
+              <td>Functions </td>
+              <td>
+                <ul style="list-style-type:disc">
+                  <li>None</li>
+                  <li>Sum</li>
+                  <li>Average</li>
+                  <li>Count</li>
+                  <li>DistinctCount</li>
+                  <li>Max</li>
+                  <li>Min</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mb-4">
+      <div id="Extensions">
+        <h4 class="blue-title">Extensions</h4>
+        <p>Extension methods for tubular.</p>
+        <h6>CONSTANTS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DateTimeFormat</td>
+              <td>string</td>
+              <td>Format for date and time strings</td>
+            </tr>
+            <tr>
+              <td>DateFormat</td>
+              <td>string</td>
+              <td>Format for date strings</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>METHODS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Parameters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AdjustTimeZone</td>
+              <td>object</td>
+              <td>Adjust a timezone data in an object</td>
+              <td>
+                <ul>
+                  <li>data</li>
+                  <li>timezoneOffset</li>
+                </ul>
+              </td>
             </tr>
             <tr>
               <td>fetch</td>
-              <td>Function</td>
-              <td>Fetch function to connect to server</td>
-              <td>No</td>
-              <td>None</td>
+              <td>GridDataResponse</td>
+              <td>
+                Generates a response using a request and a queryable source, 
+                similar to a DataSet in Entity Framework
+              </td>
+              <td>
+                <ul>
+                  <li>request</li>
+                  <li>dataSource</li>
+                  <li>preProcessSubset</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>MapColumnsToProperties</td>
+              <td>Dictionary< GridColumn, PropertyInfo ></td>
+              <td>Maps data from columns to an object's properties</td>
+              <td>
+                <ul>
+                  <li>columns</li>
+                  <li>properties</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>CreateGridPayload</td>
+              <td>List< List< object > ></td>
+              <td>Creates a payload for a Tubular grid</td>
+              <td>
+                <ul>
+                  <li>subset</li>
+                  <li>columnMap</li>
+                  <li>initialCapacity</li>
+                  <li>timeZoneOffset</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>AdjustTimeZoneForProperty</td>
+              <td>void</td>
+              <td>Adjusts time zone for a property</td>
+              <td>
+                <ul>
+                  <li>data</li>
+                  <li>timeZoneOffset</li>
+                  <li>prop</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>AggregateSubset</td>
+              <td>Dictionary< string, object ></td>
+              <td>Returns a dictionary with a new subset</td>
+              <td>
+                <ul>
+                  <li>columns</li>
+                  <li>subset</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>GetSqlOperator</td>
+              <td>string - nullable</td>
+              <td>Return an SQL logical operator</td>
+              <td>
+                <ul>
+                  <li>op</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>FilterResponse</td>
+              <td>IQueryable - nullable</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>request</li>
+                  <li>subset</li>
+                  <li>response</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>FilterColumn</td>
+              <td>void</td>
+              <td>
+                Filters the data of a column using a string
+              </td>
+              <td>
+                <ul>
+                  <li>column</li>
+                  <li>searchLambda</li>
+                  <li>searchParamsArgs</li>
+                  <li>isDbQuery</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>GetSearchFilter</td>
+              <td>void</td>
+              <td></td>
+              <td>
+                <ul>
+                  <li>request</li>
+                  <li>isDbQuery</li>
+                  <li>searchValue</li>
+                  <li>searchLambda</li>
+                  <li>searchParamsArgs</li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
-      <div id="ColumnModel">
-        <h4 class="blue-title">ColumnModel</h4>
-        <p>
-          Model used to describe columns for the data grid
-        </p>
+      <div id="Filter">
+        <h4 class="blue-title">Filter</h4>
+        <p>Object to be serialized between API and tubular</p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
               <th>Name</th>
-              <th>Type</th>
               <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
+              <th>Type</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>aggregate</td>
-              <td>AggregateFunctions</td>
-              <td>Functions used to operate on the column's data </td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>dataType</td>
-              <td>ColumnDataType</td>
-              <td>Type for the data on this column</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>filter</td>
-              <td>
-                <ul>
-                  <li>FilterWrapper</li>
-                  <li>Object</li>
-                </ul>
-              </td>
-              <td>Filter of the column</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>filterable</td>
-              <td>boolean</td>
-              <td>Defines if column can have applicable filters on its data</td>
-              <td>Yes</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>isKey</td>
-              <td>boolean</td>
-              <td>Defines if the data of this column can be used as a DB key</td>
-              <td>Yes</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>label</td>
+              <td>Name</td>
+              <td>Filter's name</td>
               <td>string</td>
-              <td>Label shown on the header of the grid</td>
-              <td>Yes</td>
-              <td>None</td>
             </tr>
             <tr>
-              <td>name</td>
+              <td>Text</td>
+              <td>Search text</td>
               <td>string</td>
-              <td>Name of the column</td>
-              <td>Yes</td>
-              <td>None</td>
             </tr>
             <tr>
-              <td>searchable</td>
-              <td>boolean</td>
-              <td>Defines if column data can be searched on the SearchTextInput component of the grid</td>
-              <td>Yes</td>
-              <td>None</td>
+              <td>Argument</td>
+              <td>Parameters for the filter search</td>
+              <td>string[]</td>
             </tr>
             <tr>
-              <td>sortDirection</td>
-              <td>ColumnSortDirection</td>
-              <td>Defines if data should be sorted in a ascending or descending order</td>
-              <td>Yes</td>
-              <td>None</td>
+              <td>Operator</td>
+              <td>Operator applied by the filter</td>
+              <td>CompareOperator</td>
             </tr>
             <tr>
-              <td>sortOrder</td>
-              <td>number</td>
-              <td></td>
-              <td>Yes</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>sortable</td>
-              <td>boolean</td>
-              <td>Defines if the column can be used to sort data of the grid</td>
-              <td>Yes</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>visible</td>
-              <td>boolean</td>
-              <td>Defines if the Column is visible on the Grid</td>
-              <td>Yes</td>
-              <td>None</td>
+              <td>HasFilter</td>
+              <td>Checks if the filter is applied</td>
+              <td>bool</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
       <div id="GridRequest">
         <h4 class="blue-title">GridRequest</h4>
@@ -307,7 +406,6 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
       <div id="DataGridStorage">
         <h4 class="blue-title">DataGridStorage</h4>
@@ -370,7 +468,6 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
       <div id="LocalStorage">
         <h4 class="blue-title">LocalStorage</h4>
@@ -440,7 +537,6 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
         </table>
       </div>
     </div>
-    <hr/>
     <div class="mb-4">
       <div id="NullStorage">
         <h4 class="blue-title">NullStorage</h4>

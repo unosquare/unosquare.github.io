@@ -4,17 +4,16 @@ title: "Open Source Software Initiatives from Unosquare | Tubular"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
 <div class="container content-home">
-<div class="main-hero hero">
-    <img src="/assets/tubular.jpg" class="px-5" alt="Tubular logo" />
-    <div class="hero-title title-black">
-        <h2 class="text-uppercase">Tubular</h2>
-        <div id="hero-label">The centerpiece of tubular is its fully templateable grid with lots
-            of features
+    <div class="main-hero hero">
+        <img src="/assets/tubular.jpg" class="px-5" alt="Tubular logo" />
+        <div class="hero-title title-black">
+            <h2 class="text-uppercase">Tubular</h2>
+            <div id="hero-label">The centerpiece of tubular is its fully templateable grid with lots
+                of features
+            </div>
+            <a class="link-gray" href="https://unosquare.github.io/tubular/"> Read more</a>
         </div>
-        <a class="link-gray" href="https://unosquare.github.io/tubular/"> Read more
-        </a>
     </div>
-</div>
 </div>
 <div class="container content-home">
 <div class="row">
@@ -30,8 +29,11 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-dotnet" class="link-blue button">
+                    <a href="https://unosquare.github.io/tubular-dotnet/api/Unosquare.Tubular.html" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-dotnet" class="d-flex justify-content-end">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -87,7 +89,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                     </p>
                 </div>
                 <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://unosquare.github.io/tubular-react-common" class="link-blue button">
+                    <a href="https://unosquare.github.io/tubular/tubular-react-common" class="link-blue button">
                         Read More
                     </a>
                 </div>

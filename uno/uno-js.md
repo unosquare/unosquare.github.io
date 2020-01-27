@@ -62,8 +62,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jscolorgenerator-ke1rl', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="debounce">
         <h4 class="blue-title">debounce</h4>
@@ -116,8 +117,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           showDebounce();
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsdebounce-wqh11', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="humanize">
         <h4 class="blue-title">humanize</h4>
@@ -153,8 +155,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => This Is An Awesome Example
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="objectDifference">
         <h4 class="blue-title">objectDifference</h4>
@@ -200,8 +203,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsobjectdifference-q4okk', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="removeDuplicated">
         <h4 class="blue-title">removeDuplicated</h4>
@@ -245,8 +249,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: "Mike", age: 3, gender: "Male" }, { name: "John", age: 5, gender: "Male" }]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="toDate">
         <h4 class="blue-title">toDate</h4>
@@ -283,8 +288,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => 1994-08-17T06:00:00.000Z
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36', 'editor,console');">Open CodeSandbox</a>
     </div>
+    <hr/>
     <div class="mb-4">
       <div id="toTitleCase">
         <h4 class="blue-title">toTitleCase</h4>
@@ -318,7 +324,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => Hello World
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstotitlecase-208pm', 'editor,console');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
