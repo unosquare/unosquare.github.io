@@ -682,7 +682,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
-      <li><a class="nav-link" href="#AggregateFunctions"></a></li>
+      <li><a class="nav-link" href="#AggregateFunctions">AggregateFunctions</a></li>
       <li><a class="nav-link" href="#ColumnDataType">ColumnDataType</a></li>
       <li><a class="nav-link" href="#ColumnModel">ColumnModel</a></li>
       <li><a class="nav-link" href="#CompareOperators">CompareOperators</a></li>
