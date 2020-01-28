@@ -114,7 +114,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                             in-line editing of rows via templates.
                         </p>
                     </div>
-                    <a href="/tubular.html" class="text-uppercase">read more</a>
+                    <a href="https://unosquare.github.io/tubular/" class="text-uppercase">read more</a>
                 </div>
             </div>
         </div>
