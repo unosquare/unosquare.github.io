@@ -455,7 +455,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
     <div class="mb-4">
       <div id="LocalStorage">
         <h4 class="blue-title">LocalStorage</h4>
-        <p>Stores the data of the grid on the local storage. Implements <b>DataGridStorage</b> interface</p>
+        <p>Stores the data of the grid on the local storage. Implements DataGridStorage interface</p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -525,7 +525,7 @@ description: "Utilize Unosquare's tool to model and transform data with tubular-
     <div class="mb-4">
       <div id="NullStorage">
         <h4 class="blue-title">NullStorage</h4>
-        <p>Implements <b>DataGridStorage</b> interface with null results.</p>
+        <p>Implements DataGridStorage interface with null results.</p>
       </div>
     </div>
     <hr class="separator"/>
