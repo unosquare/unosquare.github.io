@@ -150,7 +150,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular Angular Components easily with any Node.js WebApi library.
                     </p>
                 </div>
-                <div class="d-flex row justify-content-end align-items-center m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-nodejs" class="link-blue button">
                         Read More
                     </a>

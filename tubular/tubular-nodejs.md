@@ -173,12 +173,12 @@ description: "Start coding your WebAPI with tubular-nodejs"
   <div class="col-2 toc d-none d-lg-block">
     <ul>
       <li><p class="navbar-brand pl-3">Table of Content</p></li>
-      <li><a class="nav-link" href="#applyFiltering"></a></li>
-      <li><a class="nav-link" href="#applyFreeTextSearch">ColumnDataType</a></li>
-      <li><a class="nav-link" href="#applySorting">ColumnModel</a></li>
-      <li><a class="nav-link" href="#createGridResponse">CompareOperators</a></li>
-      <li><a class="nav-link" href="#getAggregatePayload">ColumnSortDirection</a></li>
-      <li><a class="nav-link" href="#getCompareOperators">DataGridStorage</a></li>
+      <li><a class="nav-link" href="#applyFiltering">applyFiltering</a></li>
+      <li><a class="nav-link" href="#applyFreeTextSearch">applyFreeTextSearch</a></li>
+      <li><a class="nav-link" href="#applySorting">applySorting</a></li>
+      <li><a class="nav-link" href="#createGridResponse">createGridResponse</a></li>
+      <li><a class="nav-link" href="#getAggregatePayload">getAggregatePayload</a></li>
+      <li><a class="nav-link" href="#getCompareOperators">getCompareOperators</a></li>
     </ul>
   </div>
 </div>
