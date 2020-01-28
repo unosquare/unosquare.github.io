@@ -50,9 +50,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         objects.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-common" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-common">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -71,9 +74,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Remote data is paged in the server side.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-react" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-react">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -88,9 +94,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular React Common functions and hooks.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-react-common" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-react-common">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -106,9 +115,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular/tubular" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -123,9 +135,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular2" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular/tubular2" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular2">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -141,9 +156,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular Angular Components easily with any Node.js WebApi library.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-nodejs" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular/tubular-nodejs" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-nodejs">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
