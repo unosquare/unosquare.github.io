@@ -115,10 +115,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
                     </p>
                 </div>
-                <div class="d-flex row justify-content-between align-items-center m-0">
-                    <a href="https://unosquare.github.io/tubular/tubular" class="link-blue button">
-                        Read More
-                    </a>
+                <div class="d-flex row justify-content-end align-items-center m-0">
                     <a href="https://github.com/unosquare/tubular">
                         <img src="/assets/github.png" />
                     </a>
@@ -135,10 +132,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
                     </p>
                 </div>
-                <div class="d-flex row justify-content-between align-items-center m-0">
-                    <a href="https://unosquare.github.io/tubular/tubular2" class="link-blue button">
-                        Read More
-                    </a>
+                <div class="d-flex row justify-content-end align-items-center m-0">
                     <a href="https://github.com/unosquare/tubular2">
                         <img src="/assets/github.png" />
                     </a>
@@ -156,10 +150,7 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular Angular Components easily with any Node.js WebApi library.
                     </p>
                 </div>
-                <div class="d-flex row justify-content-between align-items-center m-0">
-                    <a href="https://unosquare.github.io/tubular/tubular-nodejs" class="link-blue button">
-                        Read More
-                    </a>
+                <div class="d-flex row justify-content-end align-items-center m-0">
                     <a href="https://github.com/unosquare/tubular-nodejs">
                         <img src="/assets/github.png" />
                     </a>
