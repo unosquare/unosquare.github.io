@@ -253,6 +253,52 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     </div>
     <hr class="separator"/>
     <div class="mb-4">
+      <div id="stringTemplate">
+        <h4 class="blue-title">stringTemplate</h4>
+        <p>.</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>string</li>
+                  <li>string[]</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>boolean</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>
+          A function that may build a string 
+        </p>
+      </div>
+      <code>
+        <pre class="pre-block">
+          import { humanize } from "uno-js";
+          const toHumanize = humanize("thisIsAnAwesomeExample");
+          // => This Is An Awesome Example
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
       <div id="toDate">
         <h4 class="blue-title">toDate</h4>
         <p>
@@ -326,6 +372,109 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       </code>
       <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstotitlecase-208pm', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="truncateText">
+        <h4 class="blue-title">truncateText</h4>
+        <p>.</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>string</li>
+                  <li>string[]</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>boolean</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>
+          A humanized string
+        </p>
+      </div>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="validateNotNull">
+        <h4 class="blue-title">validateNotNull</h4>
+        <p>.</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Object</td>
+              <td>Object to validate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>string[]</td>
+              <td>Object props that will be ignored for validation</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>True if object is correctly validated</p>
+      </div>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="validateObject">
+        <h4 class="blue-title">validateObject</h4>
+        <p>.</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Object</td>
+              <td>Object to be validated</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>Function used to validate object</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>True, false</p>
+      </div>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
+    </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
     <ul>
@@ -335,8 +484,12 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       <li><a class="nav-link" href="#humanize">humanize</a></li>
       <li><a class="nav-link" href="#objectDifference">objectDifference</a></li>
       <li><a class="nav-link" href="#removeDuplicated">removeDuplicated</a></li>
+      <li><a class="nav-link" href="#stringTemplate">stringTemplate</a></li>
       <li><a class="nav-link" href="#toDate">toDate</a></li>
       <li><a class="nav-link" href="#toTitleCase">toTitleCase</a></li>
+      <li><a class="nav-link" href="#truncateText">truncateText</a></li>
+      <li><a class="nav-link" href="#validateNotNull">validateNotNull</a></li>
+      <li><a class="nav-link" href="#validateObject">validateObject</a></li>
     </ul>
   </div>
 </div>
