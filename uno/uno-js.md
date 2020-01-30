@@ -295,7 +295,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => This Is An Awesome Example
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -374,7 +373,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => 1994-08-17T06:00:00.000Z
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36', 'console');">Open CodeSandbox</a>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -416,7 +414,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     <div class="mb-4">
       <div id="truncateText">
         <h4 class="blue-title">truncateText</h4>
-        <p></p>
+        <p>Truncates a string to a certain length</p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -454,7 +452,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           A humanized string
         </p>
       </div>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -486,7 +483,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
         <h6>RETURN</h6>
         <p>True if object is correctly validated</p>
       </div>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -518,7 +514,6 @@ description: "Check out uno-js, a Typescript library for array and string manipu
         <h6>RETURN</h6>
         <p>True, false</p>
       </div>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
