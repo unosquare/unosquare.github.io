@@ -30,22 +30,28 @@ The last step is to create triggers to notify users when a job has thrown a resu
 Example: If my job checks the data of a computer, I can create a trigger that will rise when the CPU's manufacturer is HP and will notify users which computers check positive on that condition.
 
 ## How can we create our own jobs?
-  1. Basic information
+  1. **Basic information**
+
   ![step01-basic info](https://user-images.githubusercontent.com/28661932/73490216-abbee000-4371-11ea-9d89-b32767cd9aa5.gif)
 
-  2. Scheduling
+  2. **Scheduling**
+
   ![step02-schedule](https://user-images.githubusercontent.com/28661932/73490241-b5e0de80-4371-11ea-80cc-8094db530062.gif)
 
-  3. Asset assignation
+  3. **Asset assignation**
+
   ![step03-targets](https://user-images.githubusercontent.com/28661932/73490260-bc6f5600-4371-11ea-880c-d4f041319154.gif)
 
-  4. Triggers
+  4. **Triggers**
+
   ![step04-triggers](https://user-images.githubusercontent.com/28661932/73490272-c2fdcd80-4371-11ea-9fc0-7b7fe1ba4a2a.gif)
 
-  5. Commands manager & Trigger rules
+  5. **Commands manager & Trigger rules**
+
   ![step05-commandsTriggerRules](https://user-images.githubusercontent.com/28661932/73490285-c7c28180-4371-11ea-9cf1-9fe8d0cd3d31.gif)
 
-  6. Voilà!
+  6. ***Voilà!***
+
   Finally, you can select your new job in the job page:
   ![final](https://user-images.githubusercontent.com/28661932/73490626-81215700-4372-11ea-8686-105c47ec985d.png)
 
