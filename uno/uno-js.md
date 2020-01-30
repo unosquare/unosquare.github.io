@@ -338,6 +338,46 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     </div>
     <hr class="separator"/>
     <div class="mb-4">
+      <div id="toDate">
+        <h4 class="blue-title">toLocalTime</h4>
+        <p>Converts a date object or string to UTC Date</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>string</li>
+                  <li>Date</li>
+                </ul>
+              </td>
+              <td>Date to convert to UTC</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>A DateTime object converted to UTC</p>
+      </div>
+      <code>
+        <pre class="pre-block">
+          import { toDate } from "uno-js";
+          const MyObject: any = { myDateString: "08.17.1994" };
+          toDate(MyObject);
+          // => 1994-08-17T06:00:00.000Z
+        </pre>
+      </code>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36', 'console');">Open CodeSandbox</a>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
       <div id="toTitleCase">
         <h4 class="blue-title">toTitleCase</h4>
         <p>Returns the given string in Title Case</p>
@@ -376,7 +416,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     <div class="mb-4">
       <div id="truncateText">
         <h4 class="blue-title">truncateText</h4>
-        <p>.</p>
+        <p></p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -390,16 +430,21 @@ description: "Check out uno-js, a Typescript library for array and string manipu
             <tr>
               <td>
                 <ul>
+                  <li>TemplateStringArray</li>
                   <li>string</li>
-                  <li>string[]</li>
                 </ul>
               </td>
-              <td></td>
+              <td>Complements for the resulting truncated string</td>
               <td>No</td>
             </tr>
             <tr>
-              <td>boolean</td>
-              <td></td>
+              <td>string</td>
+              <td>Text to be truncated</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>number</td>
+              <td>Length of truncation</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -415,7 +460,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     <div class="mb-4">
       <div id="validateNotNull">
         <h4 class="blue-title">validateNotNull</h4>
-        <p>.</p>
+        <p>Validate if an object is not null</p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
@@ -447,7 +492,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     <div class="mb-4">
       <div id="validateObject">
         <h4 class="blue-title">validateObject</h4>
-        <p>.</p>
+        <p>Validate an object, and ommit certain properties</p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
