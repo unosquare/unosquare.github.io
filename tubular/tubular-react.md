@@ -814,6 +814,30 @@ description: "Check out tubular-react, a Material UI table with local and remote
           </tbody>
         </table>
       </div>
+      <div>
+        <p>Example of DataGrid with MobileResolution breakpoint.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const mobileBreakpointWidth = 800;
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                <>
+                  < h4>Try to change the resolution...< /h4>
+                  < DataGrid
+                    gridName="Tubular-React"
+                    columns={columns}
+                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                    mobileBreakpointWidth={mobileBreakpointWidth}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -1003,7 +1027,7 @@ description: "Check out tubular-react, a Material UI table with local and remote
       <div id="TbList">
         <h4 class="blue-title">TbList</h4>
         <p>
-          Paginator component to handle when grid contains tpp much data
+          Tubular list of items
         </p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
@@ -1042,7 +1066,7 @@ description: "Check out tubular-react, a Material UI table with local and remote
         </table>
       </div>
       <div>
-        <p>Example of the Advance Pagination actions.</p>
+        <p>Example of TbList</p>
         <code>
           <pre>
             import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
@@ -1175,30 +1199,6 @@ description: "Check out tubular-react, a Material UI table with local and remote
             </tr>
           </tbody>
         </table>
-      </div>
-      <div>
-        <p>Example of DataGrid with MobileResolution breakpoint.</p>
-        <code>
-          <pre>
-            import { DataGrid, ToolbarOptions } from "tubular-react";
-            import columns from "./columns";
-            const mobileBreakpointWidth = 800;
-            const RemoteDataGrid: React.FunctionComponent = () => {
-              return (
-                <>
-                  < h4>Try to change the resolution...< /h4>
-                  < DataGrid
-                    gridName="Tubular-React"
-                    columns={columns}
-                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                    mobileBreakpointWidth={mobileBreakpointWidth}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
