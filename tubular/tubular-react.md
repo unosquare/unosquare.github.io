@@ -1202,21 +1202,19 @@ description: "Check out tubular-react, a Material UI table with local and remote
         <p>Example of DataGrid with custom row component.</p>
         <code>
           <pre>
-            import { DataGrid, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
+            import { DataGrid, TbRow, TbRowProps } from "tubular-react";
+            const rowClick = () => {
+              console.log("You clicked on a row!");
+            };
+            const CustomTbRow: React.FunctionComponent< TbRowProps > = ({
               row,
             }: TbRowProps) => (
-              < TableRow hover={true} key={row.OrderID}>
-                < TableCell padding="default">{row.OrderID} < /TableCell>
-                < TableCell padding="default">{row.CustomerName} < /TableCell>
-                < TableCell padding="default">{row.ShipperCity}< /TableCell>
-                < TableCell padding="default" align={"right"} >
-                  {row.Amount || 0}
-                < /TableCell>
-                < TableCell padding="default">
-                  {row.IsShipped ? < CheckBox /> : < CheckBoxOutlineBlank />}
-                < /TableCell>
-              < /TableRow>
+              < TbRow
+                columns={columns}
+                row={row}
+                rowIndex={row.OrderID}
+                onRowClick={rowClick}
+              />
             );
             const RemoteDataGrid: React.FunctionComponent = () => {
               return (
@@ -1230,7 +1228,7 @@ description: "Check out tubular-react, a Material UI table with local and remote
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-tbrow-j9h69', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
   </div>
