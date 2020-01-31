@@ -1069,47 +1069,42 @@ description: "Check out tubular-react, a Material UI table with local and remote
         <p>Example of TbList</p>
         <code>
           <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
+            import { TbList, TbListItem } from "tubular-react";
+            const MyListItem: React.FunctionComponent = ({
+              rowStyle,
+              selectedIndex,
+              onItemClick,
+              row
+            }: any) => {
               return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
+                < TbListItem
+                  selectedIndex={selectedIndex}
+                  onItemClick={onItemClick}
+                  row={row}
+                  rowStyle={rowStyle}
+                  columns={columns}
+                />
+              );
+            };
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const tbList = useTbList(
+                columns,
+                "https://tubular.azurewebsites.net/api/orders/paged"
+              );
+              const rowClick = () => {
+                console.log("You clicked on a row!");
+              };
+              return (
+                < TbList
+                  listItemComponent={MyListItem}
+                  onItemClick={rowClick}
+                  tbInstance={tbList}
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-tblist-vyhze', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
