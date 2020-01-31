@@ -213,32 +213,23 @@ description: "Check out tubular-react, a Material UI table with local and remote
           </tbody>
         </table>
       </div>
-      <h3>Examples</h3>
       <div>
-        <p>Example of DataGrid with footer component.</p>
+        <h3>Example of DataGrid</h3>
         <code>
           <pre>
-            import columns from "./columns";
-            import { DataGrid, ToolbarOptions } from "tubular-react";
-            const tbFooter = ({ aggregates }: any) => (
-              < tr >
-                < tdTotal:< /td >
-                < td >{aggregates && aggregates.CustomerName}< /td >
-              < /tr >
-            );
+            import { DataGrid } from "tubular-react";
             const RemoteDataGrid: React.FunctionComponent = () => {
               return (
                 < DataGrid
                   gridName="Tubular-React"
                   columns={columns}
                   dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                  footerComponent={tbFooter}
-                >
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op', 'editor,browser');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-datagrid-rr4op', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
@@ -399,6 +390,36 @@ description: "Check out tubular-react, a Material UI table with local and remote
           </tbody>
         </table>
       </div>
+      <div>
+        <h3>Example of DialogModal</h3>
+        <p>Filterable columns have dialog modal by default</p>
+        <code>
+          <pre>
+            /* Only filterable columns have a dialog modal by default */
+            const columns = [
+              ...
+              new ColumnModel("CustomerName", {
+                aggregate: AggregateFunctions.Count,
+                filterable: true,
+                searchable: true,
+                sortable: true
+              })
+            ]
+            -----------------------------------------------------------------------------
+            import { DataGrid } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-dialogmodal-ulurp', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
     <hr class="separator"/>
     <div class="mb-4">
@@ -454,6 +475,33 @@ description: "Check out tubular-react, a Material UI table with local and remote
             </tr>
           </tbody>
         </table>
+      </div>
+      <div>
+        <h3>Example of ExportButton</h3>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const toolbarOptions = new ToolbarOptions({
+                advancePagination: false,
+                bottomPager: false,
+                exportButton: true,
+                printButton: false,
+                searchText: false,
+                topPager: false
+              });
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  toolbarOptions={toolbarOptions}
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-exportbutton-zblqu', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
@@ -706,47 +754,23 @@ description: "Check out tubular-react, a Material UI table with local and remote
         <p>Example of DataGrid with details row.</p>
         <code>
           <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
+            import { DataGrid, DetailBaseComponent } from "tubular-react";
+            export interface DetailBaseComponentProps { row: any; }
+            const DetailComponent: DetailBaseComponent = ({row}: DetailBaseComponentProps)
+              => <>This is a test with the row #{row.OrderID}</>;
+            const RemoteDataGrid: React.FunctionComponent = () => {
               return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  detailComponent={< DetailComponent />}
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69', 'editor,browser');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-detailcomponent-yusvc', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
@@ -861,6 +885,36 @@ description: "Check out tubular-react, a Material UI table with local and remote
             </tr>
           </tbody>
         </table>
+      </div>
+      <div>
+        <h3>Example of OperatorsDropdown</h3>
+        <p>When filtering a column's data, a default OperatorsDropdown will appear</p>
+        <code>
+          <pre>
+            /* Only filterable columns have a dialog modal by default */
+            const columns = [
+              ...
+              new ColumnModel("CustomerName", {
+                aggregate: AggregateFunctions.Count,
+                filterable: true,
+                searchable: true,
+                sortable: true
+              })
+            ]
+            -----------------------------------------------------------------------------
+            import { DataGrid } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-dialogmodal-ulurp', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
     <hr class="separator"/>
