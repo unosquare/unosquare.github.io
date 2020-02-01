@@ -255,7 +255,7 @@ description: "Check out uno-js, a Typescript library for array and string manipu
     <div class="mb-4">
       <div id="stringTemplate">
         <h4 class="blue-title">stringTemplate</h4>
-        <p>.</p>
+        <p>Build a string with a given template</p>
         <h6>PARAMETERS</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
