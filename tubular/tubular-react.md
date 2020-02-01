@@ -595,50 +595,6 @@ description: "Check out tubular-react, a Material UI table with local and remote
     </div>
     <hr class="separator"/>
     <div class="mb-4">
-      <div id="GridToolbar">
-        <h4 class="blue-title">GridToolbar</h4>
-        <p>
-          Toolbar options of the Grid.
-        </p>
-        <h6>PROPERTIES</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>toolbarOptions</td>
-              <td>ToolbarOptions</td>
-              <td>Options included on the grid</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>gridName</td>
-              <td>string</td>
-              <td>Name of the grid that has this toolbar options assigned</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>tbTableInstance</td>
-              <td>ITbTableInstance</td>
-              <td>Table assigned to the grid.</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <hr class="separator"/>
-    <div class="mb-4">
       <div id="GridHeaderCell">
         <h4 class="blue-title">GridHeaderCell</h4>
         <p>
@@ -681,6 +637,50 @@ description: "Check out tubular-react, a Material UI table with local and remote
               <td>sortColumn</td>
               <td>Function</td>
               <td>Function to sort the data of the column</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="GridToolbar">
+        <h4 class="blue-title">GridToolbar</h4>
+        <p>
+          Toolbar options of the Grid.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>toolbarOptions</td>
+              <td>ToolbarOptions</td>
+              <td>Options included on the grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>gridName</td>
+              <td>string</td>
+              <td>Name of the grid that has this toolbar options assigned</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>tbTableInstance</td>
+              <td>ITbTableInstance</td>
+              <td>Table assigned to the grid.</td>
               <td>No</td>
               <td>None</td>
             </tr>
