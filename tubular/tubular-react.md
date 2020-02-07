@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Open Source Software Initiatives from Unosquare | uno-react"
-description: "Check out uno-react, a Typescript library with common functions and hooks for React"
+title: "Open Source Software Initiatives from Unosquare | tubular-react"
+description: "Check out tubular-react, a Material UI table with local and remote data-source."
 ---
 <div class="container content-home d-flex flex-row">
   <div class="col-lg-10 col-xl-10 col-sm-12 col-md-12 p-0">
@@ -92,6 +92,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="DataGrid">
         <h4 class="blue-title">DataGrid</h4>
@@ -212,34 +213,26 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <h3>Examples</h3>
       <div>
-        <p>Example of DataGrid with footer component.</p>
+        <h3>Example of DataGrid</h3>
         <code>
           <pre>
-            import columns from "./columns";
-            import { DataGrid, ToolbarOptions } from "tubular-react";
-            const tbFooter = ({ aggregates }: any) => (
-              < tr >
-                < tdTotal:< /td >
-                < td >{aggregates && aggregates.CustomerName}< /td >
-              < /tr >
-            );
+            import { DataGrid } from "tubular-react";
             const RemoteDataGrid: React.FunctionComponent = () => {
               return (
                 < DataGrid
                   gridName="Tubular-React"
                   columns={columns}
                   dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                  footerComponent={tbFooter}
-                >
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-footercomponent-example-rr4op');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-datagrid-rr4op', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="DataGridCard">
         <h4 class="blue-title">DataGridCard</h4>
@@ -283,6 +276,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="DataGridTable">
         <h4 class="blue-title">DataGridTable</h4>
@@ -341,6 +335,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="DialogModal">
         <h4 class="blue-title">DialogModal</h4>
@@ -395,7 +390,38 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
+      <div>
+        <h3>Example of DialogModal</h3>
+        <p>Filterable columns have dialog modal by default</p>
+        <code>
+          <pre>
+            /* Only filterable columns have a dialog modal by default */
+            const columns = [
+              ...
+              new ColumnModel("CustomerName", {
+                aggregate: AggregateFunctions.Count,
+                filterable: true,
+                searchable: true,
+                sortable: true
+              })
+            ]
+            -----------------------------------------------------------------------------
+            import { DataGrid } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-dialogmodal-ulurp', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ExportButton">
         <h4 class="blue-title">ExportButton</h4>
@@ -450,7 +476,35 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
+      <div>
+        <h3>Example of ExportButton</h3>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const toolbarOptions = new ToolbarOptions({
+                advancePagination: false,
+                bottomPager: false,
+                exportButton: true,
+                printButton: false,
+                searchText: false,
+                topPager: false
+              });
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  toolbarOptions={toolbarOptions}
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-exportbutton-zblqu', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="GridBody">
         <h4 class="blue-title">GridBody</h4>
@@ -502,6 +556,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="GridHeader">
         <h4 class="blue-title">GridHeader</h4>
@@ -538,49 +593,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
-    <div class="mb-4">
-      <div id="GridToolbar">
-        <h4 class="blue-title">GridToolbar</h4>
-        <p>
-          Toolbar options of the Grid.
-        </p>
-        <h6>PROPERTIES</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Description</th>
-              <th>Optional</th>
-              <th>Default value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>toolbarOptions</td>
-              <td>ToolbarOptions</td>
-              <td>Options included on the grid</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>gridName</td>
-              <td>string</td>
-              <td>Name of the grid that has this toolbar options assigned</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-            <tr>
-              <td>tbTableInstance</td>
-              <td>ITbTableInstance</td>
-              <td>Table assigned to the grid.</td>
-              <td>No</td>
-              <td>None</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="GridHeaderCell">
         <h4 class="blue-title">GridHeaderCell</h4>
@@ -631,6 +644,51 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="GridToolbar">
+        <h4 class="blue-title">GridToolbar</h4>
+        <p>
+          Toolbar options of the Grid.
+        </p>
+        <h6>PROPERTIES</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Optional</th>
+              <th>Default value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>toolbarOptions</td>
+              <td>ToolbarOptions</td>
+              <td>Options included on the grid</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>gridName</td>
+              <td>string</td>
+              <td>Name of the grid that has this toolbar options assigned</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>tbTableInstance</td>
+              <td>ITbTableInstance</td>
+              <td>Table assigned to the grid.</td>
+              <td>No</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="MasterDetailRow">
         <h4 class="blue-title">MasterDetailRow</h4>
@@ -696,49 +754,26 @@ description: "Check out uno-react, a Typescript library with common functions an
         <p>Example of DataGrid with details row.</p>
         <code>
           <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
+            import { DataGrid, DetailBaseComponent } from "tubular-react";
+            export interface DetailBaseComponentProps { row: any; }
+            const DetailComponent: DetailBaseComponent = ({row}: DetailBaseComponentProps)
+              => <>This is a test with the row #{row.OrderID}</>;
+            const RemoteDataGrid: React.FunctionComponent = () => {
               return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                  detailComponent={< DetailComponent />}
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-detailcomponent-yusvc', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="MobileDataGridTable">
         <h4 class="blue-title">MobileDataGridTable</h4>
@@ -779,7 +814,32 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
+      <div>
+        <p>Example of DataGrid with MobileResolution breakpoint.</p>
+        <code>
+          <pre>
+            import { DataGrid, ToolbarOptions } from "tubular-react";
+            import columns from "./columns";
+            const mobileBreakpointWidth = 800;
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                <>
+                  < h4>Try to change the resolution...< /h4>
+                  < DataGrid
+                    gridName="Tubular-React"
+                    columns={columns}
+                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                    mobileBreakpointWidth={mobileBreakpointWidth}
+                  />
+                </>
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="NoDataRow">
         <h4 class="blue-title">NoDataRow</h4>
@@ -814,6 +874,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="OperatorsDropdown">
         <h4 class="blue-title">OperatorsDropdown</h4>
@@ -849,7 +910,38 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
+      <div>
+        <h3>Example of OperatorsDropdown</h3>
+        <p>When filtering a column's data, a default OperatorsDropdown will appear</p>
+        <code>
+          <pre>
+            /* Only filterable columns have a dialog modal by default */
+            const columns = [
+              ...
+              new ColumnModel("CustomerName", {
+                aggregate: AggregateFunctions.Count,
+                filterable: true,
+                searchable: true,
+                sortable: true
+              })
+            ]
+            -----------------------------------------------------------------------------
+            import { DataGrid } from "tubular-react";
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              return (
+                < DataGrid
+                  gridName="Tubular-React"
+                  columns={columns}
+                  dataSource="https://tubular.azurewebsites.net/api/orders/paged"
+                />
+              );
+            };
+          </pre>
+        </code>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-dialogmodal-ulurp', 'editor,browser');">Open CodeSandbox</a>
+      </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="Paginator">
         <h4 class="blue-title">Paginator</h4>
@@ -893,6 +985,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="SearchTextInput">
         <h4 class="blue-title">SearchTextInput</h4>
@@ -929,11 +1022,12 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TbList">
         <h4 class="blue-title">TbList</h4>
         <p>
-          Paginator component to handle when grid contains tpp much data
+          Tubular list of items
         </p>
         <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
@@ -972,52 +1066,48 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
       <div>
-        <p>Example of the Advance Pagination actions.</p>
+        <p>Example of TbList</p>
         <code>
           <pre>
-            import { DataGridTable, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
-              row,
-            }: TbRowProps) => (
+            import { TbList, TbListItem } from "tubular-react";
+            const MyListItem: React.FunctionComponent = ({
+              rowStyle,
+              selectedIndex,
+              onItemClick,
+              row
+            }: any) => {
               return (
-                <>
-                  {getErrorMessage && (
-                    < Snackbar
-                      anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-                      style={{ paddingTop: '10px' }}
-                      open={true}
-                      ContentProps={{ 'aria-describedby': 'message-id' }}
-                      message={< span id="message-id">{getErrorMessage}< /span>}
-                    />
-                  )}
-                  < Typography style={{ margin: '25px', marginBottom: '10px' }} variant="h4">
-                    No card grid!
-                  < /Typography>
-                  < Table>
-                    < TableHead>
-                      < TableRow>
-                        < Paginator
-                          tbTableInstance={tbTableInstance}
-                          rowsPerPageOptions={null}
-                          advancePagination={false}
-                        />
-                      < /TableRow>
-                    < /TableHead>
-                  < /Table>
-                  < DataGridTable
-                    tbTableInstance={tbTableInstance}
-                    rowComponent={CustomTbRow}
-                    footerComponent={tbFooter}
-                    onRowClick={onRowClick}
-                  />
-                </>
+                < TbListItem
+                  selectedIndex={selectedIndex}
+                  onItemClick={onItemClick}
+                  row={row}
+                  rowStyle={rowStyle}
+                  columns={columns}
+                />
+              );
+            };
+            const RemoteDataGrid: React.FunctionComponent = () => {
+              const tbList = useTbList(
+                columns,
+                "https://tubular.azurewebsites.net/api/orders/paged"
+              );
+              const rowClick = () => {
+                console.log("You clicked on a row!");
+              };
+              return (
+                < TbList
+                  listItemComponent={MyListItem}
+                  onItemClick={rowClick}
+                  tbInstance={tbList}
+                />
               );
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-tblist-vyhze', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TbListItem">
         <h4 class="blue-title">TbListItem</h4>
@@ -1061,6 +1151,7 @@ description: "Check out uno-react, a Typescript library with common functions an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TbMobileRow">
         <h4 class="blue-title">TbMobileRow</h4>
@@ -1104,31 +1195,8 @@ description: "Check out uno-react, a Typescript library with common functions an
           </tbody>
         </table>
       </div>
-      <div>
-        <p>Example of DataGrid with MobileResolution breakpoint.</p>
-        <code>
-          <pre>
-            import { DataGrid, ToolbarOptions } from "tubular-react";
-            import columns from "./columns";
-            const mobileBreakpointWidth = 800;
-            const RemoteDataGrid: React.FunctionComponent = () => {
-              return (
-                <>
-                  < h4>Try to change the resolution...< /h4>
-                  < DataGrid
-                    gridName="Tubular-React"
-                    columns={columns}
-                    dataSource="https://tubular.azurewebsites.net/api/orders/paged"
-                    mobileBreakpointWidth={mobileBreakpointWidth}
-                  />
-                </>
-              );
-            };
-          </pre>
-        </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-mobilebreakpointwidthwidth-example-lumcz');">Open CodeSandbox</a>
-      </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TbRow">
         <h4 class="blue-title">TbRow</h4>
@@ -1183,21 +1251,19 @@ description: "Check out uno-react, a Typescript library with common functions an
         <p>Example of DataGrid with custom row component.</p>
         <code>
           <pre>
-            import { DataGrid, ToolbarOptions, TbRowProps } from "tubular-react";
-            const CustomTbRow: React.FunctionComponent = ({
+            import { DataGrid, TbRow, TbRowProps } from "tubular-react";
+            const rowClick = () => {
+              console.log("You clicked on a row!");
+            };
+            const CustomTbRow: React.FunctionComponent< TbRowProps > = ({
               row,
             }: TbRowProps) => (
-              < TableRow hover={true} key={row.OrderID}>
-                < TableCell padding="default">{row.OrderID} < /TableCell>
-                < TableCell padding="default">{row.CustomerName} < /TableCell>
-                < TableCell padding="default">{row.ShipperCity}< /TableCell>
-                < TableCell padding="default" align={"right"} >
-                  {row.Amount || 0}
-                < /TableCell>
-                < TableCell padding="default">
-                  {row.IsShipped ? < CheckBox /> : < CheckBoxOutlineBlank />}
-                < /TableCell>
-              < /TableRow>
+              < TbRow
+                columns={columns}
+                row={row}
+                rowIndex={row.OrderID}
+                onRowClick={rowClick}
+              />
             );
             const RemoteDataGrid: React.FunctionComponent = () => {
               return (
@@ -1211,7 +1277,7 @@ description: "Check out uno-react, a Typescript library with common functions an
             };
           </pre>
         </code>
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'remotedatagrid-rowcomponent-example-j9h69');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'tubular-react-tbrow-j9h69', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
   </div>

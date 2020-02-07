@@ -4,17 +4,16 @@ title: "Open Source Software Initiatives from Unosquare | Tubular"
 description: "Check how to improve your CRUD views with amazing webcontrols from Unosquare"
 ---
 <div class="container content-home">
-<div class="main-hero hero">
-    <img src="/assets/tubular.jpg" class="px-5" alt="Tubular logo" />
-    <div class="hero-title title-black">
-        <h2 class="text-uppercase">Tubular</h2>
-        <div id="hero-label">The centerpiece of tubular is its fully templateable grid with lots
-            of features
+    <div class="main-hero hero">
+        <img src="/assets/tubular.jpg" class="px-5" alt="Tubular logo" />
+        <div class="hero-title title-black">
+            <h2 class="text-uppercase">Tubular</h2>
+            <div id="hero-label">The centerpiece of tubular is its fully templateable grid with lots
+                of features
+            </div>
+            <a class="link-gray" href="https://unosquare.github.io/tubular/"> Read more</a>
         </div>
-        <a class="link-gray" href="https://unosquare.github.io/tubular/"> Read more
-        </a>
     </div>
-</div>
 </div>
 <div class="container content-home">
 <div class="row">
@@ -29,9 +28,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         (ASP.NET Web API for example).
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-dotnet" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular-dotnet/api/Unosquare.Tubular.html" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-dotnet">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -48,9 +50,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         objects.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-common" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-common">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -69,9 +74,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Remote data is paged in the server side.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
+                <div class="d-flex row justify-content-between align-items-center m-0">
                     <a href="https://unosquare.github.io/tubular/tubular-react" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-react">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -86,44 +94,12 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular React Common functions and hooks.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://unosquare.github.io/tubular-react-common" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular/tubular-react-common" class="link-blue button">
                         Read More
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-            <div class="card-body p-3">
-                <div class="card-head">
-                    <h4 class="text-uppercase">Tubular for AngularJS (formerly Tubular)</h4>
-                    <p class="author-date">
-                        Provides a set of directives and services using AngularJS as a framework.
-                        Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
-                    </p>
-                </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular" class="link-blue button">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-lg-4 mb-4">
-        <div class="card">
-            <div class="card-body p-3">
-                <div class="card-head">
-                    <h4 class="text-uppercase">Tubular for Angular8 (formerly Tubular2)</h4>
-                    <p class="author-date">
-                        A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
-                    </p>
-                </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular2" class="link-blue button">
-                        Read More
+                    <a href="https://github.com/unosquare/tubular-react-common">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>
@@ -139,9 +115,47 @@ description: "Check how to improve your CRUD views with amazing webcontrols from
                         Tubular Angular Components easily with any Node.js WebApi library.
                     </p>
                 </div>
-                <div class="calltoaction calltoaction-sm d-flex justify-content-start m-0">
-                    <a href="https://github.com/unosquare/tubular-nodejs" class="link-blue button">
+                <div class="d-flex row justify-content-between align-items-center m-0">
+                    <a href="https://unosquare.github.io/tubular/tubular-nodejs" class="link-blue button">
                         Read More
+                    </a>
+                    <a href="https://github.com/unosquare/tubular-nodejs">
+                        <img src="/assets/github.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body p-3">
+                <div class="card-head">
+                    <h4 class="text-uppercase">Tubular for AngularJS (formerly Tubular)</h4>
+                    <p class="author-date">
+                        Provides a set of directives and services using AngularJS as a framework.
+                        Full markup design means a Controller in AngularJS isn’t needed to start using our Grid or Form. 
+                    </p>
+                </div>
+                <div class="d-flex row justify-content-end align-items-center m-0">
+                    <a href="https://github.com/unosquare/tubular">
+                        <img src="/assets/github.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-body p-3">
+                <div class="card-head">
+                    <h4 class="text-uppercase">Tubular for Angular8 (formerly Tubular2)</h4>
+                    <p class="author-date">
+                        A set of components based on Angular Material 2 featuring: full grid with sorting, filtering, exporting just like the previous Tubular for AngularJS component. 
+                    </p>
+                </div>
+                <div class="d-flex row justify-content-end align-items-center m-0">
+                    <a href="https://github.com/unosquare/tubular2">
+                        <img src="/assets/github.png" />
                     </a>
                 </div>
             </div>

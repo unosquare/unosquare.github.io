@@ -114,7 +114,7 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
                             in-line editing of rows via templates.
                         </p>
                     </div>
-                    <a href="/tubular.html" class="text-uppercase">read more</a>
+                    <a href="https://unosquare.github.io/tubular/" class="text-uppercase">read more</a>
                 </div>
             </div>
         </div>
@@ -176,17 +176,14 @@ description: "Check Unosquare's Open Source Software Initiatives for several tec
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card">
-                <img alt="LiteLib logo" src="assets/litelib-logo.png" class="logo">
                 <div class="card-body p-3">
                     <div class="card-head">
-                        <h4 class="text-uppercase">LiteLib</h4>
+                        <h4 class="text-uppercase">Uno</h4>
                         <p class="author-date">
-                            A cool little wrapper for SQLite based on Dapper. <br>
-                            LiteLib is a library that helps you get the job done quickly and easily by
-                            defining POCO classes and turns those classes into SQLite-mapped tables.
+                            Save time using our typescript libraries featuring useful functions, hooks, HOCs and even components.
                         </p>
                     </div>
-                    <a href="https://github.com/unosquare/litelib" class="text-uppercase">read more</a>
+                    <a href="https://unosquare.github.io/uno/" class="text-uppercase">read more</a>
                 </div>
             </div>
         </div>

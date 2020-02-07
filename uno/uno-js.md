@@ -62,8 +62,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => ["rgba(0,0,0, 1)", "rgba(45,30,15, 1)", "rgba(90,60,30, 1)"]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jscolorgenerator-ke1rl');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jscolorgenerator-ke1rl', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="debounce">
         <h4 class="blue-title">debounce</h4>
@@ -116,8 +117,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           showDebounce();
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsdebounce-wqh11');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsdebounce-wqh11', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="humanize">
         <h4 class="blue-title">humanize</h4>
@@ -153,8 +155,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => This Is An Awesome Example
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jshumanize-dp40n', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="objectDifference">
         <h4 class="blue-title">objectDifference</h4>
@@ -200,8 +203,9 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: { prev: "Mike", new: "John", type: "name" }, age: { prev: 3, new: 5, type: "age" }}]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsobjectdifference-q4okk');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsobjectdifference-q4okk', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="removeDuplicated">
         <h4 class="blue-title">removeDuplicated</h4>
@@ -245,8 +249,54 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => [{ name: "Mike", age: 3, gender: "Male" }, { name: "John", age: 5, gender: "Male" }]
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jsremoveduplicated-6pmtz', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="stringTemplate">
+        <h4 class="blue-title">stringTemplate</h4>
+        <p>Build a string with a given template</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>string</li>
+                  <li>string[]</li>
+                </ul>
+              </td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>boolean</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>
+          A function that may build a string 
+        </p>
+      </div>
+      <code>
+        <pre class="pre-block">
+          import { humanize } from "uno-js";
+          const toHumanize = humanize("thisIsAnAwesomeExample");
+          // => This Is An Awesome Example
+        </pre>
+      </code>
+    </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="toDate">
         <h4 class="blue-title">toDate</h4>
@@ -283,8 +333,48 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => 1994-08-17T06:00:00.000Z
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstodate-29d36', 'console');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="toDate">
+        <h4 class="blue-title">toLocalTime</h4>
+        <p>Converts a date object or string to UTC Date</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>string</li>
+                  <li>Date</li>
+                </ul>
+              </td>
+              <td>Date to convert to UTC</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>A DateTime object converted to UTC</p>
+      </div>
+      <code>
+        <pre class="pre-block">
+          import { toDate } from "uno-js";
+          const MyObject: any = { myDateString: "08.17.1994" };
+          toDate(MyObject);
+          // => 1994-08-17T06:00:00.000Z
+        </pre>
+      </code>
+    </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="toTitleCase">
         <h4 class="blue-title">toTitleCase</h4>
@@ -318,7 +408,112 @@ description: "Check out uno-js, a Typescript library for array and string manipu
           // => Hello World
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstotitlecase-208pm');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-jstotitlecase-208pm', 'console');">Open CodeSandbox</a>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="truncateText">
+        <h4 class="blue-title">truncateText</h4>
+        <p>Truncates a string to a certain length</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>TemplateStringArray</li>
+                  <li>string</li>
+                </ul>
+              </td>
+              <td>Complements for the resulting truncated string</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>string</td>
+              <td>Text to be truncated</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>number</td>
+              <td>Length of truncation</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>
+          A humanized string
+        </p>
+      </div>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="validateNotNull">
+        <h4 class="blue-title">validateNotNull</h4>
+        <p>Validate if an object is not null</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Object</td>
+              <td>Object to validate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>string[]</td>
+              <td>Object props that will be ignored for validation</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>True if object is correctly validated</p>
+      </div>
+    </div>
+    <hr class="separator"/>
+    <div class="mb-4">
+      <div id="validateObject">
+        <h4 class="blue-title">validateObject</h4>
+        <p>Validate an object, and ommit certain properties</p>
+        <h6>PARAMETERS</h6>
+        <table class="table table-striped w-100 mt-2">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Object</td>
+              <td>Object to be validated</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>Function used to validate object</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+        <h6>RETURN</h6>
+        <p>True, false</p>
+      </div>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
@@ -329,8 +524,12 @@ description: "Check out uno-js, a Typescript library for array and string manipu
       <li><a class="nav-link" href="#humanize">humanize</a></li>
       <li><a class="nav-link" href="#objectDifference">objectDifference</a></li>
       <li><a class="nav-link" href="#removeDuplicated">removeDuplicated</a></li>
+      <li><a class="nav-link" href="#stringTemplate">stringTemplate</a></li>
       <li><a class="nav-link" href="#toDate">toDate</a></li>
       <li><a class="nav-link" href="#toTitleCase">toTitleCase</a></li>
+      <li><a class="nav-link" href="#truncateText">truncateText</a></li>
+      <li><a class="nav-link" href="#validateNotNull">validateNotNull</a></li>
+      <li><a class="nav-link" href="#validateObject">validateObject</a></li>
     </ul>
   </div>
 </div>

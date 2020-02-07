@@ -90,8 +90,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseclickoutside-demo-flf7c', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useEffectWithDebounce">
         <h4 class="blue-title">useEffectWithDebounce</h4>
@@ -154,8 +155,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseeffectwithdebounce-demo-08ugt', 'editor.browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useEffectWithLoading">
         <h4 class="blue-title">useEffectWithLoading</h4>
@@ -237,8 +239,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseeffectwithloading-demo-t9p6v', 'editor,broser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useNow">
         <h4 class="blue-title">useNow</h4>
@@ -267,8 +270,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusenow-demo-hbe1t');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusenow-demo-hbe1t', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="usePersistedState">
         <h4 class="blue-title">usePersistedState</h4>
@@ -329,8 +333,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusepersistedstate-demo-ome0b', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useResolutionSwitch">
         <h4 class="blue-title">useResolutionSwitch</h4>
@@ -382,8 +387,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactuseresolutionswitch-demo-ex1fg', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useStateForField">
         <h4 class="blue-title">useStateForField</h4>
@@ -436,8 +442,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateforfield-demo-2xuq3', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useStateForModel">
         <h4 class="blue-title">useStateForModel</h4>
@@ -502,8 +509,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateformodel-demo-lmkuh', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useStateForModelWithLoading">
         <h4 class="blue-title">useStateForModelWithLoading</h4>
@@ -571,8 +579,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reactusestateformodelwithloading-demo-6294s', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="useToggle">
         <h4 class="blue-title">useToggle</h4>
@@ -625,8 +634,9 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7');">Open CodeSandbox</a>
+      <a class="nav-link link-blue" onclick="convert(this, 'uno-reactusetoggle-demo-i39t7', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ValidatorForm">
         <h4 class="blue-title">ValidatorForm</h4>
@@ -683,7 +693,7 @@ description: "Check out uno-react, a Typescript library with common functions an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-reacttextvalidator-demo-9l3sl', 'editor,browser');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">

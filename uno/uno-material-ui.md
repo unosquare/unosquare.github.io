@@ -70,8 +70,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uibuttonwithloading-gkg1q', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ConfirmationDialog">
         <h4 class="blue-title">ConfirmationDialog</h4>
@@ -125,8 +126,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiconfirmationdialog-gwgre', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ErrorBoundary">
         <h4 class="blue-title">ErrorBoundary</h4>
@@ -152,6 +154,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         </table>
       </div>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="FixedLinearProgress">
         <h4 class="blue-title">FixedLinearProgress</h4>
@@ -205,8 +208,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uifixedlinearprogress-zyylp', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="FormModal">
         <h4 class="blue-title">FormModal</h4>
@@ -287,8 +291,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiformmodal-ewusv');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiformmodal-ewusv', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="FormSwitch">
         <h4 class="blue-title">FormSwitch</h4>
@@ -338,8 +343,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiformswitch-796ng');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiformswitch-796ng', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="IndeterminatedLoading">
         <h4 class="blue-title">IndeterminatedLoading</h4>
@@ -384,8 +390,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiindeterminatedloading-vubgx', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="LoadingIcon">
         <h4 class="blue-title">LoadingIcon</h4>
@@ -426,8 +433,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiloadingicon-ugguf');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uiloadingicon-ugguf', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="MenuList">
         <h4 class="blue-title">MenuList</h4>
@@ -474,8 +482,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uimenulist-uzuhe');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uimenulist-uzuhe', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="NavBar">
         <h4 class="blue-title">NavBar</h4>
@@ -513,8 +522,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uinavbar-nsk7f');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uinavbar-nsk7f', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TextValidator">
         <h4 class="blue-title">SnackbarContainer</h4>
@@ -568,8 +578,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uisnackbar-lwylt');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uisnackbar-lwylt', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="TextValidator">
         <h4 class="blue-title">TextValidator</h4>
@@ -621,8 +632,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           };
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uitextvalidator-zh9xl', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="ThumbnailPhoto">
         <h4 class="blue-title">ThumbnailPhoto</h4>
@@ -665,8 +677,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb');">Open CodeSandbox</a>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uithumbnailphoto-y8bbb', 'editor,browser');">Open CodeSandbox</a>
     </div>
+    <hr class="separator"/>
     <div class="mb-4">
       <div id="Title">
         <h4 class="blue-title">Title</h4>
@@ -711,7 +724,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         </pre>
       </code>
       <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uititle-gw7xq');">Open CodeSandbox</a>
+        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uititle-gw7xq', 'editor,browser');">Open CodeSandbox</a>
       </div>
     </div>
   </div>
