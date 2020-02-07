@@ -28,13 +28,13 @@ She gave them some rules about this art, which we will be discovering through th
 
 Function Component *was the easy to deal with* guy. He wasn't very complex or heavy, he was as simple as a javascript function. And that's why some developers really loved him. Playing with Function Component was as easy as:
 
-![Code snippet](../assets/arhh-snippet-1.png)
+![Code snippet](/assets/arhh-snippet-1.png)
 
 He was able to take some props  as a function parameter so that the developer could do anything with it.
 
 His brother Class component was also cool, but he was a little more complex. He was able to do the same job his simple brother could do. Playing with that guy looked something like:
 
-![Code snippet](../assets/arhh-snippet-2.png)
+![Code snippet](/assets/arhh-snippet-2.png)
 
 ## The origin of the fight
 *FC* had a problem: he was able to produce new results whenever someone asked for it, but he wasn't able to react to changes himself 😥.
@@ -43,7 +43,7 @@ He wasn't able to detect changes and her mother told them that [they weren't all
 
 He tried to learn to react to changes with some tricks like having an internal variable and changing it but that didn't make a change. His mother didn't like that and simply **ignored him**. So, even with something like:
 
-![Code snippet](../assets/arhh-snippet-3.png)
+![Code snippet](/assets/arhh-snippet-3.png)
 
 He wasn't able to get any fans, his mother was not happy with it and told him he should know his limitations. 
 

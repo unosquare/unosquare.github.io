@@ -21,11 +21,11 @@ At the **Unmount** moment he would clean anything after doing any work.
 
 Then, he developed some methods to deal with that:
 
-![Code snippet](../assets/arhh-snippet-6.png)
+![Code snippet](/assets/arhh-snippet-6.png)
 
 That was his plan regarding the render process. And then he presented his plan regarding the way to work with changes. Since using some random variables internally or modifying props was not an option, he agreed with his mother on using a special variable that could be subject of changes.
 
-![Code snippet](../assets/arhh-snippet-5.png)
+![Code snippet](/assets/arhh-snippet-5.png)
 
 Her mother was so happy about this because she was able to keep track of any change he was doing. It was just a matter of watching that ```state``` variable.
 
