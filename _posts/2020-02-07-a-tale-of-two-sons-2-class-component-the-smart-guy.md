@@ -8,6 +8,8 @@ tags: Reactjs Javascript
 ---
 On these episodes, I will try to guide you through a story that will help you understand React Class/Function Components. If you're an experienced React developer this might not be that interesting for you, but I hope you find this enjoyable.
 
+I recommend you to [read part 1 first](https://unosquare.github.io/2020/02/07/a-tale-of-two-sons-1-the-origins.html)
+
 # Class component learns to change
 Since changing props or variables was not a valid way for her mother when reacting to changes, he created an entire strategy.
 

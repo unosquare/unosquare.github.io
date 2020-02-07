@@ -49,4 +49,4 @@ He wasn't able to get any fans, his mother was not happy with it and told him he
 
 On the other hand, his brother learned to deal with changes.
 
-To be continued...
+[Read part 2](https://unosquare.github.io/2020/02/07/a-tale-of-two-sons-2-class-component-the-smart-guy.html)
