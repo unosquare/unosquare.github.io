@@ -158,6 +158,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -165,8 +166,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>error</td>
               <td>String</td>
-              <td>String to humanize</td>
+              <td>Error to render on boundary</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>errorInfo</td>
+              <td>String</td>
+              <td>Info of error to trigger boundary</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -184,6 +192,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -191,13 +200,9 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
-              <td>Object</td>
-              <td>First object to be compared.</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Object</td>
-              <td>Second object to be compared.</td>
+              <td>isLoading</td>
+              <td>Boolean</td>
+              <td>Value to determine if component is rendering</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -695,7 +700,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
-              <th scope="col">label</th>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
