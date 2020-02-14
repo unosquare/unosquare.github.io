@@ -311,8 +311,18 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>Boolean</td>
+              <td>Value to determine if switch is on or off</td>
+              <td>No</td>
+            </tr>
+            <tr>
               <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>Label that shows user the value being changed</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>Function to toggle value or/off</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -363,8 +373,8 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
-              <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>Boolean</td>
+              <td>Value that controls the rendering of the component. Once false, the component will hide</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -410,8 +420,8 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
-              <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>string</td>
+              <td>Determines which MUI color to use for the component</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -444,22 +454,6 @@ description: "Check out uno-material-ui, a Typescript library with components an
           it leaves an space to add a Navbar.
         </p>
         <h6>PARAMETERS</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Description</th>
-              <th scope="col">Optional</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>String</td>
-              <td>String to be converted on Title Case.</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <code>
         <pre class="pre-block">
@@ -503,7 +497,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           <tbody>
             <tr>
               <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>Title inside navigation bar</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -532,23 +526,6 @@ description: "Check out uno-material-ui, a Typescript library with components an
           A global snackbar component implemented using Observer pattern, reducing the load on re-renders. It has to be immediately after your ThemeProvider tag
           because the snackbar type colors are based on the theme. Just add the container and consume the service at any children on your app.
         </p>
-        <h6>PARAMETERS</h6>
-        <table class="table table-striped w-100 mt-2">
-          <thead>
-            <tr>
-              <th scope="col">Type</th>
-              <th scope="col">Description</th>
-              <th scope="col">Optional</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>String</td>
-              <td>String to be converted on Title Case.</td>
-              <td>No</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <code>
         <pre class="pre-block">
@@ -599,7 +576,27 @@ description: "Check out uno-material-ui, a Typescript library with components an
           <tbody>
             <tr>
               <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>Label appearing beside the control</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>Function that changes the value of the control</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Array</td>
+              <td>Array of validator rules applied to the control's value</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Array</td>
+              <td>Array of messages shown when validators are not met</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>Value contained on the control</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -651,7 +648,17 @@ description: "Check out uno-material-ui, a Typescript library with components an
           <tbody>
             <tr>
               <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>Full name of the contact</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>Source to the image to show</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>Placement of the tooltip</td>
               <td>No</td>
             </tr>
           </tbody>
