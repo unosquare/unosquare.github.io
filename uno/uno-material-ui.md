@@ -21,10 +21,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A button that adds an animated loading icon when the action is resolving.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -32,18 +33,15 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
-              <td>Array</td>
-              <td>Starting array with RGB values, e.g. [255, 255, 255]</td>
+              <td>isFetching</td>
+              <td>Boolean</td>
+              <td>Flag to determine if loading icon will hide/show</td>
               <td>No</td>
             </tr>
             <tr>
-              <td>Array</td>
-              <td>Ending array with RGB values, e.g. [255, 255, 255]</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Number</td>
-              <td>The factor which will multiply the values.</td>
+              <td>onClick</td>
+              <td>Function</td>
+              <td>Function executed when clicking on the button</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -79,10 +77,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A customizable dialog to confirm important actions like to delete an item.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -90,13 +89,33 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>onAgreeAction</td>
               <td>Function</td>
-              <td>Function to be executed after the lapse finishes.</td>
+              <td>Action executed when agree button is pressed</td>
               <td>No</td>
             </tr>
             <tr>
-              <td>Number</td>
-              <td>Milliseconds until the function will execute.</td>
+              <td>contentText</td>
+              <td>String</td>
+              <td>Text rendered inside of modal</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>onClose</td>
+              <td>Function</td>
+              <td>Function executed when closing modal</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>open</td>
+              <td>Boolean</td>
+              <td>Flag to determine if modal is open</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>String</td>
+              <td>Title of the modal</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -135,7 +154,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           This container catch any error in the children, displaying it, avoiding that the whole app crashes.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
@@ -161,7 +180,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A linear progress component.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
@@ -217,10 +236,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A wrapper for your modals with a form logic, just add input fields.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -228,13 +248,33 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
-              <td>Array</td>
-              <td>Array of objects to be evaluated.</td>
+              <td>action</td>
+              <td>Component</td>
+              <td>Component containing the actions of the modal</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>onClose</td>
+              <td>Function</td>
+              <td>Function executed when modal is closed</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>onSubmit</td>
+              <td>Function</td>
+              <td>Function executed when submit action is called</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>open</td>
+              <td>Boolean</td>
+              <td>Flag to determine if modal will render</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>title</td>
               <td>String</td>
-              <td>Prop to be evaluated.</td>
+              <td>Title of the modal</td>
               <td>No</td>
             </tr>
           </tbody>
@@ -300,10 +340,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           An useful switch component with label, perfect for forms.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -311,16 +352,19 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>checked</td>
               <td>Boolean</td>
               <td>Value to determine if switch is on or off</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>label</td>
               <td>String</td>
               <td>Label that shows user the value being changed</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>onChange</td>
               <td>Function</td>
               <td>Function to toggle value or/off</td>
               <td>No</td>
@@ -362,10 +406,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A screen-wide modal that blocks the entire UI to prevent interruption during loading or fetching.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -373,6 +418,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>isLoading</td>
               <td>Boolean</td>
               <td>Value that controls the rendering of the component. Once false, the component will hide</td>
               <td>No</td>
@@ -409,10 +455,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A center-aligned circular loading animation.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -420,6 +467,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>color</td>
               <td>string</td>
               <td>Determines which MUI color to use for the component</td>
               <td>No</td>
@@ -453,7 +501,6 @@ description: "Check out uno-material-ui, a Typescript library with components an
           A left-side permanent drawer to display navigation options,
           it leaves an space to add a Navbar.
         </p>
-        <h6>PARAMETERS</h6>
       </div>
       <code>
         <pre class="pre-block">
@@ -485,10 +532,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           A navbar. Uses primary color of your theme. You can add a title or logo, and buttons.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -496,6 +544,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>title</td>
               <td>String</td>
               <td>Title inside navigation bar</td>
               <td>No</td>
@@ -564,10 +613,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
         <p>
           An input with validations.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -575,26 +625,31 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>label</td>
               <td>String</td>
               <td>Label appearing beside the control</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>onChange</td>
               <td>Function</td>
               <td>Function that changes the value of the control</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>validators</td>
               <td>Array</td>
               <td>Array of validator rules applied to the control's value</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>errorMessages</td>
               <td>Array</td>
               <td>Array of messages shown when validators are not met</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>value</td>
               <td>String</td>
               <td>Value contained on the control</td>
               <td>No</td>
@@ -636,10 +691,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
       <div id="ThumbnailPhoto">
         <h4 class="blue-title">ThumbnailPhoto</h4>
         <p>An small avatar to display a photo with tooltip.</p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">label</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -647,16 +703,19 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>fullName</td>
               <td>String</td>
               <td>Full name of the contact</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>imgSrc</td>
               <td>String</td>
               <td>Source to the image to show</td>
               <td>No</td>
             </tr>
             <tr>
+              <td>placement</td>
               <td>String</td>
               <td>Placement of the tooltip</td>
               <td>No</td>
@@ -694,10 +753,11 @@ description: "Check out uno-material-ui, a Typescript library with components an
           A title, it also changes the document title,
           so it is displayed on the tab of your web browser.
         </p>
-        <h6>PARAMETERS</h6>
+        <h6>PROPERTIES</h6>
         <table class="table table-striped w-100 mt-2">
           <thead>
             <tr>
+              <th scope="col">Name</th>
               <th scope="col">Type</th>
               <th scope="col">Description</th>
               <th scope="col">Optional</th>
@@ -705,8 +765,21 @@ description: "Check out uno-material-ui, a Typescript library with components an
           </thead>
           <tbody>
             <tr>
+              <td>value</td>
               <td>String</td>
-              <td>String to be converted on Title Case.</td>
+              <td>String to be used as title.</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>prefix</td>
+              <td>String</td>
+              <td>String used as a suffix for the value.</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>suffix</td>
+              <td>String</td>
+              <td>String used as a prefix for the value.</td>
               <td>No</td>
             </tr>
           </tbody>
