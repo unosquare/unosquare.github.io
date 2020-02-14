@@ -730,9 +730,7 @@ description: "Check out uno-material-ui, a Typescript library with components an
           }
         </pre>
       </code>
-      <div class="calltoaction calltoaction-sm d-flex justify-content-end m-0">
-        <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uititle-gw7xq', 'editor,browser');">Open CodeSandbox</a>
-      </div>
+      <a class="nav-link link-blue button" style="width:max-content!important" onclick="convert(this, 'uno-material-uititle-gw7xq', 'editor,browser');">Open CodeSandbox</a>
     </div>
   </div>
   <div class="col-2 toc d-none d-lg-block">
