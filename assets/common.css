@@ -328,3 +328,8 @@ em {
     font-size: 26px;
   }
 }
+
+img[src*='-snippet-'] {
+  display: block;
+  margin: auto;
+}
