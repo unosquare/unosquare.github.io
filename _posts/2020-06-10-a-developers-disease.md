@@ -28,7 +28,7 @@ Let me try to describe the status quo in a full-stack dev life...
 ### A daily life example
 You got started with React, for example, and it has been more than a year you've been working with it and you still don't understand why you need to subscribe to network calls inside the **componentDidMount**. 
 
-![Code snippet](/assets/developers_disease/whoa-take-it-easy.jpg)
+![Code snippet](/assets/developers_disease/whoa-snippet-take-it-easy.jpg)
 
 >*I know that componentDidMount runs after the component output has been rendered to the DOM, I remember that from the basic tutorial.*
 
@@ -37,7 +37,7 @@ Yeah, that's stated at the docs. But do you really understand what it means?
 ### How about css?
 I have known developers that have worked more than 2 years with css and they still don't get the very basis of the flex model. Some experienced engineers will end up adding a complete UI framework just to create a basic layout.
 
-![Code snippet](/assets/developers_disease/whoa-take-it-easy-3.jpg)
+![Code snippet](/assets/developers_disease/whoa-snippet-take-it-easy-3.jpg)
 
 I'm not talking about you, it happened to a friend of mine...
 
@@ -48,7 +48,7 @@ That's right, but even when you're relying on a UI framework, the framework reli
 
 ### How about .NET?
 Ever wondered what is that thing inside square brackets before a method or a class? 
-![Code snippet](/assets/developers_disease/whoa-take-it-easy-2.jpg)
+![Code snippet](/assets/developers_disease/whoa-snippet-take-it-easy-2.jpg)
 
 Again, many full-stack developers know that those are needed in some places, but they haven't reviewed it in a deep way. They know where to put it but they don't have that curiosity to understand how it works.
 
