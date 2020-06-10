@@ -9,7 +9,7 @@ tags: Performance Developer Development
 
 Some people talk about the health problems developers will face due to the amount of time we spend seated every day. It is very important, I won't argue against that.
 
-## A developers disease
+## A developer's disease
 But there's another problem that I have seen a lot of developers are facing. It is the **status quo** in their dev life.
 
 It was Voltaire who said:
